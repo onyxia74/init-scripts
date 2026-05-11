@@ -11,3 +11,4 @@
 
 | vscode-python | exercice de programmation avec fonction addition | [init-scripts/vscode-python/exercice-de-programmation-avec-fonction-addition.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exercice-de-programmation-avec-fonction-addition.sh) | - |
 | vscode-python | exercice addition | [init-scripts/vscode-python/exercice-addition.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exercice-addition.sh) | - |
+| vscode-python | exercice java compte caractères | [init-scripts/vscode-python/exercice-java-compte-caract-res.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exercice-java-compte-caract-res.sh) | - |
