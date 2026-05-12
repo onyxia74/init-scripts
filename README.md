@@ -15,3 +15,4 @@
 | vscode-python | exercice addition avec fonction python | [init-scripts/vscode-python/exercice-addition-avec-fonction-python.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exercice-addition-avec-fonction-python.sh) | - |
 | vscode-python | application java pour compter les lettres | [init-scripts/vscode-python/application-java-pour-compter-les-lettres.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/application-java-pour-compter-les-lettres.sh) | - |
 | vscode-python | visualisation boxplot | [init-scripts/vscode-python/visualisation-boxplot.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/visualisation-boxplot.sh) | - |
+| rstudio | calcul de moyenne sur CSV | [init-scripts/rstudio/calcul-de-moyenne-sur-csv.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/calcul-de-moyenne-sur-csv.sh) | - |
