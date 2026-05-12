@@ -7,15 +7,18 @@ set -euo pipefail
 
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
-mkdir -p "${WORK_DIR}/src"
-
 # Create workspace files.
-mkdir -p "$(dirname "${WORK_DIR}/src/main.py")"
-cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_17d83818dfc4'
-print('Hello from VSCode Onyxia!')
-ONYXIA_FILE_17d83818dfc4
+mkdir -p "$(dirname "${WORK_DIR}/src")"
+cat > "${WORK_DIR}/src" <<'ONYXIA_FILE_da64d768c88e'
+{}
+ONYXIA_FILE_da64d768c88e
+mkdir -p "$(dirname "${WORK_DIR}/main.py")"
+cat > "${WORK_DIR}/main.py" <<'ONYXIA_FILE_376981640adb'
+print('Hello Onyxia!')
+ONYXIA_FILE_376981640adb
 mkdir -p "$(dirname "${WORK_DIR}/requirements.txt")"
-cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_39402881f776'
+cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_52ab719f4454'
 pandas
-ONYXIA_FILE_39402881f776
+duckdb
+ONYXIA_FILE_52ab719f4454
 
