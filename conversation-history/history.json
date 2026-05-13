@@ -199,5 +199,31 @@
     "question": "Je veux un VScode avec un fichier qui fait des additions à l'intérieur",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je préfère préciser avant de générer un lien : quel service Onyxia souhaitez-vous utiliser ?",
+    "created_at": "2026-05-13T13:44:11.459844+00:00",
+    "event_id": "06f16967-f0a5-43f1-99f3-c1fdaf1fd509",
+    "interaction_id": "134f7409-bd4d-48d4-9401-83b4d299c5ed",
+    "metadata": {
+      "agent_prompt": "Je veux la lune ",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [
+          "vscode-python",
+          "rstudio",
+          "jupyter-python"
+        ],
+        "original_request": "Je veux la lune ",
+        "question": "Je préfère préciser avant de générer un lien : quel service Onyxia souhaitez-vous utiliser ?",
+        "validation_reason": "reponse_inutilisable"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux la lune ",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
