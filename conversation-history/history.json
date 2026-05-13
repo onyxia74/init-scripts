@@ -13,5 +13,27 @@
     "question": "J'aimerais un VSCode avec un persistent volume de 40Gi ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas vérifier que le lien proposé répond bien à votre besoin. Pouvez-vous préciser le service attendu et les paramètres importants ?",
+    "created_at": "2026-05-13T12:42:51.015888+00:00",
+    "event_id": "a7c496c1-8050-4753-bf44-f1bccdca430c",
+    "interaction_id": "e765f30a-aae3-4ae0-a237-c35ba54a2631",
+    "metadata": {
+      "agent_prompt": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "user_need",
+        "options": [],
+        "original_request": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+        "question": "Je ne peux pas vérifier que le lien proposé répond bien à votre besoin. Pouvez-vous préciser le service attendu et les paramètres importants ?",
+        "validation_reason": "reponse_inutilisable"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
