@@ -139,5 +139,20 @@
     "question": "Je veux un service pour faire des statistiques ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Service prêt : `vscode-python` dans le catalogue `ide`.\n\nOverride : `kubernetes.role` = `admin` (Donne moi un VScode avec le rôle admin).\n\nURL de lancement : https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&kubernetes.role=%C2%ABadmin%C2%BB",
+    "created_at": "2026-05-13T13:14:47.427426+00:00",
+    "event_id": "c87146ab-e059-4209-a1b9-ee3f6edbf9c3",
+    "interaction_id": "ec9438e1-a17e-4cb2-b7b6-b812b352b570",
+    "metadata": {
+      "agent_prompt": "Donne moi un VScode avec le rôle admin",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Donne moi un VScode avec le rôle admin",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
