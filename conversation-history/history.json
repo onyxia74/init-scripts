@@ -225,5 +225,20 @@
     "question": "Je veux la lune ",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Je connais maintenant la réponse finale.\n\nVoici votre service VSCode configuré avec le fichier `definition.py` contenant la fonction `addition` :\n\n- **Service** : `vscode-python` (ID: `vscode-python`)\n- **Catalogue** : `ide`\n- **Version** : `2.5.6`\n- **Fichier créé** : `/home/onyxia/work/definition.py`\n- **URL de lancement** : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fexercice-addition.sh%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fexercice-addition.sh%C2%BB)",
+    "created_at": "2026-05-13T13:49:49.102541+00:00",
+    "event_id": "15bd8e1e-4d9c-4bcd-9b11-0dba9526d992",
+    "interaction_id": "0f86d42a-de96-4846-9d93-0f8d4d430421",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service VScode avec un fichier qui contient une focntion addition déjà dedans",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service VScode avec un fichier qui contient une focntion addition déjà dedans",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
