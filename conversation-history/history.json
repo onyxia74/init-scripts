@@ -124,5 +124,20 @@
     "question": "Je veux un Rstudio avec un init script à l'intérieur",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Le service **rstudio-r-python-julia** (ID: `rstudio-r-python-julia`, Catalogue: `ide`) est prêt pour vos analyses statistiques.\n\nVoici le lien de lancement par défaut :\nhttps://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.4.6",
+    "created_at": "2026-05-13T12:54:18.904685+00:00",
+    "event_id": "0d3c24a6-5d73-440e-801d-d1dd60491f11",
+    "interaction_id": "85a426f8-285b-4fa1-8d40-e3596cc6b5af",
+    "metadata": {
+      "agent_prompt": "Je veux un service pour faire des statistiques ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service pour faire des statistiques ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
