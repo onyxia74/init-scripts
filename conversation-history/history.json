@@ -184,5 +184,20 @@
     "question": "Pourquoi il n'y a pas d'init script à l'intérieur",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Service prêt : `vscode-python` dans le catalogue `ide`.\n\nURL de lancement : https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6",
+    "created_at": "2026-05-13T13:43:53.637735+00:00",
+    "event_id": "9dadc528-ec69-4651-b319-c99337a17c93",
+    "interaction_id": "4d8ec111-c839-4690-ab09-eaee7710751c",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec un fichier qui fait des additions à l'intérieur",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec un fichier qui fait des additions à l'intérieur",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
