@@ -35,5 +35,20 @@
     "question": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Service prêt : `rstudio` dans le catalogue `ide`.\n\nOverride : `resources.limits.memory` = `100Gi` (Demande initiale utilisateur:\nJ'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv\n\nQuestion de clarification posee:\nJe ne peux pas vérifier que le lien proposé répond bien à votre besoin. Pouvez-vous préciser le service attendu et les paramètres importants ?\n\nPrecision apportee par l'utilisateur:\nRstudio et les parametres par défaut\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.).\n\nURL de lancement : https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.4.6&s3=region-79669f20&resources.limits.memory=%C2%AB100Gi%C2%BB",
+    "created_at": "2026-05-13T12:43:16.647105+00:00",
+    "event_id": "9d68ca3e-541b-4d3a-9d89-c09c7e65d2db",
+    "interaction_id": "347f9752-6527-45e1-b235-6fe7b3899c25",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nJ'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv\n\nQuestion de clarification posee:\nJe ne peux pas vérifier que le lien proposé répond bien à votre besoin. Pouvez-vous préciser le service attendu et les paramètres importants ?\n\nPrecision apportee par l'utilisateur:\nRstudio et les parametres par défaut\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Rstudio et les parametres par défaut",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
