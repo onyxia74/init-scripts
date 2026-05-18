@@ -532,5 +532,15 @@
     "question": "Je veux 10 CPU dnas mon vs code python",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-18T13:19:00.940520+00:00",
+    "event_id": "56a58a94-6cb4-4b75-a561-24ae704913ad",
+    "interaction_id": "1a731205-61ad-43b0-beae-4a408b99e433",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
