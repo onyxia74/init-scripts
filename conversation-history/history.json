@@ -827,5 +827,15 @@
     "question": "Salut j'aimerais faire des statistiques ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-18T13:51:33.082335+00:00",
+    "event_id": "a73ab284-bc13-48ee-a8e4-32a8bab4aee0",
+    "interaction_id": "340237f6-ad28-4b0e-9099-35637255a120",
+    "metadata": {
+      "message_index": 5
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
