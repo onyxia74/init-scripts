@@ -1017,5 +1017,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration de votre service pour réaliser des statistiques. J'ai sélectionné l'environnement JupyterLab qui inclut nativement les langages R, Python et Julia, ainsi qu'une collection de packages standards pour la science des données.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"jupyter-r-python-julia\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.4.8\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-18T14:53:39.948552+00:00",
+    "event_id": "8dc31b43-3fba-4d55-bab0-54becae6ba7e",
+    "interaction_id": "73b8ad1d-3ed4-4f9c-b4e1-92c6cadf0262",
+    "metadata": {
+      "agent_prompt": "Salut j'aimerais faire des statistiques",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Salut j'aimerais faire des statistiques",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
