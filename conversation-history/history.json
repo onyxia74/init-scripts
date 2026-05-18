@@ -415,5 +415,20 @@
     "question": "Je veux un VS code avec 30 000 CPU",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Voici la configuration pour votre service VS Code Python avec 30 000 CPU (30 000m) :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"30000m\",\n      \"default\": \"100m\",\n      \"changed\": true,\n      \"reason\": \"l'utilisateur demande explicitement 30 000 CPU\"\n    }\n  },\n  \"uses_default_values_for_unselected_parameters\": true\n}\n```",
+    "created_at": "2026-05-18T12:41:59.723511+00:00",
+    "event_id": "ad908df4-3012-40c8-81e7-c972b2e4f4a6",
+    "interaction_id": "75a218af-e4d8-4c24-8bfc-f452154308db",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nJe veux un VS code avec 30 000 CPU\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python` ?\n\nPrecision apportee par l'utilisateur:\nJe veux un VS code avec 30 000 CPU\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VS code avec 30 000 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
