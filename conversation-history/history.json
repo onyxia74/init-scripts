@@ -450,5 +450,27 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python` ?",
+    "created_at": "2026-05-18T13:02:56.652690+00:00",
+    "event_id": "00f0f1ee-cc5d-477d-b2e6-1a57c448ccaa",
+    "interaction_id": "33e8bd31-7b6a-45fc-ad00-f3ebf27f4021",
+    "metadata": {
+      "agent_prompt": "Je veux un VS code avec 30 000 CPU",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "parameter_changes",
+        "options": [],
+        "original_request": "Je veux un VS code avec 30 000 CPU",
+        "question": "Je n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python` ?",
+        "validation_reason": "override_demande_absent"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VS code avec 30 000 CPU",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
