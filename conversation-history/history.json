@@ -752,5 +752,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration de votre service VS Code Python avec l'allocation de 10 CPU demandée. J'ai configuré à la fois la requête (garantie) et la limite (maximum) à 10000m pour assurer la performance souhaitée.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.limits.cpu\": {\n      \"value\": \"10000m\",\n      \"reason\": \"demande utilisateur\"\n    },\n    \"resources.requests.cpu\": {\n      \"value\": \"10000m\",\n      \"reason\": \"VSCode avec 10 CPU\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T13:49:19.672098+00:00",
+    "event_id": "5b7f9e64-4291-4359-82fd-69107028cd65",
+    "interaction_id": "04c6b22b-9444-4188-b3d4-bd9d2297bd5e",
+    "metadata": {
+      "agent_prompt": "Je veux 10 CPU dnas mon vs code python",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux 10 CPU dnas mon vs code python",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
