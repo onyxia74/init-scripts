@@ -992,5 +992,20 @@
     "question": "Je veux un VScode avec GPU ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Voici la configuration de votre service VSCode avec le volume persistant de 40Gi comme demandé.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"persistence.size\": {\n      \"value\": \"40Gi\",\n      \"reason\": \"demande utilisateur\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T14:53:12.446826+00:00",
+    "event_id": "0b6df523-b531-42c1-a9ad-6e70339b868d",
+    "interaction_id": "e3bcea85-2692-4b4b-a3b3-57be4a9ab30c",
+    "metadata": {
+      "agent_prompt": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
