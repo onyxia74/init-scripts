@@ -517,5 +517,20 @@
     "question": "Je veux un VS code avec 30 CPU",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je connais maintenant la réponse finale.\n\nVoici la configuration pour votre service VS Code Python avec 10 CPU garantis :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"10000m\",\n      \"reason\": \"demande utilisateur de 10 CPU\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T13:18:52.764683+00:00",
+    "event_id": "7d825106-f8b7-4e03-9cfd-ee2f0a3623c8",
+    "interaction_id": "1a731205-61ad-43b0-beae-4a408b99e433",
+    "metadata": {
+      "agent_prompt": "Je veux 10 CPU dnas mon vs code python",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux 10 CPU dnas mon vs code python",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
