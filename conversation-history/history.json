@@ -812,5 +812,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration de votre service pour réaliser des analyses statistiques. J'ai sélectionné l'environnement **JupyterLab avec R, Python et Julia**, qui est l'outil le plus complet pour ce type de travaux.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"jupyter-r-python-julia\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.4.8\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-18T13:51:27.385724+00:00",
+    "event_id": "f96123cd-56bd-418c-97ae-709819fe14ba",
+    "interaction_id": "340237f6-ad28-4b0e-9099-35637255a120",
+    "metadata": {
+      "agent_prompt": "Salut j'aimerais faire des statistiques ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Salut j'aimerais faire des statistiques ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
