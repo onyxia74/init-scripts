@@ -542,5 +542,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je connais maintenant la réponse finale.\n\nVoici la configuration pour votre service VS Code Python avec un volume persistant de 40Gi :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"persistence.size\": {\n      \"value\": \"40Gi\",\n      \"reason\": \"volume demande\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T13:19:40.248310+00:00",
+    "event_id": "755f6abf-a131-453a-854e-f9f706a8674b",
+    "interaction_id": "b76784cc-796a-437d-b372-73b71d431345",
+    "metadata": {
+      "agent_prompt": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
