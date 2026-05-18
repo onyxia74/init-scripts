@@ -582,5 +582,15 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "created_at": "2026-05-18T13:21:22.770790+00:00",
+    "event_id": "ce4b45b3-fd63-428d-b1be-63c839af218c",
+    "interaction_id": "d6ae78a5-2336-4c7b-9cf9-6e08f007e471",
+    "metadata": {
+      "message_index": 5
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
