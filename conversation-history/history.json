@@ -343,5 +343,15 @@
     "question": "Je veux un VS code python avec le rôle admin",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-18T09:56:41.954469+00:00",
+    "event_id": "40412c93-51af-4167-88d8-ae1c79b4bb8d",
+    "interaction_id": "f9bbc2b9-1a81-4a8b-83af-8df6476bbd82",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
