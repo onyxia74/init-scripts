@@ -430,5 +430,15 @@
     "question": "Je veux un VS code avec 30 000 CPU",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-18T12:45:15.159855+00:00",
+    "event_id": "97394065-e265-455f-9651-6303dc87c97d",
+    "interaction_id": "75a218af-e4d8-4c24-8bfc-f452154308db",
+    "metadata": {
+      "message_index": 9
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
