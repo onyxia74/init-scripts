@@ -328,5 +328,20 @@
     "question": "le rôle kubernetes",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Voici la configuration pour votre service VS Code Python avec les privilèges administrateur :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"kubernetes.role\": {\n      \"value\": \"admin\",\n      \"default\": \"view\",\n      \"changed\": true,\n      \"reason\": \"rôle admin demandé par l'utilisateur\"\n    }\n  },\n  \"uses_default_values_for_unselected_parameters\": true\n}\n```",
+    "created_at": "2026-05-18T09:56:14.279699+00:00",
+    "event_id": "8b8cb9b4-7830-4835-8117-733a4ee27cd9",
+    "interaction_id": "f9bbc2b9-1a81-4a8b-83af-8df6476bbd82",
+    "metadata": {
+      "agent_prompt": "Je veux un VS code python avec le rôle admin",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VS code python avec le rôle admin",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
