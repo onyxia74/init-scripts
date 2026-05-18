@@ -677,5 +677,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je connais maintenant la réponse finale.\n\nVoici la configuration de votre service **VSCode Python** avec le rôle Kubernetes configuré sur `admin` :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"kubernetes.role\": {\n      \"value\": \"admin\",\n      \"reason\": \"demande utilisateur role admin\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T13:25:26.918936+00:00",
+    "event_id": "4e3e8f37-d677-40b7-aa54-5f569fe0380d",
+    "interaction_id": "79efb4dd-7502-4d97-bbaf-a7ad2d04a8f6",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
