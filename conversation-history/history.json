@@ -378,5 +378,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration pour votre service VS Code Python avec 20 CPU :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"20m\",\n      \"default\": \"100m\",\n      \"changed\": true,\n      \"reason\": \"l'utilisateur demande 20 CPU\"\n    }\n  },\n  \"uses_default_values_for_unselected_parameters\": true\n}\n```",
+    "created_at": "2026-05-18T12:31:35.035423+00:00",
+    "event_id": "a79af953-8ce8-40c2-a005-fa8f409cba6d",
+    "interaction_id": "c62ffa80-a390-4b8c-81e9-b9f093ac74f6",
+    "metadata": {
+      "agent_prompt": "Je veux un VS code avec 20 CPU",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VS code avec 20 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
