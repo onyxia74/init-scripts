@@ -270,5 +270,15 @@
     "question": "Je veux un VScode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-18T09:40:45.739086+00:00",
+    "event_id": "3486e6b0-1221-410c-bda9-84fa3a5d629c",
+    "interaction_id": "acfc680e-c268-45b5-ba74-e280c3ddb4ca",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
