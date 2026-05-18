@@ -977,5 +977,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration pour votre service VSCode avec support GPU :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python-gpu\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.limits.nvidia.com/gpu\": {\n      \"value\": \"1\",\n      \"reason\": \"demande utilisateur pour GPU\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T14:34:11.308213+00:00",
+    "event_id": "25e990a3-8fa3-4acd-8c13-052bca0a81a1",
+    "interaction_id": "bd01335d-f431-482d-8702-cfae548cef20",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec GPU ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec GPU ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
