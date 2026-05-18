@@ -607,5 +607,20 @@
     "question": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"catalog\": \"Interactive services\",\n    \"version\": \"2.5.6\",\n    \"description\": \"The Visual Studio Code IDE with Python, Julia, and a collection of standard data science packages.\"\n  },\n  \"selected_parameters\": {\n    \"resources.limits.memory\": {\n      \"path\": \"resources.limits.memory\",\n      \"value\": \"100Gi\",\n      \"type\": \"string\",\n      \"source\": \"values.schema.json\",\n      \"title\": \"Memory\",\n      \"description\": \"Maximum memory allocation\",\n      \"render\": \"slider\",\n      \"required\": false,\n      \"range\": {\n        \"min\": 1,\n        \"max\": 200,\n        \"step\": 1,\n        \"unit\": \"Gi\",\n        \"extremity\": \"up\",\n        \"semantic\": \"Maximum\",\n        \"range_id\": \"memory\",\n        \"source\": \"onyxia-slider\"\n      },\n      \"explicit\": true,\n      \"reason\": \"Je veux un service VScode avec beaucoup de RAM\",\n      \"validation\": \"exact\"\n    }\n  },\n  \"available_parameters_count\": 138\n}\n```",
+    "created_at": "2026-05-18T13:22:38.263520+00:00",
+    "event_id": "48b9c28a-2d2e-426d-895e-32ae2e6f98ab",
+    "interaction_id": "b39f2e6f-7bba-485c-9079-7e4cec7a43c5",
+    "metadata": {
+      "agent_prompt": "Je veux un service VScode avec beaucoup de RAM",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service VScode avec beaucoup de RAM",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
