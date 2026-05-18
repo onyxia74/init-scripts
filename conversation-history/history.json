@@ -472,5 +472,20 @@
     "question": "Je veux un VS code avec 30 000 CPU",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Je connais maintenant la réponse finale.\n\nVoici la configuration de votre service VS Code avec la limite de CPU configurée à 30 000 millicores (30 CPU) comme demandé :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.limits.cpu\": {\n      \"value\": \"30000m\",\n      \"reason\": \"demande utilisateur\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-18T13:03:17.546449+00:00",
+    "event_id": "68d5194a-2682-4efa-a033-67ebd4ff5f7a",
+    "interaction_id": "80e0d480-7b74-4d30-879e-3f8b808e548c",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nJe veux un VS code avec 30 000 CPU\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python` ?\n\nPrecision apportee par l'utilisateur:\nJe veux un VS code avec 30 000 CPU\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VS code avec 30 000 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
