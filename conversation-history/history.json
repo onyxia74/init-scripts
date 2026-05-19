@@ -2441,5 +2441,20 @@
     "question": "Confirmer les paramètres demandés",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour traiter efficacement vos 80 millions de lignes sans saturer les ressources, je vous recommande d'utiliser le service **Jupyter PySpark**. Ce service est conçu pour le calcul distribué, ce qui permettra de répartir la charge de travail.\n\nPour éviter la saturation que vous avez rencontrée, je suggère d'augmenter significativement les ressources allouées (CPU et Mémoire). Par défaut, le service est configuré avec 2Gi de RAM, ce qui est insuffisant pour votre volume.\n\nSouhaitez-vous que je configure le service avec des ressources spécifiques ? Par exemple :\n- **Mémoire (RAM) :** 32Gi, 64Gi ou plus ?\n- **CPU :** Un nombre de cœurs plus élevé (ex: 4 ou 8 vCPUs) ?\n\nUne fois vos préférences indiquées, je générerai la configuration complète.\n\n**Service recommandé :** `jupyter-pyspark`",
+    "created_at": "2026-05-19T13:02:31.344491+00:00",
+    "event_id": "1525790f-4999-4a0d-bdf0-494921c493d9",
+    "interaction_id": "8fb46168-5a1a-4700-b623-baa6ae7a914e",
+    "metadata": {
+      "agent_prompt": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AUS ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AUS ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
