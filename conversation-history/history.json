@@ -2929,5 +2929,20 @@
     "question": "J'aimerai une base donnée postegresql",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-19T14:44:46.603953+00:00",
+    "event_id": "eee322ab-e6db-4b10-804c-86c0c73578fa",
+    "interaction_id": "c1d3288b-7a91-4d20-ac2e-ee552920bd5c",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
