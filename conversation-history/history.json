@@ -1072,5 +1072,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration pour votre service RStudio, incluant R, Python et Julia, parfaitement adapté pour vos travaux de statistiques.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"rstudio-r-python-julia\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.4.6\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-19T07:51:42.807566+00:00",
+    "event_id": "5840d712-c618-4e25-b5b5-9dba65bd4d23",
+    "interaction_id": "6116327b-ec46-45c3-94b4-48558926366f",
+    "metadata": {
+      "agent_prompt": "Salut j'aimerais faire des statistiques",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Salut j'aimerais faire des statistiques",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
