@@ -2476,5 +2476,31 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?",
+    "created_at": "2026-05-19T13:03:16.278861+00:00",
+    "event_id": "cfd43997-09c7-4203-abe0-4f80bc784155",
+    "interaction_id": "622a0ab4-0dae-4932-826a-a09d8d4a940d",
+    "metadata": {
+      "agent_prompt": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AU",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [
+          "vscode-python",
+          "rstudio",
+          "jupyter-python"
+        ],
+        "original_request": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AU",
+        "question": "Je préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?",
+        "validation_reason": "reponse_inutilisable"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AU",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
