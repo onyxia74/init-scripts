@@ -1137,5 +1137,20 @@
     "question": "Je veux un service VScode avec beaucoup de RAM",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je connais maintenant la reponse finale.\n\nVoici la configuration pour votre service VSCode Python, configuré avec les ressources CPU demandées (1600m garantis et 3000m en maximum).\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"1600m\",\n      \"reason\": \"CPU garanti demandé\"\n    },\n    \"resources.limits.cpu\": {\n      \"value\": \"3000m\",\n      \"reason\": \"CPU maximum demandé\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T07:55:31.150201+00:00",
+    "event_id": "3bce322b-ded8-4989-b3bf-8512dc70284b",
+    "interaction_id": "39028600-8692-4f33-a5a2-e17cbca324d9",
+    "metadata": {
+      "agent_prompt": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
