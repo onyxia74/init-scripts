@@ -1202,5 +1202,20 @@
     "question": "J'aimerais un service VScode python qui a déjà la structure de dossier suivante (j'aimerais avoir un dossier src, un fichier main.py et un requirements.txt)",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python-gpu\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-19T07:58:09.762058+00:00",
+    "event_id": "745cbb41-2f85-4c0b-9840-d8cf91219b38",
+    "interaction_id": "7347e7a9-812a-4f3c-86bb-44aa90f80556",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec GPU ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec GPU ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
