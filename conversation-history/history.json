@@ -1282,5 +1282,31 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Voici la configuration pour votre service VSCode avec un volume persistant de 40Gi.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"persistence.size\": {\n      \"value\": \"40Gi\",\n      \"reason\": \"volume demande\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T12:05:43.993394+00:00",
+    "event_id": "7713f2a2-0284-4ea4-9e4d-fd1bc54798d7",
+    "interaction_id": "21e9b89f-9383-4372-b4ec-c9a235a67054",
+    "metadata": {
+      "agent_prompt": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "persistence.size": {
+            "reason": "volume demande",
+            "value": "40Gi"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un VSCode avec un persistent volume de 40Gi",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
