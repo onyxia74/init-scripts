@@ -2084,5 +2084,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous aider à configurer des services de calcul (Jupyter, VSCode, RStudio, etc.) en utilisant les charts Helm de la plateforme.\n\nVotre question \"Est ce Momo est le goat ?\" ne concerne pas la configuration de services de données ou l'utilisation de la plateforme Onyxia. Je ne peux donc pas répondre à cette question de manière technique ou opérationnelle.\n\nSi vous souhaitez déployer un environnement de travail (par exemple, un notebook Jupyter pour faire de l'analyse de données), n'hésitez pas à me le demander !",
+    "created_at": "2026-05-19T12:45:54.869796+00:00",
+    "event_id": "4f726aed-ab28-4c85-b61c-94c82d5e86d0",
+    "interaction_id": "9dfca87a-35b1-413d-b32a-e301f1687886",
+    "metadata": {
+      "agent_prompt": "Est ce Momo est le goat ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Est ce Momo est le goat ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
