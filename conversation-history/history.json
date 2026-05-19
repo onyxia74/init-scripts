@@ -2293,5 +2293,27 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Vous souhaitez un service qui ne correspond pas à vos besoins précédents (LLM/GPU/Gros stockage). Quel type d'environnement souhaitez-vous plutôt ? (ex: un IDE léger pour du Python, un environnement de statistiques avec R, ou un outil de data engineering ?)",
+    "created_at": "2026-05-19T12:56:56.161302+00:00",
+    "event_id": "283cb2e5-ae7d-463a-8aaa-128f0368eae1",
+    "interaction_id": "a489b1d0-6fa0-44f8-8f63-9d800af8b3de",
+    "metadata": {
+      "agent_prompt": "n vrai, je veux déployer un LLM, j'aurai donc besoin de 4 GPU, de 64 Go de RAM, et de plus de 200 Go de stockage pour être sûr. Pourrais-tu me créer un tout autre service Onyxia qui n'a rien à voir avec ces besoins ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type",
+        "options": [],
+        "original_request": "",
+        "question": "Vous souhaitez un service qui ne correspond pas à vos besoins précédents (LLM/GPU/Gros stockage). Quel type d'environnement souhaitez-vous plutôt ? (ex: un IDE léger pour du Python, un environnement de statistiques avec R, ou un outil de data engineering ?)",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "n vrai, je veux déployer un LLM, j'aurai donc besoin de 4 GPU, de 64 Go de RAM, et de plus de 200 Go de stockage pour être sûr. Pourrais-tu me créer un tout autre service Onyxia qui n'a rien à voir avec ces besoins ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
