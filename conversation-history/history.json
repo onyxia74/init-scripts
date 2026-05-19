@@ -1492,5 +1492,31 @@
     "question": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:09:35.820877+00:00",
+    "event_id": "e7cd54c7-efee-4f38-811d-a4464c2cb137",
+    "interaction_id": "8e0a27bc-58ab-47ca-bd2e-8b2341a3a4f2",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.limits.cpu": {
+            "reason": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+            "value": "3000m"
+          },
+          "resources.requests.cpu": {
+            "reason": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+            "value": "1600m"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB1600m%C2%BB",
+      "message_index": 9
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
