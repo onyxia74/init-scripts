@@ -1062,5 +1062,15 @@
     "question": "J'aimerais un VSCode avec un persistent volume de 40Gi",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T07:51:35.351421+00:00",
+    "event_id": "048c0dd2-0470-4f72-bffe-8d8f4f20592a",
+    "interaction_id": "fc6e5c47-d175-4ad0-b5fb-5f4c85cde5fe",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
