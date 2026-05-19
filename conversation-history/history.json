@@ -2048,5 +2048,25 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"kafka\",\n    \"catalog_id\": \"databases\",\n    \"version\": \"0.2.13\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-19T12:41:52.765159+00:00",
+    "event_id": "03a75e72-6679-46a9-a557-55ed6076f946",
+    "interaction_id": "ae9b0a3b-b4bc-43a4-8bfa-edd52bf46c51",
+    "metadata": {
+      "agent_prompt": "je veux un service kafka",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "kafka",
+        "version": "0.2.13"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "je veux un service kafka",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
