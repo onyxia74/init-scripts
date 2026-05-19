@@ -1898,5 +1898,27 @@
     "question": "J'aimerais un service VScode où j'ai pour role \"admin\"",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:40:23.095246+00:00",
+    "event_id": "7887b28c-4d76-4e66-9a83-0531f2e162e9",
+    "interaction_id": "3eca9a34-3212-4cce-813a-e3da326c9f9d",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "kubernetes.role": {
+            "reason": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+            "value": "admin"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&kubernetes.role=%C2%ABadmin%C2%BB",
+      "message_index": 10
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
