@@ -1152,5 +1152,15 @@
     "question": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T07:56:53.844474+00:00",
+    "event_id": "6c472652-af52-4b5c-9fc9-13319383a10a",
+    "interaction_id": "1583ffad-2325-4530-adb0-ac6d33062e54",
+    "metadata": {
+      "message_index": 7
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
