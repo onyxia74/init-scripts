@@ -2894,5 +2894,20 @@
     "question": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
     "status": "answered_repaired",
     "type": "interaction"
+  },
+  {
+    "answer": "Le choix d'une base de données dépend entièrement de la nature de vos données et de votre cas d'usage. D'après le catalogue Onyxia, voici mes recommandations selon votre profil :\n\n1.  **Données relationnelles (SQL) :** Si vous avez des données structurées avec des relations claires (ex: gestion client, inventaire), je vous conseille **PostgreSQL (postgresql-cnpg)**. C'est la référence pour sa robustesse et sa conformité ACID. **MariaDB** est également une excellente alternative libre.\n2.  **Données non-structurées (NoSQL) :** Si vous travaillez avec des documents JSON ou des schémas flexibles, **MongoDB** est le choix idéal.\n3.  **Intelligence Artificielle & Vecteurs :** Si vous développez des applications de recherche sémantique ou de LLM (RAG), tournez-vous vers une base de données vectorielle comme **ChromaDB**, **Milvus** ou **Qdrant**.\n4.  **Données de graphes :** Si vos données sont fortement interconnectées (ex: réseaux sociaux, détection de fraude), **Neo4j** est l'outil spécialisé.\n5.  **Recherche textuelle :** Pour de la recherche plein texte ultra-rapide, **Elasticsearch** est la solution standard.\n\nPourriez-vous me préciser le type de données que vous souhaitez stocker ou votre projet ? Je pourrai alors vous générer la configuration prête à l'emploi pour le service choisi.",
+    "created_at": "2026-05-19T14:43:55.970098+00:00",
+    "event_id": "c2ff10d1-1923-40b7-8f8c-05827a9dceec",
+    "interaction_id": "29b92715-09e0-4ceb-9b0b-496bb44a6870",
+    "metadata": {
+      "agent_prompt": "Je veux stocker mes données dans une base de données laqeulle me conseillerais tu ? ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux stocker mes données dans une base de données laqeulle me conseillerais tu ? ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
