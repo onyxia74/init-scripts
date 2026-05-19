@@ -3031,5 +3031,31 @@
     "question": "Je veux 10 CPU dnas mon vs code python",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour traiter 80 millions de lignes, la mémoire vive (RAM) sera le facteur limitant. Quel niveau de RAM souhaitez-vous allouer ?",
+    "created_at": "2026-05-19T14:50:47.347745+00:00",
+    "event_id": "5e976334-e455-439c-acf2-b13f5fb18949",
+    "interaction_id": "460d70c7-482d-4b88-9355-4db98762f4cc",
+    "metadata": {
+      "agent_prompt": "or mon jeu de donnée fait 80 millions de ligne, est ce qu'il me faut plus de ressource ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "ram_value",
+        "options": [
+          "64Gi",
+          "128Gi",
+          "256Gi"
+        ],
+        "original_request": "",
+        "question": "Pour traiter 80 millions de lignes, la mémoire vive (RAM) sera le facteur limitant. Quel niveau de RAM souhaitez-vous allouer ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "or mon jeu de donnée fait 80 millions de ligne, est ce qu'il me faut plus de ressource ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
