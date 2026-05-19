@@ -2139,5 +2139,31 @@
     "question": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:49:24.654099+00:00",
+    "event_id": "59458f1d-0c98-48b0-9d6a-a26a051f58c8",
+    "interaction_id": "6f1e88e4-4c88-4d30-bb86-1ad2173e079e",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+            "value": "3000m"
+          },
+          "resources.requests.memory": {
+            "reason": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+            "value": "16Gi"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.memory=%C2%AB16Gi%C2%BB&resources.requests.cpu=%C2%AB3000m%C2%BB",
+      "message_index": 3
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
