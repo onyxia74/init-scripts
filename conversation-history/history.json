@@ -1462,5 +1462,35 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"1600m\",\n      \"reason\": \"J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000\"\n    },\n    \"resources.limits.cpu\": {\n      \"value\": \"3000m\",\n      \"reason\": \"J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T12:09:29.214907+00:00",
+    "event_id": "f98cae22-c44e-441d-9aa3-fb616936ebdb",
+    "interaction_id": "8e0a27bc-58ab-47ca-bd2e-8b2341a3a4f2",
+    "metadata": {
+      "agent_prompt": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.limits.cpu": {
+            "reason": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+            "value": "3000m"
+          },
+          "resources.requests.cpu": {
+            "reason": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+            "value": "1600m"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J’aimerais un service VScode python qui a pour CPU garanted 1600 m et pour max 3000",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
