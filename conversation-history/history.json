@@ -2456,5 +2456,15 @@
     "question": "j'ai 80 millions de ligne pour de la démographie d'entreprise et je fais saturer AUS ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T13:02:53.906606+00:00",
+    "event_id": "f53f5821-e0c8-4007-abb3-9aa6d85a37e6",
+    "interaction_id": "8fb46168-5a1a-4700-b623-baa6ae7a914e",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
