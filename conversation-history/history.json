@@ -1257,5 +1257,20 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"10000m\",\n      \"reason\": \"Je veux 10 CPU dnas mon vs code python\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T07:59:30.124771+00:00",
+    "event_id": "acfeab9f-d1ef-4616-acf9-768004fbdf6a",
+    "interaction_id": "9b4235a9-7237-4a79-93d3-e694722fc9c0",
+    "metadata": {
+      "agent_prompt": "Je veux 10 CPU dnas mon vs code python",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux 10 CPU dnas mon vs code python",
+    "status": "answered_repaired",
+    "type": "interaction"
   }
 ]
