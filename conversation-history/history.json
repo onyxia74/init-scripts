@@ -3005,5 +3005,31 @@
     },
     "satisfied": false,
     "type": "feedback"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB10000m%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB10000m%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"10000m\",\n      \"reason\": \"demande utilisateur\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T14:46:40.559280+00:00",
+    "event_id": "16895ece-a66a-48a3-923e-a3c98f946953",
+    "interaction_id": "2360c94d-d768-41b2-a223-3ef40c3f790b",
+    "metadata": {
+      "agent_prompt": "Je veux 10 CPU dnas mon vs code python",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "demande utilisateur",
+            "value": "10000m"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux 10 CPU dnas mon vs code python",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
