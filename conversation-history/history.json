@@ -2259,5 +2259,39 @@
     "question": "En vrai, je veux déployer un LLM, j'aurai donc besoin de 4 GPU, de 64 Go de RAM, et de plus de 200 Go de stockage pour être sûr. Pourrais-tu me créer un tout autre service Onyxia avec ces configurations ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:55:10.524532+00:00",
+    "event_id": "1f1b7347-06ea-40bc-b434-620818b6e198",
+    "interaction_id": "9aac50ec-7172-4a7c-8cfb-b94e0750b3d9",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pytorch-gpu",
+        "overrides": {
+          "persistence.enabled": {
+            "reason": "activation du stockage persistant",
+            "value": true
+          },
+          "persistence.size": {
+            "reason": "besoin pour LLM",
+            "value": "200Gi"
+          },
+          "resources.limits.nvidia.com/gpu": {
+            "reason": "besoin pour LLM",
+            "value": "4"
+          },
+          "resources.requests.memory": {
+            "reason": "besoin pour LLM",
+            "value": "64Gi"
+          }
+        },
+        "version": "2.4.8"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/jupyter-pytorch-gpu?name=jupyter-pytorch-gpu&version=2.4.8&s3=region-79669f20&resources.limits.nvidia.com%2Fgpu=%C2%AB4%C2%BB&resources.requests.memory=%C2%AB64Gi%C2%BB&persistence.enabled=true&persistence.size=%C2%AB200Gi%C2%BB&resources.limits.memory=%C2%AB64Gi%C2%BB",
+      "message_index": 7
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
