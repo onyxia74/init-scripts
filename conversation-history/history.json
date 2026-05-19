@@ -3087,5 +3087,31 @@
     "question": "j'en sais rien",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/databases/neo4j?name=neo4j&version=1.0.8&persistence.size=%C2%AB500Gi%C2%BB](https://datalab.sspcloud.fr/launcher/databases/neo4j?name=neo4j&version=1.0.8&persistence.size=%C2%AB500Gi%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"neo4j\",\n    \"catalog_id\": \"databases\",\n    \"version\": \"1.0.8\"\n  },\n  \"selected_parameters\": {\n    \"persistence.size\": {\n      \"value\": \"500Gi\",\n      \"reason\": \"besoin utilisateur de stocker des données volumineuses\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T15:34:54.486741+00:00",
+    "event_id": "eaee5bf6-de16-42ec-879b-4bbf83a0b896",
+    "interaction_id": "7084e067-3e0b-4c2f-8cae-3a0ffe8869cb",
+    "metadata": {
+      "agent_prompt": "je veux un service onyxia pour stocker des données volumineuses qui dépassent 500go",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "neo4j",
+        "overrides": {
+          "persistence.size": {
+            "reason": "besoin utilisateur de stocker des données volumineuses",
+            "value": "500Gi"
+          }
+        },
+        "version": "1.0.8"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "je veux un service onyxia pour stocker des données volumineuses qui dépassent 500go",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
