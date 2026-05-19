@@ -2411,5 +2411,35 @@
     "question": "Je veux évaluer visuellement un angle sur Onyxia, avec beaucoup de RAM mais pas beaucoup de mémoire, comment qu'on fait ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python-gpu\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.limits.memory\": {\n      \"value\": \"100Gi\",\n      \"reason\": \"Besoin de beaucoup de RAM pour l'analyse visuelle\"\n    },\n    \"persistence.size\": {\n      \"value\": \"5Gi\",\n      \"reason\": \"Faible besoin de stockage persistant\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T13:00:31.567054+00:00",
+    "event_id": "8e0675a0-78af-47e8-ad46-a19f914f8734",
+    "interaction_id": "73d51621-4a0a-410e-af98-ce706e4489da",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\n\n\nQuestion de clarification posee:\nVous souhaitez un service qui ne correspond pas à vos besoins précédents (LLM/GPU/Gros stockage). Quel type d'environnement souhaitez-vous plutôt ? (ex: un IDE léger pour du Python, un environnement de statistiques avec R, ou un outil de data engineering ?)\n\nPrecision apportee par l'utilisateur:\nComment être sûrd\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nComment être sûr de correctement évaluer un angle visuellement ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nvscode-python\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?\n\nPrecision apportee par l'utilisateur:\nJe veux évaluer visuellement un angle sur Onyxia, avec beaucoup de RAM mais pas beaucoup de mémoire, comment qu'on fait ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?\n\nPrecision apportee par l'utilisateur:\nConfirmer les paramètres demandés\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "overrides": {
+          "persistence.size": {
+            "reason": "Faible besoin de stockage persistant",
+            "value": "5Gi"
+          },
+          "resources.limits.memory": {
+            "reason": "Besoin de beaucoup de RAM pour l'analyse visuelle",
+            "value": "100Gi"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Confirmer les paramètres demandés",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
