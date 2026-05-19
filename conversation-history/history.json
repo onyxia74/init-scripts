@@ -1986,5 +1986,31 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Je préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?",
+    "created_at": "2026-05-19T12:40:47.795415+00:00",
+    "event_id": "78075784-24e9-4c59-a24a-990a23d72b6e",
+    "interaction_id": "1b7aaeb0-165b-403b-a85d-8601ec82bfc7",
+    "metadata": {
+      "agent_prompt": "Je veux un service kafka",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [
+          "vscode-python",
+          "rstudio",
+          "jupyter-python"
+        ],
+        "original_request": "Je veux un service kafka",
+        "question": "Je préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?",
+        "validation_reason": "reponse_inutilisable"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service kafka",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
