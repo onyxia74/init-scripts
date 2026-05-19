@@ -1366,5 +1366,31 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"rstudio\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.4.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/j-aimerais-que-dans-mon-service-r-studio-il-y-est-un-script-pour-calculer-les-valeurs-moyenne-des-colonnes-numerique-du-fichier-csv-srcv2025.csv.sh\",\n      \"reason\": \"J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T12:07:10.967967+00:00",
+    "event_id": "73936741-f314-4d01-a871-45c70b6914b6",
+    "interaction_id": "8b83b160-ebb2-4f49-8149-d3de99f646c5",
+    "metadata": {
+      "agent_prompt": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/j-aimerais-que-dans-mon-service-r-studio-il-y-est-un-script-pour-calculer-les-valeurs-moyenne-des-colonnes-numerique-du-fichier-csv-srcv2025.csv.sh"
+          }
+        },
+        "version": "2.4.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais que dans mon service R studio il y est un script pour calculer les valeurs moyenne des colonnes numerique du fichier csv SRCV2025.csv",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
