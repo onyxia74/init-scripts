@@ -2109,5 +2109,35 @@
     },
     "satisfied": false,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.memory\": {\n      \"value\": \"16Gi\",\n      \"reason\": \"J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?\"\n    },\n    \"resources.requests.cpu\": {\n      \"value\": \"3000m\",\n      \"reason\": \"J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T12:48:28.279144+00:00",
+    "event_id": "ef8a014c-f07d-4849-b14e-0b70ad75f4ef",
+    "interaction_id": "6f1e88e4-4c88-4d30-bb86-1ad2173e079e",
+    "metadata": {
+      "agent_prompt": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+            "value": "3000m"
+          },
+          "resources.requests.memory": {
+            "reason": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+            "value": "16Gi"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais déployer une application mi-java mi-Python sur Kubernetes, avec 3 vCPU, 16 Go de RAM et un StatefulSet. Peux-tu lancer et configurer le service Onyxia pour faire ça ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
