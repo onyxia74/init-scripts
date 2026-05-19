@@ -3113,5 +3113,20 @@
     "question": "je veux un service onyxia pour stocker des données volumineuses qui dépassent 500go",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-19T15:36:46.840483+00:00",
+    "event_id": "de86d4ac-f0d3-471a-83fb-ad582a337524",
+    "interaction_id": "2345ab21-8a44-46ff-93b1-a916066c2e6a",
+    "metadata": {
+      "agent_prompt": "Je veux un service vscode python avec à l'intérieur un fichier qui fait du traitement d'image",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service vscode python avec à l'intérieur un fichier qui fait du traitement d'image",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
