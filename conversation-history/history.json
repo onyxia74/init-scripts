@@ -2389,5 +2389,27 @@
     "question": "vscode-python",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Je n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?",
+    "created_at": "2026-05-19T13:00:21.952233+00:00",
+    "event_id": "783ad953-37ec-454d-80b4-a3220e7b6a09",
+    "interaction_id": "a94ae442-e6f5-4f5e-a18f-0d389c2c6abb",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\n\n\nQuestion de clarification posee:\nVous souhaitez un service qui ne correspond pas à vos besoins précédents (LLM/GPU/Gros stockage). Quel type d'environnement souhaitez-vous plutôt ? (ex: un IDE léger pour du Python, un environnement de statistiques avec R, ou un outil de data engineering ?)\n\nPrecision apportee par l'utilisateur:\nComment être sûrd\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nComment être sûr de correctement évaluer un angle visuellement ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nvscode-python\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?\n\nPrecision apportee par l'utilisateur:\nJe veux évaluer visuellement un angle sur Onyxia, avec beaucoup de RAM mais pas beaucoup de mémoire, comment qu'on fait ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "parameter_changes",
+        "options": [],
+        "original_request": "Demande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\nDemande initiale utilisateur:\n\n\nQuestion de clarification posee:\nVous souhaitez un service qui ne correspond pas à vos besoins précédents (LLM/GPU/Gros stockage). Quel type d'environnement souhaitez-vous plutôt ? (ex: un IDE léger pour du Python, un environnement de statistiques avec R, ou un outil de data engineering ?)\n\nPrecision apportee par l'utilisateur:\nComment être sûrd\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nComment être sûr de correctement évaluer un angle visuellement ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nvscode-python\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.\n\nQuestion de clarification posee:\nJe n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?\n\nPrecision apportee par l'utilisateur:\nJe veux évaluer visuellement un angle sur Onyxia, avec beaucoup de RAM mais pas beaucoup de mémoire, comment qu'on fait ?\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+        "question": "Je n'arrive pas à valider tous les paramètres demandés. Pouvez-vous confirmer les valeurs exactes à appliquer au service `vscode-python-gpu` ?",
+        "validation_reason": "override_demande_absent"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux évaluer visuellement un angle sur Onyxia, avec beaucoup de RAM mais pas beaucoup de mémoire, comment qu'on fait ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
