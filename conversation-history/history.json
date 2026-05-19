@@ -2012,5 +2012,25 @@
     "question": "Je veux un service kafka",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"postgresql-cnpg\",\n    \"catalog_id\": \"databases\",\n    \"version\": \"0.5.0\"\n  },\n  \"selected_parameters\": {}\n}\n```",
+    "created_at": "2026-05-19T12:41:23.044697+00:00",
+    "event_id": "fa089389-31ef-45ae-8459-62462e077ed8",
+    "interaction_id": "f6f8e542-9fe7-469a-8cd3-7f72f9c236a1",
+    "metadata": {
+      "agent_prompt": "Demande initiale utilisateur:\nJe veux un service kafka\n\nQuestion de clarification posee:\nJe préfère préciser avant de générer la configuration : quel service Onyxia souhaitez-vous utiliser ?\n\nPrecision apportee par l'utilisateur:\nJe veux un service postgre\n\nReponds maintenant a la demande initiale en tenant compte de cette precision.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.0"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service postgre",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
