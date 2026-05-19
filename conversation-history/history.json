@@ -2195,5 +2195,31 @@
     "question": "Pardon, je me suis trompé. En vrai, je voulais plutôt un tel service avec 16 vCPU et 3 Gb de mémoire. Peux-tu me lancer le service correspondant ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:51:51.927046+00:00",
+    "event_id": "8a6ab1a7-0283-45be-9c05-0bb60502689f",
+    "interaction_id": "79042e8e-bc73-4f5e-9323-3b23adab587c",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "demande utilisateur",
+            "value": "16000m"
+          },
+          "resources.requests.memory": {
+            "reason": "demande utilisateur",
+            "value": "3Gi"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB16000m%C2%BB&resources.requests.memory=%C2%AB3Gi%C2%BB",
+      "message_index": 5
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
