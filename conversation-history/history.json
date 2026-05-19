@@ -1518,5 +1518,31 @@
     },
     "satisfied": true,
     "type": "feedback"
+  },
+  {
+    "answer": "Configuration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"kubernetes.role\": {\n      \"value\": \"admin\",\n      \"reason\": \"J'aimerais un service VScode où j'ai pour role \\\"admin\\\"\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T12:10:17.325910+00:00",
+    "event_id": "126d9591-a49b-4a6c-8596-b200759d7137",
+    "interaction_id": "63c9be92-901c-401c-8ee5-70b867ed7ad2",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "kubernetes.role": {
+            "reason": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+            "value": "admin"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service VScode où j'ai pour role \"admin\"",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
