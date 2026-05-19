@@ -1187,5 +1187,20 @@
     "question": "J'aimerais un service VScode où j'ai pour role \"admin\"",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je connais maintenant la reponse finale.\n\nVoici la configuration pour votre service VSCode Python. J'ai configuré un script d'initialisation qui créera automatiquement le dossier `src`, le fichier `main.py` et le fichier `requirements.txt` dès le lancement de votre environnement.\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/cr-ation-de-la-structure-de-dossier-src-main.py-et-requirements.txt.sh\",\n      \"reason\": \"création de la structure de dossier src, main.py et requirements.txt\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-19T07:57:44.675582+00:00",
+    "event_id": "e84effe4-4771-4e99-9ed2-f03c14dc3b55",
+    "interaction_id": "d4b1ea96-8cc2-445f-924b-6ad603a07899",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service VScode python qui a déjà la structure de dossier suivante (j'aimerais avoir un dossier src, un fichier main.py et un requirements.txt)",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service VScode python qui a déjà la structure de dossier suivante (j'aimerais avoir un dossier src, un fichier main.py et un requirements.txt)",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
