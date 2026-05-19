@@ -2522,5 +2522,21 @@
     "question": "jupyter-python",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T13:03:30.839716+00:00",
+    "event_id": "9ef1f755-ce0c-48b0-8599-313df92a404c",
+    "interaction_id": "709ce142-2e94-48ef-bf8e-aa1a228f53ee",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.4.8"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.4.8",
+      "message_index": 5
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
