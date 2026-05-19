@@ -2099,5 +2099,15 @@
     "question": "Est ce Momo est le goat ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:46:04.714686+00:00",
+    "event_id": "042589e9-9760-44ac-9cef-dfb2b8e7acf6",
+    "interaction_id": "9dfca87a-35b1-413d-b32a-e301f1687886",
+    "metadata": {
+      "message_index": 1
+    },
+    "satisfied": false,
+    "type": "feedback"
   }
 ]
