@@ -2032,5 +2032,21 @@
     "question": "Je veux un service postgre",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:41:34.614262+00:00",
+    "event_id": "7c0a861e-9070-4f22-832d-7a4e2bfe2933",
+    "interaction_id": "f6f8e542-9fe7-469a-8cd3-7f72f9c236a1",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.0"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.0",
+      "message_index": 14
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
