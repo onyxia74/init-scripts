@@ -2068,5 +2068,21 @@
     "question": "je veux un service kafka",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "created_at": "2026-05-19T12:41:57.672948+00:00",
+    "event_id": "5276f9c3-5115-4e23-b4ed-20e4a86eb191",
+    "interaction_id": "ae9b0a3b-b4bc-43a4-8bfa-edd52bf46c51",
+    "metadata": {
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "kafka",
+        "version": "0.2.13"
+      },
+      "launcher_url": "https://datalab.sspcloud.fr/launcher/databases/kafka?name=kafka&version=0.2.13",
+      "message_index": 16
+    },
+    "satisfied": true,
+    "type": "feedback"
   }
 ]
