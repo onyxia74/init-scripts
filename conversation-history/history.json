@@ -2944,5 +2944,20 @@
     "question": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-19T14:45:36.648777+00:00",
+    "event_id": "393d0b8a-3cf3-417a-a843-50f87618c0a8",
+    "interaction_id": "ea9a717b-820c-466d-bcc7-95a34b9dd52a",
+    "metadata": {
+      "agent_prompt": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais un service vscode avec a l'interieur un projet python pour faire des stats (moyenne, mediane,..) pour la démographhie",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
