@@ -3204,5 +3204,20 @@
     "question": "Je veux service VScode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-21T09:42:51.298668+00:00",
+    "event_id": "3f4fe9df-24c5-40bd-8405-c593680871f0",
+    "interaction_id": "caa881a1-10d6-4677-96d9-0cb03c3b4cb4",
+    "metadata": {
+      "agent_prompt": "Je veux un service VSCode avec à l'intérieur un fichier python  qui dit que le texte : \"André Socard a perdu ses clés\"",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service VSCode avec à l'intérieur un fichier python  qui dit que le texte : \"André Socard a perdu ses clés\"",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
