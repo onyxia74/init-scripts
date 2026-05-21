@@ -3219,5 +3219,31 @@
     "question": "Je veux un service VSCode avec à l'intérieur un fichier python  qui dit que le texte : \"André Socard a perdu ses clés\"",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fcr-ation-d-un-script-python-avec-logique-de-probabilit-pour-l-utilisateur.sh%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fcr-ation-d-un-script-python-avec-logique-de-probabilit-pour-l-utilisateur.sh%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/cr-ation-d-un-script-python-avec-logique-de-probabilit-pour-l-utilisateur.sh\",\n      \"reason\": \"Changement demande explicitement.\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-21T09:44:51.341592+00:00",
+    "event_id": "dfa46816-c0bd-4cf8-a06f-d2776b2773fe",
+    "interaction_id": "8a070ca6-52fd-47db-b66e-d4094b6fc8d0",
+    "metadata": {
+      "agent_prompt": "Je veux un service VSCode avec à l'intérieur un fichier python qui dit que le texte : \"André Socard a perdu ses clés\" et ensuite une focntion qui a une probilité 1/2 et qui rajoute soit la phrase \"et mohamed lui a ramené les clés chez lui\" soit la phrase \"Mohamed ne le lui a pas ramené les clés\" ",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/cr-ation-d-un-script-python-avec-logique-de-probabilit-pour-l-utilisateur.sh"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service VSCode avec à l'intérieur un fichier python qui dit que le texte : \"André Socard a perdu ses clés\" et ensuite une focntion qui a une probilité 1/2 et qui rajoute soit la phrase \"et mohamed lui a ramené les clés chez lui\" soit la phrase \"Mohamed ne le lui a pas ramené les clés\" ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
