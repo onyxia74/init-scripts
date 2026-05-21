@@ -3169,5 +3169,20 @@
     "question": "Je veux un service VScode ",
     "status": "agent_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nAuthenticationError: Error code: 401 - {'detail': 'Your session has expired or the token is invalid. Please sign in again.'} | HTTPStatusError: Client error '401 Unauthorized' for url 'https://llm.lab.sspcloud.fr/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401\n```",
+    "created_at": "2026-05-21T09:40:32.663803+00:00",
+    "event_id": "a7e1484e-f386-4453-a766-dfec7763f10f",
+    "interaction_id": "b28e9748-5541-438d-9464-3a669a327fb7",
+    "metadata": {
+      "agent_prompt": "Je veux un service VScode",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un service VScode",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
