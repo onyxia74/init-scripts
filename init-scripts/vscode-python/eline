@@ -1,17 +1,31 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# This init script configures VSCode settings on Onyxia.
-# Purpose: set dark theme and format on save.
-# Expected parameters : None
-
 SETTINGS_FILE="${HOME}/.local/share/code-server/User/settings.json"
 
 mkdir -p "$(dirname "${SETTINGS_FILE}")"
 
-cat > "${SETTINGS_FILE}" <<'ONYXIA_SETTINGS'
+# If the file does not exist or is empty, initialize it.
+if [ ! -s "${SETTINGS_FILE}" ]; then
+    cat > "${SETTINGS_FILE}" <<'EOF'
 {
+}
+EOF
+fi
+
+# Add settings inside the existing JSON object, just before the final }
+perl -0pi -e '
+  s/^\s*"workbench\.colorTheme"\s*:\s*"[^"]*"\s*,?\n//mg;
+  s/^\s*"editor\.formatOnSave"\s*:\s*(true|false)\s*,?\n//mg;
+  s/,\s*}\s*$/\n}/s;
+
+  if (/\{\s*}\s*$/s) {
+    s/\{\s*}\s*$/{
   "workbench.colorTheme": "Visual Studio Dark",
   "editor.formatOnSave": true
 }
-ONYXIA_SETTINGS
+/s;
+  } else {
+    s/}\s*$/,\n  "workbench.colorTheme": "Visual Studio Dark",\n  "editor.formatOnSave": true\n}\n/s;
+  }
+' "${SETTINGS_FILE}"
