@@ -3245,5 +3245,20 @@
     "question": "Je veux un service VSCode avec à l'intérieur un fichier python qui dit que le texte : \"André Socard a perdu ses clés\" et ensuite une focntion qui a une probilité 1/2 et qui rajoute soit la phrase \"et mohamed lui a ramené les clés chez lui\" soit la phrase \"Mohamed ne le lui a pas ramené les clés\" ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-22T07:50:42.891946+00:00",
+    "event_id": "5b923b21-9a22-4463-a2fc-7457e853520b",
+    "interaction_id": "7b07ae7b-3bde-4af8-8536-2e9ad09064a7",
+    "metadata": {
+      "agent_prompt": "je veux faire une classification ascendante hiérarrchique sur 180000 individus avec R",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "je veux faire une classification ascendante hiérarrchique sur 180000 individus avec R",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
