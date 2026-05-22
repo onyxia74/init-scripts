@@ -3331,5 +3331,20 @@
     "question": "J'aimerais que tu me lances un service VScode avec le script init : \" https://github.com/InseeFrLab/sspcloud-init-scripts/blob/main/vscode/customize-settings.sh\" ",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-22T14:37:05.866889+00:00",
+    "event_id": "0a612203-a11f-47da-929d-846ca761d812",
+    "interaction_id": "53b0790a-f72a-4cee-bef0-338bf4be4814",
+    "metadata": {
+      "agent_prompt": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans ",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
