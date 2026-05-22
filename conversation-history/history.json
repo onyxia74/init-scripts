@@ -3346,5 +3346,31 @@
     "question": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans ",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fajout-d-un-fichier-addition.py.sh%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fajout-d-un-fichier-addition.py.sh%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/ajout-d-un-fichier-addition.py.sh\",\n      \"reason\": \"Changement demande explicitement.\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-22T14:38:15.445258+00:00",
+    "event_id": "b1d288d7-07af-4bf4-8c79-7c64a376a5c5",
+    "interaction_id": "94358f0c-8e56-416a-8ff4-b7e61044a462",
+    "metadata": {
+      "agent_prompt": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/ajout-d-un-fichier-addition.py.sh"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
