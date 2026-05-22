@@ -3260,5 +3260,31 @@
     "question": "je veux faire une classification ascendante hiérarrchique sur 180000 individus avec R",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.4.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fanalyse-de-classification-ascendante-hi-rarchique-sur-gros-volume-de-donn-es.sh%C2%BB](https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.4.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fanalyse-de-classification-ascendante-hi-rarchique-sur-gros-volume-de-donn-es.sh%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"rstudio-r-python-julia\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.4.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/analyse-de-classification-ascendante-hi-rarchique-sur-gros-volume-de-donn-es.sh\",\n      \"reason\": \"Analyse de classification ascendante hiérarchique sur gros volume de données\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-22T07:51:17.066679+00:00",
+    "event_id": "c6116c87-24d1-4407-987b-ee3a204b338b",
+    "interaction_id": "8b6b04ff-9b62-4ef8-86aa-16e385c3d213",
+    "metadata": {
+      "agent_prompt": "je veux faire une classification ascendante hiérarrchique sur 180000 individus avec R",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Analyse de classification ascendante hiérarchique sur gros volume de données",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/analyse-de-classification-ascendante-hi-rarchique-sur-gros-volume-de-donn-es.sh"
+          }
+        },
+        "version": "2.4.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "je veux faire une classification ascendante hiérarrchique sur 180000 individus avec R",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
