@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Path to the VSCode settings.json file
+SETTINGS_FILE="${HOME}/.local/share/code-server/User/settings.json"
+
+# Create settings.json if it does not exist
+if [ ! -f "$SETTINGS_FILE" ]; then
+    echo "No existing settings.json found. Creating a new one."
+    mkdir -p "$(dirname "$SETTINGS_FILE")"
+    echo "{}" > "$SETTINGS_FILE"
+fi
+
+# Petits reglages pour Eline (cadeau de Noël à l avance) 
+jq '. + {
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.formatOnSave": true
+}' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
