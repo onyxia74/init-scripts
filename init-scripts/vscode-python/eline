@@ -12,6 +12,6 @@ fi
 
 # Petits reglages pour Eline (cadeau de Noël à l avance) 
 jq '. + {
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Default Dark",
     "editor.formatOnSave": true
 }' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
