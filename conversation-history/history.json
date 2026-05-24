@@ -3372,5 +3372,31 @@
     "question": "J'aimerais que tu me lances un service VSCode avec un fichier addition dedans",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fscript-python-qui-dit-maxime-roux-est-trop-beau.sh%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fscript-python-qui-dit-maxime-roux-est-trop-beau.sh%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"init.personalInit\": {\n      \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/script-python-qui-dit-maxime-roux-est-trop-beau.sh\",\n      \"reason\": \"Changement demande explicitement.\"\n    }\n  }\n}\n```",
+    "created_at": "2026-05-24T21:07:07.579343+00:00",
+    "event_id": "c29f2227-095f-4bbf-a03f-ad6f47018723",
+    "interaction_id": "bbc4d6c1-e636-4594-912c-44a1b5767b41",
+    "metadata": {
+      "agent_prompt": "Lance moi un VScode avec un script python qui dit \"Maxime Roux est trop beau\" ",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/script-python-qui-dit-maxime-roux-est-trop-beau.sh"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Lance moi un VScode avec un script python qui dit \"Maxime Roux est trop beau\" ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
