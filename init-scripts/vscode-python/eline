@@ -12,7 +12,7 @@ if [ ! -f "$SETTINGS_FILE" ]; then
 fi
 
 jq '. + {
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Light Modern",
     "editor.rulers": [80, 100, 120],
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
