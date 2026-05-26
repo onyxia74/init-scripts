@@ -1,6 +1,6 @@
+cat > /chemin/vers/ton-script.sh << 'ENDOFSCRIPT'
 #!/bin/bash
 # This init script updates settings of VSCode.
-# See: https://github.com/InseeFrLab/images-datascience/blob/main/vscode/settings/User.json
 # Expected parameters: None
 
 SETTINGS_FILE="/home/onyxia/.local/share/code-server/User/settings.json"
@@ -28,4 +28,5 @@ JQ_FILTER='. + {
     }
 }'
 
-jq "$JQ_FILTER" "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"```
+jq "$JQ_FILTER" "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
+ENDOFSCRIPT
