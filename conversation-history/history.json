@@ -3465,5 +3465,20 @@
     "question": "j'aimerai un outil pour faire de la cartographie avec les ressources nécessaires",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-05-26T08:23:02.542242+00:00",
+    "event_id": "b4bbd63a-9b8c-4f95-a647-7a3174d89aa2",
+    "interaction_id": "00eece9a-0285-4fc2-bb57-cc4c47e42fa7",
+    "metadata": {
+      "agent_prompt": "je connais pas bien folium, peux tu m'aider à m'en servir",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "je connais pas bien folium, peux tu m'aider à m'en servir",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
