@@ -1,6 +1,6 @@
-cat > /chemin/vers/ton-script.sh << 'ENDOFSCRIPT'
 #!/bin/bash
 # This init script updates settings of VSCode.
+# See: https://github.com/InseeFrLab/images-datascience/blob/main/vscode/settings/User.json
 # Expected parameters: None
 
 SETTINGS_FILE="/home/onyxia/.local/share/code-server/User/settings.json"
@@ -11,13 +11,17 @@ if [ ! -f "$SETTINGS_FILE" ]; then
     echo "{}" > "$SETTINGS_FILE"
 fi
 
-JQ_FILTER='. + {
-    "workbench.colorTheme": "Visual Studio Dark",
+jq '. + {
+    "workbench.colorTheme": "Light Modern",
     "editor.rulers": [80, 100, 120],
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "flake8.args": ["--max-line-length=100"],
-    "[r]": {"editor.formatOnSave": true},
+    "flake8.args": [
+        "--max-line-length=100"
+    ],
+    "[r]": {
+        "editor.formatOnSave": true
+    },
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.formatOnSave": true,
@@ -26,7 +30,4 @@ JQ_FILTER='. + {
             "source.organizeImports.ruff": "always"
         }
     }
-}'
-
-jq "$JQ_FILTER" "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
-ENDOFSCRIPT
+}' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
