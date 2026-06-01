@@ -3763,5 +3763,27 @@
     "question": "je veux faire de la cartographie",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Souhaitez-vous que je configure un service Onyxia (ex: Jupyter, VSCode) pour travailler avec Metabase, ou avez-vous besoin d'aide sur l'utilisation de l'outil Metabase lui-même ?",
+    "created_at": "2026-06-01T13:28:40.119435+00:00",
+    "event_id": "cfa200fd-a34d-48e8-a237-29622fd345f5",
+    "interaction_id": "1445b0e8-05dc-4d7c-ac12-554d1dc32e51",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur metabase",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "intent",
+        "options": [],
+        "original_request": "",
+        "question": "Souhaitez-vous que je configure un service Onyxia (ex: Jupyter, VSCode) pour travailler avec Metabase, ou avez-vous besoin d'aide sur l'utilisation de l'outil Metabase lui-même ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur metabase",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
