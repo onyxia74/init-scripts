@@ -3691,5 +3691,31 @@
     "question": "Je veux faire du python",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "URL de lancement : [https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB14000m%C2%BB](https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6&s3=region-79669f20&resources.requests.cpu=%C2%AB14000m%C2%BB)\n\nConfiguration du service sélectionné :\n\n```json\n{\n  \"service\": {\n    \"chart_id\": \"vscode-python\",\n    \"catalog_id\": \"ide\",\n    \"version\": \"2.5.6\"\n  },\n  \"selected_parameters\": {\n    \"resources.requests.cpu\": {\n      \"value\": \"14000m\",\n      \"reason\": \"demande utilisateur\"\n    }\n  }\n}\n```",
+    "created_at": "2026-06-01T13:11:12.070865+00:00",
+    "event_id": "746f0a40-ef75-460d-8098-3b1ca6773dea",
+    "interaction_id": "dfa2c33d-98da-4fa1-a0d7-6279ffc1fa4a",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec 14 CPU",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "demande utilisateur",
+            "value": "14000m"
+          }
+        },
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec 14 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
