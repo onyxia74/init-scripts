@@ -3942,5 +3942,21 @@
     "question": "Je veux un VScode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-06-05T08:49:15.878098+00:00",
+    "event_id": "96dfa3df-8c5b-44c1-bcca-16b14caa09f1",
+    "interaction_id": "21e83bd2-de1c-42a4-aceb-738f1c0b4c52",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la cartographie",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux faire de la cartographie",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
