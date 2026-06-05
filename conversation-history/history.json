@@ -3974,5 +3974,21 @@
     "question": "Je veux faire de la cartographie",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-06-05T08:49:51.301141+00:00",
+    "event_id": "1bf07c8e-2758-4361-94d7-b737e08e39c3",
+    "interaction_id": "b24be8f9-1cd1-49f1-8765-e02a4edad229",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la cartographie",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux faire de la cartographie",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
