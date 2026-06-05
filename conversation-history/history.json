@@ -3905,5 +3905,21 @@
     "question": "Je veux un VScode",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"vscode-python\"}",
+    "created_at": "2026-06-05T08:00:34.749700+00:00",
+    "event_id": "21629191-77c4-45c1-a830-c5699e6723f7",
+    "interaction_id": "89558307-9ff9-408c-a038-9c9128267be6",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux un VScode",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
