@@ -3831,5 +3831,21 @@
     "question": "J'aimerais un VScode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-06-05T07:57:56.707592+00:00",
+    "event_id": "1cd13a1a-422e-4ce0-8762-f3661b2680e1",
+    "interaction_id": "3663bbe8-ed91-4056-9b7f-15beeb1ce0af",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un VScode",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
