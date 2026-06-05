@@ -3921,5 +3921,26 @@
     "question": "Je veux un VScode",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici votre environnement VS Code prêt à l'emploi. J'ai sélectionné l'image standard `vscode-python` qui inclut Python, Julia et les bibliothèques de Data Science essentielles. Comme vous n'avez pas spécifié de besoins particuliers en ressources ou en stockage, j'ai conservé les valeurs par défaut (10Gi de stockage persistant et les ressources CPU/RAM standards).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.6\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"VS Code sur Onyxia est un environnement de développement complet qui s'exécute dans un conteneur isolé. Il est pré-configuré avec les outils de Data Science les plus utilisés, ce qui vous permet de coder immédiatement sans perdre de temps avec l'installation de bibliothèques.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Cliquez sur le bouton de lancement dans l'interface Onyxia. Votre instance VS Code va démarrer en quelques secondes.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Ouvrir un terminal\",\n        \"content\": \"Utilisez le raccourci ``Ctrl + ` `` pour ouvrir un terminal intégré. Vous y trouverez déjà Python et Julia installés.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Gérer vos fichiers\",\n        \"content\": \"Tous les fichiers créés dans le dossier `/home/onyxia/work` sont sauvegardés sur votre volume persistant et seront disponibles lors de votre prochaine session.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import sys\\n\\ndef main():\\n    print(\\\"Bonjour Onyxia !\\\")\\n    print(f\\\"Version de Python : {sys.version}\\\")\\n\\nif __name__ == '__main__':\\n    main()\"\n    },\n    \"best_practices\": [\n      \"Travaillez toujours dans le répertoire /home/onyxia/work pour garantir la persistance de vos données.\",\n      \"Utilisez des environnements virtuels si vous avez besoin de versions de bibliothèques très spécifiques.\",\n      \"N'oubliez pas de fermer votre session via l'interface Onyxia pour libérer les ressources du cluster.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-06-05T08:01:13.654756+00:00",
+    "event_id": "5403681b-e19e-4b6e-a09c-b47f0afbab35",
+    "interaction_id": "f7473243-e343-42bc-8f2e-9b568a2bce13",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux un VScode",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
