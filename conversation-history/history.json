@@ -4032,5 +4032,26 @@
     "question": "Je veux un vscode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici votre environnement VSCode prêt à l'emploi. J'ai sélectionné l'image `vscode-python` qui est la plus polyvalente, incluant Python, Julia et les bibliothèques standards de la science des données. Comme vous n'avez pas spécifié de besoins particuliers en ressources ou en stockage, j'ai conservé les configurations par défaut (2Gi de RAM et 10Gi de stockage persistant).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.6\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"VSCode sur Onyxia est un environnement de développement complet qui tourne dans un conteneur isolé. Il est pré-configuré avec les outils essentiels pour la Data Science, vous permettant de coder immédiatement sans gérer l'installation des interpréteurs.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'instance\",\n        \"content\": \"Une fois la configuration validée, votre instance VSCode sera déployée sur le cluster Onyxia.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Ouvrir un terminal\",\n        \"content\": \"Utilisez le terminal intégré pour installer des packages supplémentaires via `pip install` ou `conda install`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Persistance des données\",\n        \"content\": \"Tous les fichiers créés dans votre répertoire de travail sont sauvegardés automatiquement sur votre volume persistant.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import sys\\n\\ndef main():\\n    print(f\\\"Hello Onyxia!\\\")\\n    print(f\\\"Version de Python : {sys.version}\\\")\\n\\nif __name__ == '__main__':\\n    main()\"\n    },\n    \"best_practices\": [\n      \"Utilisez le terminal pour installer des librairies spécifiques à vos projets.\",\n      \"N'oubliez pas que votre stockage est persistant : travaillez dans votre dossier utilisateur.\",\n      \"Si vous avez besoin de plus de puissance (GPU ou RAM), vous pouvez me le demander pour ajuster la configuration.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-06-08T09:43:32.153567+00:00",
+    "event_id": "1ad068e0-2270-4339-8503-4a4f2a79a520",
+    "interaction_id": "d025e0dd-c26a-4e7e-830b-f272ad0f0fcd",
+    "metadata": {
+      "agent_prompt": "Je veux un vscode",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux un vscode",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
