@@ -4011,5 +4011,26 @@
     "question": "Je veux un vscode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre service VSCode. J'ai sélectionné l'image standard `vscode-python` qui inclut Python, Julia et les packages de data science essentiels. Tous les autres paramètres (ressources, persistance, etc.) sont configurés avec les valeurs par défaut de la plateforme.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.6\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"news_block\": {\n    \"summary\": \"Déploiement d'un IDE cloud-native via Helm sur Kubernetes.\",\n    \"items\": [\n      {\n        \"topic\": \"VSCode\",\n        \"message\": \"Utilisation de l'image inseefrlab/onyxia-vscode-python\",\n        \"impact\": \"Environnement prêt pour le développement Python et Julia\"\n      },\n      {\n        \"topic\": \"Helm\",\n        \"message\": \"Configuration basée sur les valeurs par défaut du chart\",\n        \"impact\": \"Stabilité garantie par les standards de la plateforme\"\n      }\n    ],\n    \"verification_note\": \"Les informations sur les versions des images reposent sur les données du catalogue Onyxia au moment de la requête.\"\n  }\n}\n```",
+    "created_at": "2026-06-08T09:42:22.944453+00:00",
+    "event_id": "645475e5-7091-48eb-ace9-f268aed0e4cc",
+    "interaction_id": "5a814bee-9b26-44e9-81d6-890d804c0092",
+    "metadata": {
+      "agent_prompt": "Je veux un vscode",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "news",
+      "retryable": false
+    },
+    "question": "Je veux un vscode",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
