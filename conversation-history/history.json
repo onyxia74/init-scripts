@@ -4053,5 +4053,26 @@
     "question": "Je veux un vscode",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est entendu ! J'ai identifié le service **VSCode Python** comme étant l'outil idéal pour vos besoins. Ce service est une plateforme de développement complète incluant Python, Julia et une large collection de bibliothèques de science des données standard. \\n\\nComme vous n'avez pas spécifié de besoins particuliers en termes de ressources (CPU/RAM), de stockage ou de packages spécifiques, j'ai généré une configuration basée sur les paramètres par défaut d'Onyxia, ce qui vous garantit un environnement stable et prêt à l'emploi.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.6\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.6\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"VSCode sur Onyxia n'est pas qu'un simple éditeur de texte ; c'est un environnement de développement (IDE) complet qui tourne dans un conteneur isolé. Il est pré-configuré avec les outils essentiels pour la Data Science, vous permettant de passer immédiatement de l'écriture de code à l'analyse de données sans installation manuelle fastidieuse.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancement\",\n        \"content\": \"Une fois le service lancé, l'interface VSCode s'ouvre dans votre navigateur. Attendez que le terminal interne soit prêt.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Exploration\",\n        \"content\": \"Utilisez l'explorateur de fichiers à gauche pour naviguer dans votre espace `/home/onyxia/work`. C'est ici que vos données et scripts seront persistants.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécution\",\n        \"content\": \"Ouvrez un fichier `.py` et utilisez le bouton 'Run' ou le terminal intégré pour exécuter vos analyses.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import sys\\nimport pandas as pd\\n\\ndef main():\\n    print(\\\"Bonjour Onyxia !\\\")\\n    print(f\\\"Version Python : {sys.version}\\\")\\n    \\n    # Petit test avec pandas\\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\\n    print(\\\"\\\\nTest de DataFrame pandas :\\\")\\n    print(df)\\n\\nif __name__ == '__main__':\\n    main()\"\n    },\n    \"best_practices\": [\n      \"Travaillez toujours dans le répertoire /home/onyxia/work pour garantir la persistance de vos données.\",\n      \"Utilisez le terminal intégré pour installer des packages spécifiques via 'pip install' si nécessaire.\",\n      \"Pour des projets collaboratifs, pensez à utiliser l'extension Git intégrée pour versionner votre code.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-06-11T11:16:24.139669+00:00",
+    "event_id": "63fb4da9-493a-4a43-ab97-dc19d0e9bc11",
+    "interaction_id": "a9eb511b-604a-4cac-8b0f-bf79bf7f7e78",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.5.6"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux un VScode",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
