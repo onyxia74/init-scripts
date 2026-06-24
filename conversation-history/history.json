@@ -4095,5 +4095,21 @@
     "question": "J'aimerais faire des statistiques",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Bonjour ! Je suis votre architecte Data expert de la plateforme Onyxia. Comment puis-je vous aider aujourd'hui ? Vous pouvez me demander de configurer un environnement de travail pour vos analyses (Python, R, SQL, Machine Learning, SIG, etc.) ou me préciser vos besoins en outils de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-06-24T12:46:35.444729+00:00",
+    "event_id": "96f7676d-f656-4038-acdf-455bb01ca29d",
+    "interaction_id": "5be2785f-387f-4645-af88-10814539a4a2",
+    "metadata": {
+      "agent_prompt": "Salut",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Salut",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
