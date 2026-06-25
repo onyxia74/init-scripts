@@ -4143,5 +4143,32 @@
     "question": "J'aimerais un VScode avec 16 CPU",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre service VSCode avec 16 CPU (configuré à 16000m pour garantir la ressource).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.5.7&s3=region-79669f20&resources.requests.cpu=%C2%AB16000m%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.7\"\n    },\n    \"selected_parameters\": {\n      \"resources.requests.cpu\": {\n        \"value\": \"16000m\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-06-25T08:14:15.822513+00:00",
+    "event_id": "4b0ac40f-a897-4e49-a3c1-8442fe883390",
+    "interaction_id": "ce08397a-a901-492d-94bc-39619c9a1d4b",
+    "metadata": {
+      "agent_prompt": "J'aimerais un VScode avec 16 CPU",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "Changement demande explicitement.",
+            "value": "16000m"
+          }
+        },
+        "version": "2.5.7"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J'aimerais un VScode avec 16 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
