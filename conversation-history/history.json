@@ -4127,5 +4127,21 @@
     "question": "Salut quelle temps fait il",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:build_service_configuration{request: {chart_id: \"vscode-python\", overrides: {resources: {requests: {cpu: \"16\"}}}, purpose: \"VSCode avec 16 CPU\"}}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-06-25T08:13:57.366995+00:00",
+    "event_id": "7f284423-30ae-45c1-81c6-e18d8940d40b",
+    "interaction_id": "f68aec57-3dc9-45c1-bd9a-b7d6b4623daf",
+    "metadata": {
+      "agent_prompt": "J'aimerais un VScode avec 16 CPU",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J'aimerais un VScode avec 16 CPU",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
