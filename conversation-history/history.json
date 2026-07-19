@@ -4271,5 +4271,21 @@
     "question": "Comment changer les ressources d’un service déjà lancé ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:build_service_configuration{chart_id: \"jupyter-python\",overrides:{\"resources.requests.cpu\":{\"value\":\"4\",\"reason\":\"demande utilisateur\"},\"resources.requests.memory\":{\"value\":\"16Gi\",\"reason\":\"demande utilisateur\"}}}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-19T23:46:19.472223+00:00",
+    "event_id": "8df98eef-8f9d-49fc-b338-eaaf7fbfdd58",
+    "interaction_id": "b6dc9b69-4e84-4e49-bd53-94f4cd90168d",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
