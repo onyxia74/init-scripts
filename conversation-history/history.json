@@ -4191,5 +4191,37 @@
     "question": "Je veux faire des statistiques",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement, utilisez le paramètre `extraEnvVars`. Ce paramètre accepte une liste d'objets contenant une clé `name` et une clé `value` (format standard Kubernetes).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&extraEnvVars=%C2%AB%5B%7B%22name%22%3A%22MA_VARIABLE_CUSTOM%22%2C%22value%22%3A%22ma_valeur%22%7D%5D%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"extraEnvVars\": {\n        \"value\": [\n          {\n            \"name\": \"MA_VARIABLE_CUSTOM\",\n            \"value\": \"ma_valeur\"\n          }\n        ],\n        \"reason\": \"Ajout d'une variable d'environnement personnalisée\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-19T23:45:15.885901+00:00",
+    "event_id": "fe9faeeb-8837-4337-8819-7c93467006d1",
+    "interaction_id": "4cf5833d-c9f2-4ef8-bf4c-323b1b2e6788",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "extraEnvVars": {
+            "reason": "Ajout d'une variable d'environnement personnalisée",
+            "value": [
+              {
+                "name": "MA_VARIABLE_CUSTOM",
+                "value": "ma_valeur"
+              }
+            ]
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
