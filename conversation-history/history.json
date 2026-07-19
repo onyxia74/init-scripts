@@ -4457,5 +4457,26 @@
     "question": "Je veux faire de l’exploration de données dans un notebook.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour développer une application Shiny, je vous recommande d'utiliser le service RStudio (rstudio-r-python-julia). Ce service est l'environnement de référence pour le langage R et permet une gestion fluide des packages nécessaires au développement d'interfaces interactives.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-19T23:50:03.779775+00:00",
+    "event_id": "e77cf094-ac5e-4676-a40e-691febbe7059",
+    "interaction_id": "b75f4a7d-8a8a-48e1-90dc-25b7a46c9f7b",
+    "metadata": {
+      "agent_prompt": "Quel service dois-je utiliser pour créer une application Shiny ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
