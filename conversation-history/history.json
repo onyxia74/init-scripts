@@ -4478,5 +4478,26 @@
     "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour la cartographie et les analyses géospatiales, je recommande l'utilisation de JupyterLab Python. Cet environnement est idéal pour manipuler des données géographiques grâce à l'écosystème Python (Geopandas, Folium, etc.).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-19T23:50:33.236162+00:00",
+    "event_id": "80827f12-a016-46e2-8223-1d8f1ae66c78",
+    "interaction_id": "534c625d-7923-4289-8f67-110279c22cea",
+    "metadata": {
+      "agent_prompt": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
