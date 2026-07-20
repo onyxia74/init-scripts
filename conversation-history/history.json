@@ -4938,5 +4938,32 @@
     "question": "Je veux un VScode avec 30 Go de ram",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre service VS Code avec une allocation de 30 Go de RAM (garantie).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&s3=region-79669f20&resources.requests.memory=%C2%AB30Gi%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"resources.requests.memory\": {\n        \"value\": \"30Gi\",\n        \"reason\": \"demande utilisateur 30 Go de ram\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-20T08:22:40.421877+00:00",
+    "event_id": "d4b60935-b95e-468a-b637-a0efc24b4c92",
+    "interaction_id": "cf77a3f7-f6b9-4b7d-a6be-b576d62323c5",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec 30 Go de ram",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.memory": {
+            "reason": "demande utilisateur 30 Go de ram",
+            "value": "30Gi"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec 30 Go de ram",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
