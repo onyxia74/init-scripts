@@ -4922,5 +4922,21 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-20T08:22:24.041406+00:00",
+    "event_id": "268428dc-533a-43e8-98ff-434d37b8844e",
+    "interaction_id": "35c61933-4ffa-476a-b74b-4f468be3c3d2",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode avec 30 Go de ram",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un VScode avec 30 Go de ram",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
