@@ -4652,5 +4652,21 @@
     "question": "Comment changer les ressources d’un service déjà lancé ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour configurer votre service avec 16 Go de mémoire et 4 CPU, j'ai besoin de savoir quel outil vous souhaitez utiliser (par exemple : Jupyter, VS Code, RStudio, ou une base de données). Pourriez-vous me préciser votre besoin ?\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-20T07:32:36.760867+00:00",
+    "event_id": "1a19ebcd-565d-4edb-94dc-b78ee5aeb399",
+    "interaction_id": "fdc98dd4-11bc-44d9-b7a0-a913345347e2",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
