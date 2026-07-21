@@ -6009,5 +6009,21 @@
     "question": "Propose un notebook pour explorer des données.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:get_service_details(chart_id=\"vscode-python\")%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:10:25.478195+00:00",
+    "event_id": "4bb00bd1-b205-41be-bbe6-734f2cc529e6",
+    "interaction_id": "44963de9-1f41-4bf7-b4d8-23467e616562",
+    "metadata": {
+      "agent_prompt": "Donne-moi le squelette d’un pipeline de machine learning.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Donne-moi le squelette d’un pipeline de machine learning.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
