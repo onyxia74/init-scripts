@@ -8064,5 +8064,21 @@
     "question": "Comment déployer une image personnalisée de RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-21T13:34:00.810659+00:00",
+    "event_id": "b0fb6ec9-303c-4fcf-ae21-06f2887db68b",
+    "interaction_id": "05e52717-2769-4f84-8465-c43ac45aa2fe",
+    "metadata": {
+      "agent_prompt": "Crée-moi un VS Code avec R, Python et PostgreSQL.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée-moi un VS Code avec R, Python et PostgreSQL.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
