@@ -7928,5 +7928,28 @@
     "question": "Mon projet d’entraînement  d’un LLM nécessite-t-il un GPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour quel service Onyxia souhaitez-vous dimensionner le CPU ? (ex: Jupyter, VS Code, Dask, etc.) ou quelle est la nature de votre tâche (analyse légère, calcul intensif, etc.) ?",
+    "created_at": "2026-07-21T13:32:32.990358+00:00",
+    "event_id": "1cb8cafa-eef3-4783-bea9-9ca717be1c27",
+    "interaction_id": "45791aeb-e5f4-4b5b-88e5-60ef61feb43f",
+    "metadata": {
+      "agent_prompt": "Combien de CPU dois-je sélectionner pour cette tâche ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_id_or_task_type",
+        "options": [],
+        "original_request": "",
+        "question": "Pour quel service Onyxia souhaitez-vous dimensionner le CPU ? (ex: Jupyter, VS Code, Dask, etc.) ou quelle est la nature de votre tâche (analyse légère, calcul intensif, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Combien de CPU dois-je sélectionner pour cette tâche ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
