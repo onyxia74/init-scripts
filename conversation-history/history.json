@@ -8043,5 +8043,26 @@
     "question": "Comment utiliser ma propre image Docker dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser une image personnalisée, je dois activer l'option 'Custom image' dans la configuration du service RStudio. Veuillez me communiquer le nom complet de votre image (ex: `mon-registre.fr/mon-image:latest`) pour que je puisse finaliser la configuration.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:33:52.716829+00:00",
+    "event_id": "6e4bef0d-19a4-4499-b284-7d97ddcd3cf3",
+    "interaction_id": "537040bc-9eaa-498e-9f34-b1e26290f2e8",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
