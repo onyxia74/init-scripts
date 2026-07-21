@@ -6810,5 +6810,21 @@
     "question": "Comment résoudre un conflit Git ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour créer une branche dans votre projet via un terminal (comme celui de VS Code ou Jupyter sur Onyxia), utilisez la commande suivante :\\n\\n1. **Créer et basculer sur la nouvelle branche :**\\n   `git checkout -b nom-de-votre-branche`\\n\\n2. **Ou, si vous voulez seulement créer la branche sans changer de branche actuelle :**\\n   `git branch nom-de-votre-branche`\\n\\n3. **Pour envoyer la nouvelle branche sur le dépôt distant (GitHub/GitLab) :**\\n   `git push -u origin nom-de-votre-branche`\\n\\nSi vous utilisez l'interface graphique de VS Code, vous pouvez aussi cliquer sur le nom de la branche actuelle en bas à gauche de la barre d'état, puis sélectionner \\\"Create new branch\\\".\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:19:28.636495+00:00",
+    "event_id": "ed4c20b7-7d9f-4a78-b491-bf6c29e84369",
+    "interaction_id": "2c779057-708e-4544-989e-5d50d0dbf832",
+    "metadata": {
+      "agent_prompt": "Comment créer une branche dans mon projet ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer une branche dans mon projet ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
