@@ -7029,5 +7029,28 @@
     "question": "Comment déboguer mon service Elasticsearch ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service Onyxia est en CrashLoopBackOff ? (ex: jupyter-python, vscode-python, postgresql, etc.)",
+    "created_at": "2026-07-21T13:21:48.226239+00:00",
+    "event_id": "cef32d56-4f98-465f-aefc-3ba8ef8496c3",
+    "interaction_id": "3ae0c8e4-e687-4771-8d9a-4c8d1ba6c20e",
+    "metadata": {
+      "agent_prompt": "Mon service est en CrashLoopBackOff, comment le réparer ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [],
+        "original_request": "",
+        "question": "Quel service Onyxia est en CrashLoopBackOff ? (ex: jupyter-python, vscode-python, postgresql, etc.)",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Mon service est en CrashLoopBackOff, comment le réparer ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
