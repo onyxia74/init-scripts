@@ -5414,5 +5414,21 @@
     "question": "Comment utiliser les API de l’Insee dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:get_service_details(chart_id=\"vscode-python\")%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:02:15.011767+00:00",
+    "event_id": "474f7f65-3b45-4baa-898e-695a889a43b8",
+    "interaction_id": "7d44f4f3-9bf7-4805-87f6-26ba03e264d5",
+    "metadata": {
+      "agent_prompt": "Génère le code permettant d’interroger l’API RMéS.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Génère le code permettant d’interroger l’API RMéS.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
