@@ -7704,5 +7704,21 @@
     "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La suppression de votre pod après une période d'inactivité est généralement due aux politiques de gestion des ressources de la plateforme Onyxia. Pour optimiser l'utilisation du cluster, des mécanismes de nettoyage des sessions inactives sont souvent mis en place afin de libérer de la RAM et du CPU pour d'autres utilisateurs. Si vous avez besoin de maintenir un environnement actif pour des calculs longs, assurez-vous que votre session est interactive ou contactez l'administrateur pour connaître les limites de TTL (Time To Live) appliquées à votre projet.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:30:05.141716+00:00",
+    "event_id": "c11909d3-dfe5-4399-ad2f-8379958d1302",
+    "interaction_id": "55fbdea9-6a9d-4168-a6d5-37536dc9a83e",
+    "metadata": {
+      "agent_prompt": "Pourquoi mon pod est-il supprimé après une période d’inactivité ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Pourquoi mon pod est-il supprimé après une période d’inactivité ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
