@@ -5908,5 +5908,21 @@
     "question": "Crée un service adapté à un projet de deep learning.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-21T13:09:12.498997+00:00",
+    "event_id": "d5e2fcfd-8c38-4a86-8553-2399cac03c6e",
+    "interaction_id": "602a3bed-26e7-46ed-af99-94dbc015cd53",
+    "metadata": {
+      "agent_prompt": "Comment suivre les performances de mes expériences ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment suivre les performances de mes expériences ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
