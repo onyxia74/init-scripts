@@ -5371,5 +5371,21 @@
     "question": "Quelle API utiliser pour récupérer des données de rescencement?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question en utilisant les outils de configuration de services Onyxia, car votre demande concerne la documentation externe des outils de l'Insee et non le déploiement d'un service sur la plateforme.\n\nCependant, en tant qu'architecte Data sur Onyxia, je peux vous suggérer de déployer un environnement de travail (comme un notebook Jupyter ou un IDE VS Code) pour manipuler les données de l'Insee une fois que vous les aurez récupérées.\n\nPour trouver la documentation officielle des outils de l'Insee (comme le portail Sirene, les API de données, ou les outils statistiques), je vous recommande de consulter directement le site officiel de l'**Insee** ou le portail **data.gouv.fr**.\n\nSi vous souhaitez que je vous prépare un environnement de travail prêt à l'emploi pour analyser des données Insee (avec les bibliothèques nécessaires comme `pandas` ou des connecteurs API), n'hésitez pas à me le demander.\n\n```json\n{\n  \"answer\": \"La documentation des outils Insee se trouve sur les portails officiels de l'Insee et sur data.gouv.fr. Je peux cependant vous déployer un environnement de calcul (Jupyter, VS Code) configuré pour l'analyse de ces données si vous le souhaitez.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:01:42.281146+00:00",
+    "event_id": "7f86af09-a245-4234-81ca-43429dd1e5e3",
+    "interaction_id": "a07d63bd-906e-4c93-b10a-69d77031d794",
+    "metadata": {
+      "agent_prompt": "Où trouver la documentation de des outil Insee ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Où trouver la documentation de des outil Insee ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
