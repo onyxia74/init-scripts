@@ -7843,5 +7843,21 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour éviter de dépasser vos quotas ou de subir des interruptions de service (comme des erreurs OOMKilled), il est recommandé de configurer précisément les ressources de votre service Onyxia. Vous pouvez ajuster les 'requests' (ce que le service réserve au démarrage) et les 'limits' (le plafond maximum autorisé). Une configuration équilibrée permet d'optimiser l'utilisation de l'infrastructure tout en garantissant la stabilité de vos environnements de travail.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:31:35.661248+00:00",
+    "event_id": "c4b5f4a0-4cc7-4fb9-ac5a-8b0264e8a1e2",
+    "interaction_id": "d5148a3e-1da5-4df7-a5d9-78c577e23635",
+    "metadata": {
+      "agent_prompt": "Comment éviter de dépasser mon quota ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment éviter de dépasser mon quota ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
