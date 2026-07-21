@@ -6432,5 +6432,21 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\nPour passer des variables d'environnement dans un service Onyxia (basé sur un Helm chart), vous disposez de deux méthodes principales selon votre besoin :\n\n1.  **Variables d'environnement standards (`extraEnvVars`)** :\n    Si vous souhaitez injecter des variables simples (ex: `MY_VAR=hello`), utilisez le paramètre `extraEnvVars`. Ce paramètre attend une liste d'objets respectant le format Kubernetes `envVar`.\n    *   **Chemin Helm** : `extraEnvVars`\n    *   **Exemple de structure** : `[{\"name\": \"API_KEY\", \"value\": \"secret_value\"}]`\n\n2.  **Variables via un script d'initialisation (`init.personalInit`)** :\n    Si vous avez besoin de logique complexe (calculer une valeur, récupérer un secret via une commande, ou configurer des fichiers `.env`), la méthode recommandée est d'utiliser un script d'initialisation. Vous pouvez créer un script qui exporte ces variables ou les écrit dans un fichier que votre application lira au démarrage.\n    *   **Chemin Helm** : `init.personalInit` (prend l'URL d'un script shell).\n\n**Résumé technique pour votre configuration :**\n\n| Besoin | Paramètre Helm | Type de valeur |\n| :--- | :--- | :--- |\n| Variables simples | `extraEnvVars` | `array` (format Kubernetes env) |\n| Logique complexe / Scripts | `init.personalInit` | `string` (URL du script `.sh`) |\n\nSi vous souhaitez que je prépare un service avec des variables spécifiques, n'hésitez pas à me les communiquer !",
+    "created_at": "2026-07-21T13:14:58.738344+00:00",
+    "event_id": "76de36f9-166b-4c20-8d1e-7d40fc1a0cc5",
+    "interaction_id": "92ab60b0-e765-4d0d-b784-27742cbc7c11",
+    "metadata": {
+      "agent_prompt": "Comment passer des variables d’environnement dans un Helm chart ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment passer des variables d’environnement dans un Helm chart ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
