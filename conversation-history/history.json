@@ -5860,5 +5860,32 @@
     "question": "Comment distribuer ce calcul sur plusieurs processus ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour travailler sur des datasets volumineux, j'ai configuré un environnement VS Code incluant Polars et DuckDB. Ces bibliothèques permettent d'effectuer des calculs et des jointures sur des données stockées sur disque sans saturer la RAM disponible.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Ftraitement-de-datasets-volumineux-out-of-core.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/traitement-de-datasets-volumineux-out-of-core.sh\",\n        \"reason\": \"installation de polars et duckdb pour traitement out-of-core\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:08:29.030862+00:00",
+    "event_id": "b6534811-6328-4567-af86-c6daca640df6",
+    "interaction_id": "b2a32419-895b-45de-9f8a-410458862248",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "installation de polars et duckdb pour traitement out-of-core",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/traitement-de-datasets-volumineux-out-of-core.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
