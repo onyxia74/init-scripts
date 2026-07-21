@@ -8331,5 +8331,26 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service Neo4j a été configuré avec les paramètres par défaut. Vous pouvez maintenant lancer votre instance de base de données orientée graphe sur Onyxia.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/neo4j?name=neo4j&version=1.0.8\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"neo4j\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"1.0.8\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:37:00.541423+00:00",
+    "event_id": "dd32c0c1-da6a-43e4-b84e-1cd85c093093",
+    "interaction_id": "4b5f1873-f52a-4017-8e61-c07ce321603d",
+    "metadata": {
+      "agent_prompt": "Je veux utiliser Neo4j dans Onyxia.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "neo4j",
+        "version": "1.0.8"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux utiliser Neo4j dans Onyxia.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
