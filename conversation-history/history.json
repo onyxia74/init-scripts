@@ -5092,5 +5092,32 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre application à PostgreSQL, j'ai configuré une instance de base de données PostgreSQL avec la fonction 'discovery' activée. Cela permettra à vos futurs services (IDE, notebooks) de détecter automatiquement les paramètres de connexion. Vous pourrez ensuite utiliser vos outils de développement habituels pour interagir avec la base.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.0&discovery.enabled=true\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.0\"\n    },\n    \"selected_parameters\": {\n      \"discovery.enabled\": {\n        \"value\": true,\n        \"reason\": \"Permet la détection automatique de la base de données par les autres services Onyxia pour faciliter la connexion.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T12:58:38.502401+00:00",
+    "event_id": "27ef4378-bf8c-44d8-95e6-0675c7ba1631",
+    "interaction_id": "c3054746-d04d-4192-b829-47bc52cca8d0",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "overrides": {
+          "discovery.enabled": {
+            "reason": "Permet la détection automatique de la base de données par les autres services Onyxia pour faciliter la connexion.",
+            "value": true
+          }
+        },
+        "version": "0.5.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
