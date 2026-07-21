@@ -6556,5 +6556,21 @@
     "question": "Comment entrer dans un conteneur en cours d’exécution ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question technique sur l'administration Kubernetes via la plateforme Onyxia, car mon rôle est de configurer et de déployer des services (IDE, bases de données, etc.) via les charts Helm de la plateforme.\n\nPour consulter les logs d'un pod dans un environnement Onyxia, vous devez généralement utiliser le terminal de votre service (JupyterLab, VS Code, etc.) et utiliser la commande `kubectl logs %C2%ABnom-du-pod%C2%BB` si les permissions vous le permettent, ou vous référer aux outils de monitoring mis à disposition par votre administrateur SSPCloud.\n\nSi vous souhaitez que je vous déploie un service pour effectuer des analyses ou du développement, n'hésitez pas à me le demander.\n\n```json\n{\n  \"answer\": \"Je suis un architecte Data spécialisé dans la configuration de services Onyxia. Je ne peux pas exécuter de commandes d'administration Kubernetes comme 'kubectl logs'. Pour consulter les logs, utilisez le terminal de votre service ou contactez votre administrateur système.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:16:18.217663+00:00",
+    "event_id": "2d858c75-fb2a-49a3-b0fb-56ab1a77d67f",
+    "interaction_id": "dd3ecc6a-afce-4ec8-be1d-9327500d271d",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs d’un pod ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs d’un pod ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
