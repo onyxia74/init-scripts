@@ -5579,5 +5579,21 @@
     "question": "Comment joindre mes données statistiques à un fond de carte ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:inspect_service_parameters(request='{\"chart_id\":\"jupyter-python\",\"query\":\"geopandas folium matplotlib\"}')%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:04:30.503789+00:00",
+    "event_id": "3c238eaa-332b-4dcd-8dda-ab2d96d03d81",
+    "interaction_id": "f8b4f8fd-f236-4978-815d-d33fc08485a2",
+    "metadata": {
+      "agent_prompt": "Comment afficher un fichier GeoJSON ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment afficher un fichier GeoJSON ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
