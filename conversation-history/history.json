@@ -7544,5 +7544,26 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter Metabase à PostgreSQL, déployez d'abord PostgreSQL pour obtenir les identifiants de connexion, puis déployez Metabase et configurez la source de données dans son interface d'administration en utilisant ces identifiants.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.0\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:28:07.342364+00:00",
+    "event_id": "b44628df-cd96-49f5-b3d3-231a1de5c10e",
+    "interaction_id": "9af0a887-a449-4895-8641-ccc44f1d8dd5",
+    "metadata": {
+      "agent_prompt": "Comment connecter Metabase à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter Metabase à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
