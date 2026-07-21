@@ -5839,5 +5839,26 @@
     "question": "Propose un code Onyxia utilisant S3 et la parallélisation.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour distribuer vos calculs, je vous recommande d'utiliser le service JupyterPySpark. Il intègre Apache Spark, qui permet de répartir les tâches de calcul sur plusieurs processus (exécuteurs) de manière transparente. Le service est configuré par défaut pour activer l'allocation dynamique, optimisant ainsi l'utilisation des ressources en fonction de vos besoins de calcul.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pyspark?name=jupyter-pyspark&version=3.2.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pyspark\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"3.2.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:08:09.447021+00:00",
+    "event_id": "9671da83-5b56-46a9-be7b-261d8cddffab",
+    "interaction_id": "289e0fca-34f7-46a7-8520-56942869e90b",
+    "metadata": {
+      "agent_prompt": "Comment distribuer ce calcul sur plusieurs processus ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pyspark",
+        "version": "3.2.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment distribuer ce calcul sur plusieurs processus ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
