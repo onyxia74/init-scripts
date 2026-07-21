@@ -5055,5 +5055,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de travail (IDE, bases de données, outils de calcul) via des configurations Helm optimisées.\n\nPour répondre à votre question sur la mise en production dans un contexte de plateforme de données comme Onyxia, voici les étapes clés :\n\n1.  **Définition des besoins (Discovery) :** Identification des outils nécessaires (Jupyter, VS Code, PostgreSQL, etc.) et des ressources de calcul (CPU, RAM, GPU) ainsi que du stockage (Persistence) requis pour la charge de travail.\n2.  **Configuration de l'environnement (Provisioning) :** Utilisation de charts Helm pour définir l'infrastructure. Cela inclut la configuration des paramètres de ressources (`resources.requests`, `resources.limits`) et de la persistance des données.\n3.  **Automatisation de l'initialisation (Init Scripts) :** Mise en place de scripts d'initialisation (`personalInit`) pour installer automatiquement les bibliothèques Python/R, cloner des dépôts Git ou préparer des structures de dossiers (`src/`, `data/`) dès le lancement du service.\n4.  **Validation de la configuration :** Vérification de la conformité des paramètres Helm par rapport aux schémas (`values.schema.json`) pour garantir que l'environnement est stable et sécurisé.\n5.  **Déploiement et Exécution :** Lancement du service sur le cluster Kubernetes via l'orchestrateur Onyxia, permettant aux utilisateurs d'accéder à un environnement prêt à l'emploi.\n\nSi vous souhaitez que je prépare un environnement spécifique pour un projet, n'hésitez pas à me donner vos besoins (ex: *\"Je veux un environnement VS Code Python pour faire de l'analyse de données avec pandas et duckdb\"*).",
+    "created_at": "2026-07-21T12:58:10.674049+00:00",
+    "event_id": "4d5ee36d-f1be-410a-b439-fba9339b7cf4",
+    "interaction_id": "be12c925-fae9-439b-aa90-a4bb998e729b",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
