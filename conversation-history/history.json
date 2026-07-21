@@ -6041,5 +6041,26 @@
     "question": "Crée-moi un service VS Code adapté à l’exploration de ce dataset de la population française .",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Les services Onyxia sont des environnements d'analyse interactifs. Pour créer un CronJob Kubernetes, vous devez utiliser un outil de ligne de commande (kubectl) ou un IDE pour rédiger votre manifeste YAML. Je peux vous fournir un environnement VSCode Python configuré avec un exemple de script et de manifeste pour vous aider à démarrer.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"vscode-python\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:10:42.517227+00:00",
+    "event_id": "69f9e743-5583-4216-972d-bce8b66328a9",
+    "interaction_id": "36a3ca29-c877-4c29-8e2f-bb562a5b1100",
+    "metadata": {
+      "agent_prompt": "Comment créer une tâche planifiée avec Kubernetes CronJob ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "vscode-python",
+        "chart_id": "vscode-python",
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer une tâche planifiée avec Kubernetes CronJob ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
