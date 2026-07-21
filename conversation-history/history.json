@@ -8139,5 +8139,21 @@
     "question": "Configure un environnement Java complet dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:inspect_service_parameters{request: '{\"chart_id\":\"vscode-python\",\"query\":\"extension\"}'}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:34:56.941965+00:00",
+    "event_id": "2f06986a-f7cc-4952-8d7f-69084c1d74e6",
+    "interaction_id": "83163692-f1c6-48a7-a72e-18b9c84e28c4",
+    "metadata": {
+      "agent_prompt": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
