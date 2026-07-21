@@ -7448,5 +7448,21 @@
     "question": "Comment transmettre un secret Kubernetes à mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur la gestion des identifiants entre plusieurs services dans l'écosystème Onyxia, il est important de comprendre que la plateforme est conçue pour l'isolation des environnements de calcul tout en permettant l'interopérabilité via des services de données partagés.\n\nVoici les trois piliers de la gestion des identifiants et de l'accès aux données :\n\n1.  **Isolation des Services (Compute) :** Chaque service lancé (Jupyter, VSCode, RStudio) tourne dans son propre Pod Kubernetes avec ses propres secrets et variables d'environnement. Les identifiants de session ou de calcul d'un service ne sont pas partagés par défaut avec un autre pour garantir la sécurité.\n2.  **Accès aux Données (Storage) :** Pour partager des données (et potentiellement des fichiers de configuration contenant des accès) entre plusieurs services, on utilise des **Persistent Volume Claims (PVC)**. Dans Onyxia, le répertoire `/home/onyxia/work` est le point d'ancrage. Si plusieurs services sont configurés pour monter le même volume de travail, ils pourront lire et écrire les mêmes fichiers.\n3.  **Gestion des Identifiants Externes (Secrets) :** Pour accéder à des bases de données (PostgreSQL, Kafka, etc.) ou des API depuis différents services, la bonne pratique consiste à :\n    *   Utiliser des fichiers de configuration (ex: `.env` ou `config.yaml`) stockés dans le répertoire `/home/onyxia/work`.\n    *   Utiliser des scripts d'initialisation (`init_script`) pour injecter de manière sécurisée les variables d'environnement nécessaires au démarrage de chaque service.\n\nSi vous souhaitez mettre en place un environnement de travail spécifique (par exemple, un IDE avec des accès pré-configurés à une base de données), je peux vous aider à générer la configuration Onyxia correspondante.\n\n```json\n{\n  \"answer\": \"La gestion des identifiants entre services Onyxia repose sur l'utilisation de volumes persistants partagés (/home/onyxia/work) pour le stockage de fichiers de configuration et l'utilisation de scripts d'initialisation pour injecter les variables d'environnement nécessaires à chaque service.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {},\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:26:49.465672+00:00",
+    "event_id": "eaeedb16-f757-4272-8564-a789b5a702ab",
+    "interaction_id": "c695b013-17dc-4e17-b798-091e1b574b2d",
+    "metadata": {
+      "agent_prompt": "Comment gérer les identifiants entre plusieurs services ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment gérer les identifiants entre plusieurs services ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
