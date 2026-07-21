@@ -7651,5 +7651,26 @@
     "question": "Comment retrouver l’adresse de connexion de ma base de données ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter Python à PostgreSQL sur Onyxia, utilisez la bibliothèque `psycopg2`. Assurez-vous d'avoir les identifiants (host, user, password, dbname) et utilisez un bloc try/except pour gérer la connexion. L'activation de la 'discovery' dans le service PostgreSQL facilite grandement l'obtention de ces paramètres.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.0\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:29:21.629881+00:00",
+    "event_id": "528afb61-6c74-4306-a3c9-4cdbf13ee93f",
+    "interaction_id": "379ec006-1057-4fb9-b369-af98fb04d4c3",
+    "metadata": {
+      "agent_prompt": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
