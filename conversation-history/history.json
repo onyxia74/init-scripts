@@ -5264,5 +5264,26 @@
     "question": "Comment déployer une API Python ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour publier ou développer votre application Shiny, le service RStudio est le plus approprié. J'ai sélectionné la version la plus complète (`rstudio-r-python-julia`) qui vous permettra de manipuler R, Python et Julia au sein du même environnement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:00:26.162117+00:00",
+    "event_id": "38f82f01-2382-4186-bfec-e4be1454d1b3",
+    "interaction_id": "650f45ae-b477-43b0-b698-4ddddca4dea7",
+    "metadata": {
+      "agent_prompt": "Quel service utiliser pour publier mon application Shiny ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service utiliser pour publier mon application Shiny ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
