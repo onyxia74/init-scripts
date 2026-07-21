@@ -7565,5 +7565,28 @@
     "question": "Comment connecter Metabase à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour quel service Onyxia souhaitez-vous rendre l'interface web accessible depuis l'extérieur ? (ex: jupyter-python, vscode-python, rstudio, etc.)",
+    "created_at": "2026-07-21T13:28:23.359077+00:00",
+    "event_id": "04dde4f4-742c-4bfb-96d4-c0ea28bd562c",
+    "interaction_id": "1d8b6799-decd-4dd1-8375-738d91903516",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [],
+        "original_request": "",
+        "question": "Pour quel service Onyxia souhaitez-vous rendre l'interface web accessible depuis l'extérieur ? (ex: jupyter-python, vscode-python, rstudio, etc.)",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
