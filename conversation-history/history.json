@@ -6540,5 +6540,21 @@
     "question": "Comment redémarrer un service Kubernetes ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour entrer dans un conteneur en cours d'exécution dans un environnement Kubernetes (comme Onyxia), vous devez utiliser la commande `kubectl exec`. La syntaxe standard est :\\n\\n`kubectl exec -it %C2%ABnom-du-pod%C2%BB -- /bin/bash` (ou `/bin/sh` si bash n'est pas disponible).\\n\\n- `-i` (interactive) : garde l'entrée standard ouverte.\\n- `-t` (tty) : alloue un terminal virtuel.\\n- `--` : sépare les arguments de la commande kubectl de ceux de la commande exécutée dans le conteneur.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {},\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:16:06.980069+00:00",
+    "event_id": "bbd950ca-02e0-4587-afb4-d5f9f0d957d4",
+    "interaction_id": "acc52dbd-dfe0-45a1-995c-c75163a1f06f",
+    "metadata": {
+      "agent_prompt": "Comment entrer dans un conteneur en cours d’exécution ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment entrer dans un conteneur en cours d’exécution ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
