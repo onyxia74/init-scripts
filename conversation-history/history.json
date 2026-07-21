@@ -6699,5 +6699,36 @@
     "question": "Comment éviter de pousser mes secrets sur GitHub ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Environnement VS Code configuré pour le développement Git avec installation automatique des outils de linting (black, flake8) et ouverture directe du dépôt en racine du workspace.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&git.asCodeServerRoot=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Foutillage-dev-et-linting.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"git.asCodeServerRoot\": {\n        \"value\": true,\n        \"reason\": \"Ouvrir le projet comme racine du workspace pour faciliter le flux Git\"\n      },\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/outillage-dev-et-linting.sh\",\n        \"reason\": \"Installation automatique des outils de linting au démarrage\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:18:21.921701+00:00",
+    "event_id": "ea489964-7b1b-4436-8df9-a196710c4e76",
+    "interaction_id": "4ff7557f-9a21-4f36-b81b-a85969720ea8",
+    "metadata": {
+      "agent_prompt": "Comment automatiser le déploiement après un push Git ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "git.asCodeServerRoot": {
+            "reason": "Ouvrir le projet comme racine du workspace pour faciliter le flux Git",
+            "value": true
+          },
+          "init.personalInit": {
+            "reason": "Installation automatique des outils de linting au démarrage",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/outillage-dev-et-linting.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment automatiser le déploiement après un push Git ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
