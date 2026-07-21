@@ -7127,5 +7127,28 @@
     "question": "Comment monter un bucket S3 dans mon environnement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous me préciser quel service Onyxia vous utilisez et si vous essayez de vous connecter à un stockage persistant (PVC) ou à un service de stockage externe (S3, etc.) ?",
+    "created_at": "2026-07-21T13:22:55.125513+00:00",
+    "event_id": "1baeed63-5733-4e41-8ec7-f93061b5bebf",
+    "interaction_id": "5ee8a130-5e96-41c2-81c3-d60c56106347",
+    "metadata": {
+      "agent_prompt": "Pourquoi mon service n’arrive-t-il pas à se connecter au stockage ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_id_and_storage_type",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous me préciser quel service Onyxia vous utilisez et si vous essayez de vous connecter à un stockage persistant (PVC) ou à un service de stockage externe (S3, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Pourquoi mon service n’arrive-t-il pas à se connecter au stockage ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
