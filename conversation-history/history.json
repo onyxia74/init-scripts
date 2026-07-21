@@ -6953,5 +6953,21 @@
     "question": "Donne-moi les commandes nécessaires pour lancer un projet java.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour interroger les logs et identifier l'origine d'un problème sur une plateforme basée sur Kubernetes comme Onyxia, voici les commandes essentielles :\\n\\n1. **Logs des Pods** : Pour voir les sorties standard d'un service spécifique.\\n   - `kubectl logs %C2%ABpod_name%C2%BB -n %C2%ABnamespace%C2%BB`\\n   - `kubectl logs -f %C2%ABpod_name%C2%BB -n %C2%ABnamespace%C2%BB` (mode suivi/follow)\\n   - `kubectl logs %C2%ABpod_name%C2%BB --previous` (pour voir les logs d'un pod qui a crashé et redémarré).\\n\\n2. **Logs des Conteneurs** : Si le pod contient plusieurs conteneurs.\\n   - `kubectl logs %C2%ABpod_name%C2%BB -c %C2%ABcontainer_name%C2%BB -n %C2%ABnamespace%C2%BB`\\n\\n3. **Événements du Cluster** : Pour voir les erreurs de scheduling, de pull d'image ou de montage de volume.\\n   - `kubectl get events -n %C2%ABnamespace%C2%BB --sort-by='.lastTimestamp'`\\n\\n4. **Description de la ressource** : Pour inspecter l'état détaillé (ex: CrashLoopBackOff, ImagePullBackOff).\\n   - `kubectl describe pod %C2%ABpod_name%C2%BB -n %C2%ABnamespace%C2%BB`\\n\\n5. **Logs de l'Ingress/Gateway** : Si le problème concerne l'accès réseau.\\n   - Il faut consulter les logs du contrôleur Ingress (ex: Nginx Ingress Controller) dans le namespace dédié.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:21:01.557730+00:00",
+    "event_id": "98ff09e1-6007-4300-8cb3-9eca7fd22ca2",
+    "interaction_id": "7ab2a0bf-b874-434f-8510-0407d5468613",
+    "metadata": {
+      "agent_prompt": "Quel sont les commandes pour interroger les logs et trouver l’origine du problème.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel sont les commandes pour interroger les logs et trouver l’origine du problème.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
