@@ -6232,5 +6232,21 @@
     "question": "Exporte les secrets nécessaires avant l’exécution du script.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas créer directement un workflow Argo (orchestrateur de workflows Kubernetes) car Onyxia est une plateforme de services de calcul (IDE, bases de données, etc.) et non un orchestrateur de pipelines de données.\n\nCependant, je peux vous proposer un environnement de développement adapté pour concevoir, tester et déployer vos workflows Argo (par exemple, un environnement Python avec les outils nécessaires pour interagir avec l'API Kubernetes ou Argo).\n\nSouhaitez-vous que je vous provisionne un service **VS Code Python** ou **Jupyter** configuré avec les bibliothèques nécessaires (comme `argo-workflows` ou `kubernetes`) pour développer vos fichiers YAML et vos scripts de déploiement ?\n\n```json\n{\n  \"answer\": \"Je ne peux pas générer de workflow Argo directement, mais je peux vous fournir un environnement de développement (IDE) configuré pour écrire et tester vos workflows Argo.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:12:53.554726+00:00",
+    "event_id": "1f739f04-5f6a-48e8-9d1f-5af56ce6c6ba",
+    "interaction_id": "b0dc3fb3-556e-4275-a7a9-0b3e06fd5323",
+    "metadata": {
+      "agent_prompt": "Crée un workflow Argo avec plusieurs étapes.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée un workflow Argo avec plusieurs étapes.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
