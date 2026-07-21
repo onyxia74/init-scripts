@@ -6115,5 +6115,21 @@
     "question": "Comment sauvegarder les résultats du workflow dans S3 ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Sur Onyxia, la transmission de résultats entre différentes étapes ou services s'effectue principalement via le stockage persistant partagé. Tous les services lancés sur votre espace de travail ont accès au répertoire `/home/onyxia/work`. Pour transmettre des données d'un service A (ex: Jupyter) vers un service B (ex: VS Code), il suffit d'écrire les fichiers (CSV, Parquet, modèles, etc.) dans ce répertoire. Pour des volumes de données plus importants ou des besoins de base de données, vous pouvez utiliser des services de stockage persistants (PostgreSQL, MinIO) configurés dans votre catalogue.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:11:23.878590+00:00",
+    "event_id": "e8265a7b-44de-4062-a5dc-1c25d6edf032",
+    "interaction_id": "dd15aa3e-54db-49ea-9f91-9b607c8ead70",
+    "metadata": {
+      "agent_prompt": "Comment transmettre les résultats d’une étape à la suivante ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment transmettre les résultats d’une étape à la suivante ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
