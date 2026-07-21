@@ -6174,5 +6174,26 @@
     "question": "Lance un traitement esquisse tous les jours à 2 heures.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service Argo Workflows est disponible sur Onyxia pour orchestrer vos jobs sur Kubernetes. Cependant, un `CronWorkflow` est un objet de ressource Kubernetes (manifeste YAML) et non une configuration de service Onyxia. Voici un exemple de structure pour un CronWorkflow que vous pouvez adapter et soumettre à votre cluster Argo :\\n\\n```yaml\\napiVersion: argoproj.io/v1alpha1\\nkind: CronWorkflow\\nmetadata:\\n  name: mon-pipeline-cron\\nspec:\\n  schedule: \\\"0 1 * * *\\\" # Tous les jours à 1h du matin\\n  workflowSpec:\\n    entrypoint: main\\n    templates:\\n    - name: main\\n      container:\\n        image: argoproj/argo-workflows:latest\\n        command: [python, -c, \\\"print('Hello Argo!')\\\"]\\n```\\n\\nSi vous souhaitez un environnement de développement pour concevoir ces workflows, je peux vous lancer un service comme `vscode-python` ou `jupyter-python`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/automation/argo-workflows?name=argo-workflows&version=1.0.7\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"argo-workflows\",\n      \"catalog_id\": \"automation\",\n      \"version\": \"1.0.7\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:12:17.092042+00:00",
+    "event_id": "548897e6-9bfe-4260-bffd-1b51bdba58fe",
+    "interaction_id": "ebc9f93c-5629-44e5-bb8d-b3f0562a5040",
+    "metadata": {
+      "agent_prompt": "Génère un CronWorkflow Argo pour ce pipeline.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "automation",
+        "chart_id": "argo-workflows",
+        "version": "1.0.7"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Génère un CronWorkflow Argo pour ce pipeline.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
