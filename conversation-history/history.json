@@ -6985,5 +6985,28 @@
     "question": "Maven ne trouve pas une dépendance, que faire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous aider à résoudre ce problème, pourriez-vous me préciser quel package R vous tentez d'installer et quel service Onyxia vous utilisez actuellement (par exemple RStudio, Jupyter, etc.) ?",
+    "created_at": "2026-07-21T13:21:24.439177+00:00",
+    "event_id": "e85e161d-bbb1-489e-bfa3-383e233afd3d",
+    "interaction_id": "0a619d68-c881-4294-af0e-fdb68aab4665",
+    "metadata": {
+      "agent_prompt": "Mon package R ne s’installe pas, aide-moi.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "package_name, current_service",
+        "options": [],
+        "original_request": "",
+        "question": "Pour vous aider à résoudre ce problème, pourriez-vous me préciser quel package R vous tentez d'installer et quel service Onyxia vous utilisez actuellement (par exemple RStudio, Jupyter, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Mon package R ne s’installe pas, aide-moi.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
