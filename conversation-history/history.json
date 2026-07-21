@@ -8294,5 +8294,26 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service Metabase est disponible dans le catalogue Dataviz. Comme aucun paramètre spécifique n'a été demandé, j'ai généré une configuration utilisant les valeurs par défaut du chart Helm.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:36:39.475724+00:00",
+    "event_id": "a1df4282-dcff-487d-87dd-fe8c9ad4238a",
+    "interaction_id": "b4a895d4-451e-4922-9645-a7ec800dbfe1",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
