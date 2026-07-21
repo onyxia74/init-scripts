@@ -8155,5 +8155,26 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement, vous devez utiliser le paramètre Helm spécifique au chart (souvent 'extraEnv'). Je peux identifier le chemin exact et générer la configuration pour vous si vous me précisez le service et les variables souhaitées.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/exemple-catalog/exemple-service?name=exemple-service&version=1.0.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"exemple-service\",\n      \"catalog_id\": \"exemple-catalog\",\n      \"version\": \"1.0.0\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:35:07.150908+00:00",
+    "event_id": "4e2c9b75-12f0-47ca-8a7c-dac76c83f1af",
+    "interaction_id": "15cd54ea-154f-446b-8f0c-6cf5220287b8",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "exemple-catalog",
+        "chart_id": "exemple-service",
+        "version": "1.0.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
