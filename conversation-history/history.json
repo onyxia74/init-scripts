@@ -6216,5 +6216,21 @@
     "question": "Comment planifier un traitement récurrent dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour pouvoir configurer l'exportation de vos secrets, j'ai besoin de précisions sur l'environnement que vous souhaitez utiliser et sur la nature des secrets.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:12:44.153431+00:00",
+    "event_id": "1d6a9476-c6d9-49b9-ba0d-a7ff84b92f7d",
+    "interaction_id": "58534510-32f1-4256-82a0-bedab8b4fef4",
+    "metadata": {
+      "agent_prompt": "Exporte les secrets nécessaires avant l’exécution du script.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Exporte les secrets nécessaires avant l’exécution du script.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
