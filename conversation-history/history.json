@@ -8394,5 +8394,21 @@
     "question": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"jupyter-python\"}",
+    "created_at": "2026-07-21T13:37:35.762970+00:00",
+    "event_id": "a709e922-8736-455e-b47d-4d41728b31a4",
+    "interaction_id": "ceb8d2ae-704b-400a-9e99-2ae3f13fbc9a",
+    "metadata": {
+      "agent_prompt": "Je veux faire de l’exploration de données dans un notebook.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de l’exploration de données dans un notebook.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
