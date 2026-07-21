@@ -6083,5 +6083,21 @@
     "question": "Comment surveiller l’exécution de mon workflow ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question technique concernant la gestion des échecs de processus ou de pipelines, car mon rôle est strictement limité à l'architecture et à la configuration de services sur la plateforme **Onyxia SSPCloud** via l'utilisation de mes outils spécialisés.\n\nSi votre question concerne la relance d'un service Onyxia qui a échoué à cause d'une configuration incorrecte, je peux vous aider à ajuster les paramètres (CPU, RAM, stockage) ou à corriger un script d'initialisation via les outils `build_service_configuration` ou `create_init_script`.\n\nPourriez-vous préciser si vous souhaitez configurer un service spécifique ou modifier une configuration existante ?",
+    "created_at": "2026-07-21T13:11:05.398408+00:00",
+    "event_id": "91d5868e-6627-47e7-8939-5d0dae05c0f7",
+    "interaction_id": "a40ef7aa-55c1-42c2-b07b-f41c0e8097c7",
+    "metadata": {
+      "agent_prompt": "Comment relancer uniquement les étapes qui ont échoué ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment relancer uniquement les étapes qui ont échoué ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
