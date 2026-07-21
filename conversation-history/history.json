@@ -5344,5 +5344,32 @@
     "question": "Comment charger les résultats d’une API dans un dataframe ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour récupérer des données de recensement, vous devrez interroger une API externe (comme celle de l'INSEE). Onyxia fournit l'infrastructure pour effectuer ces analyses. Je vous ai configuré un environnement **VS Code Python** incluant les bibliothèques essentielles (`pandas`, `requests`, `numpy`, `matplotlib`) ainsi qu'un script de base (`main.py`) pour faciliter vos requêtes API et le traitement des données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fanalyse-de-donn-es-de-recensement-via-api.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/analyse-de-donn-es-de-recensement-via-api.sh\",\n        \"reason\": \"script d'initialisation pour l'analyse de données de recensement\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:01:29.874618+00:00",
+    "event_id": "ac60f398-888c-42b8-b894-9b93c1cf049b",
+    "interaction_id": "d8397ace-0831-452e-b36e-8fbb8ccd74f0",
+    "metadata": {
+      "agent_prompt": "Quelle API utiliser pour récupérer des données de rescencement?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "script d'initialisation pour l'analyse de données de recensement",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/analyse-de-donn-es-de-recensement-via-api.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quelle API utiliser pour récupérer des données de rescencement?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
