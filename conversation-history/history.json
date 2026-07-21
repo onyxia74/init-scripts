@@ -7464,5 +7464,21 @@
     "question": "Comment gérer les identifiants entre plusieurs services ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas générer d'URL de lancement pour votre application. Mon rôle est de configurer l'environnement de service Onyxia (via les charts Helm) pour qu'il soit prêt à l'emploi. Une fois que la configuration est validée, l'application sera déployée et une URL de service vous sera fournie par la plateforme.\n\nSi vous souhaitez que je prépare un environnement spécifique (par exemple, un IDE avec des bibliothèques particulières ou des ressources de calcul définies), n'hésitez pas à me préciser votre besoin métier.\n\n```json\n{\n  \"answer\": \"Je ne peux pas générer d'URL de lancement. Je peux cependant configurer l'environnement technique (IDE, bibliothèques, ressources) nécessaire à votre application. Une fois la configuration validée, l'URL sera générée par la plateforme Onyxia.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:26:58.320405+00:00",
+    "event_id": "890a4439-ec0f-4375-82c1-5fc01377e967",
+    "interaction_id": "1338b8c1-d7d4-4d20-9d77-8dfeb40f2293",
+    "metadata": {
+      "agent_prompt": "Comment rendre mon application accessible avec une URL ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment rendre mon application accessible avec une URL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
