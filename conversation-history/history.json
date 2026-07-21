@@ -5174,5 +5174,36 @@
     "question": "Comment ajouter un nom de domaine à mon application ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser une image Docker personnalisée, vous devez activer l'option 'Custom image' dans la configuration du service. Cela permet de remplacer l'image standard par la vôtre (ex: `mon-registre.fr/mon-image:latest`).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&service.image.custom.enabled=true&service.image.custom.version=%C2%ABvotre-image-personnalisee%3Atag%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"Utilisation d'une image Docker personnalisée\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"votre-image-personnalisee:tag\",\n        \"reason\": \"Nom de l'image personnalisée\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T12:59:21.205272+00:00",
+    "event_id": "5aa92861-5315-4afe-9b56-072e9a687340",
+    "interaction_id": "3d120b69-5b68-43bd-8418-4c79c2f79584",
+    "metadata": {
+      "agent_prompt": "Comment utiliser une image Docker personnalisée pour mon application ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "Utilisation d'une image Docker personnalisée",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "Nom de l'image personnalisée",
+            "value": "votre-image-personnalisee:tag"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser une image Docker personnalisée pour mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
