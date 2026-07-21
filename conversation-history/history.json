@@ -6572,5 +6572,21 @@
     "question": "Comment consulter les logs d’un pod ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Sur la plateforme Onyxia, les utilisateurs n'ont pas d'accès direct aux commandes Kubernetes (comme `kubectl get pods`) pour des raisons de sécurité et d'abstraction de l'infrastructure. L'accès aux ressources est géré via le déploiement de services (IDE, bases de données, etc.).\n\nSi vous souhaitez vérifier l'état de vos ressources ou de vos données, vous devez déployer un service spécifique. Si vous rencontrez un problème technique majeur ou si vous avez besoin de visibilité sur l'état de vos services déployés, je vous invite à contacter l'équipe support de SSPCloud.\n\n```json\n{\n  \"answer\": \"Sur la plateforme Onyxia, l'accès direct aux commandes Kubernetes (comme 'kubectl get pods') n'est pas autorisé pour les utilisateurs. L'infrastructure est abstraite pour vous permettre de vous concentrer sur vos données. Pour gérer vos ressources, vous devez utiliser les services disponibles dans le catalogue. Si vous avez besoin d'une assistance technique concernant l'état de vos services, veuillez contacter le support SSPCloud.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:16:32.036404+00:00",
+    "event_id": "c07eb4c7-5274-464d-bd47-a9b21eee4bf4",
+    "interaction_id": "f54e0fd5-9d3a-4639-a39e-3c1b4bd6b2bd",
+    "metadata": {
+      "agent_prompt": "Comment afficher les pods de mon projet ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment afficher les pods de mon projet ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
