@@ -6292,5 +6292,28 @@
     "question": "Quelle méthode de déploiement utiliser pour mon projet ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Souhaitez-vous déployer un service spécifique (comme un IDE ou une base de données) pour tester l'état de santé de votre application, ou s'agit-il d'une question sur le fonctionnement des services Onyxia ?",
+    "created_at": "2026-07-21T13:13:31.576141+00:00",
+    "event_id": "300f8f19-766c-4a86-9690-9c3f5f980d5a",
+    "interaction_id": "71387824-7ca2-4fdd-9d85-1ab5fd2a4ffc",
+    "metadata": {
+      "agent_prompt": "Comment vérifier l’état de santé de mon application ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "intent",
+        "options": [],
+        "original_request": "",
+        "question": "Souhaitez-vous déployer un service spécifique (comme un IDE ou une base de données) pour tester l'état de santé de votre application, ou s'agit-il d'une question sur le fonctionnement des services Onyxia ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment vérifier l’état de santé de mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
