@@ -7891,5 +7891,21 @@
     "question": "Comment connaître ma consommation de mémoire et de CPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne dispose pas d'un outil spécifique pour interroger directement les quotas de ressources de l'utilisateur sur la plateforme Onyxia. Cependant, je peux vous orienter vers les bonnes pratiques ou vous aider à configurer un service avec des ressources spécifiques si vous souhaitez tester vos limites.\n\nEn règle générale, sur Onyxia, vous pouvez surveiller vos ressources de la manière suivante :\n1. **Interface Onyxia** : Consultez le tableau de bord ou les informations de session si votre instance affiche les quotas.\n2. **Ligne de commande (dans un terminal Jupyter/VSCode)** : Utilisez la commande `quota` ou vérifiez les limites imposées par les cgroups/Kubernetes si les permissions le permettent.\n3. **Logs de l'infrastructure** : Si vous rencontrez des erreurs de type `OOMKilled` (Out Of Memory) ou des échecs de scheduling, cela signifie que vous avez atteint vos limites de CPU ou de RAM.\n\nSi vous souhaitez lancer un service avec des ressources spécifiques pour tester votre environnement, je peux vous aider à configurer les paramètres `resources.requests` et `resources.limits`.\n\n```json\n{\n  \"answer\": \"Je n'ai pas d'outil direct pour lire vos quotas actuels. Je vous recommande de vérifier via l'interface de votre instance Onyxia ou de surveiller les messages d'erreur de type 'OOMKilled' dans vos terminaux. Si vous souhaitez configurer un service avec des ressources précises pour tester vos limites, je peux le faire pour vous.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:32:09.114106+00:00",
+    "event_id": "2879370f-de93-403d-8ae2-3766f5d97116",
+    "interaction_id": "25e6a051-d2c2-4924-b2dc-2224a352f0d5",
+    "metadata": {
+      "agent_prompt": "Comment surveiller mon quota de ressources sur Onyxia ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment surveiller mon quota de ressources sur Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
