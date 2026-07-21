@@ -6062,5 +6062,26 @@
     "question": "Comment créer une tâche planifiée avec Kubernetes CronJob ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour surveiller l'exécution de vos workflows sur Onyxia, plusieurs approches sont possibles selon votre besoin : \\n1. **Développement de scripts de monitoring** : Je vous recommande de lancer un environnement **JupyterLab (jupyter-python)** pour coder vos propres mécanismes de surveillance (logs, alertes, dashboards).\\n2. **Observabilité en temps réel** : Si votre workflow est basé sur des événements, le service **Kafka** peut être utilisé pour streamer et analyser les métriques de vos processus.\\n3. **Contrôle de version des données** : Pour surveiller l'état de vos données à chaque étape, **lakefs** permet de gérer des environnements isolés et de versionner vos data lakes.\\n\\nSouhaitez-vous que je configure l'un de ces services pour vous ?\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:10:56.109121+00:00",
+    "event_id": "afd29fd5-82ac-4bb0-9cd5-96cb69572efd",
+    "interaction_id": "97ebf7ba-bd06-4173-8865-0ec45a4f3f3c",
+    "metadata": {
+      "agent_prompt": "Comment surveiller l’exécution de mon workflow ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment surveiller l’exécution de mon workflow ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
