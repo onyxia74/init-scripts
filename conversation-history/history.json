@@ -5676,5 +5676,34 @@
     "question": "Ajoute des libellés en français sur les axes.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous conseiller le graphique le plus adapté, j'ai besoin de comprendre la nature de vos données. Pourriez-vous me préciser :",
+    "created_at": "2026-07-21T13:05:57.709094+00:00",
+    "event_id": "e043679a-05fe-4d01-ad41-c8f60e39590e",
+    "interaction_id": "1595570b-01df-469e-8383-610749908a69",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "data_nature",
+        "options": [
+          "Séries temporelles (évolution dans le temps)",
+          "Comparaison de catégories",
+          "Distribution de valeurs (fréquences)",
+          "Relation entre deux variables (corrélation)",
+          "Composition d'un tout (parts de marché, etc.)"
+        ],
+        "original_request": "",
+        "question": "Pour vous conseiller le graphique le plus adapté, j'ai besoin de comprendre la nature de vos données. Pourriez-vous me préciser :",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
