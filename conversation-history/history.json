@@ -6379,5 +6379,26 @@
     "question": "Comment déployer plusieurs services dans le même chart ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour créer un volume persistant dans Onyxia, vous devez activer l'option de persistance et spécifier sa taille. Par exemple, pour un service Jupyter, cela implique de passer `persistence.enabled` à `true` et de définir `persistence.size` (ex: `20Gi`).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:14:26.341457+00:00",
+    "event_id": "a569f17a-d3f7-4d63-9b89-5e2787b6df48",
+    "interaction_id": "7d0542a9-f429-49c3-8a26-87ada3ae649c",
+    "metadata": {
+      "agent_prompt": "Comment créer un volume persistant ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un volume persistant ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
