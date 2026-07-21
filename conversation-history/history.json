@@ -7789,5 +7789,32 @@
     "question": "Comment planifier l’utilisation d’un GPU pendant les heures creuses ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Environnement VSCode avec support GPU configuré. Votre script `cron.sh` a été préparé et sera disponible au démarrage du service via un script d'initialisation. Notez que la planification temporelle (minuit-6h) doit être gérée manuellement via `crontab` dans l'IDE, car Onyxia fournit des environnements interactifs et non des orchestrateurs de tâches planifiées.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python-gpu%2Fpr-paration-du-script-cron.sh-pour-ex-cution-sur-gpu.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/pr-paration-du-script-cron.sh-pour-ex-cution-sur-gpu.sh\",\n        \"reason\": \"chargement du script cron.sh demandé\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:31:11.345373+00:00",
+    "event_id": "37464b54-07a3-4c1f-94c6-05a630eb617b",
+    "interaction_id": "1387d620-cfe1-46c5-a279-72b839a66bdc",
+    "metadata": {
+      "agent_prompt": "Lance mon script cron.sh sur un GPU entre minuit et 6 heures.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "chargement du script cron.sh demandé",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/pr-paration-du-script-cron.sh-pour-ex-cution-sur-gpu.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Lance mon script cron.sh sur un GPU entre minuit et 6 heures.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
