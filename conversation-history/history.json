@@ -7951,5 +7951,21 @@
     "question": "Combien de CPU dois-je sélectionner pour cette tâche ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-21T13:32:58.544573+00:00",
+    "event_id": "eb1320b8-ad58-4d82-8e52-d881a3d02dcd",
+    "interaction_id": "c9965fb9-bcb4-469f-bfaf-11b03dbd78e4",
+    "metadata": {
+      "agent_prompt": "De combien de mémoire ai-je besoin pour mon projet de statistique sur la population française ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "De combien de mémoire ai-je besoin pour mon projet de statistique sur la population française ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
