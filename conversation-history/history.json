@@ -7182,5 +7182,21 @@
     "question": "Comment copier des données entre deux buckets ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:inspect_service_parameters{request: '{\"chart_id\":\"jupyter-python\",\"query\":\"s3\"}'}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:23:33.208593+00:00",
+    "event_id": "b0184950-af23-4ed6-969c-7f71fbcafda9",
+    "interaction_id": "e0ae84b3-fc8d-4d8b-9ab8-72a3aded8b78",
+    "metadata": {
+      "agent_prompt": "Comment télécharger tout le contenu d’un bucket ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment télécharger tout le contenu d’un bucket ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
