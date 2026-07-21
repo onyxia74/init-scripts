@@ -7988,5 +7988,21 @@
     "question": "Comment créer un service personnalisable à partir d’un Helm chart ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je comprends votre besoin. Pour vous aider à ajouter un script d'initialisation commun, je dois d'abord identifier quel service vous souhaitez utiliser comme base, car la structure du script (packages Python, commandes shell, ou fichiers spécifiques) dépendra du type d'environnement (Jupyter, VS Code, RStudio, etc.).\n\nPourriez-vous me préciser quel service Onyxia vous souhaitez utiliser pour ce script commun, ou quel est l'objectif de ce script (ex: installation de bibliothèques spécifiques, configuration d'un environnement de dev, etc.) ?\n\n```json\n{\n  \"answer\": \"Pour créer un script d'initialisation commun, j'ai besoin de savoir sur quel service Onyxia vous souhaitez l'appliquer et quel est son objectif (installation de packages, création de fichiers, commandes système, etc.).\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:33:21.980530+00:00",
+    "event_id": "27783f18-df19-4c57-b513-c4b1e8a6591b",
+    "interaction_id": "d8b797ad-d71f-4c21-b8ae-5731742c6450",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
