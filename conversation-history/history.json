@@ -8027,5 +8027,21 @@
     "question": "Je veux réutiliser le même fichier .env dans un nouveau service.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour utiliser votre propre image Docker dans Onyxia, vous devez configurer le paramètre Helm correspondant au chemin de l'image du service. En règle générale, cela se fait via le paramètre `service.image.repository`.\n\nCependant, pour vous fournir la configuration exacte, je dois identifier le service que vous souhaitez personnaliser (par exemple, un JupyterLab, un VS Code ou un RStudio) afin de récupérer le chemin de paramètre précis de son chart Helm.\n\nPourriez-vous me préciser quel service vous souhaitez utiliser avec votre image personnalisée ?\n\n```json\n{\n  \"answer\": \"Pour utiliser votre propre image Docker, vous devez modifier le paramètre de l'image du service dans la configuration Helm. Afin de vous générer le dictionnaire de configuration correct, j'ai besoin de savoir quel service Onyxia vous souhaitez personnaliser (ex: Jupyter, VS Code, RStudio).\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:33:40.685642+00:00",
+    "event_id": "ee76e776-cbb1-4bda-910e-99bcc77e53a6",
+    "interaction_id": "07a07095-9a09-41be-93a9-5d23bb9f64ea",
+    "metadata": {
+      "agent_prompt": "Comment utiliser ma propre image Docker dans Onyxia ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser ma propre image Docker dans Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
