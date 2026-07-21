@@ -6789,5 +6789,26 @@
     "question": "Comment récupérer les dernières modifications du dépôt ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Je suis spécialisé dans la configuration de services sur la plateforme Onyxia. Pour résoudre un conflit Git, vous devez généralement identifier les fichiers en conflit, les éditer manuellement pour choisir les modifications à conserver, puis effectuer un 'git add' et un 'git commit'. Si vous souhaitez un environnement pour pratiquer, je peux vous déployer un service VS Code.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/n/a/n/a?name=n%2Fa&version=n%2Fa\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"n/a\",\n      \"catalog_id\": \"n/a\",\n      \"version\": \"n/a\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:19:16.770190+00:00",
+    "event_id": "f89d8075-6ebf-48d2-9aa9-e4763322d93e",
+    "interaction_id": "20d4665b-fad5-4a22-93e0-1f1c9016f4ab",
+    "metadata": {
+      "agent_prompt": "Comment résoudre un conflit Git ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "n/a",
+        "chart_id": "n/a",
+        "version": "n/a"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment résoudre un conflit Git ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
