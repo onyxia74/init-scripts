@@ -7008,5 +7008,26 @@
     "question": "Mon package R ne s’installe pas, aide-moi.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déboguer Elasticsearch, commencez par inspecter les logs du pod pour identifier des erreurs de mémoire ou de configuration. Vérifiez ensuite la consommation des ressources (CPU/RAM) et assurez-vous que les politiques réseau (NetworkPolicy) et la configuration TLS ne bloquent pas l'accès. Si vous suspectez un manque de ressources, je peux configurer une nouvelle instance avec des limites plus élevées.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/elastic?name=elastic&version=2.1.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"elastic\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"2.1.0\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:21:38.083095+00:00",
+    "event_id": "9fa6a490-089d-44c2-8e99-598658ac7dc5",
+    "interaction_id": "de004886-3de3-4d6e-967c-5d2c130dfcc5",
+    "metadata": {
+      "agent_prompt": "Comment déboguer mon service Elasticsearch ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "elastic",
+        "version": "2.1.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déboguer mon service Elasticsearch ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
