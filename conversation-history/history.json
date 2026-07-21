@@ -7967,5 +7967,26 @@
     "question": "De combien de mémoire ai-je besoin pour mon projet de statistique sur la population française ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La création d'un service personnalisé repose sur l'extraction des paramètres via get_service_details, l'éventuelle création d'un script d'initialisation via create_init_script, et la génération de la configuration finale via build_service_configuration en appliquant des overrides sur les chemins Helm exacts.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/exemple-catalog/exemple-chart?name=exemple-chart&version=1.0.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"exemple-chart\",\n      \"catalog_id\": \"exemple-catalog\",\n      \"version\": \"1.0.0\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:33:12.496051+00:00",
+    "event_id": "a2cb70cc-3a12-4335-9cf0-129f27930f16",
+    "interaction_id": "40f6587b-17b2-4d4e-b86a-d132e6150bc1",
+    "metadata": {
+      "agent_prompt": "Comment créer un service personnalisable à partir d’un Helm chart ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "exemple-catalog",
+        "chart_id": "exemple-chart",
+        "version": "1.0.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un service personnalisable à partir d’un Helm chart ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
