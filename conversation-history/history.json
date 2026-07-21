@@ -5387,5 +5387,32 @@
     "question": "Où trouver la documentation de des outil Insee ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser les API de l'Insee (comme Sirene ou DVF) dans Onyxia, j'ai configuré un environnement JupyterLab Python prêt à l'emploi. J'ai ajouté un script d'initialisation automatique qui installe les bibliothèques essentielles (`requests`, `pandas`, `matplotlib`) nécessaires pour interroger les services web de l'Insee et manipuler les données JSON ou CSV qu'ils renvoient.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Finterroger-les-api-de-l-insee.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/interroger-les-api-de-l-insee.sh\",\n        \"reason\": \"installation des packages pour API Insee\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:02:05.726607+00:00",
+    "event_id": "7c219802-026c-4c8b-9e5b-9d5c8784a03a",
+    "interaction_id": "4b89735e-c86c-4a55-af99-ad640cc29eaa",
+    "metadata": {
+      "agent_prompt": "Comment utiliser les API de l’Insee dans Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "installation des packages pour API Insee",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/interroger-les-api-de-l-insee.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser les API de l’Insee dans Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
