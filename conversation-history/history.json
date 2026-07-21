@@ -5489,5 +5489,21 @@
     "question": "Comment créer une application Shiny à partir de ce graphique ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-21T13:03:15.891139+00:00",
+    "event_id": "d4f37ab6-46da-4562-b05a-99783cd7cf06",
+    "interaction_id": "9d21314e-2f28-4702-87d0-5b049fed8b23",
+    "metadata": {
+      "agent_prompt": "Comment connecter Metabase à mes données ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter Metabase à mes données ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
