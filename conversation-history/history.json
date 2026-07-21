@@ -5649,5 +5649,32 @@
     "question": "Ajoute un titre et une légende à ce graphique.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement JupyterLab (jupyter-python) incluant un script d'initialisation personnalisé. Ce script crée un fichier `exemple_graphique.py` contenant un exemple de code Python utilisant Matplotlib pour générer un graphique avec des libellés d'axes et un titre en français, vous permettant de tester immédiatement vos visualisations.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fexemple-de-visualisation-avec-axes-en-fran-ais.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/exemple-de-visualisation-avec-axes-en-fran-ais.sh\",\n        \"reason\": \"préparation d'un exemple de code pour visualisation avec axes en français\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-21T13:05:44.959350+00:00",
+    "event_id": "460820d6-e37a-43e8-b623-efe10c54a2be",
+    "interaction_id": "7bb0cfd4-e9b8-41c2-9e20-8efa31078ff5",
+    "metadata": {
+      "agent_prompt": "Ajoute des libellés en français sur les axes.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "préparation d'un exemple de code pour visualisation avec axes en français",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/exemple-de-visualisation-avec-axes-en-fran-ais.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Ajoute des libellés en français sur les axes.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
