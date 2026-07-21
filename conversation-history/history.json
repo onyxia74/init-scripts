@@ -6969,5 +6969,21 @@
     "question": "Quel sont les commandes pour interroger les logs et trouver l’origine du problème.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'erreur \"Maven ne trouve pas une dépendance\" (souvent `DependencyResolutionException` ou `Could not find artifact`) signifie que le dépôt configuré dans votre `pom.xml` ne contient pas l'artefact demandé ou que Maven n'arrive pas à s'y connecter.\n\nVoici les étapes de résolution par ordre de probabilité :\n\n1.  **Vérifier l'identifiant et la version** : Assurez-vous que le `groupId`, `artifactId` et la `version` sont strictement identiques à ceux du dépôt (ex: Maven Central). Une faute de frappe est la cause la plus fréquente.\n2.  **Vérifier la présence du dépôt** : Si la dépendance n'est pas sur Maven Central (ex: une bibliothèque spécifique à une entreprise ou un projet spécifique), vous devez déclarer explicitement le `%C2%ABrepository%C2%BB` dans votre `pom.xml` ou dans votre fichier `settings.xml`.\n3.  **Forcer la mise à jour** : Maven peut avoir créé des fichiers `.lastUpdated` qui bloquent les tentatives suivantes en cas d'échec réseau. Forcez la mise à jour avec la commande :\n    `mvn clean install -U` (le flag `-U` force le check des snapshots et des releases).\n4.  **Problème de Proxy/Réseau** : Si vous êtes en entreprise, Maven a probablement besoin d'un proxy pour sortir sur Internet. Vérifiez la configuration de votre fichier `~/.m2/settings.xml` avec la section `%C2%ABproxies%C2%BB`.\n5.  **Nettoyer le cache local** : Si le fichier téléchargé est corrompu, supprimez le dossier correspondant dans votre répertoire local `.m2/repository/` et relancez le build.\n\n**Résumé technique :**\n*   **Erreur de syntaxe** $\\rightarrow$ Vérifier `pom.xml`.\n*   **Erreur de dépôt** $\\rightarrow$ Ajouter `%C2%ABrepository%C2%BB`.\n*   **Erreur de cache** $\\rightarrow$ `mvn clean install -U`.\n*   **Erreur réseau** $\\rightarrow$ Configurer `%C2%ABproxies%C2%BB` dans `settings.xml`.",
+    "created_at": "2026-07-21T13:21:12.985194+00:00",
+    "event_id": "5318971e-5596-4eab-bad6-00454e92d692",
+    "interaction_id": "09c42b73-bd65-4617-af0f-a861a6067eb6",
+    "metadata": {
+      "agent_prompt": "Maven ne trouve pas une dépendance, que faire ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Maven ne trouve pas une dépendance, que faire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
