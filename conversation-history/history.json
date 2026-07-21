@@ -6667,5 +6667,21 @@
     "question": "Comment utiliser un dépôt privé dans mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:create_init_script{chart_id: \"vscode-python\",files: {\".gitignore\": \"# Onyxia specific\\n.ipynb_checkpoints/\\n__pycache__/\\n*.py[cod]\\n*$py.class\\n.env\\n.venv\\nenv/\\nvenv/\\n.vscode/\\n.idea/\\n*.log\\n.DS_Store\\n\"},purpose: \"Générer un fichier .gitignore adapté à l'environnement Onyxia pour un projet Python.\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:17:36.478576+00:00",
+    "event_id": "6a9cefa9-dd10-4b2c-bb7a-62d38ef12696",
+    "interaction_id": "f56b87ab-079d-4856-8437-9fe9af42352c",
+    "metadata": {
+      "agent_prompt": "Génère-moi un fichier .gitignore adapté à Onyxia.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Génère-moi un fichier .gitignore adapté à Onyxia.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
