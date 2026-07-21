@@ -6331,5 +6331,21 @@
     "question": "Comment annuler un déploiement Helm défectueux ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question technique sur la gestion des mises à jour applicatives (comme le Blue-Green deployment ou le Rolling Update) car mon rôle est strictement limité à l'architecture et à la configuration de services sur la plateforme **Onyxia SSPCloud**.\n\nSi votre question concerne la mise à jour d'un service spécifique au sein d'Onyxia ou la gestion des versions de vos environnements de travail, n'hésitez pas à me le préciser.\n\n```json\n{\n  \"answer\": \"Ma spécialité est la configuration de services sur la plateforme Onyxia. Je ne peux pas fournir de conseils généraux sur les stratégies de mise à jour logicielle (Zero Downtime), mais je peux vous aider à configurer des services spécifiques via leurs charts Helm.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:13:51.348872+00:00",
+    "event_id": "e52c98ae-db44-4487-ac3f-4a8bddf1ec76",
+    "interaction_id": "e65f0108-22fe-4e80-9a3d-2c91b7aa8c7b",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour une application sans interruption ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour une application sans interruption ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
