@@ -5312,5 +5312,21 @@
     "question": "Je veux déployer une application Shiny.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"jupyter-python\"}",
+    "created_at": "2026-07-21T13:00:57.507820+00:00",
+    "event_id": "f2481042-27d6-4352-934c-6aeedbda898d",
+    "interaction_id": "fbbea46b-c778-49d4-975a-7c8d0163101f",
+    "metadata": {
+      "agent_prompt": "Comment combiner les données d’une API avec mes données S3 ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment combiner les données d’une API avec mes données S3 ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
