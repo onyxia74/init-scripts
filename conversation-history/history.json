@@ -5993,5 +5993,21 @@
     "question": "Génère un pipeline de préparation des données.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-21T13:10:16.157873+00:00",
+    "event_id": "2c6360c5-23fe-46d8-9696-e8dec0af50f4",
+    "interaction_id": "c22fa5af-def1-407b-86ef-f223e7491f1d",
+    "metadata": {
+      "agent_prompt": "Propose un notebook pour explorer des données.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Propose un notebook pour explorer des données.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
