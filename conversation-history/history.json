@@ -6524,5 +6524,21 @@
     "question": "Pourquoi mon pod ne peut-il pas être planifié ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas redémarrer directement un service Kubernetes via cette interface, car mon rôle est de concevoir et de configurer des services Onyxia. Pour redémarrer un service déjà déployé sur votre plateforme, vous devez généralement agir sur l'interface de gestion de votre cluster ou demander à votre administrateur de supprimer et recréer le Pod/Deployment associé.\n\nSi vous souhaitez lancer une nouvelle instance d'un service, je peux vous aider à en générer la configuration.\n\n```json\n{\n  \"answer\": \"Je n'ai pas la capacité technique de redémarrer des ressources Kubernetes existantes. Cette action doit être effectuée via l'interface d'administration de votre cluster ou par un administrateur système. Je peux cependant vous aider à configurer et déployer un nouveau service Onyxia si nécessaire.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:15:56.857582+00:00",
+    "event_id": "75c9f386-6c2b-42a0-998b-e3b2f3ab9b33",
+    "interaction_id": "8fef5bbb-86f2-4996-ac1f-6d46dc7176a2",
+    "metadata": {
+      "agent_prompt": "Comment redémarrer un service Kubernetes ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment redémarrer un service Kubernetes ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
