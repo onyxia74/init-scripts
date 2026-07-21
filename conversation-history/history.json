@@ -8315,5 +8315,21 @@
     "question": "Comment créer un kit sur Metabase ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\": \"metabase\"}",
+    "created_at": "2026-07-21T13:36:48.677430+00:00",
+    "event_id": "6874b528-1cd0-4c09-8bdc-1e734eec4d58",
+    "interaction_id": "d8b49a02-d118-4589-bc20-3683ab28ce5b",
+    "metadata": {
+      "agent_prompt": "Je veux créer un tableau de bord avec Metabase.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux créer un tableau de bord avec Metabase.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
