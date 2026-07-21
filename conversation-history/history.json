@@ -5135,5 +5135,21 @@
     "question": "Comment injecter mes secrets dans l’application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Ma spécialité est l'architecture et la configuration de services de données sur la plateforme Onyxia (déploiement d'environnements Jupyter, VS Code, bases de données, etc.). Je ne suis pas en mesure de fournir des conseils en cybersécurité concernant la sécurisation d'interfaces web externes. Si vous souhaitez déployer un service spécifique sur Onyxia, n'hésitez pas à me le demander.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T12:58:57.106105+00:00",
+    "event_id": "bd5890c9-b756-46bc-b05c-e4b4f860db18",
+    "interaction_id": "4b62fff4-72a1-4347-bff0-8ec688e72c18",
+    "metadata": {
+      "agent_prompt": "Comment sécuriser l’accès à mon interface web ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sécuriser l’accès à mon interface web ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
