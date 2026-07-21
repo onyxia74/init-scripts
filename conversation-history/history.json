@@ -5924,5 +5924,21 @@
     "question": "Comment suivre les performances de mes expériences ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:inspect_service_parameters{request: '{\"chart_id\":\"jupyter-python\",\"query\":\"s3\"}'}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:09:28.782437+00:00",
+    "event_id": "1aa06fde-a6f6-483c-b0c4-d73ee9a9873d",
+    "interaction_id": "42932ee6-035a-4800-99fe-491792b19262",
+    "metadata": {
+      "agent_prompt": "Comment enregistrer mon modèle sur S3 ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment enregistrer mon modèle sur S3 ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
