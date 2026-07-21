@@ -5151,5 +5151,28 @@
     "question": "Comment sécuriser l’accès à mon interface web ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous préciser votre demande ? Souhaitez-vous configurer un service spécifique sur Onyxia (comme une base de données) ou s'agit-il d'une question sur l'infrastructure réseau globale de la plateforme ?",
+    "created_at": "2026-07-21T12:59:08.527587+00:00",
+    "event_id": "e7c61ead-174b-4e73-9b85-a40cbdace7cb",
+    "interaction_id": "a6defbb9-fc2b-4388-8dc0-bdb1ed047347",
+    "metadata": {
+      "agent_prompt": "Comment ajouter un nom de domaine à mon application ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "context_of_domain_request",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous préciser votre demande ? Souhaitez-vous configurer un service spécifique sur Onyxia (comme une base de données) ou s'agit-il d'une question sur l'infrastructure réseau globale de la plateforme ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter un nom de domaine à mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
