@@ -6315,5 +6315,21 @@
     "question": "Comment vérifier l’état de santé de mon application ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas intervenir directement sur l'infrastructure Kubernetes ou Helm pour annuler un déploiement en cours ou défectueux. En tant qu'architecte Data Onyxia, mon rôle est de configurer et de préparer les services via les charts Helm disponibles.\n\nPour annuler un déploiement Helm défectueux, vous devez utiliser l'interface de ligne de commande (CLI) Helm sur votre terminal avec les commandes suivantes :\n\n1. **Identifier le déploiement :**\n   `helm list -A` (pour lister tous les releases dans tous les namespaces).\n\n2. **Annuler (Rollback) vers la version précédente :**\n   `helm rollback %C2%ABnom_du_release%C2%BB %C2%ABrevision_precedente%C2%BB -n %C2%ABnamespace%C2%BB`\n\n3. **Supprimer le déploiement si nécessaire :**\n   `helm uninstall %C2%ABnom_du_release%C2%BB -n %C2%ABnamespace%C2%BB`\n\nSi le déploiement est bloqué au niveau de l'infrastructure Onyxia, veuillez contacter l'administrateur de la plateforme.\n\n```json\n{\n  \"answer\": \"Je n'ai pas la capacité technique d'intervenir sur le cycle de vie des déploiements Helm (rollback ou uninstall) directement sur le cluster. Vous devez utiliser la CLI Helm (`helm rollback` ou `helm uninstall`) ou contacter l'administrateur de la plateforme Onyxia.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {},\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:13:42.201689+00:00",
+    "event_id": "25b9abbe-8b95-4cd0-8ae0-4ed1315f6b13",
+    "interaction_id": "0e1f5b7b-a658-4d95-b2c0-ddd3440eee6d",
+    "metadata": {
+      "agent_prompt": "Comment annuler un déploiement Helm défectueux ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment annuler un déploiement Helm défectueux ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
