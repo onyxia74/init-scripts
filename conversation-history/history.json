@@ -6501,5 +6501,28 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous préciser si ce problème survient lors du lancement d'un service Onyxia spécifique ? Si oui, avez-vous un message d'erreur (ex: Insufficient cpu, Out of memory, ou Quota exceeded) ?",
+    "created_at": "2026-07-21T13:15:48.171920+00:00",
+    "event_id": "f3755009-8925-4631-a467-225ce9181b16",
+    "interaction_id": "90d9de1f-9f8b-4ffb-a34f-7837920e43f2",
+    "metadata": {
+      "agent_prompt": "Pourquoi mon pod ne peut-il pas être planifié ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "context_error_details",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous préciser si ce problème survient lors du lancement d'un service Onyxia spécifique ? Si oui, avez-vous un message d'erreur (ex: Insufficient cpu, Out of memory, ou Quota exceeded) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Pourquoi mon pod ne peut-il pas être planifié ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
