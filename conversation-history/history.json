@@ -6916,5 +6916,26 @@
     "question": "Comment cloner un dépôt Git dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service VS Code Python est déjà configuré pour le débogage. Il vous suffit d'utiliser l'onglet 'Run and Debug' de l'interface VS Code, de définir vos points d'arrêt et de lancer le débogage avec F5.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:20:38.779495+00:00",
+    "event_id": "2a3ddc72-2d1e-49b4-992b-f2b4f8240199",
+    "interaction_id": "f051bc8c-a0e2-485e-a395-88e7a6c557d2",
+    "metadata": {
+      "agent_prompt": "Comment déboguer ce code directement dans VS Code ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déboguer ce code directement dans VS Code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
