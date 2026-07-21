@@ -6131,5 +6131,21 @@
     "question": "Comment transmettre les résultats d’une étape à la suivante ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:create_init_script{chart_id: \"vscode-python\",files: {\"workflow.py\": \"import os\\nimport time\\n\\ndef step_1():\\n    print('Étape 1: Nettoyage des données...')\\n    time.sleep(1)\\n    return True\\n\\ndef step_2():\\n    print('Étape 2: Analyse des données...')\\n    time.sleep(1)\\n    return True\\n\\nif __name__ == '__main__':\\n    if step_1():\\n        step_2()\\n    print('Workflow terminé.')\", \"main.py\": \"from workflow import step_1, step_2\\n\\nif __name__ == '__main__':\\n    print('Lancement du workflow principal...')\\n    step_1()\\n    step_2()\\n\"},purpose: \"illustrer l'enchainement de scripts via un projet structuré\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-21T13:11:36.122971+00:00",
+    "event_id": "0bb1587f-4ac1-401c-81fb-6988e834b0cc",
+    "interaction_id": "76a8a0af-a9b4-45b3-8cce-18f22fec969d",
+    "metadata": {
+      "agent_prompt": "Comment enchaîner plusieurs scripts dans un workflow ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment enchaîner plusieurs scripts dans un workflow ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
