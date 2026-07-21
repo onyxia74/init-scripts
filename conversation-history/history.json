@@ -7052,5 +7052,21 @@
     "question": "Mon service est en CrashLoopBackOff, comment le réparer ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "L'état `Pending` d'un Pod dans un environnement Kubernetes (comme celui utilisé par Onyxia) signifie généralement que le scheduler n'a pas pu assigner le Pod à un nœud. En tant qu'architecte Data, je peux vous aider à diagnostiquer et à résoudre ce problème en vérifiant les ressources demandées.\n\nVoici les causes les plus fréquentes et les actions à entreprendre :\n\n1.  **Manque de ressources (CPU/RAM) :** C'est la cause la plus courante. Le cluster n'a plus de capacité disponible pour satisfaire les `requests` (demandes minimales) de votre service.\n    *   *Action :* Vérifiez si vous avez demandé des ressources trop importantes (ex: 100Gi de RAM sur un petit cluster). Essayez de lancer un service avec des paramètres de ressources plus faibles.\n2.  **Problème de Persistent Volume (PV) :** Si votre service demande un volume spécifique (ex: `persistence.size`), le cluster peut être incapable de provisionner le disque ou de l'attacher au nœud.\n    *   *Action :* Vérifiez les messages d'erreur liés au `PersistentVolumeClaim` (PVC).\n3.  **Contraintes de scheduling (Taints/Tolerations) :** Le Pod peut être configuré pour ne tourner que sur des nœuds spécifiques qui sont actuellement occupés ou indisponibles.\n4.  **Images non trouvées :** Si l'image du service ne peut pas être téléchargée (problème de réseau ou d'authentification au registry).\n\n**Pour vous aider concrètement, je peux configurer un service avec des ressources plus légères pour tester la disponibilité du cluster.**\n\nSi vous souhaitez que je génère une configuration spécifique pour tester votre environnement, merci de me préciser le type de service souhaité (ex: Jupyter, VS Code) et les ressources que vous voulez allouer.",
+    "created_at": "2026-07-21T13:21:59.021372+00:00",
+    "event_id": "1d3bf0fc-03f2-45e2-b52e-f0af62bdd02a",
+    "interaction_id": "baad6a71-d70b-45ed-98a6-ab1c436dc88e",
+    "metadata": {
+      "agent_prompt": "Mon pod reste en statut Pending, que faire ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Mon pod reste en statut Pending, que faire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
