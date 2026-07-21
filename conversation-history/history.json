@@ -7875,5 +7875,21 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connaître votre consommation de CPU et de mémoire au sein d'un service Onyxia, vous disposez de deux méthodes principales :\\n\\n1. **Via le terminal du service** : Une fois votre IDE (Jupyter, VSCode, RStudio) lancé, ouvrez un terminal et utilisez les commandes standards Linux :\\n   - `top` ou `htop` : pour une vue interactive et en temps réel de l'utilisation des ressources.\\n   - `free -h` : pour vérifier l'état de la mémoire vive.\\n   - `df -h` : pour vérifier l'utilisation de l'espace disque.\\n\\n2. **Via le monitoring de la plateforme** : Les administrateurs de la plateforme utilisent généralement des outils comme Grafana pour suivre l'utilisation globale des ressources du cluster. Si vous avez besoin de limites de ressources plus élevées pour vos calculs, vous pouvez me demander de configurer un service avec des `resources.requests` ou `resources.limits` spécifiques.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:31:57.643345+00:00",
+    "event_id": "0fc9cde5-0c14-47ab-a93d-36b767a0a50a",
+    "interaction_id": "4d3f3cb0-0020-4d20-8d42-aa7c5997203f",
+    "metadata": {
+      "agent_prompt": "Comment connaître ma consommation de mémoire et de CPU ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connaître ma consommation de mémoire et de CPU ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
