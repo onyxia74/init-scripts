@@ -7363,5 +7363,26 @@
     "question": "Comment accéder à mes données stockées sur S3 ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"L'utilisation d'outils comme Claude Code est possible dans Onyxia, principalement en utilisant le service VS Code pour installer des extensions d'assistance au code, ou en installant des outils CLI dans le terminal de votre session. Pour une expérience optimale, je vous recommande de partir sur une instance VS Code.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"vscode-python\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-21T13:25:42.947244+00:00",
+    "event_id": "12d5e883-9f19-4477-b6cb-1e63ed6c59c1",
+    "interaction_id": "e46bbe4e-6676-4d57-a5c9-075da6a34ab2",
+    "metadata": {
+      "agent_prompt": "Puis-je connecter Claude Code ou un outil similaire à ma session ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "vscode-python",
+        "chart_id": "vscode-python",
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Puis-je connecter Claude Code ou un outil similaire à ma session ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
