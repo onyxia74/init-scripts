@@ -6651,5 +6651,21 @@
     "question": "Comment configurer une clé SSH pour GitHub ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\nget_service_details\n{\"chart_id\": \"vscode-python\"}",
+    "created_at": "2026-07-21T13:17:25.363975+00:00",
+    "event_id": "03320cd2-0918-49d5-a9aa-1539a1bc12ea",
+    "interaction_id": "11ebec90-f50e-4c64-ad92-198b1dca18cf",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un dépôt privé dans mon service ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un dépôt privé dans mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
