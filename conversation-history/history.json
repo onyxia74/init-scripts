@@ -6264,5 +6264,33 @@
     "question": "Génère un workflow Argo pour lancer ce script Python.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous conseiller la meilleure méthode de déploiement sur Onyxia, pourriez-vous préciser la nature de votre projet ?",
+    "created_at": "2026-07-21T13:13:20.539431+00:00",
+    "event_id": "708ffab3-b093-472a-9152-7bc1da010260",
+    "interaction_id": "fdb4088a-6a9c-4af0-9e9e-46bba2391e58",
+    "metadata": {
+      "agent_prompt": "Quelle méthode de déploiement utiliser pour mon projet ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "project_type",
+        "options": [
+          "Data Science (Python/R/Jupyter)",
+          "Développement logiciel (VS Code)",
+          "Analyse de données avec base de données (PostgreSQL/Kafka)",
+          "Calcul intensif (Spark/GPU)"
+        ],
+        "original_request": "",
+        "question": "Pour vous conseiller la meilleure méthode de déploiement sur Onyxia, pourriez-vous préciser la nature de votre projet ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quelle méthode de déploiement utiliser pour mon projet ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
