@@ -8489,5 +8489,21 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs de votre application (service) sur Onyxia, vous disposez de deux méthodes principales selon votre accès :\\n\\n1. **Via l'interface Onyxia (si disponible) :** Certains services permettent de visualiser les logs directement dans l'interface utilisateur ou via un bouton 'Logs' dans le dashboard de gestion du service.\\n\\n2. **Via la ligne de commande (Kubernetes/kubectl) :** Si vous avez un accès terminal à votre environnement, utilisez la commande suivante :\\n   `kubectl logs %C2%ABnom-du-pod%C2%BB -n %C2%ABnamespace%C2%BB`\\n   Pour suivre les logs en temps réel, ajoutez l'option `-f` :\\n   `kubectl logs -f %C2%ABnom-du-pod%C2%BB -n %C2%ABnamespace%C2%BB`\\n\\nNote : Le nom du pod peut être trouvé avec `kubectl get pods -n %C2%ABnamespace%C2%BB`. Le namespace est généralement lié à votre projet ou votre utilisateur.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {},\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-22T13:06:52.311472+00:00",
+    "event_id": "328a5865-c036-4e24-9a80-793e2d981274",
+    "interaction_id": "29138166-073e-4932-834a-c67ccc7b69cf",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
