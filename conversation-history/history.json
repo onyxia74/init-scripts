@@ -8673,5 +8673,21 @@
     "question": "Je veux travailler sur les données du recensement de la population française qui sont volumineuses",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-23T12:30:13.609008+00:00",
+    "event_id": "9eeccaff-8fa5-4233-9dcf-2d5aced77722",
+    "interaction_id": "7d2105a6-d9ba-4336-9783-11fa4b448cff",
+    "metadata": {
+      "agent_prompt": "Je veux travailler sur les données du recensement de la population française qui sont volumineuses avec Duckdb",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler sur les données du recensement de la population française qui sont volumineuses avec Duckdb",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
