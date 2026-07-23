@@ -8855,5 +8855,36 @@
     "question": "Peux-tu lancer un service VScode avec 16 Go de mémoire et 4 CPU ?\n",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré votre service **VS Code Python** avec les ressources demandées : **4 CPU** (4000m) et **16 Go de RAM** (16Gi) en tant que ressources garanties (requests). Tous les autres paramètres sont conservés avec leurs valeurs par défaut.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&s3=region-79669f20&resources.requests.cpu=%C2%AB4000m%C2%BB&resources.requests.memory=%C2%AB16Gi%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"resources.requests.cpu\": {\n        \"value\": \"4000m\",\n        \"reason\": \"demande utilisateur\"\n      },\n      \"resources.requests.memory\": {\n        \"value\": \"16Gi\",\n        \"reason\": \"demande utilisateur\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-23T12:52:54.493478+00:00",
+    "event_id": "9cab3657-ccf5-408f-8806-4d6fc4b8eaf2",
+    "interaction_id": "3967c2a9-8327-4c97-9952-9e81624a16f3",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "demande utilisateur",
+            "value": "4000m"
+          },
+          "resources.requests.memory": {
+            "reason": "demande utilisateur",
+            "value": "16Gi"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 16 Go de mémoire et 4 CPU ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
