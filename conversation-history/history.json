@@ -8812,5 +8812,32 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ? \n",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour mettre en place votre système RAG (Retrieval-Augmented Generation), j'ai configuré un environnement **JupyterLab Python** prêt à l'emploi. \\n\\nL'environnement inclut automatiquement :\\n1. **Les bibliothèques spécialisées** : `langchain`, `chromadb` (base vectorielle), `sentence-transformers` (embeddings), ainsi que `openai`, `pandas` et `numpy`.\\n2. **Les scripts de travail** :\\n   - `ingestion.py` : Un script pour créer la collection et ingérer vos données dans ChromaDB.\\n   - `client.py` : Un script client pour interroger votre base vectorielle via des requêtes textuelles.\\n\\nVous pouvez dès maintenant lancer le service pour commencer l'ingestion de vos documents et tester vos requêtes.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fconfiguration-environnement-rag-avec-base-vectorielle-et-structure-de-projet.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/configuration-environnement-rag-avec-base-vectorielle-et-structure-de-projet.sh\",\n        \"reason\": \"Installation des bibliothèques RAG et création des scripts d'ingestion et de client\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-23T12:51:44.991055+00:00",
+    "event_id": "0c838a51-65ca-42ca-8827-20fbe5b291dd",
+    "interaction_id": "badac95e-6ec1-4c1d-b0fe-b6e0bee76918",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ? \n",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Installation des bibliothèques RAG et création des scripts d'ingestion et de client",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/configuration-environnement-rag-avec-base-vectorielle-et-structure-de-projet.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ? \n",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
