@@ -8988,5 +8988,21 @@
     "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-23T13:03:56.739858+00:00",
+    "event_id": "8a21967c-f859-4342-b9d2-cc95958c2a58",
+    "interaction_id": "960e5307-6c7d-42d0-881f-7077d30c64fe",
+    "metadata": {
+      "agent_prompt": " Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom \n",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": " Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom \n",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
