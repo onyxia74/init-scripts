@@ -8796,5 +8796,21 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer et l’alimenter avec un service interactif ? \n",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:create_init_script(request: {\"chart_id\":\"jupyter-python\",\"packages\":[\"langchain\",\"chromadb\",\"sentence-transformers\",\"openai\",\"pandas\",\"numpy\"],\"purpose\":\"Mise en place d'un environnement RAG avec base vectorielle et structure de projet (ingestion et client).\",\"files\":{\"ingestion.py\":\"import chromadb\\nimport pandas as pd\\n\\ndef ingest_data(data_path, collection_name):\\n    \\\"\\\"\\\"Simule l'ingestion de données dans ChromaDB\\\"\\\"\\\"\\n    client = chromadb.PersistentClient(path='./data/chroma_db')\\n    collection = client.get_or_create_collection(name=collection_name)\\n    print(f'Ingestion terminée dans la collection: {collection_name}')\\n\\nif __name__ == '__main__':\\n    ingest_data('data/sample.csv', 'my_rag_collection')\",\"client.py\":\"import chromadb\\n\\ndef query_rag(query_text):\\n    \\\"\\\"\\\"Simule un client de requête RAG\\\"\\\"\\\"\\n    client = chromadb.PersistentClient(path='./data/chroma_db')\\n    collection = client.get_collection(name='my_rag_collection')\\n    results = collection.query(query_texts=[query_text], n_results=2)\\n    return results\\n\\nif __name__ == '__main__':\\n    print(query_rag('Exemple de question'))\"}})%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-23T12:51:28.608050+00:00",
+    "event_id": "7dad27c0-319a-4e57-a4d9-7219437d2d0f",
+    "interaction_id": "7005cc35-2d60-4f88-bce2-e32e3f9ea2ea",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ? \n",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ? \n",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
