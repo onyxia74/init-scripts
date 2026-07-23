@@ -8587,5 +8587,21 @@
     "question": "Quelle API utiliser pour récupérer des données de rescencement de l'INSEE?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:get_service_details(chart_id=\"jupyter-python\")%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-23T12:26:25.352496+00:00",
+    "event_id": "7dcb777f-1918-4199-9e65-7486fc4ce8e3",
+    "interaction_id": "4271abac-fd72-462a-b640-fa1f401e959b",
+    "metadata": {
+      "agent_prompt": "Quelle API utiliser pour récupérer des données de rescencement de l'INSEE? ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quelle API utiliser pour récupérer des données de rescencement de l'INSEE? ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
