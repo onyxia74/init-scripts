@@ -8716,5 +8716,21 @@
     "question": "Je veux travailler sur les données du recensement de la population française qui sont volumineuses avec Duckdb",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-23T12:33:07.060310+00:00",
+    "event_id": "8923bcc0-de63-4bf9-b8f1-e45a4e9789e5",
+    "interaction_id": "507afb6e-af6e-464d-9c5c-c565bd31a6fa",
+    "metadata": {
+      "agent_prompt": "Je veux requeter une base de donnée postgreSQL ",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux requeter une base de donnée postgreSQL ",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
