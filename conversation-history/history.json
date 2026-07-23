@@ -8732,5 +8732,26 @@
     "question": "Je veux requeter une base de donnée postgreSQL ",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour requêter votre base de données PostgreSQL, je vous recommande d'utiliser **pgAdmin**. C'est une interface graphique (GUI) complète qui vous permettra de gérer vos serveurs, d'exécuter des requêtes SQL et de visualiser vos données de manière intuitive.\\n\\nLe service est configuré avec les paramètres par défaut. Si vous avez besoin d'une instance de base de données PostgreSQL elle-même, ou si vous souhaitez ajuster les ressources (CPU/RAM) de pgAdmin, n'hésitez pas à me le demander.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.10\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"pgadmin\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"1.0.10\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-23T12:33:30.929390+00:00",
+    "event_id": "7864af92-d430-4ae0-b56a-54c19896b0a3",
+    "interaction_id": "3c484078-e4d8-4f44-bad0-643374a2df04",
+    "metadata": {
+      "agent_prompt": "Je veux requeter une base de donnée postgreSQL, quelle service utiliser ",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "pgadmin",
+        "version": "1.0.10"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux requeter une base de donnée postgreSQL, quelle service utiliser ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
