@@ -8937,5 +8937,21 @@
     "question": "\nPeux-tu lancer un service avec 60 Go de mémoire et 4 CPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-23T12:56:07.694566+00:00",
+    "event_id": "30645f41-6759-41fe-bd25-10c966e42191",
+    "interaction_id": "03b1cabb-b0ee-41be-98e2-e6c56fb9d129",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
