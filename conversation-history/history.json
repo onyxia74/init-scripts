@@ -9788,5 +9788,21 @@
     "question": "Donne-moi le squelette d’un pipeline de machine learning.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:get_service_details(chart_id=\"vscode-python\")%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-27T08:43:03.808040+00:00",
+    "event_id": "36c9fca5-d8ad-42b4-b108-401a39aeef84",
+    "interaction_id": "d1ce79e9-f9c3-4115-ad0b-c450e481090b",
+    "metadata": {
+      "agent_prompt": "Crée-moi un service VS Code adapté à l’exploration de ce dataset de la population française .",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée-moi un service VS Code adapté à l’exploration de ce dataset de la population française .",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
