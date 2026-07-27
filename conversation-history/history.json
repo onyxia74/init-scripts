@@ -10968,5 +10968,21 @@
     "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour gérer des fichiers Parquet de plusieurs centaines de mégaoctets sur Git, la méthode recommandée est d'utiliser **Git LFS (Large File Storage)**. Git LFS remplace les gros fichiers par des pointeurs texte dans votre dépôt, tandis que le contenu réel est stocké sur un serveur distant, évitant ainsi d'alourdir l'historique de votre projet.\",\n  \"config_link\": \"\",\n  \"json_payload\": {},\n  \"teacher_block\": {\n    \"explanation\": \"Git n'est pas conçu pour stocker des fichiers binaires volumineux. Chaque modification d'un fichier Parquet créerait une copie complète dans l'historique `.git`, saturant votre espace disque et ralentissant les opérations. Git LFS résout ce problème en ne versionnant que des fichiers de référence (pointeurs) et en gérant le transfert des données lourdes de manière optimisée.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Installation\",\n        \"content\": \"Dans votre terminal, installez l'outil : `sudo apt-get update && sudo apt-get install git-lfs` puis initialisez-le avec `git lfs install`.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Configuration\",\n        \"content\": \"Indiquez à Git de suivre les fichiers Parquet : `git lfs track \\\"*.parquet\\\"`. Cela génère un fichier `.gitattributes`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Utilisation\",\n        \"content\": \"Ajoutez vos fichiers normalement : `git add .gitattributes` puis `git add mon_fichier.parquet`, puis effectuez votre commit et push.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"bash\",\n      \"filename\": \"setup_lfs.sh\",\n      \"content\": \"#!/bin/bash\\n# Installation rapide de Git LFS\\nsudo apt-get update && sudo apt-get install -y git-lfs\\ngit lfs install\\ngit lfs track \\\"*.parquet\\\"\\necho \\\"Git LFS est prêt pour vos fichiers Parquet.\\\"\"\n    },\n    \"best_practices\": [\n      \"N'oubliez jamais d'ajouter le fichier `.gitattributes` à votre dépôt, sinon les pointeurs ne seront pas reconnus.\",\n      \"Utilisez un fichier `.gitignore` pour exclure les dossiers de données temporaires ou très volumineux qui ne nécessitent pas de versionnage.\",\n      \"Vérifiez la taille de votre dépôt avec `du -sh .git` pour vous assurer que LFS fonctionne correctement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-07-27T14:20:42.082981+00:00",
+    "event_id": "8a3b3bea-e18b-4b0b-8b8c-78b53253dc16",
+    "interaction_id": "431d9bb4-0ade-4f4a-8a13-c1772f415aad",
+    "metadata": {
+      "agent_prompt": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ? Ne fais aucune suggestion, répond juste à la question.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ? Ne fais aucune suggestion, répond juste à la question.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
