@@ -9311,5 +9311,28 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous préciser votre besoin pour le script d'initialisation ? J'ai besoin de savoir : 1. Quel service (chart Onyxia) est concerné ? 2. Quel est le contenu ou l'objectif (installation de packages Python/R, exécution de commandes shell, création de fichiers spécifiques, ou un script complet) ?",
+    "created_at": "2026-07-27T08:31:01.088502+00:00",
+    "event_id": "aa6a2e38-7033-4aa3-8979-416e7d4d2e0c",
+    "interaction_id": "836542a0-dfc4-4dcf-898c-1f2a6247fb53",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id, purpose, content_type",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous préciser votre besoin pour le script d'initialisation ? J'ai besoin de savoir : 1. Quel service (chart Onyxia) est concerné ? 2. Quel est le contenu ou l'objectif (installation de packages Python/R, exécution de commandes shell, création de fichiers spécifiques, ou un script complet) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
