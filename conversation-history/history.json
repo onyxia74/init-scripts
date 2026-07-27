@@ -10952,5 +10952,21 @@
     "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Mettre des fichiers Parquet de plusieurs centaines de mégaoctets directement sur Git est déconseillé car cela va alourdir considérablement votre dépôt et ralentir toutes vos opérations (clone, push, pull). Pour gérer cela proprement, vous avez deux options principales : utiliser **Git LFS (Large File Storage)** si vous devez absolument les versionner, ou mieux encore, **ne versionner que le code** et stocker les données sur un volume persistant ou un stockage objet.\",\n  \"config_link\": \"\",\n  \"json_payload\": {},\n  \"teacher_block\": {\n    \"explanation\": \"Git est un système de gestion de versions conçu pour du texte (code). Les fichiers binaires comme les .parquet ne peuvent pas être 'diffés' (comparés ligne par ligne), donc Git les stocke intégralement à chaque modification, ce qui fait exploser la taille du dossier .git. Git LFS résout cela en ne stockant qu'un petit fichier texte (un pointeur) dans votre dépôt, tandis que le gros fichier est envoyé sur un serveur de stockage séparé.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Installer Git LFS\",\n        \"content\": \"Dans votre terminal Onyxia, installez l'extension : `sudo apt-get update && sudo apt-get install git-lfs`. Puis initialisez-le avec `git lfs install`.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Suivre les fichiers Parquet\",\n        \"content\": \"Dites à Git LFS de gérer vos fichiers : `git lfs track \\\"*.parquet\\\"`. Cela créera ou mettra à jour un fichier `.gitattributes`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Commit et Push\",\n        \"content\": \"Ajoutez le fichier `.gitattributes` et vos données : `git add .gitattributes data/mon_fichier.parquet`. Ensuite, faites votre `git commit` et `git push` normalement.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"bash\",\n      \"filename\": \"setup_lfs.sh\",\n      \"content\": \"#!/bin/bash\\n# Script pour préparer un projet avec Git LFS\\necho \\\"Installation de Git LFS...\\\"\\nsudo apt-get update && sudo apt-get install -y git-lfs\\ngit lfs install\\ngit lfs track \\\"*.parquet\\\"\\ngit lfs track \\\"*.csv\\\"\\necho \\\"Fichiers Parquet et CSV suivis par LFS.\\\"\\nls -a .gitattributes\"\n    },\n    \"best_practices\": [\n      \"La règle d'or : Le code sur Git, les données sur un stockage dédié (S3, Volumes, ou Git LFS).\",\n      \"Utilisez un fichier `.gitignore` pour éviter d'ajouter accidentellement des dossiers de données massifs sans LFS.\",\n      \"Si vos fichiers dépassent plusieurs Go, préférez l'utilisation de bibliothèques comme `fsspec` pour lire les données directement depuis un bucket S3 plutôt que de les cloner localement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-07-27T14:16:50.612629+00:00",
+    "event_id": "52ecc8dd-fba1-4e37-8948-ebb47bdcd3ef",
+    "interaction_id": "cd1bde96-5ca7-436a-89dd-f521d2c213c5",
+    "metadata": {
+      "agent_prompt": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
