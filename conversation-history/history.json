@@ -9455,5 +9455,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'injection de secrets dans une application Onyxia dépend du service utilisé et de la manière dont vous souhaitez les consommer (variables d'environnement ou fichiers). \n\nPour vous répondre précisément, j'ai besoin de savoir quel service vous utilisez actuellement ou quel service vous souhaitez configurer. En général, sur Onyxia, les secrets sont gérés via des mécanismes Kubernetes/Helm qui permettent d'injecter des valeurs dans les variables d'environnement du conteneur.\n\nSi vous avez un service spécifique en tête, je peux inspecter ses paramètres pour voir s'il expose des champs dédiés à l'injection de secrets (comme des références à des `Secret` Kubernetes).\n\n```json\n{\n  \"answer\": \"Pour vous aider à injecter vos secrets, j'ai besoin de savoir quel service Onyxia vous utilisez (ex: Jupyter, VS Code, PostgreSQL). Les secrets peuvent être injectés via des variables d'environnement ou des volumes, selon la configuration Helm du chart. Veuillez préciser le service ou votre besoin spécifique.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-27T08:39:08.508023+00:00",
+    "event_id": "cf0bd7dd-5515-424f-9976-5baa5af897a1",
+    "interaction_id": "4220e98e-3633-4b4d-960d-a27f72133cb8",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
