@@ -9524,5 +9524,21 @@
     "question": "Quel service utiliser pour publier mon application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-27T08:40:11.023634+00:00",
+    "event_id": "a29f1ec4-119f-4fed-b390-0d35b76f9e3c",
+    "interaction_id": "536687a3-30ba-4188-bfa0-e32de39d43f8",
+    "metadata": {
+      "agent_prompt": "Je veux déployer une application Shiny.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux déployer une application Shiny.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
