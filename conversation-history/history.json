@@ -10808,5 +10808,26 @@
     "question": "Quand j'ouvre un service Rstudio, les packages que j'utilise ne sont pas installés donc à chaque j'ouvre un service je dois les ré-installer, peut tu me corriger cela ? Les packages sont ggplot et data.table. Je ne veux pas créer un nouveau service, j'aimerais modifier mon service Wistan que j'ai pré-enregistrer dans onyxia.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Sur Onyxia, les services sont éphémères et basés sur des conteneurs. Vous ne pouvez pas 'injecter' un script dans un service qui tourne déjà sans le redémarrer. Pour ajouter un script d'initialisation à un service existant, la démarche consiste à modifier la configuration Helm du service pour inclure l'URL du script dans le paramètre `init.personalInit`. Cela déclenchera le téléchargement du script au démarrage de la nouvelle instance du service.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/manual_update/instruction?name=instruction&version=1.0\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"instruction\",\n      \"catalog_id\": \"manual_update\",\n      \"version\": \"1.0\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"La plateforme Onyxia utilise Helm pour déployer des services. Chaque service possède un 'Init Container' : un petit conteneur qui s'exécute juste avant votre environnement de travail pour préparer le terrain (installer des librairies, cloner un dépôt, créer des dossiers). Pour ajouter un script, on ne modifie pas le disque dur du conteneur en direct, on met à jour la 'recette' (la configuration) pour que le prochain démarrage inclue cette étape de préparation.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Identifier le script\",\n        \"content\": \"Assurez-vous que votre script est hébergé sur un dépôt accessible (comme GitHub) ou qu'il est prêt à être injecté via la configuration `personalInit`.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Modifier la configuration\",\n        \"content\": \"Dans votre interface de configuration (ou via l'API), vous devez ajouter le chemin vers votre script dans le champ `init.personalInit`. Ce champ accepte une URL brute (raw URL) pointant vers votre fichier.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Relancer le service\",\n        \"content\": \"Une fois la configuration mise à jour, relancez le service. Onyxia va détruire l'ancienne instance et en créer une nouvelle qui exécutera votre script avant même que vous n'ouvriez votre Jupyter Notebook ou VS Code.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"bash\",\n      \"filename\": \"setup_env.sh\",\n      \"content\": \"#!/bin/bash\\necho 'Initialisation de l'environnement...'\\npip install pandas numpy matplotlib\\necho 'Installation terminée !'\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours des URLs 'raw' (ex: raw.githubusercontent.com) pour vos scripts.\",\n      \"Rendez vos scripts idempotents : ils doivent pouvoir être exécutés plusieurs fois sans erreur (ex: vérifier si un dossier existe avant de le créer).\",\n      \"Limitez la complexité des scripts d'init pour ne pas ralentir le temps de démarrage de vos services.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-07-27T13:57:19.180321+00:00",
+    "event_id": "7baadc1f-726a-4a19-866f-b818d2deed3f",
+    "interaction_id": "b5712e33-cfeb-46f9-90cc-14fa8b41c023",
+    "metadata": {
+      "agent_prompt": "Je ne veux pas que tu configure un service, je veux que tu m'expliques les démarches pour ajouter le script d'initialisation que tu m'as donné à un service déjà exsitant",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "manual_update",
+        "chart_id": "instruction",
+        "version": "1.0"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je ne veux pas que tu configure un service, je veux que tu m'expliques les démarches pour ajouter le script d'initialisation que tu m'as donné à un service déjà exsitant",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
