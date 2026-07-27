@@ -10936,5 +10936,21 @@
     "question": "je veux un R studio avec avec tidytable déjà installé",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-27T14:16:36.163318+00:00",
+    "event_id": "9ac50dad-7e29-4594-94de-617908297c61",
+    "interaction_id": "43bac6d1-54e1-428f-861c-4f9f1068db5c",
+    "metadata": {
+      "agent_prompt": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
