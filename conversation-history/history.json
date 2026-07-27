@@ -10557,5 +10557,21 @@
     "question": "Qu",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis prêt à vous assister. Veuillez me préciser votre besoin (type de service, outils souhaités, ressources spécifiques comme le CPU/RAM/GPU, ou installation de packages particuliers) afin que je puisse générer votre configuration Onyxia.",
+    "created_at": "2026-07-27T13:47:32.435134+00:00",
+    "event_id": "fbd3d377-acef-484e-a81e-06cabdaf6637",
+    "interaction_id": "da001b82-dfd0-445d-8da2-0501e4dd6706",
+    "metadata": {
+      "agent_prompt": "Qu",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Qu",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
