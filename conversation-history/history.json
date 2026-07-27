@@ -9193,5 +9193,26 @@
     "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter Python à PostgreSQL sur Onyxia, utilisez les bibliothèques `psycopg2` ou `sqlalchemy`. La connexion est facilitée par le mécanisme de 'Discovery' d'Onyxia qui injecte les identifiants (host, port, user, password) directement dans les variables d'environnement de votre environnement de calcul (Jupyter, VS Code, etc.).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-27T08:29:53.059962+00:00",
+    "event_id": "dc40eae1-1c6c-4e5d-bc5c-6c9dba8c4fef",
+    "interaction_id": "a1deeda2-bf85-47b0-92ce-619c4d115e02",
+    "metadata": {
+      "agent_prompt": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
