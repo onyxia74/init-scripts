@@ -9693,5 +9693,26 @@
     "question": "Génère une architecture de projet data science reproductible.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour traiter des volumes de données dépassant votre mémoire vive, je vous recommande d'utiliser JupyterPySpark. Ce service vous permet d'exploiter Apache Spark pour effectuer des calculs distribués, ce qui est la méthode standard pour gérer le 'Big Data' sans saturation mémoire. Par défaut, le service est configuré avec des ressources standards, mais vous pourrez augmenter la RAM ou le CPU si vos traitements deviennent plus intensifs.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pyspark?name=jupyter-pyspark&version=3.2.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pyspark\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"3.2.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-27T08:42:08.162264+00:00",
+    "event_id": "27e94c81-3ba1-4ad8-a0b8-d76f0bc8bf9d",
+    "interaction_id": "79c8e15f-3294-4313-af21-fdc246eb9a7c",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pyspark",
+        "version": "3.2.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
