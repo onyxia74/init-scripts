@@ -10573,5 +10573,28 @@
     "question": "Qu",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour automatiser l'installation de vos outils, j'ai besoin de deux informations : quel service Onyxia souhaitez-vous utiliser (ex: Jupyter, VSCode, RStudio) et quels sont les packages ou bibliothèques que vous utilisez habituellement ?",
+    "created_at": "2026-07-27T13:49:15.768415+00:00",
+    "event_id": "99400392-28d6-49b1-997f-1f680f27171c",
+    "interaction_id": "e234f2e1-cf31-4066-a7f0-e5b3a871dbeb",
+    "metadata": {
+      "agent_prompt": "Quand j'ouvre une service Onyxia, les packages que j'utilise ne sont pas installés donc à chaque j'ouvre un service je dois les ré-installer, peut tu me corriger cela ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type, package_list",
+        "options": [],
+        "original_request": "",
+        "question": "Pour automatiser l'installation de vos outils, j'ai besoin de deux informations : quel service Onyxia souhaitez-vous utiliser (ex: Jupyter, VSCode, RStudio) et quels sont les packages ou bibliothèques que vous utilisez habituellement ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quand j'ouvre une service Onyxia, les packages que j'utilise ne sont pas installés donc à chaque j'ouvre un service je dois les ré-installer, peut tu me corriger cela ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
