@@ -10306,5 +10306,21 @@
     "question": "Je veux travailler avec une base PostgreSQL.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"jupyter-pytorch-gpu\"}",
+    "created_at": "2026-07-27T08:48:24.202017+00:00",
+    "event_id": "fa57448c-31e3-4202-96a5-6b1a8553aaeb",
+    "interaction_id": "e9e2a645-a6bc-4814-b21b-30eafaf39c3d",
+    "metadata": {
+      "agent_prompt": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
