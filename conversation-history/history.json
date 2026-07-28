@@ -11677,5 +11677,21 @@
     "question": "Comment connecter R à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:get_service_details{chart_id: \"postgresql-cnpg\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-28T13:55:31.487438+00:00",
+    "event_id": "1f5d197c-0748-41be-af01-bfc8bf57668b",
+    "interaction_id": "dfcaf293-14cc-4a59-87f9-81ef88e90762",
+    "metadata": {
+      "agent_prompt": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
