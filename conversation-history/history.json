@@ -11064,5 +11064,21 @@
     "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-28T13:47:58.860664+00:00",
+    "event_id": "b597098b-38d5-49b7-9c97-2b29bd20ffa1",
+    "interaction_id": "44bf7a2b-d722-4d2a-a9a0-088cdc39bb40",
+    "metadata": {
+      "agent_prompt": "Comment lire un fichier S3 depuis R ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire un fichier S3 depuis R ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
