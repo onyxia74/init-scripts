@@ -11720,5 +11720,26 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour augmenter le stockage, vous devez modifier le paramètre `persistence.size` du service. Par exemple, pour passer à 40Gi sur un service Jupyter Python, il faut configurer `persistence.size` avec la valeur '40Gi'. Assurez-vous également que `persistence.enabled` est à true.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-28T13:56:01.168523+00:00",
+    "event_id": "f193cca8-f2fe-48ba-be29-eb916c45ddc7",
+    "interaction_id": "8abf832d-4229-4478-89bf-be73fac96f28",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
