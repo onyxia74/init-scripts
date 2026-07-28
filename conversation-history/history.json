@@ -11987,5 +11987,26 @@
     "question": "Je veux déployer une application Shiny.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai sélectionné Apache Superset pour votre application de datavisualisation. C'est une plateforme moderne et puissante pour l'exploration et la visualisation de données. Le service sera déployé avec sa configuration par défaut.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/superset?name=superset&version=0.1.12\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"superset\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"0.1.12\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-28T13:59:07.526850+00:00",
+    "event_id": "2f1a40bc-02a2-49cc-9b52-814f96004da9",
+    "interaction_id": "53c5b3be-e6e4-4a5d-a19d-027689b752ad",
+    "metadata": {
+      "agent_prompt": "Déploie mon application de datavisualisation.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "superset",
+        "version": "0.1.12"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Déploie mon application de datavisualisation.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
