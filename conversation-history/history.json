@@ -12394,5 +12394,21 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"rstudio\"}",
+    "created_at": "2026-07-28T14:04:18.600340+00:00",
+    "event_id": "4ac5ccd5-e970-42e5-b8ca-d83e1871dff4",
+    "interaction_id": "8b9baa74-1597-4cb9-87a3-58a79a30a993",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
