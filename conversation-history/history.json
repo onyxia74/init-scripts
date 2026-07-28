@@ -11531,5 +11531,21 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'examen des détails du service `vscode-python` montre qu'il existe des paramètres spécifiques pour l'exposition de ports via la section `networking`. \n\nPour exposer un port (par exemple pour un serveur web ou une API que vous développez), vous disposez de deux options principales dans la configuration Helm :\n\n1.  **`networking.user.enabled`** : Ce paramètre doit être activé (`true`) pour permettre l'accès à votre service via des ports spécifiques.\n2.  **`networking.user.port`** : Ce paramètre définit le numéro du port que vous souhaitez exposer (par défaut `5000`).\n3.  **`networking.user.ports`** : Si vous avez besoin d'exposer plusieurs ports, vous pouvez utiliser cette liste.\n\n**Exemple de démarche :**\nSi vous souhaitez exposer votre application sur le port `8080`, je devrai modifier les paramètres `networking.user.enabled` à `true` et `networking.user.port` à `8080`.\n\nSouhaitez-vous que je configure un service VSCode avec un port spécifique ? Si oui, merci de m'indiquer le numéro du port souhaité.",
+    "created_at": "2026-07-28T13:53:57.251914+00:00",
+    "event_id": "de9a9086-e967-4ca4-88ad-f5d7f70e5208",
+    "interaction_id": "e39132fa-7d4a-43f3-8e3c-79b45e2502e6",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
