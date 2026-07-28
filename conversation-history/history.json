@@ -11806,5 +11806,21 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs de votre application sur Onyxia, la méthode dépend de ce que vous souhaitez inspecter :\\n\\n1. **Logs de votre code/processus** : Utilisez directement le terminal intégré à votre service (JupyterLab, VSCode, RStudio) ou consultez les sorties (outputs) de vos cellules de notebook.\\n2. **Logs du conteneur (Runtime)** : Si vous avez besoin de voir les logs de démarrage du service ou les erreurs système du pod, vous devez utiliser l'interface de gestion de votre plateforme ou, si vous disposez des droits, la commande `kubectl logs [nom-du-pod]` via un terminal.\\n3. **Logs de l'infrastructure** : Pour des problèmes de plateforme plus larges, contactez l'administrateur du cluster SSPCloud.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {},\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-28T13:56:46.495527+00:00",
+    "event_id": "b5ac48e1-8a30-4536-9620-ceabd8b2d552",
+    "interaction_id": "984fb6ce-ee01-4348-8a63-2d17d96e9d74",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
