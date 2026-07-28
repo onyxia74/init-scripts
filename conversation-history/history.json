@@ -11000,5 +11000,21 @@
     "question": "Dans mon service j'ai des parquets (de plusieurs centaines de méga octet) et j'aimerais les mettre sur git, comment faire ? Ne fais aucune suggestion, répond juste à la question.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-07-28T09:14:23.186242+00:00",
+    "event_id": "b7b56251-5f8a-438c-bf6f-523277ef6b71",
+    "interaction_id": "9bfd947f-d62c-4c84-aa7c-b26435a7341f",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
