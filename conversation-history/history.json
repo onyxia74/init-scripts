@@ -11457,5 +11457,26 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre application à PostgreSQL, je vous recommande de déployer le service 'postgresql-cnpg'. Ce service instanciera une base de données prête à l'emploi. Vous pourrez ensuite utiliser les identifiants générés pour votre application. Notez que l'option 'discovery' est disponible pour permettre à vos autres outils Onyxia de détecter automatiquement cette base de données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-28T13:52:11.568104+00:00",
+    "event_id": "ef6be2e3-fdd5-44da-8b47-2ca4e15760a7",
+    "interaction_id": "38933859-4ebb-4c14-a6ab-59f86f5f79d9",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
