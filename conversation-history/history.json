@@ -11478,5 +11478,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:inspect_service_parameters(request='{\"chart_id\":\"vscode-python\",\"query\":\"s3\"}')%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-28T13:53:11.267619+00:00",
+    "event_id": "5e20b5f6-847b-4894-b1c5-f13372f4f1a3",
+    "interaction_id": "d7a64873-2b99-4576-8a34-945e768b9b75",
+    "metadata": {
+      "agent_prompt": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
