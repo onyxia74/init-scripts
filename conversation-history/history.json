@@ -12219,5 +12219,32 @@
     "question": "Propose un notebook pour explorer des données.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre environnement de machine learning. J'ai sélectionné l'IDE VSCode avec PyTorch et configuré un script d'initialisation qui créera automatiquement l'arborescence suivante : `data/`, `models/`, `src/main.py`, `requirements.txt` et `README.md`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-pytorch?name=vscode-pytorch&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-pytorch%2Fsquelette-de-pipeline-de-machine-learning.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-pytorch\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-pytorch/squelette-de-pipeline-de-machine-learning.sh\",\n        \"reason\": \"squelette de pipeline de machine learning\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-28T14:02:13.623472+00:00",
+    "event_id": "c4bd0c94-1c53-4477-b72b-d70c7d61dbc0",
+    "interaction_id": "7b8e33ea-d0b2-4a2d-9554-009e51d09085",
+    "metadata": {
+      "agent_prompt": "Donne-moi le squelette d’un pipeline de machine learning.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-pytorch",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "squelette de pipeline de machine learning",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-pytorch/squelette-de-pipeline-de-machine-learning.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Donne-moi le squelette d’un pipeline de machine learning.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
