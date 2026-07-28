@@ -12851,5 +12851,26 @@
     "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre service RStudio (incluant Python et Julia). Tous les paramètres sont configurés avec les valeurs par défaut.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-28T14:09:20.847304+00:00",
+    "event_id": "d1c4dfed-4ed2-4c61-b8f5-20d5311ba4a7",
+    "interaction_id": "0c8614f3-1ea4-446a-a37c-b789cd9d177a",
+    "metadata": {
+      "agent_prompt": "J’aimerais lancer un service RStudio.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais lancer un service RStudio.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
