@@ -12893,5 +12893,32 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La perte de vos fichiers indique que la persistance n'était pas activée lors de votre session précédente. Pour résoudre ce problème durablement, vous devez utiliser un service avec un volume persistant. J'ai configuré pour vous un nouveau service RStudio (incluant Python et Julia) avec la persistance activée pour garantir que vos travaux soient sauvegardés automatiquement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&s3=region-79669f20\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"persistence.enabled\": {\n        \"value\": true,\n        \"reason\": \"Garantir la conservation des fichiers entre les sessions\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-07-29T07:39:15.572194+00:00",
+    "event_id": "09353534-a493-4393-b64f-57ecbf0cc7a2",
+    "interaction_id": "d1cb76a8-12e9-41b8-b566-39e0fdc9e18a",
+    "metadata": {
+      "agent_prompt": "J'ai démarré un projet Rstudio, mais je n'ai plus les fichiers que j'avais créé, comment réglé ce problème ? ",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "overrides": {
+          "persistence.enabled": {
+            "reason": "Garantir la conservation des fichiers entre les sessions",
+            "value": true
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J'ai démarré un projet Rstudio, mais je n'ai plus les fichiers que j'avais créé, comment réglé ce problème ? ",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
