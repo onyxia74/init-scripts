@@ -12990,5 +12990,26 @@
     "question": "J'ai crée un nouveau service R mais je n'ai plus les fichiers de mon ancien service R, comment reglé ce problème ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Je suis désolé d'apprendre que vous avez perdu vos fichiers. Sur Onyxia, les services fonctionnent dans des conteneurs qui sont éphémères par nature. Si vos fichiers n'ont pas été enregistrés dans le répertoire persistant (le dossier `/home/onyxia/work`), ils sont malheureusement supprimés dès que le service s'arrête.\\n\\nPour éviter que cela ne se reproduise, j'ai préparé une configuration pour un nouveau service **RStudio (avec support Python et Julia)**. Par défaut, la persistance est **activée** sur Onyxia, ce qui signifie que tout ce que vous placerez dans votre dossier de travail sera sauvegardé pour votre prochaine session. \\n\\n**Conseil d'expert :** Travaillez toujours exclusivement dans `/home/onyxia/work` pour garantir la survie de vos données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Sur Onyxia, la persistance est assurée par un volume réseau monté sur votre conteneur. Pour que vos fichiers soient sauvegardés, ils doivent impérativement résider dans le répertoire `/home/onyxia/work`. Tout fichier créé ailleurs (comme dans `/tmp` ou à la racine du système) sera définitivement perdu à la fermeture de votre session.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Utilisez la configuration générée pour démarrer votre environnement RStudio.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier le répertoire\",\n        \"content\": \"Une fois dans RStudio, assurez-vous que votre 'Working Directory' est bien `/home/onyxia/work` (utilisez la commande `getwd()` pour vérifier).\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder\",\n        \"content\": \"Enregistrez vos scripts (.R, .py) et vos données directement dans ce dossier. Ils seront automatiquement réapparus à votre prochaine connexion.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"r\",\n      \"filename\": \"hello_world.R\",\n      \"content\": \"# Test de persistance\\nprint(\\\"Bonjour Onyxia !\\\")\\n\\n# Création d'un petit dataframe\\ndata %C2%AB- data.frame(\\n  nom = c(\\\"Alice\\\", \\\"Bob\\\", \\\"Charlie\\\"),\\n  score = c(10, 15, 12)\\n)\\n\\nprint(data)\\n# Sauvegarde du fichier pour tester la persistance\\nwrite.csv(data, \\\"test_data.csv\\\", row.names = FALSE)\\nprint(\\\"Fichier test_data.csv créé dans le répertoire de travail.\\\")\"\n    },\n    \"best_practices\": [\n      \"Travaillez TOUJOURS dans /home/onyxia/work.\",\n      \"Utilisez Git pour versionner vos scripts en plus de la persistance Onyxia.\",\n      \"Si vous avez besoin de plus d'espace, demandez-moi d'augmenter la taille du volume (ex: 'passe la persistance à 50Gi').\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-07-29T07:42:48.578878+00:00",
+    "event_id": "ff7deebb-3084-454e-8cb8-b93fa4c6a6c0",
+    "interaction_id": "732141cd-ed9e-4e28-9872-d7f52b9b4112",
+    "metadata": {
+      "agent_prompt": "J'ai démarré un nouveau projet Rstudio, mais je n'ai plus les fichiers que j'avais créé, comment réglé ce problème ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "J'ai démarré un nouveau projet Rstudio, mais je n'ai plus les fichiers que j'avais créé, comment réglé ce problème ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
