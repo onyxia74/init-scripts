@@ -13849,5 +13849,21 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question car l'accès au cluster Kubernetes interne est une opération d'administration système et de sécurité qui ne relève pas de la configuration de services via l'interface Onyxia. L'accès aux ressources de calcul et de stockage se fait exclusivement via le déploiement de services (IDE, bases de données, etc.) depuis le catalogue Onyxia.\n\nSi vous souhaitez utiliser des ressources de calcul sur le cluster, je peux vous aider à configurer un service adapté à vos besoins (Jupyter, VS Code, RStudio, etc.).\n\n```json\n{\n  \"answer\": \"L'accès direct au cluster Kubernetes est restreint pour des raisons de sécurité. Pour utiliser les ressources du cluster (CPU, RAM, stockage), vous devez déployer un service via le catalogue Onyxia. Je peux vous aider à configurer un environnement de travail (Jupyter, VS Code, etc.) selon vos besoins analytiques.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-30T14:51:38.668384+00:00",
+    "event_id": "7e6aeb7d-6091-4156-8cf9-0fcd9ef0cc78",
+    "interaction_id": "20434e63-60f0-484b-8654-35d0fd23c641",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
