@@ -14290,5 +14290,26 @@
     "question": "Je veux utiliser Neo4j dans Onyxia.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un service PostgreSQL (via le chart `postgresql-cnpg`) pour vous permettre de travailler avec une base de données relationnelle. Comme vous n'avez pas spécifié de besoins particuliers concernant le stockage, les ressources ou l'authentification, le service est configuré avec les paramètres par défaut (10Gi de stockage, 256Mi de RAM et 250m de CPU).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-30T14:55:58.262162+00:00",
+    "event_id": "b468bc2b-bbbf-4b1e-8a50-efe2b69baeec",
+    "interaction_id": "c354081a-a014-4894-8716-7edde4306ea5",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec une base PostgreSQL.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec une base PostgreSQL.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
