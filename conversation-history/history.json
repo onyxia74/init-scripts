@@ -13663,5 +13663,21 @@
     "question": "Je veux faire de la cartographie.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:inspect_service_parameters{request: '{\"chart_id\":\"vscode-python\",\"query\":\"init\"}'}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-30T14:49:44.633044+00:00",
+    "event_id": "05eff859-d479-416e-b861-9c58c2554383",
+    "interaction_id": "b9731593-0400-4b57-bcd4-426185f8b9b0",
+    "metadata": {
+      "agent_prompt": "Génère une architecture de projet data science reproductible.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Génère une architecture de projet data science reproductible.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
