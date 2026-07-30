@@ -13064,5 +13064,28 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour quel service Onyxia souhaitez-vous exposer un port ? (Par exemple : un IDE comme VS Code, une base de données, ou une application spécifique que vous déployez)",
+    "created_at": "2026-07-30T14:43:24.561616+00:00",
+    "event_id": "e281cf5a-a906-456b-8432-354eb2778f81",
+    "interaction_id": "2ddd378f-c0f1-47e6-a6b8-fbe4f23d17dd",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [],
+        "original_request": "",
+        "question": "Pour quel service Onyxia souhaitez-vous exposer un port ? (Par exemple : un IDE comme VS Code, une base de données, ou une application spécifique que vous déployez)",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
