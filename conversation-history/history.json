@@ -13227,5 +13227,32 @@
     "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Combien de GPU souhaitez-vous allouer à votre instance ?",
+    "created_at": "2026-07-30T14:45:08.463695+00:00",
+    "event_id": "91d2fac1-1d19-46dd-b542-3a07d67706e3",
+    "interaction_id": "c9bf5b22-d4ab-4b7a-972f-f411cf8b3566",
+    "metadata": {
+      "agent_prompt": "Réserve une ressource GPU pendant une heure.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "gpu_count",
+        "options": [
+          "1",
+          "2",
+          "3"
+        ],
+        "original_request": "",
+        "question": "Combien de GPU souhaitez-vous allouer à votre instance ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Réserve une ressource GPU pendant une heure.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
