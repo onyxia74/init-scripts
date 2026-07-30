@@ -13981,5 +13981,21 @@
     "question": "Configure un environnement R connecté à PostgreSQL.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:inspect_service_parameters(request='{\"chart_id\":\"vscode-python\",\"query\":\"init\"}')%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-07-30T14:53:07.236541+00:00",
+    "event_id": "37d11caa-10f0-4c86-aaed-62f58de5101d",
+    "interaction_id": "159a5ad7-76d4-469e-9ffa-da1a8e2ee5b0",
+    "metadata": {
+      "agent_prompt": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
