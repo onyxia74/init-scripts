@@ -13817,5 +13817,21 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'ajout de secrets dans un déploiement Onyxia dépend de la nature du secret (variables d'environnement, fichiers de configuration, clés d'accès cloud) et du service utilisé. \n\nPour vous répondre précisément, j'ai besoin de savoir quel service vous utilisez ou souhaitez utiliser, car la méthode d'injection varie (certains charts permettent de passer des variables d'environnement via des paramètres Helm, d'autres nécessitent l'utilisation d'un script d'initialisation pour récupérer des secrets depuis un coffre-fort ou un fichier).\n\nAfin de vous proposer la configuration la plus adaptée, pourriez-vous me préciser :\n1. Quel service Onyxia utilisez-vous (ex: Jupyter, VS Code, RStudio) ?\n2. Quel type de secret souhaitez-vous injecter (ex: une clé API, un mot de passe de base de données, un jeton d'accès cloud) ?\n\n```json\n{\n  \"answer\": \"Pour vous aider à ajouter des secrets, j'ai besoin de connaître le service cible et le type de secret à injecter afin de déterminer si nous devons passer par des paramètres Helm (variables d'environnement) ou par un script d'initialisation personnalisé.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-07-30T14:51:20.426429+00:00",
+    "event_id": "da3440c1-46aa-4f6f-9fe9-69b2131138a8",
+    "interaction_id": "8c01837c-adb6-461b-bf95-7f3b671f5b63",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
