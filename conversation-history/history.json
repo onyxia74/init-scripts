@@ -214,5 +214,21 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\n<|tool_call>call:get_catalog(request=\"postgresql neo4j web\")<tool_call|>\n```",
+    "created_at": "2026-08-10T09:07:05.372193+00:00",
+    "event_id": "c14db271-2049-472a-a988-ea7889b093ec",
+    "interaction_id": "0d9a8341-e78b-4bbb-bdc4-b7a5e043239f",
+    "metadata": {
+      "agent_prompt": "Déploie PostgreSQL, Neo4j et une interface web.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Déploie PostgreSQL, Neo4j et une interface web.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
