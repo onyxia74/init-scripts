@@ -15669,5 +15669,32 @@
     "question": "Je veux travailler avec des données géographiques volumineuses.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour développer une application Java, l'environnement le plus adapté est VS Code (`vscode-python`). Bien que ce service soit orienté Python, sa polyvalence permet d'installer des extensions Java et des outils système. J'ai configuré un script d'initialisation qui installe automatiquement le JDK OpenJDK 17 via `apt` au démarrage du service pour vous permettre de compiler et d'exécuter du code Java immédiatement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fpr-paration-environnement-de-d-veloppement-java-via-apt.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-paration-environnement-de-d-veloppement-java-via-apt.sh\",\n        \"reason\": \"installation du JDK pour le développement Java\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-10T08:42:58.138071+00:00",
+    "event_id": "0b156714-9e75-47c7-87ae-574ca22a41d3",
+    "interaction_id": "156f2d48-5724-4cb6-ad69-fbb4b8ad784f",
+    "metadata": {
+      "agent_prompt": "Quel environnement utiliser pour développer une application Java ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "installation du JDK pour le développement Java",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-paration-environnement-de-d-veloppement-java-via-apt.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel environnement utiliser pour développer une application Java ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
