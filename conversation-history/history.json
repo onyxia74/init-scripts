@@ -1152,5 +1152,26 @@
     "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement de Deep Learning optimisé utilisant JupyterLab avec le framework PyTorch et le support GPU. Ce service est prêt pour vos travaux de recherche et de développement intensifs.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pytorch-gpu?name=jupyter-pytorch-gpu&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pytorch-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T13:34:41.778768+00:00",
+    "event_id": "e0b7eb6a-5872-4571-95a5-3a6b02930621",
+    "interaction_id": "4dfa6140-2ee0-4b5c-958e-541b94392931",
+    "metadata": {
+      "agent_prompt": "Crée un service adapté à un projet de deep learning.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pytorch-gpu",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée un service adapté à un projet de deep learning.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
