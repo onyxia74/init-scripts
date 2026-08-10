@@ -15297,5 +15297,21 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour lire les événements Kubernetes associés à votre service, vous devez utiliser l'outil de ligne de commande `kubectl`. Voici les commandes principales :\\n\\n1. **Lister les événements récents dans votre namespace** :\\n   `kubectl get events --sort-by='.lastTimestamp'`\\n\\n2. **Filtrer les événements pour un pod spécifique** (remplacez `%C2%ABpod-name%C2%BB` par le nom de votre pod) :\\n   `kubectl describe pod %C2%ABpod-name%C2%BB`\\n\\n3. **Suivre les événements en temps réel** :\\n   `kubectl get events -w`\\n\\nSi vous n'avez pas d'accès direct au cluster, vous pouvez consulter les logs de votre pod via l'interface de gestion de votre plateforme ou contacter l'administrateur du cluster.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": null,\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T08:38:11.412664+00:00",
+    "event_id": "83341e59-d9db-423f-add7-580f52aac3d9",
+    "interaction_id": "94e3625f-d512-4974-98d4-25d0d74580c0",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
