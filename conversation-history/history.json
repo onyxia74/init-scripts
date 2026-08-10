@@ -1794,5 +1794,26 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour faire de la dataviz, je vous recommande le service **JupyterLab Python**. C'est l'environnement de référence qui inclut déjà les bibliothèques essentielles (comme Matplotlib, Seaborn ou Plotly) pour la visualisation de données, au sein d'une interface interactive et puissante.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T13:45:02.163485+00:00",
+    "event_id": "5ea6c4d2-c027-4fd6-8cae-536bc651fad6",
+    "interaction_id": "54a5beeb-aa1c-488c-a984-273d3f22d0bb",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
