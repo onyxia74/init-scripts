@@ -389,5 +389,21 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'exposition d'un port spécifique pour une application sur Onyxia dépend du service utilisé. En règle générale, les services Onyxia sont exposés via un Ingress qui redirige le trafic vers un port spécifique du conteneur.\n\nPour répondre précisément à votre besoin, j'ai besoin de savoir quel type d'environnement vous souhaitez utiliser (un IDE comme VS Code ou Jupyter pour développer votre application, ou un service de base de données/serveur spécifique).\n\nCependant, si vous développez une application (par exemple en Python avec Flask ou FastAPI) et que vous souhaitez qu'elle soit accessible, la méthode standard consiste à :\n1. Utiliser un environnement de développement (comme `vscode-python`).\n2. Configurer votre application pour qu'elle écoute sur `0.0.0.0` et sur un port spécifique (souvent `8080` ou `8000`).\n3. Dans certains cas, si le chart le permet, il peut être nécessaire de modifier les paramètres de service Helm pour ouvrir ce port.\n\nPourriez-vous me préciser :\n1. **Le service** que vous comptez utiliser (ex: VS Code, Jupyter, etc.) ?\n2. **Le port** que vous souhaitez exposer ?\n3. **Le langage/framework** de votre application ?\n\n```json\n{\n  \"answer\": \"Pour vous aider à exposer un port, j'ai besoin de savoir quel service Onyxia vous utilisez et quel port vous souhaitez ouvrir. La configuration dépendra du chart Helm spécifique (par exemple, modifier le paramètre de service ou utiliser un script d'initialisation pour lancer votre serveur sur un port précis).\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```",
+    "created_at": "2026-08-10T13:23:14.203136+00:00",
+    "event_id": "6d8daad0-6cad-46d7-b157-d284dde45bc8",
+    "interaction_id": "e468e7a3-96f5-4848-b1e5-49cf51c98d7a",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
