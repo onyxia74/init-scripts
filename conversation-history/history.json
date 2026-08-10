@@ -2674,5 +2674,32 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre environnement de développement d'API Python. J'ai sélectionné l'IDE VS Code avec Python et préparé un script d'initialisation qui installe FastAPI et Uvicorn, crée un fichier `main.py` avec un endpoint de test, et configure un fichier `requirements.txt`. Vous pourrez lancer l'API directement depuis le terminal avec la commande fournie dans le script.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fd-ploiement-d-une-api-python-avec-fastapi.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-ploiement-d-une-api-python-avec-fastapi.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-10T14:34:29.271760+00:00",
+    "event_id": "5b804623-b7db-4b15-98d7-87e1d0227026",
+    "interaction_id": "789d3229-05e7-4c7a-a065-16f6fab173e3",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-ploiement-d-une-api-python-avec-fastapi.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
