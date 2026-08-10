@@ -15084,5 +15084,21 @@
     "question": "Quel service utiliser pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "thought\n%C2%AB|tool_call%C2%BBcall:create_init_script{chart_id: \"jupyter-python\",packages: [\"folium\", \"geopandas\", \"matplotlib\", \"plotly\", \"shapely\"],purpose: \"préparation environnement cartographie interactive\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-08-10T08:35:07.548567+00:00",
+    "event_id": "08ee9873-52df-4d81-b3dd-92484bad0ca8",
+    "interaction_id": "d02033b2-ae08-4bd9-bbf1-661ced399e90",
+    "metadata": {
+      "agent_prompt": "J’aimerais créer une carte interactive.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais créer une carte interactive.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
