@@ -230,5 +230,21 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:get_service_details{chart_id: \"neo4j\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-08-10T09:28:27.486049+00:00",
+    "event_id": "5ae0bfb0-21b4-473b-b764-a3c4fd7a16ca",
+    "interaction_id": "379f1539-1734-4482-bcdb-119939f32e4f",
+    "metadata": {
+      "agent_prompt": "Déploie PostgreSQL, Neo4j et une interface web.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Déploie PostgreSQL, Neo4j et une interface web.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
