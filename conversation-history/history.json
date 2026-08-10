@@ -14638,5 +14638,21 @@
     "question": "Comment connecter Python à un service PostgreSQL Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:create_init_script{chart_id: \"rstudio-r-python-julia\", packages: [\"DBI\", \"RPostgreSQL\"], purpose: \"connexion PostgreSQL\"}%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-08-10T08:29:58.865036+00:00",
+    "event_id": "93d237ea-ffb5-4783-8795-cd3ec7fc444a",
+    "interaction_id": "1c80bee1-5a03-40f5-b505-40cbf8c9ffbd",
+    "metadata": {
+      "agent_prompt": "Comment connecter R à une base PostgreSQL ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter R à une base PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
