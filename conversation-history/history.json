@@ -262,5 +262,21 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour votre environnement comprenant PostgreSQL (via CNPG), Neo4j et une interface de développement VS Code avec Python.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {}\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"neo4j\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.8\"\n        },\n        \"selected_parameters\": {}\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"vscode-python\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.6.2\"\n        },\n        \"selected_parameters\": {}\n      }\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-10T09:35:14.880755+00:00",
+    "event_id": "55456f26-6ad3-4a57-b245-fe70a35b3c61",
+    "interaction_id": "d13b4cbb-b83b-4f80-9306-b7c3966a3392",
+    "metadata": {
+      "agent_prompt": "Déploie PostgreSQL, Neo4j et une interface web.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Déploie PostgreSQL, Neo4j et une interface web.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
