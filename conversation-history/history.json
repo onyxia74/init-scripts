@@ -1583,5 +1583,32 @@
     "question": "Configure un environnement Java complet dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré votre environnement VS Code pour inclure l'extension Java (via le pack d'extensions Java) ainsi que le package Python `pandas`. Un script d'initialisation sera exécuté automatiquement au démarrage de votre service.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Finstallation-extensions-java-et-package-pandas.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installation-extensions-java-et-package-pandas.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-10T13:38:44.312800+00:00",
+    "event_id": "072b5706-29b4-4140-bead-c2a052b70b8f",
+    "interaction_id": "786c0ea6-30a0-49a9-b5af-b0e0a35e0904",
+    "metadata": {
+      "agent_prompt": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installation-extensions-java-et-package-pandas.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
