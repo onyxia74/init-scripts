@@ -1368,5 +1368,32 @@
     "question": "Comment connecter mon service à GitHub ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour traiter de gros fichiers S3 sans saturer la mémoire, l'utilisation de PySpark est idéale car il permet un traitement distribué et par partitions. J'ai configuré un environnement Jupyter PySpark incluant les bibliothèques `boto3`, `s3fs`, `dask` et `pyarrow` pour faciliter le streaming et le chunking des données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pyspark?name=jupyter-pyspark&version=3.2.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-pyspark%2Fgestion-de-gros-fichiers-s3-via-streaming-et-chunking.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pyspark\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"3.2.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/gestion-de-gros-fichiers-s3-via-streaming-et-chunking.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-10T13:36:55.206952+00:00",
+    "event_id": "3c3a4acb-acb2-4a61-ac75-1d2e5f5dce17",
+    "interaction_id": "39d56d6a-04b4-4dfd-9ee5-ff46b30e52b2",
+    "metadata": {
+      "agent_prompt": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pyspark",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/gestion-de-gros-fichiers-s3-via-streaming-et-chunking.sh"
+          }
+        },
+        "version": "3.2.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
