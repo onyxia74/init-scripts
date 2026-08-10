@@ -1352,5 +1352,21 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour connecter votre service Onyxia à un dépôt GitHub, il existe deux approches principales selon votre besoin :\n\n### 1. Cloner un projet existant au démarrage\nSi vous souhaitez que votre environnement (par exemple **VS Code**) ouvre directement un dépôt spécifique, vous pouvez configurer les paramètres `git.repository` et `git.branch`. \n\nPour automatiser cela, la méthode la plus robuste consiste à utiliser un **script d'initialisation personnalisé** (`personalInit`). Ce script sera exécuté au lancement du conteneur pour effectuer le `git clone` et configurer votre espace de travail.\n\n### 2. Utiliser un script d'initialisation (Recommandé)\nVous pouvez me demander de préparer un environnement qui contient déjà votre code ou qui clone votre dépôt automatiquement. Je peux alors :\n1. Générer un script qui exécute les commandes `git clone` et `git config`.\n2. L'injecter dans votre configuration via le paramètre `init.personalInit`.\n\n**Exemple de ce que je peux faire pour vous :**\n%C2%BB *\"Prépare-moi un service VS Code Python qui clone mon dépôt `https://github.com/mon-org/mon-projet.git` sur la branche `main`.\"*\n\n**Ce que je ferai techniquement :**\n*   J'utiliserai `create_init_script` pour créer un script shell contenant les commandes de clonage.\n*   J'utiliserai `build_service_configuration` pour lier ce script à votre service via l'URL générée.\n\n**Note sur la sécurité :** Pour les dépôts privés, il est nécessaire de fournir un **Personal Access Token (PAT)**. Dans Onyxia, vous pourrez renseigner ce token dans le champ `git.token` de la configuration pour permettre les opérations Git (push/pull) de manière sécurisée.\n\nSouhaitez-vous que je configure un service spécifique avec un dépôt GitHub dès maintenant ?",
+    "created_at": "2026-08-10T13:36:35.804614+00:00",
+    "event_id": "e7968f7a-db22-45bf-903b-6d9dee14cbfc",
+    "interaction_id": "373be501-c974-4483-87c2-35ab870e4d38",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
