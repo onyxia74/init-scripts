@@ -503,5 +503,26 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Sur Onyxia, le partage d'un service PostgreSQL se fait principalement par le partage des données (via des fichiers SQL ou un stockage externe) plutôt que par le partage de l'instance elle-même, qui est isolée par utilisateur. Pour collaborer, vous pouvez exporter vos données avec `pg_dump` et les transmettre à vos collègues, ou utiliser un stockage partagé si votre projet le permet.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T13:24:34.915854+00:00",
+    "event_id": "44ca9af4-f61d-499a-804c-09404545b622",
+    "interaction_id": "a7f6348a-c9ca-44b8-9768-34d1cb9d45ef",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
