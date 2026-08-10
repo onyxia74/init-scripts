@@ -15329,5 +15329,26 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre service Onyxia à GitHub, je dois configurer un script d'initialisation qui clonera votre dépôt au démarrage. Veuillez me fournir l'URL de votre dépôt GitHub pour que je puisse générer la configuration complète.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T08:38:33.480284+00:00",
+    "event_id": "6f967103-102c-443b-be3a-f5075cf89927",
+    "interaction_id": "0400398a-e748-4d9b-8c98-453e7bc086b3",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
