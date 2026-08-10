@@ -15696,5 +15696,21 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "%C2%AB|tool_call%C2%BBcall:get_service_details(chart_id: \"jupyter-python\")%C2%ABtool_call|%C2%BB",
+    "created_at": "2026-08-10T08:43:08.550200+00:00",
+    "event_id": "117a7408-e1e3-4065-818b-6fc2240534d4",
+    "interaction_id": "48461230-4473-404f-a2b5-10d3a4d6f940",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
