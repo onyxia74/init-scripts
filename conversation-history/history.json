@@ -718,5 +718,21 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs d'un service déployé sur Onyxia, la méthode dépend de votre accès : \\n1. **Via l'interface Onyxia** : Si le service est un environnement de développement (Jupyter, VSCode), vous pouvez souvent consulter les logs de sortie directement dans le terminal de l'IDE.\\n2. **Via Kubernetes (si vous avez les droits)** : Les logs des pods peuvent être récupérés avec la commande `kubectl logs %C2%ABpod_name%C2%BB`. \\n3. **Logs d'application** : Si vous avez déployé une application spécifique (ex: un serveur Flask/FastAPI), les logs sont écrits dans le flux standard (stdout/stderr) du conteneur et sont capturés par le système de logging de la plateforme.\\n\\nSi vous souhaitez déployer un service spécifique pour tester votre application, n'hésitez pas à me le demander.\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```",
+    "created_at": "2026-08-10T13:28:12.649046+00:00",
+    "event_id": "cd64f2ed-b120-4927-9df4-f52c44270fbc",
+    "interaction_id": "4a1b151a-8c5a-4071-a0e9-52ef0db141d1",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
