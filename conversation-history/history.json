@@ -182,5 +182,21 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-10T08:57:13.095606+00:00",
+    "event_id": "f6f6e0f1-d48b-4264-8e34-c617cd8d045d",
+    "interaction_id": "2a55f2bf-c1f2-4759-a484-71e15502d2b9",
+    "metadata": {
+      "agent_prompt": "Déploie PostgreSQL, Neo4j et une interface web.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Déploie PostgreSQL, Neo4j et une interface web.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
