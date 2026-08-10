@@ -1320,5 +1320,21 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour lire les événements Kubernetes associés à votre service, vous pouvez utiliser la commande `kubectl get events` pour voir les événements récents du cluster, ou plus spécifiquement `kubectl describe pod %C2%ABnom-du-pod%C2%BB` pour voir les événements liés à un pod précis (comme des erreurs de scheduling ou de pull d'image). Pour consulter les logs applicatifs, utilisez `kubectl logs %C2%ABnom-du-pod%C2%BB`. Si vous utilisez l'interface Onyxia, vérifiez si un bouton 'Logs' est disponible dans le tableau de bord de votre service.\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```",
+    "created_at": "2026-08-10T13:36:15.020574+00:00",
+    "event_id": "1a52a5a4-9e97-471d-b7a2-1b1214102330",
+    "interaction_id": "8b9b5c17-7c8f-4326-9d0e-25faab921a51",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
