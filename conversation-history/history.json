@@ -771,5 +771,28 @@
     "question": "Explique-moi les étapes de mise en production.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous préciser quel service vous utilisez ou souhaitez utiliser (ex: Jupyter, VSCode, une base de données comme PostgreSQL) ? Cela me permettra de vous indiquer comment configurer la persistance des données (volumes de stockage, bases de données, etc.).",
+    "created_at": "2026-08-10T13:28:41.207622+00:00",
+    "event_id": "21550c5d-2706-45a0-9b1e-758b7cfaf682",
+    "interaction_id": "d5f058ea-96e8-408d-9ffa-466b6a7bfa6a",
+    "metadata": {
+      "agent_prompt": "Comment sauvegarder les données produites par mon application ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous préciser quel service vous utilisez ou souhaitez utiliser (ex: Jupyter, VSCode, une base de données comme PostgreSQL) ? Cela me permettra de vous indiquer comment configurer la persistance des données (volumes de stockage, bases de données, etc.).",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sauvegarder les données produites par mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
