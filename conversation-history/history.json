@@ -15185,5 +15185,26 @@
     "question": "Crée un service adapté à un projet de deep learning.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser un GPU, vous devez sélectionner un service compatible comme 'jupyter-python-gpu'. Ce service est pré-configuré pour allouer 1 GPU NVIDIA par défaut via le paramètre `resources.limits.nvidia.com/gpu`. Vous pouvez augmenter ce nombre (jusqu'à 3) si vos calculs le nécessitent.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python-gpu?name=jupyter-python-gpu&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-10T08:36:18.496387+00:00",
+    "event_id": "5e1eb691-d108-48d0-bd31-ac4380c217c3",
+    "interaction_id": "37046294-9f1d-43f7-80f5-e8678b1b1ed7",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un GPU avec Python dans Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python-gpu",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
