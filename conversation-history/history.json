@@ -755,5 +755,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de données (IDE, bases de données, outils de calcul) via des configurations Helm optimisées.\n\nConcernant votre question sur les **étapes de mise en production** dans un contexte de plateforme de données comme Onyxia, voici le flux standard :\n\n1.  **Définition des besoins (Design) :** Identification des services nécessaires (ex: Jupyter pour l'analyse, PostgreSQL pour le stockage, Kafka pour le streaming) et des ressources (CPU, RAM, stockage persistant).\n2.  **Configuration de l'environnement (Provisioning) :** Utilisation de fichiers de configuration (Helm/Onyxia) pour définir précisément l'état souhaité de l'infrastructure. C'est ici que j'interviens pour générer le `json_payload` de configuration.\n3.  **Initialisation du projet (Bootstrap) :** Mise en place de l'environnement de travail via des scripts d'initialisation (`init_script`) pour installer les bibliothèques spécifiques (pandas, scikit-learn, etc.) ou cloner des dépôts Git.\n4.  **Déploiement (Deployment) :** Application de la configuration sur le cluster Kubernetes via l'orchestrateur Onyxia.\n5.  **Validation et Tests :** Vérification que les services sont accessibles et que les volumes de données sont correctement montés.\n\n**Souhaitez-vous que je vous aide à configurer un environnement spécifique pour démarrer une phase de test ou de production ?** (Par exemple : un environnement de développement Python avec des bibliothèques de Data Science ou une base de données relationnelle).",
+    "created_at": "2026-08-10T13:28:32.787393+00:00",
+    "event_id": "43607fdb-e861-4d4c-9f43-0b65648d2652",
+    "interaction_id": "bf5e274b-c6fa-4e29-b6ed-77fd40f1452c",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
