@@ -665,5 +665,21 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour pouvoir t'aider à ajouter un script d'initialisation commun, j'ai besoin de comprendre ton objectif et les services concernés. Un script d'initialisation (`personalInit`) est spécifique à un service (un chart Helm particulier) car il s'exécute dans le conteneur de ce service.\n\nCependant, je peux préparer un script et l'injecter dans plusieurs services de ton choix.\n\nPourrais-tu me préciser :\n1. **Quels services** Onyxia souhaites-tu utiliser (ex: Jupyter, VS Code, RStudio) ?\n2. **Quel est le but du script** (ex: installer des librairies spécifiques, configurer des variables d'environnement, cloner un dépôt Git, ou créer une structure de dossiers) ?\n3. **Le contenu du script** (s'agit-il de commandes shell, de packages Python/R, ou de fichiers spécifiques à créer) ?\n\nUne fois ces informations reçues, je générerai le script via `create_init_script` puis je construirai les configurations pour chaque service.\n\n```json\n{\n  \"answer\": \"Pour ajouter un script d'initialisation commun, j'ai besoin de détails sur le contenu du script et sur les services cibles, car l'initialisation est injectée individuellement dans chaque service.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": []\n  }\n}\n```",
+    "created_at": "2026-08-10T13:26:48.321181+00:00",
+    "event_id": "cc2a171d-836d-4055-b202-032c8b714b8a",
+    "interaction_id": "f124a811-45fa-455d-9c03-a489b6f3a4e4",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
