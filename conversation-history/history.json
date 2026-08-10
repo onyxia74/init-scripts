@@ -1626,5 +1626,32 @@
     "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre service VSCode avec Python, Julia et les packages de data science standards a été configuré avec le mode sombre (Dark Mode) activé comme demandé.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&userPreferences.darkMode=true\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"userPreferences.darkMode\": {\n        \"value\": true,\n        \"reason\": \"thème Dark Visual Studio demandé\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-10T13:43:16.069360+00:00",
+    "event_id": "4ed8ca9f-5d5c-4379-b598-224886b79d53",
+    "interaction_id": "17ca031b-104f-4e7d-8b8b-79bea827d0e1",
+    "metadata": {
+      "agent_prompt": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "userPreferences.darkMode": {
+            "reason": "thème Dark Visual Studio demandé",
+            "value": true
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
