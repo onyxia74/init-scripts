@@ -1304,5 +1304,21 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'ajout de secrets dans un déploiement Onyxia dépend de la manière dont le service est configuré et de l'usage que vous souhaitez en faire (variables d'environnement, fichiers de configuration, ou accès à des bases de données).\n\nPour vous répondre précisément, j'ai besoin de savoir quel service vous utilisez ou souhaitez déployer. En général, il existe deux approches sur la plateforme :\n\n1.  **Via les paramètres Helm (Configuration du service) :** Certains charts permettent de passer des secrets ou des configurations sensibles via des paramètres spécifiques (ex: identifiants de base de données).\n2.  **Via un script d'initialisation (Usage utilisateur) :** Si vous avez besoin de secrets pour vos scripts de calcul (ex: clés API, tokens), nous pouvons créer un script d'initialisation qui configure ces variables dans votre environnement de travail.\n\nPourriez-vous me préciser :\n- Le **service** que vous utilisez (ex: Jupyter, VSCode, PostgreSQL...) ?\n- Le **type de secret** (une clé API, un mot de passe de base de données, un fichier de credentials...) ?\n- La **manière** dont votre application doit les consommer (variable d'environnement, fichier `.env`, etc.) ?\n\n```json\n{\n  \"answer\": \"Pour vous aider à ajouter des secrets, j'ai besoin de savoir quel service vous utilisez et comment ces secrets doivent être injectés (variables d'environnement ou fichiers).\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```",
+    "created_at": "2026-08-10T13:36:06.940870+00:00",
+    "event_id": "bf91590c-7c52-4677-ac8f-bc7d923b8b2e",
+    "interaction_id": "4da400dc-a891-47d2-952c-127f5556389a",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
