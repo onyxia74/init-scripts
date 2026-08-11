@@ -4186,5 +4186,21 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nReadError: [Errno 54] Connection reset by peer | ReadError: [Errno 54] Connection reset by peer | ConnectionResetError: [Errno 54] Connection reset by peer\n```",
+    "created_at": "2026-08-11T07:31:32.679077+00:00",
+    "event_id": "329abf58-62da-46af-9f5e-adb240d22e20",
+    "interaction_id": "d06fd057-b3f3-49a2-b0d5-a7741ce08c81",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
