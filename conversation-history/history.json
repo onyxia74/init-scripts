@@ -4438,5 +4438,32 @@
     "question": "Configure un environnement Java complet dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré votre environnement VS Code Python pour inclure l'extension Java (Java Extension Pack) ainsi que la bibliothèque pandas. Un script d'initialisation sera exécuté automatiquement au démarrage du service pour préparer ces outils.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-packages-pandas-purpose-installation-de-l-extension-java-et-du-package-pandas-vscode_extensions-vscjava.vscode-java-pack.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-pandas-purpose-installation-de-l-extension-java-et-du-package-pandas-vscode_extensions-vscjava.vscode-java-pack.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-11T07:34:20.935645+00:00",
+    "event_id": "617f6538-1574-469f-8e69-485a2ae0b10d",
+    "interaction_id": "3dbcf265-f64a-41ef-9282-edf13308fb6b",
+    "metadata": {
+      "agent_prompt": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-pandas-purpose-installation-de-l-extension-java-et-du-package-pandas-vscode_extensions-vscjava.vscode-java-pack.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
