@@ -8,8 +8,8 @@ set -euo pipefail
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 mkdir -p "${WORK_DIR}/data"
-mkdir -p "${WORK_DIR}/src"
 mkdir -p "${WORK_DIR}/notebooks"
+mkdir -p "${WORK_DIR}/src"
 
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/README.md")"
@@ -34,19 +34,17 @@ scikit-learn
 scipy
 ONYXIA_FILE_0b1da39f73b0
 mkdir -p "$(dirname "${WORK_DIR}/src/main.py")"
-cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_b92e0394d507'
+cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_a66d116aae02'
 import pandas as pd
 import numpy as np
 
 def main():
-    print('Initialisation du projet data science...')
-    # Exemple de création de données
-    df = pd.DataFrame(np.random.randn(10, 2), columns=['A', 'B'])
-    print('Données générées :\n', df)
+    print('Architecture de projet initialisée avec succès.')
+    print(f'Pandas version: {pd.__version__}')
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-ONYXIA_FILE_b92e0394d507
+ONYXIA_FILE_a66d116aae02
 mkdir -p "$(dirname "${WORK_DIR}/data/gitkeep")"
 cat > "${WORK_DIR}/data/gitkeep" <<'ONYXIA_FILE_8e7db04fcec2'
 
