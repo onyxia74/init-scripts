@@ -4864,5 +4864,26 @@
     "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre service RStudio est prêt à être lancé avec la configuration par défaut.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-11T07:38:23.268736+00:00",
+    "event_id": "33cbae73-fb3f-49bf-9917-0f8c0c9d4a85",
+    "interaction_id": "55051eb9-6f98-4383-881a-12f86309e2da",
+    "metadata": {
+      "agent_prompt": "J’aimerais lancer un service RStudio.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais lancer un service RStudio.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
