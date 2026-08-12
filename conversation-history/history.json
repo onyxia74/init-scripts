@@ -4933,5 +4933,21 @@
     "question": "Je veux un VScode avec 4 gpu ",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\nAction Input: {\"chart_id\": \"metabase\"}",
+    "created_at": "2026-08-12T07:34:05.393160+00:00",
+    "event_id": "0d009a1c-fde3-4ef5-a847-f6e8a363431c",
+    "interaction_id": "47433258-fc77-4dcb-b16b-13a69d72f574",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
