@@ -4965,5 +4965,21 @@
     "question": "Comment exposer un port de mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous aider à ajouter un script d'initialisation commun, j'ai besoin de comprendre votre objectif technique. Un script d'initialisation (`personalInit`) sur Onyxia permet de préparer l'environnement de travail (installation de packages, création de dossiers, clonage de dépôt, etc.) dès le lancement du service.\n\nPourriez-vous me préciser les éléments suivants :\n\n1.  **Quels services** souhaitez-vous cibler ? (ex: Jupyter, VS Code, RStudio...)\n2.  **Quel est le but du script ?** (ex: installer des bibliothèques Python spécifiques, cloner un projet Git, créer une structure de dossiers `data/` et `src/`, ou configurer des extensions VS Code).\n3.  **Quelles actions précises** le script doit-il effectuer ? (ex: `pip install pandas`, `mkdir -p project/data`, etc.)\n\nUne fois ces informations fournies, je pourrai :\n1.  Identifier les services compatibles dans le catalogue.\n2.  Générer le script d'initialisation via l'outil dédié.\n3.  Vous fournir la configuration Onyxia prête à l'emploi incluant le lien vers ce script.",
+    "created_at": "2026-08-17T08:56:04.596569+00:00",
+    "event_id": "eb8fde28-d8f7-49a2-9b74-d75e3f80a6eb",
+    "interaction_id": "5727055d-4962-4f6a-b93b-c9c79daa5629",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
