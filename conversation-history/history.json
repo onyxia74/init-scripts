@@ -6542,5 +6542,46 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Environnement RAG configuré avec ChromaDB pour le stockage vectoriel et VS Code Python pour le développement. Le service VS Code inclut un script d'initialisation automatique installant LangChain et un exemple de code pour l'alimentation de la base de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"chromadb\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.9\"\n        },\n        \"selected_parameters\": {},\n        \"ignored_parameters\": [\n          {\n            \"path\": \"init.personalInit\",\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-rag-environment-with-langchain-and-chromadb.sh\",\n            \"reason\": \"Parametre absent du schema/defaultValues du chart.\"\n          }\n        ],\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"chromadb\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.9\"\n        },\n        \"selected_parameters\": {},\n        \"ignored_parameters\": [\n          {\n            \"path\": \"init.personalInit\",\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-rag-environment-with-langchain-and-chromadb.sh\",\n            \"reason\": \"Parametre absent du schema/defaultValues du chart.\"\n          }\n        ],\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"vscode-python\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.6.2\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-rag-environment-with-langchain-and-chromadb.sh\",\n            \"reason\": \"setup rag environment with langchain and chromadb\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fsetup-rag-environment-with-langchain-and-chromadb.sh%C2%BB\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"chromadb\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n    },\n    {\n      \"chart_id\": \"chromadb\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n    },\n    {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fsetup-rag-environment-with-langchain-and-chromadb.sh%C2%BB\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-18T13:19:48.907136+00:00",
+    "event_id": "d08627d3-0b01-4871-8604-86421f60cc2d",
+    "interaction_id": "e5e3ff10-ff18-4bda-9cbc-6d6755dea9cd",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "chromadb",
+            "version": "1.0.9"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "chromadb",
+            "version": "1.0.9"
+          },
+          {
+            "catalog_id": "ide",
+            "chart_id": "vscode-python",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "setup rag environment with langchain and chromadb",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-rag-environment-with-langchain-and-chromadb.sh"
+              }
+            },
+            "version": "2.6.2"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
