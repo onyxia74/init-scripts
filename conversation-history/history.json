@@ -6027,5 +6027,32 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Comment souhaitez-vous utiliser ces secrets dans votre service ?",
+    "created_at": "2026-08-18T13:13:28.264763+00:00",
+    "event_id": "1dffd6d3-5d65-4aa5-abfd-6e4302f34ea6",
+    "interaction_id": "02b19101-8710-405a-aca7-995d19c3ac66",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "secret_usage_method",
+        "options": [
+          "Injecter des secrets en tant que variables d'environnement (ex: API_KEY)",
+          "Monter des secrets sous forme de fichiers dans un volume",
+          "Utiliser un outil spécifique (ex: Vault, AWS Secrets Manager)"
+        ],
+        "original_request": "",
+        "question": "Comment souhaitez-vous utiliser ces secrets dans votre service ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
