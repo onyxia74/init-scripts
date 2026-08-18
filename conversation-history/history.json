@@ -6583,5 +6583,26 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour votre besoin de dataviz, je vous recommande l'utilisation de **Metabase**. C'est un outil de Business Intelligence (BI) très intuitif qui vous permettra d'explorer vos données et de créer des tableaux de bord interactifs sans avoir à écrire de code complexe.\\n\\nSi vous préférez une approche plus orientée ingénierie de données ou exploration massive, **Apache Superset** est également une excellente alternative disponible dans le catalogue. Pour une approche par programmation (Python/R), les environnements **Jupyter** ou **RStudio** restent les standards de l'industrie.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-18T13:20:06.921987+00:00",
+    "event_id": "de5162c7-a532-475e-8508-1b9aa7f2d8ea",
+    "interaction_id": "5fc21a44-d22b-4e1c-8fd5-6eefa02cf8de",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
