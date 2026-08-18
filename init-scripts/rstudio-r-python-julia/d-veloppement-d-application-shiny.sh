@@ -8,5 +8,5 @@ set -euo pipefail
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Install R packages.
-Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'shinythemes'"'"', '"'"'shinydashboard'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
+Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'shinythemes'"'"', '"'"'leaflet'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
 
