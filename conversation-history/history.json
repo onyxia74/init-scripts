@@ -6796,5 +6796,21 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\nAction Input: {\"chart_id\": \"metabase\"}",
+    "created_at": "2026-08-18T13:40:39.281797+00:00",
+    "event_id": "afac60b6-8de0-4bad-b736-b3c72cb4726d",
+    "interaction_id": "3c74b0ab-d1c0-432f-bb5a-9cc799ab1a78",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
