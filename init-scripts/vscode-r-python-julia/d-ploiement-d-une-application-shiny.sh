@@ -9,42 +9,36 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.R")"
-cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_4f6488e086c7'
+cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_36cd4310b3f5'
 library(shiny)
-library(bslib)
+library(shinydashboard)
 
-uui <- page_fluid(
-  theme = bs_theme(version = 5),
-  titlePanel("Mon Application Shiny sur Onyxia"),
-  layout_sidebar(
-    sidebar = sidebar(
-      sliderInput("obs", "Nombre d'observations:", 1, 100, 50)
-    ),
-    card(
-      card_header("Graphique Dynamique"),
-      plotOutput("distPlot")
+ui <- dashboardPage(
+  dashboardHeader(title = "Shiny App"),
+  dashboardSidebar(),
+  dashboardBody(
+    fluidRow(
+      box(title = "Hello Shiny", status = "success", solidHeader = TRUE, 
+          "L'application est prête à être développée.")
     )
   )
 )
 
-server <- function(input, output) {
-  output$distPlot <- renderPlot({
-    hist(rnorm(input$obs),\ col = '#007bc2', border = 'white')
-  })
+server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-ONYXIA_FILE_4f6488e086c7
+ONYXIA_FILE_36cd4310b3f5
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
 if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
   PYTHON_BIN="python3"
 fi
-"${PYTHON_BIN}" -m pip install shiny shinythemes bslib
+"${PYTHON_BIN}" -m pip install shiny shinythemes shinydashboard
 
 # Install R packages.
-Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'bslib'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
+Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'shinydashboard'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
 
 # Create a reusable launch helper.
 mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
