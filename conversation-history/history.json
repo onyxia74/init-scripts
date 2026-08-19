@@ -7294,5 +7294,21 @@
     "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\nAction Input: {\"chart_id\": \"metabase\"}",
+    "created_at": "2026-08-19T09:35:13.832920+00:00",
+    "event_id": "72b28f23-2531-4488-a89f-1994ea64043f",
+    "interaction_id": "5af00257-4a2c-4c41-8034-dd572388b4c9",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
