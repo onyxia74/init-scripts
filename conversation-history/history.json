@@ -10274,5 +10274,28 @@
     "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service souhaitez-vous lancer avec ces ressources (ex: Jupyter, VS Code, RStudio, etc.) ?",
+    "created_at": "2026-08-19T13:55:27.403406+00:00",
+    "event_id": "400e8463-b801-4339-b8f8-481d09ed7ee6",
+    "interaction_id": "6fcb71f6-ebc2-48f7-8694-06ea86f02fc7",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type",
+        "options": [],
+        "original_request": "",
+        "question": "Quel service souhaitez-vous lancer avec ces ressources (ex: Jupyter, VS Code, RStudio, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
