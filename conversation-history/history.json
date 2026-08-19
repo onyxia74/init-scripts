@@ -9456,5 +9456,32 @@
     "question": "Quel service utiliser pour publier mon application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer votre application Shiny, j'ai configuré un environnement VS Code (R, Python, Julia) incluant un script d'initialisation automatique. Ce script installe les packages nécessaires (`shiny`, `shinythemes`, `shinydashboard`) et crée un squelette d'application `app.R` prêt à l'emploi dans votre répertoire de travail.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fd-ploiement-d-une-application-shiny.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/d-ploiement-d-une-application-shiny.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-19T13:45:37.869778+00:00",
+    "event_id": "c5a3f735-e1d8-4b8c-9ebd-f4a53477d8fd",
+    "interaction_id": "2ab61ce3-237e-491c-954c-0caeb4838d59",
+    "metadata": {
+      "agent_prompt": "Je veux déployer une application Shiny.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/d-ploiement-d-une-application-shiny.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux déployer une application Shiny.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
