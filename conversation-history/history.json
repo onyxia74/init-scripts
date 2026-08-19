@@ -8120,5 +8120,36 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La configuration pour déployer votre image personnalisée RStudio `Toto/rstudio-custom` a été générée. L'option d'image personnalisée a été activée et la version a été mise à jour selon votre demande.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&service.image.custom.enabled=true&service.image.custom.version=%C2%ABToto%2Frstudio-custom%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"utilisation d'une image personnalisée\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"Toto/rstudio-custom\",\n        \"reason\": \"image demandée par l'utilisateur\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-19T09:45:43.173714+00:00",
+    "event_id": "1ed0ae5a-a0db-4078-bb51-8b7d7c82e0ac",
+    "interaction_id": "49df9dc5-ffb4-4a90-891b-d0329c50845b",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "utilisation d'une image personnalisée",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "image demandée par l'utilisateur",
+            "value": "Toto/rstudio-custom"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
