@@ -9291,5 +9291,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de données et de calcul.\n\nConcernant votre question sur les **étapes de mise en production** dans un contexte de plateforme de données (DataOps/MLOps), voici le flux standard que nous suivons pour passer d'un notebook expérimental à un service stable et reproductible :\n\n1.  **Phase d'Exploration (Sandbox) :**\n    *   Utilisation de services comme **Jupyter** ou **RStudio** sur Onyxia.\n    *   Manipulation de données brutes, tests d'algorithmes et prototypage rapide.\n    *   *Objectif :* Valider la faisabilité scientifique/analytique.\n\n2.  **Industrialisation du Code (Refactoring) :**\n    *   Transition du format \"Notebook\" vers des scripts structurés (`.py`, `.R`).\n    *   Modularisation du code (création de packages, séparation de la logique de traitement et de la logique métier).\n    *   Gestion des dépendances via des fichiers `requirements.txt` ou `environment.yml`.\n\n3.  **Conteneurisation et Environnement :**\n    *   Définition d'un environnement de calcul reproductible (via les Helm charts Onyxia).\n    *   Utilisation de scripts d'initialisation (`init_scripts`) pour automatiser l'installation des bibliothèques spécifiques et la configuration des dossiers de travail.\n\n4.  **Automatisation et Orchestration (CI/CD) :**\n    *   **CI (Continuous Integration) :** Tests unitaires et validation de la qualité du code à chaque modification.\n    *   **CD (Continuous Deployment) :** Déploiement automatique de l'environnement de production (via Kubernetes/Helm) une fois les tests validés.\n    *   Mise en place d'un orchestrateur (type Airflow ou Prefect) pour gérer les pipelines de données.\n\n5.  **Monitoring et Observabilité :**\n    *   Surveillance de la consommation des ressources (CPU, RAM, GPU).\n    *   Suivi de la qualité des données (Data Drift) et de la performance des modèles (Model Drift).\n\n**Souhaitez-vous que je vous aide à configurer un environnement spécifique (par exemple un IDE VS Code avec un squelette de projet Python déjà prêt) pour entamer cette phase d'industrialisation ?**",
+    "created_at": "2026-08-19T13:43:59.850459+00:00",
+    "event_id": "6e271cbc-a7a4-4aba-b527-8623bc996a81",
+    "interaction_id": "fd6a3ecf-446c-4eb1-80ec-e1a9ee5b410c",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
