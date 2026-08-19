@@ -8766,5 +8766,28 @@
     "question": "Comment déployer une API Python ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous conseiller le graphique le plus adapté, j'ai besoin de comprendre vos données. Quel est le type de vos données (séries temporelles, catégories, distributions, corrélations...) et quel est votre objectif (comparer, montrer une tendance, répartir...) ?",
+    "created_at": "2026-08-19T13:30:24.489268+00:00",
+    "event_id": "6334a37b-2650-4fdb-a0e3-093409256028",
+    "interaction_id": "7be4dbf2-f332-448d-a1fc-b745ffd4c727",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "data_nature_and_goal",
+        "options": [],
+        "original_request": "",
+        "question": "Pour vous conseiller le graphique le plus adapté, j'ai besoin de comprendre vos données. Quel est le type de vos données (séries temporelles, catégories, distributions, corrélations...) et quel est votre objectif (comparer, montrer une tendance, répartir...) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
