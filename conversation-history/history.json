@@ -9177,5 +9177,28 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pourriez-vous me préciser quels services Onyxia vous souhaitez configurer (par exemple : Jupyter, VS Code, RStudio) et quel est l'objectif de ce script d'initialisation (installation de bibliothèques, création de dossiers, clonage d'un dépôt Git, etc.) ?",
+    "created_at": "2026-08-19T13:42:32.351276+00:00",
+    "event_id": "af57e2a7-f472-44ae-9742-bfd3c7aa1090",
+    "interaction_id": "80881403-91d3-4aeb-8be9-5149fc076966",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "services_list, init_script_purpose",
+        "options": [],
+        "original_request": "",
+        "question": "Pourriez-vous me préciser quels services Onyxia vous souhaitez configurer (par exemple : Jupyter, VS Code, RStudio) et quel est l'objectif de ce script d'initialisation (installation de bibliothèques, création de dossiers, clonage d'un dépôt Git, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
