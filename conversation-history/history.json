@@ -12057,5 +12057,21 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour ajouter des variables d'environnement à un service Onyxia, vous devez utiliser le paramètre `extraEnvVars`. \n\nD'après l'inspection du service `jupyter-python`, ce paramètre est de type `array` (tableau). Il permet d'injecter des variables d'environnement personnalisées qui seront disponibles dans votre session de travail.\n\nVoici comment cela se structure techniquement dans la configuration Helm :\n\n```json\n{\n  \"extraEnvVars\": [\n    {\n      \"name\": \"MA_VARIABLE\",\n      \"value\": \"ma_valeur\"\n    },\n    {\n      \"name\": \"DATABASE_URL\",\n      \"value\": \"postgresql://user:password@host:5432/db\"\n    }\n  ]\n}\n```\n\n**Points clés à retenir :**\n1. **Format** : Chaque élément du tableau doit être un objet contenant au minimum une clé `\"name\"` et une clé `\"value\"`.\n2. **Disponibilité** : Ces variables seront accessibles directement dans vos notebooks (via `os.environ.get('MA_VARIABLE')` en Python par exemple) ou dans votre terminal.\n3. **Usage courant** : C'est la méthode recommandée pour configurer des accès à des bases de données, des clés d'API ou des chemins de configuration spécifiques sans modifier l'image Docker du service.",
+    "created_at": "2026-08-20T12:34:36.171889+00:00",
+    "event_id": "02d6908e-d101-466a-8845-74c16a5f53e5",
+    "interaction_id": "f1c79939-f85a-4d7f-adfe-33580e40b803",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
