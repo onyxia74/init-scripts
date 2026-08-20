@@ -11913,5 +11913,41 @@
     "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre environnement est prêt. Il comprend un VS Code configuré avec R, Python et Julia, incluant l'installation automatique de pandas, numpy, tidyverse et RPostgreSQL via un script d'initialisation. Une instance PostgreSQL est également configurée pour vos besoins de stockage de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"vscode-r-python-julia\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.6.2\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/pr-paration-environnement-de-d-veloppement-avec-support-postgresql-et-outils-de-data-science-r-python.sh\",\n            \"reason\": \"Changement demande explicitement.\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fpr-paration-environnement-de-d-veloppement-avec-support-postgresql-et-outils-de-data-science-r-python.sh%C2%BB\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fpr-paration-environnement-de-d-veloppement-avec-support-postgresql-et-outils-de-data-science-r-python.sh%C2%BB\"\n    },\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-20T12:33:33.093433+00:00",
+    "event_id": "e701a130-f5c6-42ac-b8e4-6c552cd91dc7",
+    "interaction_id": "1b5e932d-c264-4f86-af0a-0817419a6466",
+    "metadata": {
+      "agent_prompt": "Crée-moi un VS Code avec R, Python et une base PostgreSQL.",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "ide",
+            "chart_id": "vscode-r-python-julia",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Changement demande explicitement.",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/pr-paration-environnement-de-d-veloppement-avec-support-postgresql-et-outils-de-data-science-r-python.sh"
+              }
+            },
+            "version": "2.6.2"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée-moi un VS Code avec R, Python et une base PostgreSQL.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
