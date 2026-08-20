@@ -601,5 +601,41 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre application à PostgreSQL, j'ai déployé un environnement composé d'une base de données PostgreSQL (via le chart postgresql-cnpg) et d'un IDE VS Code avec support GPU. Un script d'initialisation a été configuré dans VS Code pour installer automatiquement les drivers `psycopg2-binary` et `sqlalchemy`, vous permettant de commencer vos tests de connexion immédiatement.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"vscode-python-gpu\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.6.2\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/connexion-postgresql.sh\",\n            \"reason\": \"Changement demande explicitement.\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python-gpu%2Fconnexion-postgresql.sh%C2%BB\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    },\n    {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python-gpu%2Fconnexion-postgresql.sh%C2%BB\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-20T13:14:58.630190+00:00",
+    "event_id": "3a35422b-a244-4dae-ab5d-e88c309ef477",
+    "interaction_id": "a8507dfe-765d-4a99-9597-a1594e2f49d4",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "ide",
+            "chart_id": "vscode-python-gpu",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Changement demande explicitement.",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/connexion-postgresql.sh"
+              }
+            },
+            "version": "2.6.2"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
