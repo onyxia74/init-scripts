@@ -680,5 +680,32 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer votre API Python, j'ai configuré un environnement VS Code (`vscode-python`) incluant un squelette prêt à l'emploi avec FastAPI. Le script d'initialisation prépare automatiquement l'installation des packages `fastapi` et `uvicorn`, crée un fichier `app.py` contenant une API de base, et configure la commande de lancement pour que votre service soit immédiatement opérationnel.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-files-app.py-from-fastapi-import-fastapi-n-napp-fastapi-n-n-app.get-ndef-read_root-n-return-hello-onyxia-api-n-n-app.get-items-item_id-ndef-read_item-item_id-int-q-str-none-n-return-item_id-item_id-q-q-purpose-d-ploiement-d-une-api-python-avec-fastapi-packages-fastapi-uvicorn-start_command-uvicorn-app-app---host-0.0.0.0---port-8080.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-from-fastapi-import-fastapi-n-napp-fastapi-n-n-app.get-ndef-read_root-n-return-hello-onyxia-api-n-n-app.get-items-item_id-ndef-read_item-item_id-int-q-str-none-n-return-item_id-item_id-q-q-purpose-d-ploiement-d-une-api-python-avec-fastapi-packages-fastapi-uvicorn-start_command-uvicorn-app-app---host-0.0.0.0---port-8080.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-20T13:15:42.251556+00:00",
+    "event_id": "e6aeb8da-b839-48e0-8357-54d60ca87e4b",
+    "interaction_id": "8edf6433-4c99-4563-bff7-310cdbebc677",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-from-fastapi-import-fastapi-n-napp-fastapi-n-n-app.get-ndef-read_root-n-return-hello-onyxia-api-n-n-app.get-items-item_id-ndef-read_item-item_id-int-q-str-none-n-return-item_id-item_id-q-q-purpose-d-ploiement-d-une-api-python-avec-fastapi-packages-fastapi-uvicorn-start_command-uvicorn-app-app---host-0.0.0.0---port-8080.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
