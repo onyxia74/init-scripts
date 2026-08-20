@@ -1191,5 +1191,21 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas répondre directement à cette question car l'accès au cluster Kubernetes interne est une opération d'administration système et de sécurité qui n'est pas exposée via les services de l'interface Onyxia SSPCloud.\n\nEn tant qu'architecte Data, mon rôle est de vous aider à déployer des environnements de travail (Jupyter, VS Code, RStudio, bases de données, etc.) sur la plateforme via des configurations Helm. L'accès au plan de contrôle (control plane) ou aux nœuds du cluster est restreint pour garantir la sécurité et l'isolation des environnements utilisateurs.\n\nSi vous avez besoin d'un accès spécifique pour des raisons d'administration ou de développement d'infrastructure, je vous invite à contacter l'équipe support ou l'administrateur de la plateforme SSPCloud.\n\nSi votre question concernait la manière de déployer un service ou d'interagir avec les ressources de votre espace de travail, n'hésitez pas à me le préciser.",
+    "created_at": "2026-08-20T13:21:40.689137+00:00",
+    "event_id": "6fa9fe92-64a7-44b5-b187-7e312eaa7eb0",
+    "interaction_id": "d025c96b-ee2d-494a-8ad2-8041ce17211c",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
