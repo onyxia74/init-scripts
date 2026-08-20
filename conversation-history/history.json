@@ -10991,5 +10991,26 @@
     "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement JupyterLab avec support GPU via le service `jupyter-python-gpu`. Ce service est idéal pour vos travaux de machine learning nécessitant une accélération matérielle. Notez que la durée de réservation (une heure) est une gestion de session qui dépend de la politique de votre plateforme Onyxia, mais la configuration du service est prête.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python-gpu?name=jupyter-python-gpu&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-20T12:22:09.629999+00:00",
+    "event_id": "8693acd3-e7ce-4574-b9f9-b4e9bf968de7",
+    "interaction_id": "db97a504-84a4-4760-ba8c-84fea5c290bf",
+    "metadata": {
+      "agent_prompt": "Réserve une ressource GPU pendant une heure.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python-gpu",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Réserve une ressource GPU pendant une heure.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
