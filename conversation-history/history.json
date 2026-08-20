@@ -12073,5 +12073,21 @@
     "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "get_service_details\n{\"chart_id\":\"vscode-python\"}",
+    "created_at": "2026-08-20T12:34:44.743466+00:00",
+    "event_id": "85fdb5ee-1863-4af1-a03e-3bcf23e2a325",
+    "interaction_id": "19a0ad75-4fab-453c-81e0-3c9f55f4e535",
+    "metadata": {
+      "agent_prompt": "Active automatiquement l’option « Format on Save » dans VS Code.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
