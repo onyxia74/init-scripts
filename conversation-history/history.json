@@ -1566,5 +1566,34 @@
     "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel type de service souhaitez-vous lancer avec ces ressources (65 Go de RAM et 4 CPU) ?",
+    "created_at": "2026-08-20T13:24:36.960344+00:00",
+    "event_id": "4adcd62a-ce30-46f0-b53b-85f8df327433",
+    "interaction_id": "33a02e4c-2cbc-4881-b0ac-d30c246a7b3f",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type",
+        "options": [
+          "Jupyter Notebook",
+          "VS Code",
+          "RStudio",
+          "PostgreSQL",
+          "Autre"
+        ],
+        "original_request": "",
+        "question": "Quel type de service souhaitez-vous lancer avec ces ressources (65 Go de RAM et 4 CPU) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
