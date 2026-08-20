@@ -558,5 +558,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de données et de calcul.\n\nConcernant votre question sur les **étapes de mise en production** dans un contexte de plateforme de données (DataOps/MLOps), voici le flux standard que nous suivons pour passer d'un notebook expérimental à un service stable et reproductible :\n\n1.  **Phase d'Exploration (Sandbox) :**\n    *   Utilisation de services comme **Jupyter** ou **RStudio** sur Onyxia.\n    *   Manipulation de données brutes, tests d'algorithmes et prototypage rapide.\n    *   *Objectif :* Valider la faisabilité scientifique/analytique.\n\n2.  **Industrialisation du Code (Refactoring) :**\n    *   Transition du format \"Notebook\" vers des scripts structurés (`.py`, `.R`).\n    *   Modularisation du code (création de packages, séparation de la logique de traitement et de la logique métier).\n    *   Gestion des dépendances via des fichiers `requirements.txt` ou `environment.yml`.\n\n3.  **Conteneurisation et Environnement :**\n    *   Définition d'un environnement de calcul reproductible (via les Helm charts Onyxia).\n    *   Utilisation de scripts d'initialisation (`init_scripts`) pour automatiser l'installation des bibliothèques spécifiques et la configuration des dossiers de projet (`src/`, `data/`, `models/`).\n\n4.  **Orchestration et Automatisation (CI/CD) :**\n    *   Mise en place de pipelines (ex: via GitHub Actions ou GitLab CI) pour tester le code automatiquement.\n    *   Déploiement de l'application ou du modèle sur un environnement de staging, puis de production.\n    *   Utilisation d'orchestrateurs (Airflow, Prefect) pour gérer les flux de données (ETL/ELT).\n\n5.  **Monitoring et Observabilité :**\n    *   Surveillance de la performance des modèles (Data Drift, Model Drift).\n    *   Suivi de l'utilisation des ressources (CPU, RAM, Stockage) pour optimiser les coûts sur la plateforme.\n\n**Souhaitez-vous que je vous aide à configurer un environnement spécifique (par exemple un IDE VS Code avec un squelette de projet Python déjà prêt) pour entamer cette phase d'industrialisation ?**",
+    "created_at": "2026-08-20T13:14:32.775697+00:00",
+    "event_id": "1561386f-35d2-418e-b8e3-ec0946ec502c",
+    "interaction_id": "873cf879-2439-4f86-9377-021b729e6109",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
