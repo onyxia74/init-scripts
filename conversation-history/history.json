@@ -11269,5 +11269,21 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nNameError: name 'PORT' is not defined\n```",
+    "created_at": "2026-08-20T12:25:14.473299+00:00",
+    "event_id": "935306ed-1f49-4b6f-846e-cbb1ab3ea518",
+    "interaction_id": "21f0ea52-5c62-4948-9a31-a8c815469c20",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
