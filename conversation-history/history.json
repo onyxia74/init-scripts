@@ -973,5 +973,32 @@
     "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement de Deep Learning optimisé utilisant JupyterLab avec support GPU et le framework PyTorch. Le service inclut un script d'initialisation automatique qui prépare les bibliothèques essentielles telles que PyTorch, torchvision, torchaudio, ainsi que les outils de data science (transformers, accelerate, matplotlib, pandas, numpy) pour vous permettre de commencer vos entraînements immédiatement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pytorch-gpu?name=jupyter-pytorch-gpu&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-pytorch-gpu%2Fenvironnement-de-deep-learning-complet-avec-support-pytorch-et-librairies-de-data-science.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pytorch-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pytorch-gpu/environnement-de-deep-learning-complet-avec-support-pytorch-et-librairies-de-data-science.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-20T13:19:39.644521+00:00",
+    "event_id": "ca2a3092-c089-426c-a260-3fd7ad5ca2eb",
+    "interaction_id": "fcd1429a-5d74-468d-af2b-bd43e97f3c5d",
+    "metadata": {
+      "agent_prompt": "Crée un service adapté à un projet de deep learning.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pytorch-gpu",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pytorch-gpu/environnement-de-deep-learning-complet-avec-support-pytorch-et-librairies-de-data-science.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée un service adapté à un projet de deep learning.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
