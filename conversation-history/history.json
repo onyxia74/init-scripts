@@ -12195,5 +12195,32 @@
     "question": "Je veux travailler avec des données géographiques volumineuses.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour le développement Java, l'environnement le plus adapté sur Onyxia est VS Code. J'ai configuré un environnement VS Code avec un script d'initialisation qui prépare l'installation des extensions nécessaires au support du langage Java, vous permettant de bénéficier d'un véritable IDE (autocomplétion, débogage, gestion de projet) directement dans votre navigateur.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fd-veloppement-java-via-extensions-vs-code.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-veloppement-java-via-extensions-vs-code.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-20T12:35:44.942732+00:00",
+    "event_id": "db1445b5-8044-407f-9474-bbecbc2709bd",
+    "interaction_id": "577d991b-a675-43c7-a3dd-854311f9b409",
+    "metadata": {
+      "agent_prompt": "Quel environnement utiliser pour développer une application Java ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-veloppement-java-via-extensions-vs-code.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel environnement utiliser pour développer une application Java ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
