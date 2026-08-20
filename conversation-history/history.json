@@ -40,5 +40,32 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour votre projet d'écriture, j'ai configuré un environnement **VS Code** personnalisé. Ce service inclut un script d'initialisation qui prépare automatiquement une structure de travail organisée avec des dossiers pour vos chapitres et vos notes, ainsi qu'un fichier README pour vous guider dans la gestion de votre manuscrit.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fenvironnement-d-criture-de-livres-avec-support-markdown-et-organisation-de-chapitres.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/environnement-d-criture-de-livres-avec-support-markdown-et-organisation-de-chapitres.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-20T12:42:37.721938+00:00",
+    "event_id": "721912e4-a87b-4830-9cab-87016b38379b",
+    "interaction_id": "f684e135-991e-4696-89f4-ec6e20091c12",
+    "metadata": {
+      "agent_prompt": "j'aime ecrire des livres",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/environnement-d-criture-de-livres-avec-support-markdown-et-organisation-de-chapitres.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "j'aime ecrire des livres",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
