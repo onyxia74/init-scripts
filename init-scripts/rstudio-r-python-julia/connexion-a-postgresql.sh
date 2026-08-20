@@ -8,5 +8,5 @@ set -euo pipefail
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Install R packages.
-Rscript -e 'install.packages(c('"'"'DBI'"'"', '"'"'RPostgres'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
+Rscript -e 'install.packages(c('"'"'RPostgreSQL'"'"', '"'"'DBI'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
 
