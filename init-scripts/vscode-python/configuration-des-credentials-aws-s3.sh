@@ -9,10 +9,11 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/aws_config.py")"
-cat > "${WORK_DIR}/aws_config.py" <<'ONYXIA_FILE_28826af155b4'
+cat > "${WORK_DIR}/aws_config.py" <<'ONYXIA_FILE_bed1cbb17f3b'
 import boto3
+import os
 
-# Configuration AWS S3
+# Configuration des credentials
 s3 = boto3.client(
     's3',
     aws_access_key_id='toto',
@@ -20,7 +21,7 @@ s3 = boto3.client(
 )
 
 print('Client S3 initialisé avec succès.')
-ONYXIA_FILE_28826af155b4
+ONYXIA_FILE_bed1cbb17f3b
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
