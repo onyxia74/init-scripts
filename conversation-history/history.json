@@ -6696,5 +6696,32 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre service Onyxia à GitHub, la méthode la plus efficace consiste à utiliser un script d'initialisation qui clone votre dépôt automatiquement au démarrage. J'ai configuré un environnement VS Code Python incluant un script prêt à l'emploi pour cloner un projet dans votre espace de travail.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fclonage-de-projet-github.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/clonage-de-projet-github.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-24T12:55:57.177484+00:00",
+    "event_id": "493aeda9-50fb-426e-a942-a8f8e9665669",
+    "interaction_id": "c7eefcf4-24f2-4069-8b95-45a106388097",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/clonage-de-projet-github.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
