@@ -2660,5 +2660,33 @@
     "question": "Comment joindre mes données statistiques à un fond de carte ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous conseiller le graphique le plus adapté, j'ai besoin d'en savoir plus sur vos données. Pourriez-vous me préciser :",
+    "created_at": "2026-08-24T11:29:44.756658+00:00",
+    "event_id": "fc0cb47b-89f0-4e6f-bb6c-c3a22b74243a",
+    "interaction_id": "cef7535a-17fb-4063-9185-a3ceb462a96e",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "data_context",
+        "options": [
+          "Variables numériques (ex: taille, prix)",
+          "Variables catégorielles (ex: pays, genre)",
+          "Séries temporelles (ex: dates, heures)",
+          "Relations entre variables (ex: corrélation)"
+        ],
+        "original_request": "",
+        "question": "Pour vous conseiller le graphique le plus adapté, j'ai besoin d'en savoir plus sur vos données. Pourriez-vous me préciser :",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
