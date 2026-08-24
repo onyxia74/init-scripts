@@ -6146,5 +6146,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, il est important de distinguer la méthode de gestion des secrets (au niveau de la plateforme/Kubernetes) et la manière dont votre application les consomme.\n\nSur Onyxia, la méthode recommandée pour injecter des secrets de manière sécurisée dans un service (comme un notebook Jupyter ou un IDE VS Code) est d'utiliser les **variables d'environnement**.\n\nVoici les trois approches principales :\n\n1.  **Variables d'environnement via la configuration (Méthode Onyxia) :**\n    Si vous déployez un service via une configuration Helm, vous pouvez injecter des secrets en utilisant les paramètres du chart qui permettent de définir des variables d'environnement. Cela permet à votre code (Python, R, etc.) de les lire simplement via `os.environ.get('MON_SECRET')`.\n\n2.  **Fichiers de configuration locaux (Méthode de développement) :**\n    Pour un usage rapide dans votre espace de travail (`/home/onyxia/work`), vous pouvez créer un fichier `.env` (à ne pas versionner si vous utilisez Git) et utiliser une bibliothèque comme `python-dotenv` pour charger vos clés.\n\n3.  **Gestion via Kubernetes Secrets (Méthode Infrastructure) :**\n    Si vous avez accès à la gestion des secrets de votre namespace, les secrets sont montés soit comme variables d'environnement, soit comme fichiers dans un volume spécifique.\n\n**Exemple pratique en Python :**\n\nSi vous avez injecté un secret nommé `DATABASE_PASSWORD` dans votre environnement, voici comment l'utiliser de manière sécurisée :\n\n```python\nimport os\n\n# Récupération sécurisée du secret\ndb_password = os.getenv('DATABASE_PASSWORD')\n\nif db_password:\n    print(\"Secret chargé avec succès.\")\n    # Utilisez db_password pour votre connexion\nelse:\n    print(\"Erreur : Le secret DATABASE_PASSWORD n'est pas défini.\")\n```\n\n**Conseil d'expert :** Ne stockez jamais de secrets en clair dans vos notebooks ou vos fichiers de code. Utilisez toujours des variables d'environnement ou des gestionnaires de secrets dédiés.",
+    "created_at": "2026-08-24T12:38:11.844381+00:00",
+    "event_id": "7320c79d-3d05-43ff-be61-795cdd30a55e",
+    "interaction_id": "42924c81-e498-4211-a39b-2e418111be5c",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
