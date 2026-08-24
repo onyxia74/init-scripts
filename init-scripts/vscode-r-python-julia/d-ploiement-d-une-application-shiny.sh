@@ -42,12 +42,12 @@ Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'shinydashboard'"'"'), repos
 
 # Create a reusable launch helper.
 mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
-cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_34dbed224bdd'
+cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_1dd8aa12599d'
 #!/usr/bin/env bash
 set -euo pipefail
 cd "${WORK_DIR}"
-R -e 'shiny::runApp("/home/onyxia/work", host="0.0.0.0", port=8501)'
-ONYXIA_FILE_34dbed224bdd
+R -e 'shiny::runApp("/home/onyxia/work/app.R", host="0.0.0.0", port=8501)'
+ONYXIA_FILE_1dd8aa12599d
 chmod +x "${WORK_DIR}/onyxia/run.sh"
 
 # Add a VSCode task for the prepared project.
