@@ -9,7 +9,7 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/exploration_data.ipynb")"
-cat > "${WORK_DIR}/exploration_data.ipynb" <<'ONYXIA_FILE_5499d2992105'
+cat > "${WORK_DIR}/exploration_data.ipynb" <<'ONYXIA_FILE_bb53b4fe1b99'
 {
   "cells": [
     {
@@ -25,7 +25,15 @@ cat > "${WORK_DIR}/exploration_data.ipynb" <<'ONYXIA_FILE_5499d2992105'
       "metadata": {},
       "outputs": [],
       "source": [
-        "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nprint('Environnement prêt !')"
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "import seaborn as sns\n\n",
+        "# Création d'un dataset d'exemple\n",
+        "df = pd.DataFrame({\n    'A': np.random.randn(100),\n",
+        "    'B': np.random.rand(100)\n",
+        "})\n",
+        "print(df.head())"
       ]
     }
   ],
@@ -35,8 +43,8 @@ cat > "${WORK_DIR}/exploration_data.ipynb" <<'ONYXIA_FILE_5499d2992105'
       "language": "python",
       "name": "python3"
     }
-  },\n  "nbformat": 4,\n  "nbformat_minor": 5
-ONYXIA_FILE_5499d2992105
+  },\n  "nbformat": 4,\n  "nbformat_minor": 4\n}
+ONYXIA_FILE_bb53b4fe1b99
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
