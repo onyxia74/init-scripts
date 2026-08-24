@@ -7328,5 +7328,32 @@
     "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service JupyterLab Python a été sélectionné pour vos travaux de cartographie. Un script d'initialisation a été configuré pour installer automatiquement les bibliothèques spécialisées (geopandas, folium, etc.), vous permettant de commencer vos analyses SIG immédiatement après le lancement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fpr-paration-d-un-environnement-de-cartographie-et-sig-avec-python.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/pr-paration-d-un-environnement-de-cartographie-et-sig-avec-python.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-24T13:01:14.607007+00:00",
+    "event_id": "017bda3d-8af2-4cd5-bac1-1772fcb076ba",
+    "interaction_id": "39cfc01a-1f67-4497-aa90-d271d3b5406d",
+    "metadata": {
+      "agent_prompt": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/pr-paration-d-un-environnement-de-cartographie-et-sig-avec-python.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
