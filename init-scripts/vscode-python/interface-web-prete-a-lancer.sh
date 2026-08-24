@@ -9,17 +9,17 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.py")"
-cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_96a4147ca260'
+cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_d4fbcf6168a8'
 import streamlit as st
 import pandas as pd
 import numpy as np
 
 st.title('Mon Interface Web Onyxia')
-st.write('Bienvenue sur votre application Streamlit !')
+st.write('Cette interface est accessible depuis l'extérieur.')
 
 data = pd.DataFrame(np.random.randn(10, 2), columns=['x', 'y'])
 st.line_chart(data)
-ONYXIA_FILE_96a4147ca260
+ONYXIA_FILE_d4fbcf6168a8
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
