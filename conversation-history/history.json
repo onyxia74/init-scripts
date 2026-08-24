@@ -7301,5 +7301,32 @@
     "question": "Je veux faire de l’exploration de données dans un notebook.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour créer une application Shiny, le service le plus adapté est **RStudio**. J'ai configuré un environnement RStudio (incluant Python et Julia) avec un script d'initialisation qui prépare automatiquement les packages nécessaires pour le développement Shiny (notamment `shiny`, `shinythemes` et `leaflet).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fd-veloppement-d-application-shiny.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/d-veloppement-d-application-shiny.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-24T13:00:59.943060+00:00",
+    "event_id": "1787f77e-de41-4555-8363-233a19dce00a",
+    "interaction_id": "053c1171-1d36-4e3c-9c4f-35a624cbf31f",
+    "metadata": {
+      "agent_prompt": "Quel service dois-je utiliser pour créer une application Shiny ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/d-veloppement-d-application-shiny.sh"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
