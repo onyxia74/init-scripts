@@ -6067,5 +6067,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de données et de calcul.\n\nConcernant votre question sur les **étapes de mise en production** dans un contexte de plateforme de données (DataOps/MLOps), voici le flux standard que nous suivons pour passer d'un notebook expérimental à un service stable et reproductible :\n\n1.  **Phase d'Exploration (Sandbox) :**\n    *   Utilisation de services comme **Jupyter** ou **RStudio** sur Onyxia.\n    *   Manipulation de données brutes, tests de bibliothèques et prototypage de modèles.\n    *   *Objectif :* Valider la faisabilité technique.\n\n2.  **Industrialisation du Code (Refactoring) :**\n    *   Transition du format \"Notebook\" vers des scripts structurés (`.py`, `.R`).\n    *   Modularisation du code (création de packages, séparation de la logique de traitement et de la logique métier).\n    *   Gestion des dépendances via des fichiers de configuration (`requirements.txt`, `environment.yml`).\n\n3.  **Conteneurisation et Environnement :**\n    *   Définition d'un environnement de calcul reproductible (via Helm charts et configurations de services).\n    *   Utilisation de scripts d'initialisation (`init_scripts`) pour automatiser l'installation des dépendances et la préparation des répertoires de données au démarrage du service.\n\n4.  **Orchestration et Automatisation (CI/CD) :**\n    *   Mise en place de pipelines (GitLab CI, GitHub Actions) pour tester et déployer le code.\n    *   Orchestration des workflows de données (Airflow, Prefect ou Argo Workflows) pour exécuter les tâches de manière programmée et résiliente.\n\n5.  **Monitoring et Gouvernance :**\n    *   Surveillance de la performance des ressources (CPU, RAM, GPU).\n    *   Observabilité des données (Data Quality) et des modèles (Model Drift).\n    *   Gestion des accès et de la sécurité des données.\n\n**Souhaitez-vous que je vous aide à configurer un environnement spécifique (par exemple, un IDE VS Code pré-configuré avec vos bibliothèques de production) pour commencer cette transition ?**",
+    "created_at": "2026-08-24T12:37:33.014016+00:00",
+    "event_id": "77012c98-b8fe-417d-9276-53fa1b8f86ae",
+    "interaction_id": "ec1b8da1-bac4-47f0-bfef-9d1753b441d7",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
