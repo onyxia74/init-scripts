@@ -7556,5 +7556,21 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'exposition d'un port spécifique pour une application dépend du service que vous utilisez sur Onyxia. En règle générale, pour les services de type IDE (Jupyter, VS Code, RStudio) ou les services de base de données, l'exposition se gère via les paramètres de configuration Helm du chart.\n\nPour vous répondre précisément, j'ai besoin de savoir quel service vous utilisez ou souhaitez utiliser. Voici les deux cas de figure principaux :\n\n1.  **Si vous développez une application (ex: Streamlit, FastAPI) :**\n    Il est recommandé d'utiliser un environnement comme `vscode-python`. Nous pouvons configurer un `start_command` dans un script d'initialisation qui lance votre application sur un port spécifique, et nous vérifierons si le chart permet d'exposer des ports additionnels via les paramètres `service.extraPorts`.\n\n2.  **Si vous utilisez un service existant (ex: une base de données) :**\n    Il faut vérifier dans les paramètres du service (via `get_service_details`) si un paramètre de type `service.ports` ou `externalAccess` est disponible pour mapper un port du conteneur vers l'extérieur.\n\n**Pourriez-vous me préciser quel service vous utilisez ou quel type d'application vous souhaitez exposer ?**\n\nSi vous avez déjà un service en tête, je peux interroger le catalogue pour vous proposer la configuration exacte.",
+    "created_at": "2026-08-24T13:09:39.204380+00:00",
+    "event_id": "d25db6bb-4bf8-414d-b3f0-3bc2a1461e1b",
+    "interaction_id": "7ac8115b-56a3-455b-8706-3887c0593051",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
