@@ -9,28 +9,26 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.R")"
-cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_eb4319c6899c'
+cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_36cd4310b3f5'
 library(shiny)
 library(shinydashboard)
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Shiny App Onyxia"),
+  dashboardHeader(title = "Shiny App"),
   dashboardSidebar(),
   dashboardBody(
     fluidRow(
-      box(plotOutput("plot"))
+      box(title = "Hello Shiny", status = "success", solidHeader = TRUE, 
+          "L'application est prête à être développée.")
     )
   )
 )
 
-server <- function(input, output) {
-  output$plot <- renderPlot({
-    hist(rnorm(100))
-  })
+server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-ONYXIA_FILE_eb4319c6899c
+ONYXIA_FILE_36cd4310b3f5
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
@@ -44,12 +42,12 @@ Rscript -e 'install.packages(c('"'"'shiny'"'"', '"'"'shinydashboard'"'"'), repos
 
 # Create a reusable launch helper.
 mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
-cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_1dd8aa12599d'
+cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_34dbed224bdd'
 #!/usr/bin/env bash
 set -euo pipefail
 cd "${WORK_DIR}"
-R -e 'shiny::runApp("/home/onyxia/work/app.R", host="0.0.0.0", port=8501)'
-ONYXIA_FILE_1dd8aa12599d
+R -e 'shiny::runApp("/home/onyxia/work", host="0.0.0.0", port=8501)'
+ONYXIA_FILE_34dbed224bdd
 chmod +x "${WORK_DIR}/onyxia/run.sh"
 
 # Add a VSCode task for the prepared project.
