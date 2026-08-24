@@ -7941,5 +7941,21 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur la mise à jour d'une application dans l'environnement Onyxia, cela dépend de la manière dont votre application est structurée et déployée.\n\nDans un flux de travail standard sur Onyxia (par exemple avec **VS Code** ou **Jupyter**), la mise à jour suit généralement ces principes :\n\n1.  **Modification du code** : Vous modifiez vos fichiers directement dans votre espace de travail (`/home/onyxia/work/`).\n2.  **Persistance** : Comme vos données et votre code sont stockés sur un volume persistant, les modifications sont sauvegardées immédiatement.\n3.  **Redémarrage du service (si nécessaire)** : \n    *   Si vous développez une **interface web** (Streamlit, FastAPI) ou un **script de longue durée**, vous devez arrêter le processus actuel dans le terminal et relancer la commande de démarrage (ex: `streamlit run app.py`).\n    *   Si vous utilisez un **Init Script** pour préparer votre environnement, toute modification de la structure de base (nouveaux packages système, nouveaux fichiers de configuration racine) nécessitera le lancement d'une nouvelle session pour que le script d'initialisation soit réexécuté.\n4.  **Gestion de version (Git)** : La meilleure pratique consiste à utiliser un dépôt Git. Vous pouvez cloner votre projet via un `project_git_url` dans un script d'initialisation, puis effectuer vos `git pull` directement dans le terminal du service pour synchroniser votre code.\n\nSi vous souhaitez que je vous prépare un environnement de développement spécifique (par exemple un projet Python avec un squelette prêt à l'emploi et une commande de lancement automatique), n'hésitez pas à me le demander.",
+    "created_at": "2026-08-24T13:13:47.744449+00:00",
+    "event_id": "f75b84dd-4680-44e0-b95d-45fecac62bc5",
+    "interaction_id": "eccf3e9b-a2c6-46dc-8202-b6ec4111c628",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
