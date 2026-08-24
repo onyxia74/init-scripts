@@ -2493,5 +2493,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, il est important de distinguer la méthode de gestion des secrets (au niveau de la plateforme/Kubernetes) et la manière dont votre application les consomme.\n\nSur Onyxia, la méthode recommandée pour injecter des secrets de manière sécurisée dans un service (comme un notebook Jupyter ou un IDE VS Code) est d'utiliser les **variables d'environnement**.\n\nVoici les trois approches principales :\n\n1.  **Variables d'environnement via la configuration (Méthode Onyxia) :**\n    Si vous déployez un service via une configuration Helm, vous pouvez injecter des secrets en utilisant les paramètres du chart qui permettent de définir des variables d'environnement. Cela permet à votre code (Python, R, etc.) de les lire simplement via `os.environ.get('MON_SECRET')`.\n\n2.  **Fichiers de configuration locaux (Méthode de développement) :**\n    Vous pouvez créer un fichier `.env` dans votre répertoire `/home/onyxia/work/`. \n    *   **Attention :** Ne commitez jamais ce fichier sur un dépôt Git public.\n    *   Utilisez la bibliothèque `python-dotenv` pour charger ces secrets dans votre application.\n\n3.  **Gestion via un coffre-fort (Méthode Production/Expert) :**\n    Pour des besoins plus complexes, l'application peut interroger une API de gestion de secrets (comme HashiCorp Vault) au démarrage via un script d'initialisation (`init_script`).\n\n**Exemple concret en Python :**\n\n```python\nimport os\n\n# Récupération sécurisée du secret\napi_key = os.getenv('MY_API_KEY')\n\nif api_key:\n    print(\"Secret chargé avec succès.\")\nelse:\n    print(\"Erreur : La variable d'environnement MY_API_KEY est manquante.\")\n```\n\nSi vous souhaitez que je prépare un environnement de développement (par exemple VS Code ou Jupyter) incluant déjà les bibliothèques nécessaires pour gérer ces secrets (comme `python-dotenv`), n'hésitez pas à me le demander.",
+    "created_at": "2026-08-24T11:28:02.256483+00:00",
+    "event_id": "d96072cf-22fa-4689-9254-8ece5d55128a",
+    "interaction_id": "73cd16b6-6b53-4d7e-84a2-ff2b24028556",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
