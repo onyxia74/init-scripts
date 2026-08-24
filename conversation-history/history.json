@@ -7608,5 +7608,32 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour rendre une interface web accessible, j'ai configuré un environnement **VS Code Python** incluant un script d'initialisation automatique. Ce script prépare un projet prêt à l'emploi avec la bibliothèque `streamlit`, crée un fichier `app.py` contenant une application de visualisation de données, et configure la commande de lancement pour que le serveur écoute sur l'adresse `0.0.0.0`, garantissant ainsi l'accessibilité de l'interface.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Finterface-web-prete-a-lancer.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/interface-web-prete-a-lancer.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-24T13:10:19.135396+00:00",
+    "event_id": "5cf24d7a-c29f-449a-a426-078a4360ca59",
+    "interaction_id": "c9c28ccb-4be8-4eb7-9a68-a1abcac4eed6",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/interface-web-prete-a-lancer.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
