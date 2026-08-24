@@ -6641,5 +6641,28 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "{question:\"Pour vous aider à injecter des secrets, j'ai besoin de savoir quel service Onyxia vous utilisez actuellement (par exemple : Jupyter, VS Code, PostgreSQL, etc.). L'injection de secrets se fait différemment selon le service (variables d'environnement, fichiers montés, etc.).\",\"missing\":\"service_id\"}",
+    "created_at": "2026-08-24T12:45:09.988900+00:00",
+    "event_id": "eb8bb2c4-574e-4764-a869-2159dffff081",
+    "interaction_id": "2d942061-b5d6-4ce3-a9d4-a025e643b445",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "",
+        "options": [],
+        "original_request": "",
+        "question": "{question:\"Pour vous aider à injecter des secrets, j'ai besoin de savoir quel service Onyxia vous utilisez actuellement (par exemple : Jupyter, VS Code, PostgreSQL, etc.). L'injection de secrets se fait différemment selon le service (variables d'environnement, fichiers montés, etc.).\",\"missing\":\"service_id\"}",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
