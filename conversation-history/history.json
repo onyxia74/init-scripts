@@ -8036,5 +8036,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, il est important de distinguer la méthode de gestion des secrets (au niveau de la plateforme/Kubernetes) et la manière dont votre application les consomme.\n\nSur Onyxia, la méthode recommandée pour injecter des secrets de manière sécurisée dans un service (comme un notebook Jupyter ou un IDE VS Code) est d'utiliser les **variables d'environnement**.\n\nVoici les trois approches principales :\n\n### 1. Utilisation de fichiers `.env` (Méthode la plus simple pour le développement)\nVous pouvez créer un fichier `.env` à la racine de votre espace de travail (`/home/onyxia/work/`). Ce fichier contient vos clés secrètes.\n*   **Contenu du fichier `.env` :**\n    ```bash\n    DATABASE_PASSWORD=mon_mot_de_passe_ultra_secret\n    API_KEY=12345abcde\n    ```\n*   **Consommation en Python :**\n    Utilisez la bibliothèque `python-dotenv` pour charger ces variables.\n    ```python\n    import os\n    from dotenv import load_dotenv\n\n    load_dotenv()  # Charge les variables du fichier .env\n    db_pass = os.getenv(\"DATABASE_PASSWORD\")\n    print(f\"Secret chargé : {db_pass}\")\n    ```\n\n### 2. Injection via un script d'initialisation (Automatisation)\nSi vous souhaitez que vos secrets soient configurés dès l'ouverture du service, nous pouvons utiliser un `init_script`. Ce script peut créer automatiquement le fichier `.env` ou configurer des fichiers de configuration spécifiques à partir de variables que vous nous fournissez lors de la commande de déploiement.\n\n### 3. Bonnes pratiques de sécurité\n*   **Ne jamais commiter de secrets :** Si vous utilisez Git dans votre environnement Onyxia, assurez-vous que votre fichier `.gitignore` contient impérativement `.env`.\n*   **Accès restreint :** Les secrets injectés via des variables d'environnement sont visibles par les processus tournant dans votre pod, mais ne sont pas persistés dans l'image du service.\n*   **Gestion des fichiers de configuration :** Pour des applications plus complexes (comme une API FastAPI), préférez charger les secrets via des objets `Settings` (avec `pydantic-settings`) qui lisent directement les variables d'environnement du système.\n\n**Souhaitez-vous que je vous prépare un environnement de développement (VS Code ou Jupyter) incluant déjà la structure nécessaire (fichier `.env` et script de chargement) pour tester cela ?**",
+    "created_at": "2026-08-24T13:14:45.337716+00:00",
+    "event_id": "91882a78-3233-4599-9109-bfc74c2e8ca0",
+    "interaction_id": "f12bc80e-b03e-4498-9997-d21a57318798",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
