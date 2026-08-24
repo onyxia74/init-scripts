@@ -7397,5 +7397,32 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des secrets dans votre déploiement Onyxia, plusieurs méthodes sont disponibles selon votre besoin. Pour le service Jupyter (Python), vous pouvez utiliser l'intégration **Vault** pour charger automatiquement des secrets sous forme de variables d'environnement, ou utiliser le paramètre `extraEnvVars` pour injecter des variables spécifiques. Si vous utilisez un service de base de données comme PostgreSQL, les secrets sont gérés via le paramètre `secretName`. \\n\\nVoici une configuration d'exemple pour un service Jupyter configuré pour utiliser **Vault** afin de récupérer des secrets de manière sécurisée.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&vault.enabled=true\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"vault.enabled\": {\n        \"value\": true,\n        \"reason\": \"Activation de l'accès Vault pour la gestion des secrets\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-24T13:04:15.440091+00:00",
+    "event_id": "6932c882-bbff-44bb-bada-65612e694073",
+    "interaction_id": "76e6d3be-4ee0-4359-a46f-618316c73f85",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "vault.enabled": {
+            "reason": "Activation de l'accès Vault pour la gestion des secrets",
+            "value": true
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
