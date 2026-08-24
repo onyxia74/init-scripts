@@ -7863,5 +7863,35 @@
     "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour créer un 'kit' sur Metabase (un environnement prêt pour l'analyse et la visualisation), je vous propose de déployer un duo de services : Metabase pour l'interface de Business Intelligence et PostgreSQL pour servir de base de données source. Cette configuration vous permettra de stocker vos données et de créer vos tableaux de bord et questions directement dans Metabase.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"metabase\",\n          \"catalog_id\": \"dataviz\",\n          \"version\": \"2.0.3\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\"\n    },\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-24T13:12:56.597540+00:00",
+    "event_id": "881573be-8079-4d03-a577-003388208560",
+    "interaction_id": "5ea1a3ce-eb81-488a-bb4d-eb7436a340f6",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "dataviz",
+            "chart_id": "metabase",
+            "version": "2.0.3"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
