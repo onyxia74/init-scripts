@@ -9,27 +9,32 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/s3_test.py")"
-cat > "${WORK_DIR}/s3_test.py" <<'ONYXIA_FILE_2f729413a484'
+cat > "${WORK_DIR}/s3_test.py" <<'ONYXIA_FILE_1ad2554e9c6b'
 import boto3
 import os
 
-# Les secrets sont injectés via les variables d'environnement Onyxia
-# (ex: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+# Les secrets sont injectés via les variables d'environnement par Onyxia
+# ou via le paramètre 's3' du chart.
 
-def test_s3_connection():
+s3 = boto3.client(
+    's3',
+    aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+    aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
+    endpoint_url=os.getenv('S3_ENDPOINT')
+)
+
+def test_connection():
     try:
-        s3 = boto3.client('s3')
         buckets = s3.list_buckets()
-        print('Connexion réussie ! Liste des buckets :')
+        print('Connexion réussie ! Buckets trouvés :')
         for bucket in buckets['Buckets']:
             print(f' - {bucket["Name"]}')
     except Exception as e:
         print(f'Erreur de connexion : {e}')
-        print('Vérifiez que vos variables d\'environnement AWS sont correctement configurées.')
 
 if __name__ == '__main__':
-    test_s3_connection()
-ONYXIA_FILE_2f729413a484
+    test_connection()
+ONYXIA_FILE_1ad2554e9c6b
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
