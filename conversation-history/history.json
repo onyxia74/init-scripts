@@ -1324,5 +1324,21 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "To répondre à votre question, il est important de noter qu'en tant qu'utilisateur sur la plateforme Onyxia, vous n'avez pas d'accès direct aux commandes d'administration du cluster (comme `kubectl get events`) pour des raisons de sécurité. Pour diagnostiquer un service, la méthode standard consiste à consulter les **logs** de votre pod ou à utiliser un environnement de développement pour interagir avec les APIs de la plateforme si elles sont exposées.\n\nPour vous permettre de travailler sur des scripts de diagnostic, de manipuler des fichiers de configuration ou d'analyser des logs exportés, je vous propose de déployer un environnement **VS Code** configuré avec les outils de base.\n\nCependant, pour vous fournir la configuration la plus pertinente, j'ai besoin d'une précision :\n\n```json\n{\n  \"answer\": \"Pour vous aider à diagnostiquer votre service, je peux vous préparer un environnement de développement. Souhaitez-vous un environnement VS Code pour manipuler des scripts de diagnostic et des fichiers de configuration, ou préférez-vous un notebook Jupyter pour analyser des données de logs exportées ?\",\n  \"config_link\": \"\",\n  \"json_payload\": null\n}\n```\n\n*Note : Conformément à mes instructions, je ne peux pas générer de configuration sans savoir quel outil de travail est le plus adapté à votre besoin de diagnostic.*",
+    "created_at": "2026-08-25T08:33:44.472795+00:00",
+    "event_id": "95c09f26-da05-40e9-834c-36adc3257c27",
+    "interaction_id": "5ddd277d-8b34-45dc-8842-975c111a89b5",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
