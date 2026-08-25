@@ -10819,5 +10819,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, il est important de distinguer la méthode de gestion des secrets (au niveau de la plateforme) et la manière dont votre application les consomme.\n\nSur Onyxia, la méthode recommandée pour injecter des secrets (clés d'API, mots de passe de base de données, etc.) de manière sécurisée est d'utiliser des **variables d'environnement**.\n\nVoici les trois approches principales selon votre usage :\n\n### 1. Utilisation de fichiers `.env` (Développement local/IDE)\nSi vous utilisez un service comme **VS Code** ou **Jupyter**, la méthode la plus simple consiste à créer un fichier `.env` à la racine de votre répertoire de travail (`/home/onyxia/work/`).\n*   **Action** : Créez un fichier nommé `.env`.\n*   **Contenu** : `DATABASE_PASSWORD=mon_mot_de_passe_secret`\n*   **Consommation (Python)** : Utilisez la bibliothèque `python-dotenv`.\n    ```python\n    from dotenv import load_dotenv\n    import os\n\n    load_dotenv()\n    password = os.getenv(\"DATABASE_PASSWORD\")\n    ```\n\n### 2. Injection via le script d'initialisation (Automatisation)\nSi vous avez besoin que vos secrets soient configurés dès le lancement du service (par exemple, pour configurer un client API spécifique), nous pouvons utiliser l'outil `create_init_script` pour générer un fichier de configuration ou un script de bootstrap qui prépare l'environnement.\n\n### 3. Bonnes pratiques de sécurité\n*   **Ne jamais commiter de secrets** : Si votre projet est lié à un dépôt Git (`project_git_url`), assurez-vous que votre fichier `.gitignore` contient explicitement `.env`.\n*   **Accès restreint** : Les secrets injectés via les variables d'environnement sont accessibles uniquement au processus de votre session Onyxia.\n\n**Souhaitez-vous que je vous prépare un environnement de développement (VS Code ou Jupyter) avec un squelette de projet incluant déjà la gestion des variables d'environnement via `python-dotenv` ?**",
+    "created_at": "2026-08-25T07:57:23.970980+00:00",
+    "event_id": "4940a74f-c78a-47d8-a06a-45c2fc4da3ed",
+    "interaction_id": "09dbf2c0-512e-480d-b0db-a304a0d6dd69",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
