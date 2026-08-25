@@ -5808,5 +5808,32 @@
     "question": "Comment lire un fichier S3 depuis R ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser un agent de code, je vous recommande VS Code. J'ai configuré un environnement qui inclut des extensions de productivité (comme Python et Pylance) et un squelette de projet structuré. Pour un agent spécifique (ex: Copilot), il faudra vous authentifier via l'interface VS Code une fois le service lancé.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest&init.personalInit=%C2%ABhttps%3A%2F%2Fgithub.com%2Fonyxia-apps%2Finit-scripts%2Fraw%2Fmain%2Fvscode-python-dev.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"vscode-python\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://github.com/onyxia-apps/init-scripts/raw/main/vscode-python-dev.sh\",\n        \"reason\": \"Installation d'extensions et configuration de l'environnement de développement\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T12:11:03.507010+00:00",
+    "event_id": "1b212fd5-e5a1-4f26-8deb-4324e783e0a9",
+    "interaction_id": "5841f90f-30cf-4ab4-a182-ff543316568b",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "vscode-python",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Installation d'extensions et configuration de l'environnement de développement",
+            "value": "https://github.com/onyxia-apps/init-scripts/raw/main/vscode-python-dev.sh"
+          }
+        },
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
