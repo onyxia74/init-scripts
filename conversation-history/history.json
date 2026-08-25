@@ -1175,5 +1175,32 @@
     "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement JupyterLab Python prêt pour l'exploration de données. Le service inclut l'installation automatique des bibliothèques `pandas`, `matplotlib`, `seaborn` et `numpy`, ainsi qu'un notebook d'exemple (`exploration_data.ipynb`) pour vous permettre de démarrer immédiatement vos analyses.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Ffournir-un-notebook-d-exemple-et-les-biblioth-ques-de-visualisation.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/fournir-un-notebook-d-exemple-et-les-biblioth-ques-de-visualisation.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T08:31:42.782549+00:00",
+    "event_id": "8df260b5-e6f6-494c-ac1b-c66b43114200",
+    "interaction_id": "b4ad1058-b7b6-4b25-9b22-d13c1517e80e",
+    "metadata": {
+      "agent_prompt": "Propose un notebook pour explorer des données.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/fournir-un-notebook-d-exemple-et-les-biblioth-ques-de-visualisation.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Propose un notebook pour explorer des données.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
