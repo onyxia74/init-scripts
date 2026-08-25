@@ -1579,5 +1579,32 @@
     "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre environnement de développement Java complet a été configuré dans VS Code. Un script d'initialisation a été ajouté pour installer le JDK 17 et Maven automatiquement au démarrage du service.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fenvironnement-de-d-veloppement-java-complet.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/environnement-de-d-veloppement-java-complet.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T08:35:54.214295+00:00",
+    "event_id": "960eba54-793d-4429-b44d-ad6bda86a43e",
+    "interaction_id": "9ef2813c-358f-4014-a6fb-f9138e0ea310",
+    "metadata": {
+      "agent_prompt": "Configure un environnement Java complet dans VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/environnement-de-d-veloppement-java-complet.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Configure un environnement Java complet dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
