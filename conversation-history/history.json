@@ -2407,5 +2407,26 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour augmenter le stockage, je dois identifier le paramètre de persistance spécifique à votre service. Veuillez préciser le service utilisé.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/unknown/unknown?name=unknown&version=unknown\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"unknown\",\n      \"catalog_id\": \"unknown\",\n      \"version\": \"unknown\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-25T09:22:12.355272+00:00",
+    "event_id": "bf60c78c-7a8b-4f81-9388-30fb2931526e",
+    "interaction_id": "d81bd19c-9c7c-4fa3-9a00-746fae388e1b",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "unknown",
+        "chart_id": "unknown",
+        "version": "unknown"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
