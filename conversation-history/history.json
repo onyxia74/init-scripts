@@ -4788,5 +4788,32 @@
     "question": "Génère une architecture de projet data science reproductible.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour travailler sur des datasets volumineux qui dépassent la mémoire vive, la solution recommandée est d'utiliser Apache Spark via l'environnement JupyterPySpark. Ce service permet de distribuer les calculs sur un cluster, évitant ainsi les erreurs de type 'Out of Memory'. J'ai configuré un environnement incluant les bibliothèques nécessaires (pandas, numpy, dask, pyarrow) pour faciliter l'analyse de données massives.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pyspark?name=jupyter-pyspark&version=3.2.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-pyspark%2Fanalyse-de-datasets-volumineux-avec-spark-et-dask.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pyspark\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"3.2.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/analyse-de-datasets-volumineux-avec-spark-et-dask.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T11:48:46.455009+00:00",
+    "event_id": "a8caabf1-83ae-454f-9a7a-d15e6bd9110b",
+    "interaction_id": "98dc440d-5eb5-46aa-8a01-d980d5a24bb1",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pyspark",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/analyse-de-datasets-volumineux-avec-spark-et-dask.sh"
+          }
+        },
+        "version": "3.2.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
