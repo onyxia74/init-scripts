@@ -9,25 +9,26 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.R")"
-cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_70318ac713aa'
+cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_36cd4310b3f5'
 library(shiny)
 library(shinydashboard)
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Shiny App Onyxia"),
+  dashboardHeader(title = "Shiny App"),
   dashboardSidebar(),
   dashboardBody(
     fluidRow(
-      box(title = "Bienvenue", status = "success", solidHeader = TRUE, 
-          "Votre application Shiny est prête sur Onyxia.")
+      box(title = "Hello Shiny", status = "success", solidHeader = TRUE, 
+          "L'application est prête à être développée.")
     )
   )
 )
 
-server <- function(input, output, session) {}
+server <- function(input, output, session) {
+}
 
 shinyApp(ui = ui, server = server)
-ONYXIA_FILE_70318ac713aa
+ONYXIA_FILE_36cd4310b3f5
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
