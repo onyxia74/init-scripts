@@ -4473,5 +4473,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, la méthode recommandée dépend de la nature de votre service et de la manière dont vous souhaitez les consommer.\n\nEn tant qu'architecte Data, je préconise généralement l'une des trois approches suivantes :\n\n1.  **Variables d'environnement (Standard) :** C'est la méthode la plus courante. Les secrets sont injectés dans le conteneur sous forme de variables d'environnement. Dans Onyxia, cela se fait via la configuration Helm du service (par exemple, en utilisant des `extraEnv` ou des références à des `Secret` Kubernetes existants si le chart le permet).\n2.  **Fichiers de configuration (Volume Mount) :** Pour les applications qui lisent des certificats ou des clés depuis un fichier (ex: `/home/onyxia/work/.secrets/api_key`), on peut utiliser un script d'initialisation (`init_script`) pour préparer l'environnement ou configurer l'accès.\n3.  **Gestionnaire de secrets externe (Best Practice) :** Pour une sécurité maximale, l'application peut interroger un coffre-fort (comme HashiCorp Vault) au démarrage via un script de bootstrap.\n\nSi vous avez un service spécifique en tête (Jupyter, VS Code, etc.), je peux analyser ses paramètres Helm pour vous dire exactement quel champ utiliser pour injecter vos secrets.\n\n**Souhaitez-vous que j'analyse un service particulier pour voir comment il gère les variables d'environnement ou les secrets ?**",
+    "created_at": "2026-08-25T11:44:37.499999+00:00",
+    "event_id": "c0620bbe-9683-4b08-91ee-8106cbea475e",
+    "interaction_id": "78dfa587-60c9-42b6-960e-a2c567e051e0",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
