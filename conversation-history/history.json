@@ -6675,5 +6675,26 @@
     "question": "Crée un service adapté à un projet de deep learning.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser un GPU avec Python dans Onyxia, le service le plus adapté est **VS Code Python GPU**. Ce service est pré-configuré avec une image Docker incluant le support GPU et permet d'allouer des ressources de calcul intensif.\\n\\nPar défaut, le service est configuré pour allouer **1 GPU**. Vous pouvez ajuster ce nombre (jusqu'à 3) ou modifier les ressources CPU/RAM via les paramètres de configuration si nécessaire.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-25T12:21:43.795126+00:00",
+    "event_id": "1981fbc2-4afd-45ce-9b22-f4a77a3c2af6",
+    "interaction_id": "658633cf-13aa-4517-b6ec-f4445077f62e",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un GPU avec Python dans Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
