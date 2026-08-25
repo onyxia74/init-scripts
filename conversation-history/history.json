@@ -10756,5 +10756,32 @@
     "question": "Explique-moi les étapes de mise en production.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour sauvegarder vos données, vous devez utiliser les paramètres de persistance du service. Dans l'exemple ci-dessous, j'ai configuré un service PostgreSQL avec un volume de stockage de 20Gi pour assurer la pérennité de vos bases de données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&storage.size=%C2%AB20Gi%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {\n      \"storage.size\": {\n        \"value\": \"20Gi\",\n        \"reason\": \"augmentation de la capacité de stockage pour la persistance des données\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T07:56:45.485468+00:00",
+    "event_id": "458d7e9e-e7ae-47b0-ae36-70c01887f609",
+    "interaction_id": "68443c08-b37d-455e-bcef-f9ffdeb16362",
+    "metadata": {
+      "agent_prompt": "Comment sauvegarder les données produites par mon application ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "overrides": {
+          "storage.size": {
+            "reason": "augmentation de la capacité de stockage pour la persistance des données",
+            "value": "20Gi"
+          }
+        },
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sauvegarder les données produites par mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
