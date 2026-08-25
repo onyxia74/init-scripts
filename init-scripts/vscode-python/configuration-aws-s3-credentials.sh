@@ -9,15 +9,26 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/aws_config.py")"
-cat > "${WORK_DIR}/aws_config.py" <<'ONYXIA_FILE_0ec21e398ad7'
+cat > "${WORK_DIR}/aws_config.py" <<'ONYXIA_FILE_a5e33b840110'
+import boto3
 import os
 
-# Configuration AWS S3
-AWS_ACCESS_KEY_ID = 'toto'
-AWS_SECRET_ACCESS_KEY = 'titi'
+# Les credentials sont injectés via les variables d'environnement
+s3 = boto3.client(
+    's3',
+    aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+    aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
+)
 
-print('AWS credentials configured in environment variables (simulated via file).')
-ONYXIA_FILE_0ec21e398ad7
+def list_buckets():
+    response = s3.list_buckets()
+    print('Buckets:')
+    for bucket in response['Buckets']:
+        print(f'  {bucket["Name"]}')
+
+if __name__ == '__main__':
+    list_buckets()
+ONYXIA_FILE_a5e33b840110
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
