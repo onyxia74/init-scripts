@@ -11347,5 +11347,26 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"En tant qu'utilisateur Onyxia, vous ne pouvez pas exécuter directement 'kubectl get events'. Pour diagnostiquer votre service, vous devez consulter les logs via l'interface Onyxia. Je vous propose de déployer un environnement VS Code pour vous permettre de préparer des scripts de diagnostic ou de manipuler des fichiers de configuration.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"vscode-python\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-25T08:04:30.943465+00:00",
+    "event_id": "c215d51f-a5e4-4ecb-bb39-51609b084175",
+    "interaction_id": "faa9dcab-5967-40b9-8e06-59b68c486889",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "vscode-python",
+        "chart_id": "vscode-python",
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
