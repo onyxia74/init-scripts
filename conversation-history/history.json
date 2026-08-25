@@ -40,5 +40,26 @@
     "question": "Je veux utiliser Neo4j dans Onyxia.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un service PostgreSQL (via le chart `postgresql-cnpg`) pour répondre à votre besoin. Tous les paramètres, y compris le stockage (10Gi par défaut) et les ressources, sont configurés avec les valeurs standards du catalogue.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-25T08:09:16.686782+00:00",
+    "event_id": "8da84885-0c4b-4c4e-a8ab-d309148ab677",
+    "interaction_id": "5ec81a67-9b17-4f73-ae4e-2acc80b622e7",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec une base PostgreSQL.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "version": "0.5.1"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec une base PostgreSQL.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
