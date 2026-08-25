@@ -2150,5 +2150,21 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'exposition d'un port dépend du service que vous utilisez sur Onyxia. En règle générale, pour les services de type \"interface web\" ou \"application\" (comme un serveur Streamlit, FastAPI ou un dashboard), l'exposition se gère de deux manières :\n\n1.  **Via le service lui-même (Configuration Helm)** : Si le chart Helm du service possède un paramètre pour définir un port spécifique (ex: `service.port`), vous pouvez le modifier via la configuration.\n2.  **Via un script d'initialisation (Init Script)** : Pour les applications développées par vos soins (ex: une application Python lancée dans VS Code ou Jupyter), vous devez configurer votre application pour qu'elle écoute sur l'adresse `0.0.0.0` et sur le port assigné par l'environnement (souvent via la variable d'environnement `${PORT}`).\n\nSi vous avez un besoin spécifique (ex: \"Je veux lancer un serveur FastAPI dans VS Code\"), je peux vous générer la configuration complète incluant le script de lancement automatique.\n\nSouhaitez-vous que je configure un service particulier pour vous ?",
+    "created_at": "2026-08-25T09:19:43.737302+00:00",
+    "event_id": "5898b98c-a2d1-4172-b3b8-601e134f543e",
+    "interaction_id": "102e964a-1183-4cf6-b289-66afa4596252",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
