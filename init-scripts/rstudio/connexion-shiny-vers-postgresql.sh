@@ -9,31 +9,31 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/connection_test.R")"
-cat > "${WORK_DIR}/connection_test.R" <<'ONYXIA_FILE_3dffaf5fb0af'
+cat > "${WORK_DIR}/connection_test.R" <<'ONYXIA_FILE_851da42a5665'
 library(DBI)
 library(RPostgres)
 
-# Exemple de structure de connexion
-# con <- dbConnect(RPostgres::Postgres(),
-#                  dbname = 'votre_db',
-#                  host = 'votre_host',
-#                  port = 5432,
-#                  user = 'votre_user',
-#                  password = 'votre_password')
+# Exemple de connexion
+# con <- dbConnect(Postgres()
+#   dbname = 'defaultdb',
+#   host = 'postgresql-cnpg',
+#   user = 'changeme',
+#   password = 'changeme'
+# )
 
-print('Environnement prêt pour Shiny et PostgreSQL')
-ONYXIA_FILE_3dffaf5fb0af
+print('Environnement Shiny prêt pour PostgreSQL')
+ONYXIA_FILE_851da42a5665
 
 # Install R packages.
 Rscript -e 'install.packages(c('"'"'DBI'"'"', '"'"'RPostgres'"'"', '"'"'shiny'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
 
 # Create a reusable launch helper.
 mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
-cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_a9319739559d'
+cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_9c60a7be5880'
 #!/usr/bin/env bash
 set -euo pipefail
 cd "${WORK_DIR}"
-Rscript connection_test.R
-ONYXIA_FILE_a9319739559d
+R -e 'shiny::runApp("/home/onyxia/work/app.R", host="0.0.0.0", port=8266)'
+ONYXIA_FILE_9c60a7be5880
 chmod +x "${WORK_DIR}/onyxia/run.sh"
 
