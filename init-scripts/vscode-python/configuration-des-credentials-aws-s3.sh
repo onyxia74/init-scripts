@@ -8,13 +8,27 @@ set -euo pipefail
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
-mkdir -p "$(dirname "${WORK_DIR}/aws_config.sh")"
-cat > "${WORK_DIR}/aws_config.sh" <<'ONYXIA_FILE_4faaf7f9fdfe'
-export AWS_ACCESS_KEY_ID=toto
-export AWS_SECRET_ACCESS_KEY=titi
-echo 'AWS credentials configured'"
-ONYXIA_FILE_4faaf7f9fdfe
+mkdir -p "$(dirname "${WORK_DIR}/aws_config.py")"
+cat > "${WORK_DIR}/aws_config.py" <<'ONYXIA_FILE_61ebeed711f5'
+import boto3
+import os
+
+# Configuration S3
+s3 = boto3.client(
+    's3',
+    aws_access_key_id='toto',
+    aws_secret_access_key='titi'
+)
+
+print('Client S3 initialisé avec succès.')
+ONYXIA_FILE_61ebeed711f5
+
+# Install Python packages.
+PYTHON_BIN="${PYTHON_BIN:-python}"
+if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
+  PYTHON_BIN="python3"
+fi
+"${PYTHON_BIN}" -m pip install boto3
 
 
-export AWS_ACCESS_KEY_ID=toto
-export AWS_SECRET_ACCESS_KEY=titi
+pip install boto3
