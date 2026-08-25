@@ -10878,5 +10878,32 @@
     "question": "Comment déployer une API Python ?",
     "status": "agent_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service RStudio (rstudio-r-python-julia) a été sélectionné pour son support complet de l'écosystème R. Un script d'initialisation a été configuré pour installer automatiquement les bibliothèques nécessaires au développement Shiny (shiny, shinythemes, shinydashboard).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fpr-parer-l-environnement-pour-le-d-veloppement-et-la-publication-d-applications-shiny.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/pr-parer-l-environnement-pour-le-d-veloppement-et-la-publication-d-applications-shiny.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T07:58:07.997659+00:00",
+    "event_id": "2567f139-a3a1-49f1-a5a2-aab3a3818a19",
+    "interaction_id": "92af503b-c4b8-46f7-bc68-1e160d127ece",
+    "metadata": {
+      "agent_prompt": "Quel service utiliser pour publier mon application Shiny ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/pr-parer-l-environnement-pour-le-d-veloppement-et-la-publication-d-applications-shiny.sh"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service utiliser pour publier mon application Shiny ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
