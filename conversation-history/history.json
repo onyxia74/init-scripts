@@ -10740,5 +10740,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte Data expert de la plateforme Onyxia SSPCloud. Mon rôle est de vous accompagner dans la conception et le déploiement de vos environnements de données et de calcul.\n\nConcernant votre question sur les **étapes de mise en production** dans un contexte de plateforme de données (DataOps/MLOps), voici le flux standard que nous suivons pour passer d'un notebook expérimental à un service stable et reproductible :\n\n1.  **Phase d'Exploration (Sandbox) :**\n    *   Utilisation de services comme **Jupyter** ou **RStudio** sur Onyxia.\n    *   Manipulation de données brutes, tests de bibliothèques et prototypage de modèles.\n    *   *Objectif :* Valider la faisabilité technique.\n\n2.  **Industrialisation du Code (Refactoring) :**\n    *   Transition du format \"Notebook\" vers des scripts structurés (`.py`, `.R`).\n    *   Modularisation du code (création de packages, séparation de la logique de traitement et de l'accès aux données).\n    *   Gestion des dépendances via un fichier `requirements.txt` ou `environment.yml`.\n\n3.  **Conteneurisation et Configuration (Infrastructure as Code) :**\n    *   Définition des ressources nécessaires (CPU, RAM, stockage persistant).\n    *   Utilisation de **Helm charts** (comme ceux d'Onyxia) pour garantir que l'environnement de production est identique à l'environnement de développement.\n    *   Automatisation de la préparation de l'environnement via des **scripts d'initialisation** (installation de packages spécifiques, clonage de dépôts Git).\n\n4.  **Orchestration et Automatisation (CI/CD) :**\n    *   Mise en place de pipelines (GitLab CI, GitHub Actions) pour tester et déployer automatiquement le code.\n    *   Orchestration des workflows de données (Airflow, Prefect) pour exécuter les tâches de manière périodique ou événementielle.\n\n5.  **Monitoring et Observabilité :**\n    *   Surveillance de la performance des modèles (Data Drift, Model Drift).\n    *   Suivi de l'utilisation des ressources et de la santé des services.\n\n**Souhaitez-vous que je vous aide à configurer un environnement spécifique (par exemple, un IDE VS Code pré-configuré avec vos bibliothèques de production) pour commencer cette transition ?**",
+    "created_at": "2026-08-25T07:56:31.339981+00:00",
+    "event_id": "7354f581-72b9-436d-84ae-c980a0bb7271",
+    "interaction_id": "c85b2889-6321-4073-90ac-04185560fdcd",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
