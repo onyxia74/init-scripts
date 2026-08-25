@@ -2556,5 +2556,32 @@
     "question": "Explique-moi les étapes de mise en production.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour sauvegarder vos données, utilisez l'espace de stockage persistant configuré dans votre service. J'ai préparé une configuration pour VS Code Python avec un volume de 20 Gi pour vous assurer un espace suffisant pour vos projets.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&s3=region-79669f20&persistence.size=%C2%AB20Gi%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"persistence.size\": {\n        \"value\": \"20Gi\",\n        \"reason\": \"augmentation de l'espace pour la sauvegarde des données\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T09:25:07.322799+00:00",
+    "event_id": "44c10273-d90e-41cd-9dc9-1578e46d2d5e",
+    "interaction_id": "636fe322-a745-43a8-9682-f4a0f3c3a7e9",
+    "metadata": {
+      "agent_prompt": "Comment sauvegarder les données produites par mon application ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "persistence.size": {
+            "reason": "augmentation de l'espace pour la sauvegarde des données",
+            "value": "20Gi"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sauvegarder les données produites par mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
