@@ -2202,5 +2202,32 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour répondre à votre besoin d'interface web, j'ai configuré un environnement de développement VS Code Python. Un script d'initialisation a été préparé pour installer la bibliothèque `streamlit`, créer un fichier d'exemple `app.py` et configurer la commande de lancement automatique de l'application sur le port standard. Une fois le service lancé, vous pourrez développer et exposer votre interface directement depuis cet environnement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-files-app.py-import-streamlit-as-st-n-nst.title-mon-interface-web-onyxia-nst.write-cette-application-est-pr-te-tre-d-ploy-e.-n-nname-st.text_input-quel-est-votre-nom-nif-name-n-st.write-f-bonjour-name-packages-streamlit-purpose-pr-parer-un-environnement-streamlit-accessible-avec-un-fichier-d-exemple-et-une-commande-de-lancement-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-import-streamlit-as-st-n-nst.title-mon-interface-web-onyxia-nst.write-cette-application-est-pr-te-tre-d-ploy-e.-n-nname-st.text_input-quel-est-votre-nom-nif-name-n-st.write-f-bonjour-name-packages-streamlit-purpose-pr-parer-un-environnement-streamlit-accessible-avec-un-fichier-d-exemple-et-une-commande-de-lancement-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T09:20:27.654185+00:00",
+    "event_id": "b48c3b2a-43a7-4610-a6d4-e4e140f859ae",
+    "interaction_id": "ad1092b4-05a6-4293-b1e8-9313f229e6bc",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-import-streamlit-as-st-n-nst.title-mon-interface-web-onyxia-nst.write-cette-application-est-pr-te-tre-d-ploy-e.-n-nname-st.text_input-quel-est-votre-nom-nif-name-n-st.write-f-bonjour-name-packages-streamlit-purpose-pr-parer-un-environnement-streamlit-accessible-avec-un-fichier-d-exemple-et-une-commande-de-lancement-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
