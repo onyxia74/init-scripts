@@ -3669,5 +3669,35 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour la dataviz, je vous recommande Metabase pour sa simplicité d'utilisation en BI, ou Apache Superset pour une plateforme d'exploration plus robuste. Voici les configurations pour ces deux services.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"metabase\",\n          \"catalog_id\": \"dataviz\",\n          \"version\": \"2.0.3\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"superset\",\n          \"catalog_id\": \"dataviz\",\n          \"version\": \"0.1.12\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/superset?name=superset&version=0.1.12\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\"\n    },\n    {\n      \"chart_id\": \"superset\",\n      \"catalog_id\": \"dataviz\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/superset?name=superset&version=0.1.12\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-25T09:42:51.233480+00:00",
+    "event_id": "edebe569-82a5-40f2-85aa-013411734223",
+    "interaction_id": "de7756bf-fc2b-477d-ab2a-77e974b22b0e",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "dataviz",
+            "chart_id": "metabase",
+            "version": "2.0.3"
+          },
+          {
+            "catalog_id": "dataviz",
+            "chart_id": "superset",
+            "version": "0.1.12"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
