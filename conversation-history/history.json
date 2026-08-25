@@ -5505,5 +5505,32 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour mettre en place un système RAG (Retrieval-Augmented Generation), j'ai configuré un environnement de développement complet basé sur VS Code Python. Ce service inclut un script d'initialisation qui installe automatiquement les bibliothèques nécessaires (`langchain`, `chromadb`, `openai`, `sentence-transformers`, `pandas`, `numpy`) et prépare un fichier d'exemple `rag_demo.py` pour tester la création d'un store vectoriel local avec ChromaDB. Vous pourrez ensuite utiliser ce client Python pour alimenter la base de données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-packages-langchain-chromadb-openai-sentence-transformers-pandas-numpy-purpose-setup-rag-environment-with-langchain-and-chromadb-files-rag_demo.py-import-os-nfrom-langchain_community.vectorstores-import-chroma-nfrom-langchain_community.embeddings-import-huggingfaceembeddings-n-n-simple-demo-of-creating-a-vector-store-ndef-setup_rag-n-embeddings-huggingfaceembeddings-model_name-all-minilm-l6-v2-n-texts-onyxia-is-a-data-platform-rag-uses-vector-databases-langchain-orchestrates-llms-n-vectorstore-chroma.from_texts-texts-embeddings-persist_directory-.-chroma_db-n-print-vector-store-created-successfully-n-nif-__name__-__main__-n-setup_rag-start_command-python-rag_demo.py.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-langchain-chromadb-openai-sentence-transformers-pandas-numpy-purpose-setup-rag-environment-with-langchain-and-chromadb-files-rag_demo.py-import-os-nfrom-langchain_community.vectorstores-import-chroma-nfrom-langchain_community.embeddings-import-huggingfaceembeddings-n-n-simple-demo-of-creating-a-vector-store-ndef-setup_rag-n-embeddings-huggingfaceembeddings-model_name-all-minilm-l6-v2-n-texts-onyxia-is-a-data-platform-rag-uses-vector-databases-langchain-orchestrates-llms-n-vectorstore-chroma.from_texts-texts-embeddings-persist_directory-.-chroma_db-n-print-vector-store-created-successfully-n-nif-__name__-__main__-n-setup_rag-start_command-python-rag_demo.py.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-25T11:59:04.411217+00:00",
+    "event_id": "51ccc0f7-0536-4f88-8d98-e945306e59af",
+    "interaction_id": "b00610c7-46dd-4927-83e1-7f5d06ffe78e",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-langchain-chromadb-openai-sentence-transformers-pandas-numpy-purpose-setup-rag-environment-with-langchain-and-chromadb-files-rag_demo.py-import-os-nfrom-langchain_community.vectorstores-import-chroma-nfrom-langchain_community.embeddings-import-huggingfaceembeddings-n-n-simple-demo-of-creating-a-vector-store-ndef-setup_rag-n-embeddings-huggingfaceembeddings-model_name-all-minilm-l6-v2-n-texts-onyxia-is-a-data-platform-rag-uses-vector-databases-langchain-orchestrates-llms-n-vectorstore-chroma.from_texts-texts-embeddings-persist_directory-.-chroma_db-n-print-vector-store-created-successfully-n-nif-__name__-__main__-n-setup_rag-start_command-python-rag_demo.py.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
