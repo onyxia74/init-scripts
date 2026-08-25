@@ -3462,5 +3462,26 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement, vous pouvez utiliser le paramètre `extraEnvVars` du service. Dans l'exemple ci-dessous, j'ai configuré un service JupyterLab avec une variable d'exemple `MY_ENV_VAR`. Pour des besoins plus complexes (comme modifier le `.bashrc`), l'utilisation d'un script d'initialisation via `init.personalInit` est également possible.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-25T09:40:42.182621+00:00",
+    "event_id": "5815c247-dfbe-4d43-8060-0e0f882fc3a5",
+    "interaction_id": "f4e22847-bc78-4dd1-b3d6-8851122ee11d",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
