@@ -11111,5 +11111,28 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service souhaitez-vous configurer ou quel type de service utilisez-vous (ex: Jupyter, RStudio, VS Code, Kafka, etc.) ?",
+    "created_at": "2026-08-26T14:11:35.190843+00:00",
+    "event_id": "3a0cd788-d174-4c58-9d12-c54bcec7bf8f",
+    "interaction_id": "6653a7b1-b66a-430f-a450-e5b1be45b492",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_name_or_type",
+        "options": [],
+        "original_request": "",
+        "question": "Quel service souhaitez-vous configurer ou quel type de service utilisez-vous (ex: Jupyter, RStudio, VS Code, Kafka, etc.) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
