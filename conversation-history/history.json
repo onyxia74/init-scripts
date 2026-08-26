@@ -9356,5 +9356,26 @@
     "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service Metabase est disponible dans le catalogue Onyxia pour répondre à votre besoin de création de kits de visualisation et de tableaux de bord (BI). Il vous permettra d'explorer vos données et de créer des visualisations interactives de manière intuitive.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-26T13:31:45.863784+00:00",
+    "event_id": "1049c722-dfdd-40fd-8e1e-f5526ebc55d4",
+    "interaction_id": "b9b57da5-d566-4200-98de-fa7ced49b544",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
