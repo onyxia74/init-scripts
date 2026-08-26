@@ -8285,5 +8285,21 @@
     "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nAPIError: litellm.InternalServerError: The model is repeating the same chunk = .key.\n```",
+    "created_at": "2026-08-26T09:32:06.936230+00:00",
+    "event_id": "c4fe35ea-b59d-4e8a-b998-488e2d9a51f7",
+    "interaction_id": "9def1eb3-0fe2-4097-a01f-0257e262bd04",
+    "metadata": {
+      "agent_prompt": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+      "clarification": {},
+      "model": "chandra-ocr-2",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
