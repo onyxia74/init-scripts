@@ -9414,5 +9414,32 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour faciliter le développement et la mise à jour de votre application, j'ai configuré un environnement VS Code Python prêt à l'emploi. Ce service inclut un script d'initialisation qui prépare une structure de projet (fichiers `app.py`, `requirements.txt`), installe les bibliothèques nécessaires (`pandas`, `numpy`) et configure le formatage automatique du code à la sauvegarde pour garantir la qualité de votre travail.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fpr-parer-un-environnement-de-d-veloppement-avec-un-squelette-d-application-et-le-formatage-automatique-la-sauvegarde-via-.vscode-settings.json.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-parer-un-environnement-de-d-veloppement-avec-un-squelette-d-application-et-le-formatage-automatique-la-sauvegarde-via-.vscode-settings.json.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T13:32:36.598994+00:00",
+    "event_id": "2a732418-3129-4b09-9596-265650a4d8c5",
+    "interaction_id": "cbaa12ad-fd2a-47c9-8727-2deee4ffbeb3",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-parer-un-environnement-de-d-veloppement-avec-un-squelette-d-application-et-le-formatage-automatique-la-sauvegarde-via-.vscode-settings.json.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
