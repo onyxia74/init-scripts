@@ -10634,5 +10634,35 @@
     "question": "Je veux utiliser Neo4j dans Onyxia.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre environnement PostgreSQL est prêt. Il comprend le serveur de base de données (postgresql-cnpg) et l'interface d'administration graphique pgAdmin, configurée pour détecter automatiquement votre base de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"pgadmin\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.11\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    },\n    {\n      \"chart_id\": \"pgadmin\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-26T13:48:59.899838+00:00",
+    "event_id": "22606a0b-8402-41f1-be89-9b90bd34b322",
+    "interaction_id": "e4220f89-a50f-4a27-ae24-d9364d23eda0",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec une base PostgreSQL.",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "pgadmin",
+            "version": "1.0.11"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec une base PostgreSQL.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
