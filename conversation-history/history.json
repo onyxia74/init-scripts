@@ -10097,5 +10097,28 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'accès direct au plan de contrôle Kubernetes est restreint. Souhaitez-vous plutôt un outil pour orchestrer des workflows (Argo Workflows), gérer des déploiements GitOps (Argo CD), ou un environnement de développement (IDE) pour interagir avec des services via des API/SDK ?",
+    "created_at": "2026-08-26T13:43:34.388027+00:00",
+    "event_id": "6d047c94-ebb8-4fdf-acc3-9b0524a6697d",
+    "interaction_id": "f3f05acf-eb02-4c08-ac9d-fc62e2e8af3d",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "user_intent",
+        "options": [],
+        "original_request": "",
+        "question": "L'accès direct au plan de contrôle Kubernetes est restreint. Souhaitez-vous plutôt un outil pour orchestrer des workflows (Argo Workflows), gérer des déploiements GitOps (Argo CD), ou un environnement de développement (IDE) pour interagir avec des services via des API/SDK ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
