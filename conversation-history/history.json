@@ -10592,5 +10592,26 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour faire de la dataviz, je vous recommande **Metabase**. C'est un outil de Business Intelligence (BI) très intuitif qui permet d'explorer vos données et de créer des tableaux de bord de manière simple et visuelle.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-26T13:48:28.286245+00:00",
+    "event_id": "44f307b1-b485-42ff-95d7-166b82b921db",
+    "interaction_id": "3bb4b4fc-cb09-4a9f-9e7c-8890bfdb50bd",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
