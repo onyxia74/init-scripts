@@ -8923,5 +8923,21 @@
     "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
     "status": "agent_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nBadRequestError: Error code: 400 - {'detail': \"litellm.NotFoundError: NotFoundError: OpenAIException - Error code: 404 - {'detail': 'Not Found'}. Received Model Group=qwen3-embedding-8b\\nAvailable Model Group Fallbacks=None\"} | HTTPStatusError: Client error '400 Bad Request' for url 'https://llm.lab.sspcloud.fr/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400\n```",
+    "created_at": "2026-08-26T12:46:50.309061+00:00",
+    "event_id": "31b17137-ba7e-46c6-89f7-cf2d6d9f8686",
+    "interaction_id": "a376f806-8b33-4f13-9f37-719e9b42b817",
+    "metadata": {
+      "agent_prompt": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+      "clarification": {},
+      "model": "qwen3-embedding-8b",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
