@@ -11999,5 +11999,32 @@
     "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le script d'initialisation va créer le fichier `.vscode/settings.json` avec la configuration `editor.formatOnSave: true` pour activer le formatage automatique à la sauvegarde.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python-gpu%2Factiver-le-formatage-automatique-la-sauvegarde-dans-vs-code.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/activer-le-formatage-automatique-la-sauvegarde-dans-vs-code.sh\",\n        \"reason\": \"Activer le formatage automatique à la sauvegarde dans VS Code\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T15:10:57.889546+00:00",
+    "event_id": "96b78c17-0d7c-4b55-a089-16a9469f3457",
+    "interaction_id": "d59c9640-52ea-486a-8293-c46332873ac8",
+    "metadata": {
+      "agent_prompt": "Active automatiquement l’option « Format on Save » dans VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Activer le formatage automatique à la sauvegarde dans VS Code",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python-gpu/activer-le-formatage-automatique-la-sauvegarde-dans-vs-code.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
