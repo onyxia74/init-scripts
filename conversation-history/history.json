@@ -12127,5 +12127,21 @@
     "question": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-26T15:14:08.143990+00:00",
+    "event_id": "f0288003-534c-4f4f-8df5-623389ae8aba",
+    "interaction_id": "86b96bdf-2ebf-491b-a63a-78b380d8eee3",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec des données géographiques volumineuses.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec des données géographiques volumineuses.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
