@@ -12143,5 +12143,26 @@
     "question": "Je veux travailler avec des données géographiques volumineuses.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour développer une application Java, je recommande l'environnement VS Code (`vscode-python`). Bien que nommé 'python', il s'agit de l'IDE Visual Studio Code qui est un environnement de développement polyvalent. Vous pourrez y installer l'extension officielle 'Extension Pack for Java' de Microsoft pour bénéficier de la complétion, du débogage et de la gestion des projets Java (Maven/Gradle). Cet environnement offre une interface graphique complète et un terminal intégré.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-26T15:14:27.272848+00:00",
+    "event_id": "39a9afe7-e994-4008-ab41-edad2c9af2d3",
+    "interaction_id": "fdadbf70-423a-4d89-ab43-190808bc5aaa",
+    "metadata": {
+      "agent_prompt": "Quel environnement utiliser pour développer une application Java ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel environnement utiliser pour développer une application Java ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
