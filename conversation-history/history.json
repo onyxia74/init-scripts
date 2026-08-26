@@ -283,5 +283,32 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Configuration du service vscode-python avec un script init préparant une interface web Streamlit prête à lancer. Le script inclut un fichier app.py, la dépendance streamlit, et une commande de lancement pour exposer l'application sur le port 8501. L'application sera accessible depuis l'extérieur une fois le service démarré.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Finterface-web-prete-a-lancer.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/interface-web-prete-a-lancer.sh\",\n        \"reason\": \"interface web prete a lancer\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:36:26.236368+00:00",
+    "event_id": "5c204dc9-08ca-446a-8546-f3a73b7fe557",
+    "interaction_id": "0d3ccfa6-6443-477b-9f61-8dc71c76b6cd",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "interface web prete a lancer",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/interface-web-prete-a-lancer.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
