@@ -649,5 +649,52 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La configuration proposée est un environnement VS Code Python prêt à lancer une application web Python (ex: Streamlit) pour la mise en production. Le script init prépare un projet avec un fichier app.py, les dépendances nécessaires (streamlit, pandas, numpy), et une commande de lancement automatique. Les ressources CPU et RAM sont ajustées pour une utilisation en production, avec des limites et demandes augmentées, ainsi qu'un volume de stockage de 20Gi.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&s3=region-79669f20&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fmise-en-production-d-une-application-web-python.sh%C2%BB&resources.requests.cpu=%C2%AB500m%C2%BB&resources.requests.memory=%C2%AB4Gi%C2%BB&resources.limits.cpu=%C2%AB2000m%C2%BB&resources.limits.memory=%C2%AB10Gi%C2%BB&persistence.size=%C2%AB20Gi%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/mise-en-production-d-une-application-web-python.sh\",\n        \"reason\": \"mise en production d'une application web Python\"\n      },\n      \"init.personalInitArgs\": {\n        \"value\": \"\",\n        \"reason\": \"pas d'arguments spécifiés\"\n      },\n      \"resources.requests.cpu\": {\n        \"value\": \"500m\",\n        \"reason\": \"augmentation de la demande CPU pour une application web\"\n      },\n      \"resources.requests.memory\": {\n        \"value\": \"4Gi\",\n        \"reason\": \"augmentation de la demande RAM pour une application web\"\n      },\n      \"resources.limits.cpu\": {\n        \"value\": \"2000m\",\n        \"reason\": \"limite CPU pour la production\"\n      },\n      \"resources.limits.memory\": {\n        \"value\": \"10Gi\",\n        \"reason\": \"limite RAM pour la production\"\n      },\n      \"persistence.size\": {\n        \"value\": \"20Gi\",\n        \"reason\": \"volume de stockage accru pour les données de production\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:43:17.395260+00:00",
+    "event_id": "b51846ec-2110-4f46-a957-710959511e18",
+    "interaction_id": "237960fa-31d0-4226-b802-2ec548ed0c8f",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "mise en production d'une application web Python",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/mise-en-production-d-une-application-web-python.sh"
+          },
+          "persistence.size": {
+            "reason": "volume de stockage accru pour les données de production",
+            "value": "20Gi"
+          },
+          "resources.limits.cpu": {
+            "reason": "limite CPU pour la production",
+            "value": "2000m"
+          },
+          "resources.limits.memory": {
+            "reason": "limite RAM pour la production",
+            "value": "10Gi"
+          },
+          "resources.requests.cpu": {
+            "reason": "augmentation de la demande CPU pour une application web",
+            "value": "500m"
+          },
+          "resources.requests.memory": {
+            "reason": "augmentation de la demande RAM pour une application web",
+            "value": "4Gi"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
