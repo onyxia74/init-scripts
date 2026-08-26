@@ -9531,5 +9531,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, la méthode recommandée dépend de la nature de votre service et de la manière dont vous souhaitez les consommer.\n\nEn tant qu'architecte Data, je préconise généralement l'une des trois approches suivantes :\n\n1.  **Variables d'environnement (Standard) :** C'est la méthode la plus courante. Les secrets sont injectés dans le conteneur sous forme de variables d'environnement. Dans Onyxia, cela se fait via la configuration Helm du service (par exemple, en utilisant des `extraEnv` ou des références à des `Secret` Kubernetes existants si le chart le permet).\n2.  **Fichiers de configuration sécurisés (Volume Mount) :** Pour les applications qui lisent des fichiers (comme des clés SSH ou des certificats), on monte un volume contenant le secret à un emplacement spécifique (ex: `/home/onyxia/.ssh/id_rsa`).\n3.  **Gestion via un script d'initialisation (`init_script`) :** Si vous avez besoin de préparer un environnement spécifique (par exemple, configurer un fichier `.env` ou un fichier de credentials pour une bibliothèque spécifique), nous pouvons utiliser l'outil `create_init_script` pour automatiser la création de ces fichiers de configuration au démarrage du service.\n\n**Souhaitez-vous que je configure un service spécifique (comme VS Code ou Jupyter) avec un script d'initialisation prêt à gérer vos fichiers de secrets ou vos variables d'environnement ?**",
+    "created_at": "2026-08-26T13:33:50.605176+00:00",
+    "event_id": "053d709c-a59e-4ebf-a859-2704adb6157f",
+    "interaction_id": "38be2ff4-cdf1-4653-9c79-8395d643236d",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
