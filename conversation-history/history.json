@@ -8591,5 +8591,40 @@
     "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Configuration du service VSCode avec accès S3 activé et credentials fournis.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2&s3.enabled=true&s3.accessKeyId=%C2%ABtoto%C2%BB&s3.secretAccessKey=%C2%ABtiti%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"s3.enabled\": {\n        \"value\": true,\n        \"reason\": \"Activation de l'accès S3\"\n      },\n      \"s3.accessKeyId\": {\n        \"value\": \"toto\",\n        \"reason\": \"Clé d'accès fournie par l'utilisateur\"\n      },\n      \"s3.secretAccessKey\": {\n        \"value\": \"titi\",\n        \"reason\": \"Clé secrète fournie par l'utilisateur\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T12:15:20.650783+00:00",
+    "event_id": "38e767a9-b874-4c93-be90-dcfb4bf9adda",
+    "interaction_id": "1191242a-eba6-49a5-a783-ff16a6c98145",
+    "metadata": {
+      "agent_prompt": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "overrides": {
+          "s3.accessKeyId": {
+            "reason": "Clé d'accès fournie par l'utilisateur",
+            "value": "toto"
+          },
+          "s3.enabled": {
+            "reason": "Activation de l'accès S3",
+            "value": true
+          },
+          "s3.secretAccessKey": {
+            "reason": "Clé secrète fournie par l'utilisateur",
+            "value": "titi"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
