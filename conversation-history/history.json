@@ -525,5 +525,33 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel type de service(s) souhaitez-vous utiliser avec ce script d’initialisation ? (ex: Jupyter, VS Code, RStudio, etc.)",
+    "created_at": "2026-08-26T16:40:32.541328+00:00",
+    "event_id": "852ee3ef-5e63-4c29-ac92-81deeb717eb5",
+    "interaction_id": "337f42fe-dcde-4756-a40b-891de20b68bb",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type",
+        "options": [
+          "jupyter",
+          "vscode",
+          "rstudio",
+          "autre"
+        ],
+        "original_request": "",
+        "question": "Quel type de service(s) souhaitez-vous utiliser avec ce script d’initialisation ? (ex: Jupyter, VS Code, RStudio, etc.)",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
