@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# This init script prepares service on Onyxia.
+# Purpose: {"chart_id":"jupyter-python","packages":["pandas","matplotlib","seaborn","plotly"],"files":{"donnees_test.csv":"id,value\n1,10\n2,20\n3,30\n4,40\n5,50\n6,60\n7,70\n8,80\n9,90\n10,100\n","visualisation.ipynb":"{\"cells\":[{\"cell_type\":\"markdown\",\"metadata\":{},\"source\":[\"# Exemple de visualisation\"]},\"{\\\"cell_type\\\":\\\"code\\\",\\\"execution_count\\\":null,\\\"metadata\\\":{},\\\"outputs\\\":[],\\\"source\\\":\\\"import pandas as pd\\nimport matplotlib.pyplot as plt\\nimport seaborn as sns\\nimport plotly.express as px\\n\\n# Charger les données\\ndata = pd.read_csv('donnees_test.csv')\\n\\n# Histogramme\\nplt.figure(figsize=(8, 6))\\nplt.hist(data['value'], bins=10, color='skyblue', edgecolor='black')\\nplt.title('Histogramme des valeurs')\\nplt.xlabel('Valeur')\\nplt.ylabel('Fréquence')\\nplt.show()\\n\\n# Courbe\\nplt.figure(figsize=(8, 6))\\nplt.plot(data['id'], data['value'], marker='o', linestyle='-', color='red')\\nplt.title('Courbe des valeurs')\\nplt.xlabel('ID')\\nplt.ylabel('Valeur')\\nplt.grid(True)\\nplt.show()\\n\\n# Nuage de points\\nplt.figure(figsize=(8, 6))\\nsns.scatterplot(data=data, x='id', y='value', color='green')\\nplt.title('Nuage de points')\\nplt.xlabel('ID')\\nplt.ylabel('Valeur')\\nplt.grid(True)\\nplt.show()\\n\\n# Graphique interactif avec Plotly\\nfig = px.scatter(data, x='id', y='value', title='Nuage de points interactif')\\nfig.show()\\n\\n# Sauvegarder les graphiques\\nplt.savefig('histogramme.png')\\nplt.savefig('courbe.png')\\nplt.savefig('nuage_points.png')\\n\\nprint('Graphiques générés avec succès !')\\n\\\"}]}","purpose":"préparation d'un environnement de visualisation avec exemples de graphiques","start_command":"jupyter lab --ip=0.0.0.0 --port=${PORT:-8888} --no-browser --allow-root"}
+# Expected parameters : None
+
+WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
+mkdir -p "${WORK_DIR}"
+echo "No initialization action requested."
