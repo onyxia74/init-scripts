@@ -11610,5 +11610,21 @@
     "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-26T14:35:59.550644+00:00",
+    "event_id": "cf0452d6-f481-44ab-b83f-1ba59eb7d3e9",
+    "interaction_id": "f7aa2daa-11fa-4afb-abec-16f9f15bd0e1",
+    "metadata": {
+      "agent_prompt": "Crée un service adapté à un projet de deep learning.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée un service adapté à un projet de deep learning.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
