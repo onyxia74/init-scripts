@@ -8317,5 +8317,21 @@
     "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
     "status": "agent_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Erreur pendant l'appel au LLM.\n\n- Vérifiez que le modèle sélectionné est disponible.\n- Vérifiez la clé API, l'URL du serveur LLM et les logs du backend.\n\nDétail technique renvoyé par le client LLM :\n\n```text\nTypeError: Object of type set is not JSON serializable\n```",
+    "created_at": "2026-08-26T09:33:38.541185+00:00",
+    "event_id": "985e47d3-8c79-4b9c-a996-0343a89581bd",
+    "interaction_id": "b7933f35-3311-4153-9715-20b2ef6d5cc3",
+    "metadata": {
+      "agent_prompt": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je souhaiterais lancer un service vscode pour me connecter au service aws s3 d'amzon avec tes credentials accesskey = toto et secret key = titi",
+    "status": "agent_error",
+    "type": "interaction"
   }
 ]
