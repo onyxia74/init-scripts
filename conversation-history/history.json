@@ -10865,5 +10865,21 @@
     "question": "Comment lire un fichier S3 depuis R ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\ng`.\n</think>\n\nAction: get_catalog({\"query\": \"vscode rstudio\", \"limit\": 5})\n```",
+    "created_at": "2026-08-26T13:57:45.792424+00:00",
+    "event_id": "6168db81-d0b6-40f2-9a4c-10c4b17149fc",
+    "interaction_id": "4d7e3116-ccd2-430f-9d07-5ebc4856fb12",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
