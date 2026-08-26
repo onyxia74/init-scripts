@@ -11924,5 +11924,21 @@
     "question": "Configure un environnement R connecté à PostgreSQL.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nrt.\n</think>\n\nAction: get_catalog({\"query\": \"vscode\", \"limit\": 5})\n```",
+    "created_at": "2026-08-26T15:06:05.348349+00:00",
+    "event_id": "2b88f80a-f625-4b37-9094-6f215a56fdb0",
+    "interaction_id": "e6c8c4ae-b5aa-4758-858c-cea32fe3eb62",
+    "metadata": {
+      "agent_prompt": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
