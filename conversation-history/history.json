@@ -11322,5 +11322,32 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer une API Python, j'ai sélectionné l'environnement de développement `vscode-python`. J'ai également préparé un script d'initialisation qui installe les dépendances nécessaires (FastAPI, Uvicorn) et configure le lancement automatique de l'application.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fsquelette-api-python-avec-fastapi.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/squelette-api-python-avec-fastapi.sh\",\n        \"reason\": \"Script d'initialisation pour API FastAPI\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T14:25:04.801341+00:00",
+    "event_id": "340779ad-2eb7-4d70-ab4c-3c1a273b663f",
+    "interaction_id": "8f53abb8-8327-4299-a95f-9b6323bb3fb8",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour API FastAPI",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/squelette-api-python-avec-fastapi.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
