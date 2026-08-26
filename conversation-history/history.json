@@ -11756,5 +11756,21 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n````text\n0})\n</think>\n\n```json\n{\"query\":\"kubernetes events logs dashboard\",\"limit\":10}\n```\n````",
+    "created_at": "2026-08-26T14:54:48.785536+00:00",
+    "event_id": "b9e00bac-8fda-4911-ab5d-57888889bf33",
+    "interaction_id": "7ef6176d-03fb-418a-a754-185697a0b2ad",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
