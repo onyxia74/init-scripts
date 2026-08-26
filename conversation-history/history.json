@@ -727,5 +727,32 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service PostgreSQL (postgresql-cnpg) est configuré avec la découverte automatique activée pour faciliter la connexion depuis d'autres applications. Les paramètres non spécifiés restent à leurs valeurs par défaut.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&discovery.enabled=true\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"0.5.1\"\n    },\n    \"selected_parameters\": {\n      \"discovery.enabled\": {\n        \"value\": true,\n        \"reason\": \"activer la decouverte automatique pour faciliter la connexion depuis d'autres services\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:44:04.597859+00:00",
+    "event_id": "218b62f0-b632-401e-af5a-5019606e12de",
+    "interaction_id": "5050f5b4-ac51-4cc6-9ec2-263dbb109e30",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "postgresql-cnpg",
+        "overrides": {
+          "discovery.enabled": {
+            "reason": "activer la decouverte automatique pour faciliter la connexion depuis d'autres services",
+            "value": true
+          }
+        },
+        "version": "0.5.1"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
