@@ -970,5 +970,32 @@
     "question": "Quel graphique est le plus adapté à mes données ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour la cartographie, le service Jupyter Python est recommandé car il supporte les bibliothèques nécessaires (geopandas, folium, matplotlib). Un script init a été créé pour installer ces packages et fournir un notebook d'exemple de visualisation géospatiale. Le service est prêt à lancer avec un environnement de cartographie complet.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-jupyter-python-packages-geopandas-folium-matplotlib-purpose-cartographie-et-visualisation-geospatiale-files-notebook_cartographie.ipynb-cells-cell_type-markdown-metadata-source-cartographie-avec-geopandas-et-folium-n-nexemple-de-visualisation-g-ospatiale-carte-de-la-france-avec-des-points-de-donn-es.-cell_type-code-metadata.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-jupyter-python-packages-geopandas-folium-matplotlib-purpose-cartographie-et-visualisation-geospatiale-files-notebook_cartographie.ipynb-cells-cell_type-markdown-metadata-source-cartographie-avec-geopandas-et-folium-n-nexemple-de-visualisation-g-ospatiale-carte-de-la-france-avec-des-points-de-donn-es.-cell_type-code-metadata.sh\",\n        \"reason\": \"Script init pour cartographie avec geopandas, folium et matplotlib, incluant un notebook d'exemple.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:51:08.426929+00:00",
+    "event_id": "5b0512fa-3055-48a3-8f71-220ccc7bc91e",
+    "interaction_id": "fe159c2e-c7fb-44c4-83c7-1860116453bd",
+    "metadata": {
+      "agent_prompt": "Quel service utiliser pour faire de la cartographie ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script init pour cartographie avec geopandas, folium et matplotlib, incluant un notebook d'exemple.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-jupyter-python-packages-geopandas-folium-matplotlib-purpose-cartographie-et-visualisation-geospatiale-files-notebook_cartographie.ipynb-cells-cell_type-markdown-metadata-source-cartographie-avec-geopandas-et-folium-n-nexemple-de-visualisation-g-ospatiale-carte-de-la-france-avec-des-points-de-donn-es.-cell_type-code-metadata.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service utiliser pour faire de la cartographie ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
