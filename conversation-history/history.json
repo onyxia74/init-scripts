@@ -622,5 +622,32 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Un environnement VS Code Python a été configuré avec un script init qui démarre une application web Streamlit. L'application se relance automatiquement après toute modification du code. Le script inclut les dépendances nécessaires (streamlit), un fichier `app.py` avec une interface simple, et une commande de lancement avec `auto_start` activé.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-purpose-application-web-avec-rechargement-automatique-files-app.py-import-streamlit-as-st-n-nst.title-application-de-d-monstration-n-nif-st.button-actualiser-n-st.write-l-application-a-t-actualis-e.-n-nst.write-modifie-le-code-et-observe-le-rechargement-automatique.-packages-streamlit-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501-auto_start-true.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-purpose-application-web-avec-rechargement-automatique-files-app.py-import-streamlit-as-st-n-nst.title-application-de-d-monstration-n-nif-st.button-actualiser-n-st.write-l-application-a-t-actualis-e.-n-nst.write-modifie-le-code-et-observe-le-rechargement-automatique.-packages-streamlit-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501-auto_start-true.sh\",\n        \"reason\": \"Script init pour application web avec rechargement automatique\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:42:34.675436+00:00",
+    "event_id": "e519361e-b5cc-4773-996a-326978d93dc2",
+    "interaction_id": "0dc60833-72fa-4b64-bf45-04079a5d7cf3",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script init pour application web avec rechargement automatique",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-purpose-application-web-avec-rechargement-automatique-files-app.py-import-streamlit-as-st-n-nst.title-application-de-d-monstration-n-nif-st.button-actualiser-n-st.write-l-application-a-t-actualis-e.-n-nst.write-modifie-le-code-et-observe-le-rechargement-automatique.-packages-streamlit-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501-auto_start-true.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
