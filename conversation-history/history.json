@@ -9187,5 +9187,26 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le partage direct d'une instance PostgreSQL entre plusieurs sessions Onyxia n'est pas possible par conception en raison de l'isolation des namespaces. Pour partager des données, utilisez un stockage objet (S3) pour les fichiers de données, ou utilisez un script d'initialisation pour importer un dump SQL dans chaque nouvelle instance.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql?name=postgresql&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"postgresql\",\n      \"catalog_id\": \"postgresql\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-26T13:28:44.856773+00:00",
+    "event_id": "166c133c-54e7-428c-9bd2-85508b94c167",
+    "interaction_id": "f6e6efb9-8c71-4be9-9ffb-c325918a5fc2",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "postgresql",
+        "chart_id": "postgresql",
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
