@@ -997,5 +997,32 @@
     "question": "Quel service utiliser pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service Jupyter Python a été configuré avec un script d'initialisation qui installe les bibliothèques nécessaires (geopandas, folium, matplotlib) et prépare un notebook interactif pour créer une carte géospatiale. Le script inclut un exemple de carte interactive avec les limites des départements français, et permet de visualiser des données géospatiales de manière interactive.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fcr-ation-de-carte-interactive.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/cr-ation-de-carte-interactive.sh\",\n        \"reason\": \"création de carte interactive\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:51:51.824001+00:00",
+    "event_id": "d54fb7c7-ed11-4d4e-ac1b-6554d456e34a",
+    "interaction_id": "f199e0ba-84d5-4a95-b1d5-2d710a56bcb4",
+    "metadata": {
+      "agent_prompt": "J’aimerais créer une carte interactive.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "création de carte interactive",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/cr-ation-de-carte-interactive.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais créer une carte interactive.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
