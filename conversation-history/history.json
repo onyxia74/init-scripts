@@ -835,5 +835,32 @@
     "question": "Comment déployer une API Python ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service RStudio est recommandé pour publier une application Shiny. Un script d'initialisation a été créé pour installer les packages nécessaires (shiny, ggplot2, dplyr, readr) et fournir un exemple d'application Shiny prêt à lancer. L'application inclut un graphique de points générés aléatoirement et peut être lancée directement depuis RStudio en cliquant sur 'Run App'.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio%2Fapplication-shiny-pr-te-lancer.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-pr-te-lancer.sh\",\n        \"reason\": \"application Shiny prête à lancer\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-26T16:46:50.551846+00:00",
+    "event_id": "e1c7799d-4ea4-49f2-93af-3de4aca3ad4e",
+    "interaction_id": "e55c7a5a-e8a7-4593-b6cd-67d31dafce2e",
+    "metadata": {
+      "agent_prompt": "Quel service utiliser pour publier mon application Shiny ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "application Shiny prête à lancer",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-pr-te-lancer.sh"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "qwen3-vl",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service utiliser pour publier mon application Shiny ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
