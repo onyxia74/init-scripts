@@ -313,3 +313,4 @@
 | vscode-python | deploy streamlit app | [init-scripts/vscode-python/deploy-streamlit-app.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deploy-streamlit-app.sh) | - |
 | vscode-python | squelette API Python avec FastAPI | [init-scripts/vscode-python/squelette-api-python-avec-fastapi.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/squelette-api-python-avec-fastapi.sh) | - |
 | rstudio | Application Shiny interactive | [init-scripts/rstudio/application-shiny-interactive.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-interactive.sh) | - |
+| rstudio | Installer shiny et fournir un exemple d'application | [init-scripts/rstudio/installer-shiny-et-fournir-un-exemple-d-application.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/installer-shiny-et-fournir-un-exemple-d-application.sh) | - |
