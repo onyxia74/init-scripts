@@ -1615,5 +1615,22 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T21:16:14.251385+00:00",
+    "event_id": "01a6c1ee-f5f7-439f-b954-a12b57f836c5",
+    "interaction_id": "21dc53a5-d727-4936-a047-29d1675eee6a",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "agent_prompt_english": "Explain the deployment steps.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
