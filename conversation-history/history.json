@@ -1520,5 +1520,32 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "À quels services spécifiques (par exemple, Jupyter, VS Code, RStudio) souhaitez-vous appliquer ce script d'initialisation ?",
+    "created_at": "2026-08-27T21:06:10.151466+00:00",
+    "event_id": "86802dc1-cfa2-4382-b0f0-8b09da48abd7",
+    "interaction_id": "66ad02b9-98fb-47b0-a3e4-c67b1dc68392",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "agent_prompt_english": "Help me add a common initialization script to several services.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_list",
+        "options": [],
+        "options_english": [],
+        "original_request": "",
+        "original_request_english": "Help me add a common initialization script to several services.",
+        "question": "À quels services spécifiques (par exemple, Jupyter, VS Code, RStudio) souhaitez-vous appliquer ce script d'initialisation ?",
+        "question_english": "Which specific services (e.g., Jupyter, VS Code, RStudio) do you want to apply this initialization script to?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
