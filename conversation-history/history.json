@@ -2737,5 +2737,32 @@
     "question": "Je veux travailler avec des données géographiques volumineuses.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour développer une application Java, je vous recommande d'utiliser l'environnement **VS Code** (`vscode-r-python-julia`). Bien que ce service soit orienté vers Python, R et Julia, VS Code est l'outil le plus flexible pour le Java grâce à son système d'extensions. \\n\\nJ'ai configuré un environnement de développement prêt à l'emploi qui inclut :\\n1. **Les extensions indispensables** : Le pack Java de Red Hat et les outils Maven pour la gestion de projet.\\n2. **Une structure de projet standard** : Un squelette Maven avec un fichier `pom.xml` et un fichier `App.java` pour tester immédiatement votre environnement.\\n3. **Une configuration de confort** : Le formatage automatique du code à l'enregistrement (`Format on Save`) est activé.\\n\\nLe script d'initialisation prépare automatiquement ces éléments dès le lancement de votre session.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fsetup-java-development-environment-with-extensions-and-project-structure.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/setup-java-development-environment-with-extensions-and-project-structure.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Le développement Java sur Onyxia repose sur la puissance de VS Code. Plutôt que d'utiliser un IDE lourd, nous utilisons des extensions légères mais complètes qui transforment VS Code en un environnement de développement Java professionnel (Language Support, Debugger, Maven).\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Lancez le service VS Code depuis votre interface Onyxia. Attendez quelques instants que le script d'initialisation installe les extensions Java en arrière-plan.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier le projet\",\n        \"content\": \"Ouvrez l'explorateur de fichiers à gauche. Vous devriez voir un dossier `src/main/java` et un fichier `pom.xml`. Ouvrez `App.java`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter le code\",\n        \"content\": \"Cliquez sur le bouton 'Run' au-dessus de la méthode `main` ou utilisez le terminal pour taper `mvn compile exec:java -Dexec.mainClass=\\\"org.example.App\\\"`.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"java\",\n      \"filename\": \"App.java\",\n      \"content\": \"package org.example;\\n\\npublic class App {\\n    public static void main(String[] args) {\\n        System.out.println(\\\"Hello, Onyxia Java!\\\");\\n    }\\n}\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours un fichier `pom.xml` (Maven) ou `build.gradle` (Gradle) pour gérer vos dépendances.\",\n      \"Profitez du 'Format on Save' pour maintenir un code propre et conforme aux standards Java.\",\n      \"N'oubliez pas de commiter vos fichiers de configuration `.vscode/` si vous travaillez en équipe sur un projet Git.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:48:06.882776+00:00",
+    "event_id": "03591c4b-6ba3-456e-8b0e-377b92389fa0",
+    "interaction_id": "8c5caecc-e9a6-433c-bded-1c9bf1febe18",
+    "metadata": {
+      "agent_prompt": "Quel environnement utiliser pour développer une application Java ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/setup-java-development-environment-with-extensions-and-project-structure.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Quel environnement utiliser pour développer une application Java ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
