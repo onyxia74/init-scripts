@@ -9367,5 +9367,21 @@
     "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T18:11:06.325544+00:00",
+    "event_id": "19c30552-ddca-4d57-be53-6f44cbd4c42b",
+    "interaction_id": "e1f13fa7-c6ea-4504-9980-12eae3e8bc6b",
+    "metadata": {
+      "agent_prompt": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
