@@ -6053,5 +6053,32 @@
     "question": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour travailler avec des données géographiques volumineuses, j'ai configuré un environnement Jupyter Python (`jupyter-python`). Ce service est pré-configuré pour installer automatiquement les bibliothèques essentielles à la géomatique (GeoPandas, Folium, Shapely) et inclut un script de démarrage qui prépare un fichier de démonstration pour visualiser vos données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fenvironnement-de-travail-pour-donn-es-g-ographiques-volumineuses-avec-geopandas-et-folium.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-travail-pour-donn-es-g-ographiques-volumineuses-avec-geopandas-et-folium.sh\",\n        \"reason\": \"Script d'initialisation pour geopandas et folium\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"L'analyse de données géographiques (SIG) nécessite des bibliothèques spécifiques pour lire, manipuler et visualiser des vecteurs et des rasters. GeoPandas est la référence pour manipuler des données tabulaires géographiques en Python, tandis que Folium permet de créer des cartes interactives directement dans Jupyter.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton de configuration pour lancer le service. Le script d'initialisation installera les packages nécessaires au démarrage.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Explorer les données\",\n        \"content\": \"Ouvrez le notebook `geodata_analysis.py` créé automatiquement pour voir un exemple de chargement et de visualisation.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder\",\n        \"content\": \"Vos données et scripts sont sauvegardés dans le volume persistant `/home/onyxia/work`. Pensez à les versionner via Git si nécessaire.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_geo.py\",\n      \"content\": \"import geopandas as gpd\\nimport folium\\n\\n# Charger un fichier GeoJSON local (exemple)\\n# gdf = gpd.read_file('data.geojson')\\n\\n# Créer une carte centrée sur la France\\nm = folium.Map(location=[46.6, 1.8], zoom_start=6)\\n\\n# Ajouter un marqueur\\nfolium.Marker([46.6, 1.8], popup='Hello GeoData!').add_to(m)\\n\\n# Sauvegarder la carte\\nm.save('hello_map.html')\\nprint('Carte générée avec succès !')\"\n    },\n    \"best_practices\": [\n      \"Utilisez des formats de fichiers optimisés comme GeoParquet ou GeoJSON pour les gros volumes.\",\n      \"Augmentez la mémoire RAM (paramètre `resources.requests.memory`) si vous chargez des couches vectorielles très denses.\",\n      \"Pensez à indexer vos données spatiales (ex: avec `geopandas.sindex`) pour accélérer les requêtes spatiales.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T15:28:51.404122+00:00",
+    "event_id": "0c9a984e-f2cc-4053-af9f-fd8743df2b2a",
+    "interaction_id": "9b8d9ca6-0e83-4785-bbdd-24838edd91a4",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec des données géographiques volumineuses.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour geopandas et folium",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-travail-pour-donn-es-g-ographiques-volumineuses-avec-geopandas-et-folium.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec des données géographiques volumineuses.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
