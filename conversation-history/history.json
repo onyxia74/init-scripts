@@ -9685,5 +9685,21 @@
     "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T18:29:02.708232+00:00",
+    "event_id": "1d89e2f9-2c76-4401-be0b-e4534011d9dc",
+    "interaction_id": "79de27e5-b5a9-450e-bc28-1ccf5c9eed8a",
+    "metadata": {
+      "agent_prompt": "J’aimerais lancer un service RStudio.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais lancer un service RStudio.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
