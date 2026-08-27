@@ -4107,5 +4107,32 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour diagnostiquer et lire les événements Kubernetes associés à votre service, je vous propose de lancer un environnement VS Code. Un script d'initialisation a été configuré pour vous aider à exécuter des commandes de diagnostic directement depuis le terminal du service.\\n\\n**Commandes utiles à exécuter dans le terminal :**\\n- `kubectl get events --sort-by='.lastTimestamp'` : pour voir les événements récents du cluster.\\n- `kubectl get events -n $NAMESPACE` : pour filtrer les événements spécifiques à votre namespace.\\n\\n*Note : L'accès effectif à `kubectl` dépend des privilèges accordés à votre service par l'administrateur de la plateforme.*\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fdiagnostic-kubernetes.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/diagnostic-kubernetes.sh\",\n        \"reason\": \"diagnostic kubernetes\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T12:14:00.099476+00:00",
+    "event_id": "f4b7ace5-0867-4a66-8829-ce115801bcf3",
+    "interaction_id": "ccc3429d-23fa-42b9-a052-322f8b24a183",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "diagnostic kubernetes",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/diagnostic-kubernetes.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
