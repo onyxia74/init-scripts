@@ -10303,5 +10303,48 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre application à PostgreSQL, j'ai préparé un environnement complet. J'ai déployé une base de données PostgreSQL avec l'option 'Discovery' activée, ce qui permet aux autres services de votre espace de travail de détecter automatiquement ses détails de connexion. J'ai également inclus pgAdmin avec 'Postgres Discovery' activé, afin que vous puissiez immédiatement commencer à gérer votre base de données et vérifier la connectivité de votre application via une interface web.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {\n          \"discovery.enabled\": {\n            \"value\": true,\n            \"reason\": \"Active la découverte automatique de la connexion pour les autres services de l'espace de travail\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&discovery.enabled=true\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"pgadmin\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.11\"\n        },\n        \"selected_parameters\": {\n          \"discovery.postgres\": {\n            \"value\": true,\n            \"reason\": \"Permet à pgAdmin de détecter automatiquement le service PostgreSQL déployé\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&discovery.enabled=true\"\n    },\n    {\n      \"chart_id\": \"pgadmin\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-27T19:58:04.436099+00:00",
+    "event_id": "3f3643a7-b9e8-4997-b0f0-80a629f77b94",
+    "interaction_id": "c91cff6a-cc9c-43f1-b930-88b689e4a116",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "agent_prompt_english": "How to connect my application to PostgreSQL?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "overrides": {
+              "discovery.enabled": {
+                "reason": "Enables automatic connection discovery for other services in the workspace",
+                "value": true
+              }
+            },
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "pgadmin",
+            "overrides": {
+              "discovery.postgres": {
+                "reason": "Enables pgAdmin to automatically detect the deployed PostgreSQL service",
+                "value": true
+              }
+            },
+            "version": "1.0.11"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
