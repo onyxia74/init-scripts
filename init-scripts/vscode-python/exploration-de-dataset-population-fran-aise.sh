@@ -13,15 +13,15 @@ mkdir -p "${WORK_DIR}/src"
 
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/README.md")"
-cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_cb4827d6303c'
+cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_42acc12b2268'
 # Exploration Population Française
-Ce projet est configuré pour l'analyse de données démographiques.
+Ce projet est configuré pour l'analyse de données démographiques françaises.
 
 ## Structure
 - `data/` : Contient les fichiers de données.
 - `notebooks/` : Notebooks d'exploration.
 - `src/` : Scripts d'analyse.
-ONYXIA_FILE_cb4827d6303c
+ONYXIA_FILE_42acc12b2268
 mkdir -p "$(dirname "${WORK_DIR}/src/main.py")"
 cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_720f03d29789'
 import pandas as pd
