@@ -8843,5 +8843,32 @@
     "question": "J’aimerais créer une carte interactive.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement Jupyter Python avec les bibliothèques nécessaires à la cartographie (geopandas, folium, matplotlib) et un script d'exemple pour générer une carte.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fenvironnement-de-cartographie-python-avec-geopandas-et-folium.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-cartographie-python-avec-geopandas-et-folium.sh\",\n        \"reason\": \"Script d'initialisation pour la cartographie\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T17:30:37.276038+00:00",
+    "event_id": "0265a047-0c16-417a-aebb-1dc3fd6c329e",
+    "interaction_id": "e55f99b9-6ced-4017-a7ac-75e91a6086ca",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la cartographie.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour la cartographie",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-cartographie-python-avec-geopandas-et-folium.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de la cartographie.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
