@@ -8816,5 +8816,32 @@
     "question": "Quel service utiliser pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement Jupyter Python avec les bibliothèques folium et geopandas pour créer des cartes interactives. Un script d'initialisation a été créé pour installer les dépendances et préparer un exemple de carte.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fcr-er-une-carte-interactive-avec-folium-et-geopandas.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/cr-er-une-carte-interactive-avec-folium-et-geopandas.sh\",\n        \"reason\": \"Script de preparation pour carte interactive avec folium et geopandas\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T17:29:21.955763+00:00",
+    "event_id": "bf8fcb1d-2661-4902-a6cd-d57001e737c6",
+    "interaction_id": "5ed425cc-4879-4380-a7c7-698b13483097",
+    "metadata": {
+      "agent_prompt": "J’aimerais créer une carte interactive.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script de preparation pour carte interactive avec folium et geopandas",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/cr-er-une-carte-interactive-avec-folium-et-geopandas.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais créer une carte interactive.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
