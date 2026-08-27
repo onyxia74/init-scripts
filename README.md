@@ -419,3 +419,4 @@
 | rstudio | Application Shiny Hello World | [init-scripts/rstudio/application-shiny-hello-world.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-hello-world.sh) | - |
 | rstudio | Application Shiny de démonstration | [init-scripts/rstudio/application-shiny-de-d-monstration.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-de-d-monstration.sh) | - |
 | rstudio | Application Shiny de démonstration avec histogramme | [init-scripts/rstudio/application-shiny-de-d-monstration-avec-histogramme.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-de-d-monstration-avec-histogramme.sh) | - |
+| jupyter-python | datavisualisation | [init-scripts/jupyter-python/datavisualisation.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/datavisualisation.sh) | - |
