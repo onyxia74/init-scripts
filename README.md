@@ -484,3 +484,4 @@
 | vscode-python | Java development environment | [init-scripts/vscode-python/java-development-environment.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/java-development-environment.sh) | - |
 | vscode-python | preinstall java and pandas | [init-scripts/vscode-python/preinstall-java-and-pandas.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/preinstall-java-and-pandas.sh) | - |
 | vscode-python | Enable Format on Save in VS Code | [init-scripts/vscode-python/enable-format-on-save-in-vs-code.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/enable-format-on-save-in-vs-code.sh) | - |
+| vscode-python | set dark theme | [init-scripts/vscode-python/set-dark-theme.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/set-dark-theme.sh) | - |
