@@ -2629,5 +2629,22 @@
     "question": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:51:03.737530+00:00",
+    "event_id": "a97645f6-6bf1-4eac-be24-69aa2a47870a",
+    "interaction_id": "042c07f4-0b3f-4bdb-85c2-8c3c60de65d5",
+    "metadata": {
+      "agent_prompt": "Je veux faire de l’exploration de données dans un notebook.",
+      "agent_prompt_english": "I want to do data exploration in a notebook.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire de l’exploration de données dans un notebook.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
