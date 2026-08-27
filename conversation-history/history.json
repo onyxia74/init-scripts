@@ -5184,5 +5184,21 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "ed.\n%C2%AB/think%C2%BB\n\n```json\n{\n  \"answer\": \"Voici les étapes clés pour la mise en production sur Onyxia SSPCloud, structurées pour garantir fiabilité et reproductibilité.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"\",\n      \"catalog_id\": \"\",\n      \"version\": \"\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"La mise en production sur Onyxia repose sur la définition précise d'une configuration de service (Helm), l'utilisation de scripts d'initialisation pour la reproductibilité, et le déploiement via l'interface ou l'API. Contrairement à un environnement de test, la production exige des ressources garanties, des versions figées et une gestion rigoureuse des données.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Définir la configuration\",\n        \"content\": \"Sélectionnez le chart Helm correspondant à votre besoin. Fixez explicitement les paramètres critiques : version du service, ressources (CPU/RAM) avec des limites claires, et volume de persistance. Utilisez `build_service_configuration` pour valider la structure JSON sans générer d'URL.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Initialiser et préparer\",\n        \"content\": \"Intégrez un script d'initialisation (`create_init_script`) pour installer les dépendances, cloner les dépôts ou configurer l'environnement. Cela garantit que le service démarre dans un état connu et reproductible, essentiel en production.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Déployer et surveiller\",\n        \"content\": \"Validez la configuration via l'interface Onyxia ou l'API. Une fois le service lancé, surveillez les logs et les métriques. Pour les charges de travail critiques, envisagez des mécanismes de redémarrage automatique ou de scaling si la plateforme le permet.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"bash\",\n      \"filename\": \"check_production_env.sh\",\n      \"content\": \"#!/bin/bash\\n# Script de vérification basique pour un environnement de production Onyxia\\necho \\\"Vérification de l'environnement...\\\"\\nif [ -d \\\"/home/onyxia/work\\\" ]; then\\n    echo \\\"Répertoire de travail accessible.\\\"\\nelse\\n    echo \\\"Erreur : Répertoire de travail manquant.\\\"\\n    exit 1\\nfi\\n\\n# Vérification des variables d'environnement courantes\\nif [ -z \\\"$PORT\\\" ]; then\\n    echo \\\"Avertissement : Variable PORT non définie.\\\"\\nelse\\n    echo \\\"Port configuré : $PORT\\\"\\nfi\\n\\necho \\\"Environnement prêt.\\\"\\n\"\n    },\n    \"best_practices\": [\n      \"Toujours figer les versions des charts Helm et des images Docker pour assurer la reproductibilité.\",\n      \"Définir explicitement les limites de ressources (limits) pour éviter l'impact sur les autres utilisateurs et garantir la stabilité.\",\n      \"Utiliser des scripts d'initialisation pour externaliser la configuration et le code, en les versionnant dans un dépôt Git.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:14:08.248700+00:00",
+    "event_id": "f30b4db7-1731-4f13-8edb-49949dda58bd",
+    "interaction_id": "9f5bccf7-89b0-4219-9438-a0f4a5956d9c",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
