@@ -6266,5 +6266,26 @@
     "question": "J’aimerais lancer un service RStudio.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement VS Code complet basé sur l'image `vscode-python-gpu`. Ce service intègre Python, Julia et des outils standard pour la data science avec un support GPU. Par défaut, aucune ressource supplémentaire (CPU/RAM) n'a été réservée au-delà des standards, et aucun script d'initialisation personnalisé n'a été ajouté. Vous pouvez modifier ces paramètres si vous avez des besoins spécifiques (ex: plus de RAM pour de gros datasets).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python-gpu?name=vscode-python-gpu&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"VS Code est un éditeur de code très populaire qui s'exécute directement dans votre navigateur via Onyxia. Il vous permet d'écrire, tester et déboguer du code (Python, R, Julia) sans rien installer sur votre ordinateur. Le volume de données est persistant : vos fichiers restent disponibles même si vous fermez le navigateur.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton 'Lancer' dans l'interface Onyxia. Attendez que le statut passe à 'En cours d'exécution'.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Accéder à l'IDE\",\n        \"content\": \"Cliquez sur le lien fourni par Onyxia pour ouvrir VS Code. Ouvrez le menu 'Terminal' %C2%BB 'Nouveau terminal' en bas.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Tester un script\",\n        \"content\": \"Tapez `python -c \\\"print('Hello Onyxia')\\\"` dans le terminal pour vérifier que Python fonctionne.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_onyxia.py\",\n      \"content\": \"print(\\\"Bonjour depuis Onyxia !\\\")\\nprint(\\\"L'environnement est prêt.\\\")\"\n    },\n    \"best_practices\": [\n      \"Vos fichiers sont sauvegardés dans le dossier /home/onyxia/work/.\",\n      \"Utilisez le terminal intégré pour installer des paquets avec `pip install` ou `conda install`.\",\n      \"Pensez à arrêter le service quand vous n'en avez plus besoin pour libérer les ressources.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T15:51:25.076701+00:00",
+    "event_id": "46f7cfbb-3156-4c18-8571-1486228ccca6",
+    "interaction_id": "23d60057-8312-4d46-a4b7-a8a4d2cba922",
+    "metadata": {
+      "agent_prompt": "Je veux un environnement VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python-gpu",
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux un environnement VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
