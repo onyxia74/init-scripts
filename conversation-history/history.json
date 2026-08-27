@@ -1707,5 +1707,32 @@
     "question": "Comment injecter mes secrets dans l’application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer votre application Streamlit, j'ai configuré un environnement **VS Code Python** sur mesure. \\n\\nCe service est prêt à l'emploi : j'ai injecté un script d'initialisation qui installe automatiquement les bibliothèques nécessaires (`streamlit`, `pandas`, `numpy`, `matplotlib`) et crée un fichier `app.py` contenant une application de démonstration interactive avec un graphique dynamique. \\n\\nUne fois le service lancé, vous pourrez visualiser votre application directement via le port exposé par Onyxia.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fd-ploiement-d-une-application-streamlit.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-ploiement-d-une-application-streamlit.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Streamlit est une bibliothèque Python qui transforme des scripts de données en applications web interactives en quelques lignes de code. Sur Onyxia, nous utilisons un 'init script' pour automatiser la préparation de votre environnement de travail dès le démarrage du conteneur.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Sélectionnez le service VS Code Python configuré ci-dessus et lancez-le depuis votre interface Onyxia.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier les fichiers\",\n        \"content\": \"Ouvrez l'explorateur de fichiers dans VS Code. Vous y trouverez déjà `app.py` et un fichier `requirements.txt`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter l'application\",\n        \"content\": \"Ouvrez un terminal dans VS Code et tapez : `streamlit run app.py`. Utilisez ensuite le lien de prévisualisation fourni par la plateforme.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"app.py\",\n      \"content\": \"import streamlit as st\\nimport pandas as pd\\nimport numpy as np\\n\\nst.title('Hello Streamlit!')\\nst.write('Ceci est votre première application sur Onyxia.')\\ndata = pd.DataFrame(np.random.randn(10, 2), columns=['x', 'y'])\\nst.line_chart(data)\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours un fichier requirements.txt pour rendre votre projet reproductible.\",\n      \"Ne stockez pas de données sensibles (mots de passe, clés API) directement dans le code ; utilisez les variables d'environnement Onyxia.\",\n      \"Pour les applications lourdes, pensez à ajuster les ressources (CPU/RAM) dans la configuration du service.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:28:11.195983+00:00",
+    "event_id": "1a18869c-852c-48b3-9ec9-04019818a72a",
+    "interaction_id": "1112489e-2eb6-4564-8a62-6f39044bf5f8",
+    "metadata": {
+      "agent_prompt": "Comment déployer une application Streamlit ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/d-ploiement-d-une-application-streamlit.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une application Streamlit ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
