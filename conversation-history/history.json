@@ -8929,5 +8929,36 @@
     "question": "Crée un service adapté à un projet de deep learning.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser un GPU avec Python dans Onyxia, le plus simple est de sélectionner le service **JupyterLab avec support GPU** (`jupyter-python-gpu`). Ce service est préconfiguré avec les pilotes NVIDIA et les bibliothèques Python courantes (PyTorch, TensorFlow, etc.).\\n\\nVoici la configuration recommandée qui alloue explicitement 1 GPU et active le stockage persistant pour sauvegarder vos travaux :\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python-gpu?name=jupyter-python-gpu&version=2.5.2&s3=region-79669f20&persistence.enabled=true\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python-gpu\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"resources.limits.nvidia.com/gpu\": {\n        \"value\": \"1\",\n        \"reason\": \"Allocation d'un GPU NVIDIA pour l'entraînement ou l'inférence\"\n      },\n      \"persistence.enabled\": {\n        \"value\": true,\n        \"reason\": \"Activation du volume persistant pour sauvegarder les données et scripts\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T17:38:26.489698+00:00",
+    "event_id": "b84ce5ca-9256-4387-9fdb-7fcafcc2c9ba",
+    "interaction_id": "8726c332-71a4-4148-8cc1-4eed8912560e",
+    "metadata": {
+      "agent_prompt": "Comment utiliser un GPU avec Python dans Onyxia ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python-gpu",
+        "overrides": {
+          "persistence.enabled": {
+            "reason": "Activation du volume persistant pour sauvegarder les données et scripts",
+            "value": true
+          },
+          "resources.limits.nvidia.com/gpu": {
+            "reason": "Allocation d'un GPU NVIDIA pour l'entraînement ou l'inférence",
+            "value": "1"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
