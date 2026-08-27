@@ -3444,5 +3444,21 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "L'utilisateur pose une question sur la consultation des logs d'une application déjà déployée sur Onyxia. En tant qu'architecte Data, je dois répondre de manière technique et concise. Sur la plateforme Onyxia (basée sur Kubernetes), la consultation des logs se fait généralement via l'interface de la plateforme ou via des outils de ligne de commande si l'utilisateur a accès au terminal du pod.\n\nCependant, ma mission principale est de configurer des services. Puisque la question est une question de support/utilisation et non une demande de déploiement, je vais répondre directement en expliquant la procédure standard.\n\nNote : Comme il n'y a pas de demande de nouveau service, je ne peux pas utiliser les outils de configuration pour générer un `json_payload` de service. Je vais répondre textuellement.\n\n**Réponse :**\n\nPour consulter les logs de votre application sur Onyxia, vous disposez de deux méthodes principales selon votre niveau d'accès :\n\n1. **Via l'interface Onyxia (si disponible) :** Certains services ou interfaces de gestion de la plateforme permettent de visualiser les flux de logs directement dans le navigateur.\n2. **Via le terminal du service (Pod) :** \n   - Si votre service (comme VS Code ou Jupyter) dispose d'un terminal, vous pouvez tenter d'utiliser les commandes Kubernetes si l'environnement est configuré pour cela (ex: `kubectl logs %C2%ABpod_name%C2%BB`), mais cela est rarement exposé directement aux utilisateurs finaux pour des raisons de sécurité.\n   - La méthode la plus courante consiste à rediriger la sortie de votre application vers un fichier dans votre espace de travail (ex: `python app.py %C2%BB application.log 2%C2%BB&1`). Vous pourrez ensuite consulter ce fichier directement via l'explorateur de fichiers de VS Code ou Jupyter.\n3. **Logs de démarrage (Init Containers) :** Si votre application échoue au démarrage, le problème peut venir d'un script d'initialisation. Dans ce cas, l'administrateur de la plateforme doit intervenir pour inspecter les logs des `initContainers`.\n\nSi vous avez besoin de déployer un nouveau service avec une gestion spécifique des logs (ex: redirection vers un fichier de log persistant), n'hésitez pas à me le demander.",
+    "created_at": "2026-08-27T11:59:18.206155+00:00",
+    "event_id": "3c3c7396-c5c4-4d86-a2d8-c1ee1451a9c3",
+    "interaction_id": "6735ef85-63d6-482f-bd6f-21ff11c9c4e3",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
