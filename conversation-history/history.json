@@ -1440,5 +1440,32 @@
     "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel environnement de développement souhaitez-vous utiliser pour exploiter le GPU ?",
+    "created_at": "2026-08-27T10:22:19.612097+00:00",
+    "event_id": "f37c6241-5670-494b-a72e-def4c7e68b11",
+    "interaction_id": "7d5c3d5f-b2a2-4280-8891-07a92a753b7d",
+    "metadata": {
+      "agent_prompt": "Réserve une ressource GPU pendant une heure.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "ide_preference",
+        "options": [
+          "JupyterLab (Python/Data Science)",
+          "VS Code (Python/Julia/Dev)",
+          "RStudio (Statistiques R)"
+        ],
+        "original_request": "",
+        "question": "Quel environnement de développement souhaitez-vous utiliser pour exploiter le GPU ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Réserve une ressource GPU pendant une heure.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
