@@ -5587,5 +5587,32 @@
     "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici une configuration pour lancer un environnement Jupyter Python avec un notebook pré-configuré pour l'exploration de données. Le notebook `exploration.ipynb` est inclus et prêt à être utilisé pour charger et analyser vos fichiers CSV.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fnotebook-d-exploration-de-donnees-avec-pandas.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/notebook-d-exploration-de-donnees-avec-pandas.sh\",\n        \"reason\": \"notebook d'exploration de donnees avec pandas\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Ce service lance JupyterLab, un environnement de développement interactif très populaire pour la data science. Le script d'initialisation télécharge automatiquement un notebook contenant du code Python avec la bibliothèque Pandas pour vous aider à démarrer l'analyse de vos données.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer\",\n        \"content\": \"Cliquez sur le bouton de lancement pour démarrer votre service. Attendez que le statut passe à 'Running'.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Explorer\",\n        \"content\": \"Dans l'interface Jupyter, double-cliquez sur le fichier `exploration.ipynb` dans la barre latérale pour l'ouvrir.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter\",\n        \"content\": \"Cliquez sur 'Run' (ou Shift+Entrée) dans le notebook pour exécuter les cellules de code et voir les résultats.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import pandas as pd\\n\\nprint(\\\"Hello World from Jupyter!\\\")\\n\\n# Exemple de création de dataframe\\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\\nprint(df)\"\n    },\n    \"best_practices\": [\n      \"Sauvegardez régulièrement vos notebooks sur votre espace de stockage persistant.\",\n      \"Utilisez les variables d'environnement pour gérer vos clés API ou mots de passe de manière sécurisée.\",\n      \"N'oubliez pas d'arrêter votre service lorsque vous n'en avez plus besoin pour économiser les ressources.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:50:06.515289+00:00",
+    "event_id": "058f3e47-78e1-4233-970e-7fdef6e19c61",
+    "interaction_id": "7bd99dd1-067b-4ec8-9946-02265c9a7f9b",
+    "metadata": {
+      "agent_prompt": "Propose un notebook pour explorer des données.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "notebook d'exploration de donnees avec pandas",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/notebook-d-exploration-de-donnees-avec-pandas.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Propose un notebook pour explorer des données.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
