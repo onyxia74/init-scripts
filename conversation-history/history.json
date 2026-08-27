@@ -2340,5 +2340,32 @@
     "question": "Comment connecter mon service à GitHub ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour gérer de gros fichiers sur S3 sans saturer votre mémoire, la clé est de ne jamais charger l'intégralité du fichier en RAM. J'ai configuré pour vous un environnement **JupyterLab Python** optimisé avec des bibliothèques spécialisées comme `dask`, `polars` et `pyarrow`. \\n\\nLe script d'initialisation que j'ai préparé installe ces outils et vous permet d'utiliser des techniques de **chunking** (lecture par morceaux) ou de **lazy loading** (chargement différé). Cela permet de traiter des téraoctets de données avec seulement quelques gigaoctets de RAM disponible.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fgestion-de-gros-fichiers-s3-via-chunking-et-streaming.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/gestion-de-gros-fichiers-s3-via-chunking-et-streaming.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Le problème de la saturation mémoire survient quand on utilise `pandas.read_csv()` ou `read_parquet()` sur un fichier plus gros que la RAM. La solution consiste à utiliser des moteurs de calcul qui travaillent par 'morceaux' (chunks) ou qui créent un graphe de calcul sans charger les données immédiatement.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Déployez le service Jupyter configuré. Le script d'init installera automatiquement les librairies nécessaires.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Utiliser le Chunking (Pandas)\",\n        \"content\": \"Utilisez `pd.read_csv(path, chunksize=10000)` pour itérer sur le fichier morceau par morceau.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Passer au Lazy Loading (Polars/Dask)\",\n        \"content\": \"Utilisez `polars.scan_parquet(path)` pour définir vos opérations, puis `.collect()` pour exécuter le calcul de manière optimisée.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"s3_streaming_demo.py\",\n      \"content\": \"import polars as pl\\n\\n# Exemple de lecture 'lazy' (ne charge pas en mémoire immédiatement)\\n# Idéal pour les gros fichiers sur S3\\ndef process_large_file(s3_path):\\n    q = (\\n        pl.scan_parquet(s3_path)\\n        .filter(pl.col('valeur') %C2%BB 100)\\n        .group_by('categorie')\\n        .agg(pl.col('valeur').mean())\\n    )\\n    return q.collect()\\n\\nprint('Configuration prête pour le streaming de données.')\"\n    },\n    \"best_practices\": [\n      \"Privilégiez le format Parquet au CSV pour une lecture colonne optimisée.\",\n      \"Utilisez Polars ou Dask pour le calcul distribué/par morceaux plutôt que Pandas seul.\",\n      \"Configurez toujours vos accès S3 via des variables d'environnement sécurisées.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:41:26.954444+00:00",
+    "event_id": "ddcac89a-f71a-4aac-b672-0c50b37036a1",
+    "interaction_id": "3bcceddc-4617-401c-b14a-291bafb72774",
+    "metadata": {
+      "agent_prompt": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/gestion-de-gros-fichiers-s3-via-chunking-et-streaming.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
