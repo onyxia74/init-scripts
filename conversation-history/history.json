@@ -82,5 +82,22 @@
     "question": "Comment joindre mes données statistiques à un fond de carte ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "J'ai besoin de comprendre vos besoins spécifiques pour vous recommander le service le plus approprié et vous fournir une configuration prête à l'emploi. Pour m'aider à sélectionner le bon outil dans le catalogue Onyxia, pourriez-vous clarifier les points suivants :\n\n1. **Quelle est la nature de vos données ?** (ex: tabulaires/CSV, géospatiales/SIG, séries temporelles, texte non structuré ou données relationnelles à grande échelle).\n2. **Quel est votre objectif principal ?** (ex: analyse statistique, machine learning, visualisation de données, création d'un tableau de bord web/API ou gestion de base de données).\n3. **Avez-vous un langage de programmation ou un outil de préférence ?** (ex: Python, R, SQL, ou un IDE spécifique comme VS Code ou Jupyter).\n\nUne fois que j'aurai ces détails, je sélectionnerai le meilleur service et préparerai un environnement personnalisé pour vous.",
+    "created_at": "2026-08-27T20:02:28.183669+00:00",
+    "event_id": "18de49a6-b53a-4f29-b2e3-e6c4d9eb46de",
+    "interaction_id": "524c7c39-6af8-4503-b876-a86670a86d5f",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "agent_prompt_english": "Which chart is most suitable for my data?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
