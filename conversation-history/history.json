@@ -2342,5 +2342,22 @@
     "question": "Configure un environnement Java complet dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:25:25.009649+00:00",
+    "event_id": "af3b1689-4456-47c8-842e-87c66b661ec2",
+    "interaction_id": "54d519dc-b881-46aa-ba94-db26e0a500c9",
+    "metadata": {
+      "agent_prompt": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+      "agent_prompt_english": "Can you preinstall my VS Code extensions at startup, particularly Java and pandas?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
