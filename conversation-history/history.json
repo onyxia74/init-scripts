@@ -5152,5 +5152,21 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T14:12:01.207861+00:00",
+    "event_id": "805c3c57-4a2a-4ff9-a7a6-ca6c444ed4c2",
+    "interaction_id": "731f35f8-10af-47c0-a9f6-3b21dc976acf",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
