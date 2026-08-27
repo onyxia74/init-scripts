@@ -1389,5 +1389,22 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T20:56:20.833521+00:00",
+    "event_id": "cfd15c17-cb79-4897-800f-c30bd3da6212",
+    "interaction_id": "3d44a97f-dd0c-4e6c-bc06-183ec4a68b59",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "agent_prompt_english": "How to share a PostgreSQL service between multiple users?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
