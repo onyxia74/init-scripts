@@ -2175,5 +2175,33 @@
     "question": "Comment connecter mon service à GitHub ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour gérer de gros fichiers sur S3 sans épuiser la mémoire, vous devez éviter de charger des fichiers entiers en RAM. Utilisez plutôt le streaming, le découpage en chunks ou le traitement distribué. L'environnement JupyterLab fourni est préconfiguré avec `s3fs`, `pyarrow`, `dask` et `boto3`. Le script d'initialisation inclut des exemples pratiques : lecture de fichiers Parquet directement depuis S3 en utilisant les capacités de streaming de PyArrow, découpage de gros fichiers CSV avec Pandas, et exploitation de Dask pour le calcul hors-mémoire ou distribué. Cela garantit une utilisation efficace de la mémoire, quelle que soit la taille des fichiers.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fs3-large-file-management-without-exhausting-memory.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/s3-large-file-management-without-exhausting-memory.sh\",\n        \"reason\": \"Gestion de gros fichiers sur S3 sans épuiser la mémoire\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T22:12:12.033289+00:00",
+    "event_id": "ce997ae4-e5c4-4f0d-8514-1aaea813ae69",
+    "interaction_id": "25203bbc-61ec-4a2c-809d-bdda11fcaad1",
+    "metadata": {
+      "agent_prompt": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+      "agent_prompt_english": "How to manage large files on S3 without exhausting memory?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "S3 large file management without exhausting memory",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/s3-large-file-management-without-exhausting-memory.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
