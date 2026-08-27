@@ -5528,5 +5528,32 @@
     "question": "Génère une architecture de projet data science reproductible.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour travailler sur des datasets volumineux sans saturer la mémoire, la meilleure approche est d'utiliser **Apache Spark** via le service **Jupyter PySpark**. Contrairement à des outils classiques qui chargent tout en RAM, Spark traite les données de manière distribuée et par flux (streaming). J'ai configuré ce service avec un script d'initialisation qui installe les bibliothèques de data science (Pandas, PyArrow) et prépare un environnement prêt à l'emploi pour le Big Data.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-pyspark?name=jupyter-pyspark&version=3.2.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-pyspark%2Fdata-science-big-data---environnement-pr-t-pour-gros-datasets.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-pyspark\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"3.2.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/data-science-big-data---environnement-pr-t-pour-gros-datasets.sh\",\n        \"reason\": \"Script d'initialisation pour setup Big Data\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Lorsque vos données dépassent la RAM de votre machine, il ne faut pas les charger en mémoire brute. Apache Spark permet de lire les fichiers (CSV, Parquet, JSON) directement depuis le stockage (S3, HDFS) et de les traiter par morceaux (partitions) en parallèle. Cela permet de faire des calculs sur des téraoctets de données avec seulement quelques gigaoctets de RAM.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Initialisation\",\n        \"content\": \"Au lancement, le service va automatiquement installer les bibliothèques Python (pandas, pyarrow) et configurer la connexion à Spark. Attendez que le notebook soit prêt.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Chargement Intelligent\",\n        \"content\": \"Dans un notebook, utilisez `spark.read.csv()` ou `spark.read.parquet()`. Spark va créer un 'DataFrame' qui est une représentation logique des données, sans les charger toutes en RAM immédiatement.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Analyse et Filtrage\",\n        \"content\": \"Appliquez des filtres (`df.filter(...)`) ou des agrégations (`df.groupBy(...)`) avant de collecter les résultats. N'utilisez `.collect()` que sur de petits volumes de résultats finaux.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_spark.py\",\n      \"content\": \"from pyspark.sql import SparkSession\\n\\n# Création de la session Spark\\nspark = SparkSession.builder \\\\\\n    .appName(\\\"HelloBigData\\\") \\\\\\n    .getOrCreate()\\n\\n# Création d'un petit jeu de données pour l'exemple\\ndata = [(\\\"Alice\\\", 34), (\\\"Bob\\\", 45), (\\\"Charlie\\\", 29)]\\ndf = spark.createDataFrame(data, [\\\"Name\\\", \\\"Age\\\"])\\n\\n# Affichage (action qui déclenche le calcul)\\ndf.show()\\n\\n# Sauvegarde en format Parquet (optimisé pour le Big Data)\\ndf.write.parquet(\\\"output_data.parquet\\\")\\nprint(\\\"Données sauvegardées avec succès !\\\")\"\n    },\n    \"best_practices\": [\n      \"Utilisez le format Parquet plutôt que CSV pour les gros volumes : c'est plus rapide et prend moins de place.\",\n      \"Filtrez vos données (`where`, `filter`) avant de faire des jointures ou des agrégations lourdes.\",\n      \"Évitez d'utiliser `.collect()` sur des DataFrames complets ; utilisez `.count()` ou `.show()` pour inspecter.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:43:26.068698+00:00",
+    "event_id": "d5289065-ffc9-46fe-8e9d-38a65de20ec8",
+    "interaction_id": "76160787-6c24-4deb-963c-ee0525ae0658",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-pyspark",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour setup Big Data",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-pyspark/data-science-big-data---environnement-pr-t-pour-gros-datasets.sh"
+          }
+        },
+        "version": "3.2.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
