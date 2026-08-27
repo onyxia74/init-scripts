@@ -2965,5 +2965,26 @@
     "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est entendu ! J'ai préparé la configuration pour votre environnement RStudio. J'ai sélectionné la version la plus complète (`rstudio-r-python-julia`), qui vous permet de travailler non seulement avec **R**, mais aussi avec **Python** et **Julia** au sein de la même interface. C'est l'outil idéal pour la science des données polyvalente.\\n\\nVoici votre configuration prête à être déployée sur Onyxia.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"RStudio sur Onyxia n'est pas qu'un simple éditeur R. La version que nous avons choisie est un environnement multi-langages. Elle intègre des ponts (comme `reticulate` pour Python) qui vous permettent de mélanger les langages dans vos analyses, ce qui est extrêmement puissant pour la science des données moderne.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancement\",\n        \"content\": \"Cliquez sur le bouton de déploiement dans votre interface Onyxia. Attendez que l'état du service passe à 'Running'.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Exploration\",\n        \"content\": \"Une fois dans RStudio, utilisez l'onglet 'Files' pour naviguer dans votre espace de travail `/home/onyxia/work`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Interopérabilité\",\n        \"content\": \"Essayez de charger une bibliothèque Python via R en utilisant `library(reticulate)` pour tester la polyvalence de l'environnement.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"r\",\n      \"filename\": \"hello_world.R\",\n      \"content\": \"# Premier script R sur Onyxia\\nmessage %C2%AB- \\\"Bonjour Onyxia !\\\"\\nprint(message)\\n\\n# Test de calcul simple\\ndata %C2%AB- c(1, 2, 3, 4, 5)\\nmean_val %C2%AB- mean(data)\\nprint(paste(\\\"La moyenne est :\\\", mean_val))\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours le répertoire /home/onyxia/work pour vos données afin qu'elles soient persistantes.\",\n      \"Pour des projets volumineux, pensez à augmenter la taille du volume persistant via les paramètres de configuration.\",\n      \"Privilégiez l'installation de packages via les gestionnaires officiels (CRAN/Bioconductor) pour garantir la stabilité.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:52:47.532086+00:00",
+    "event_id": "50ef2959-97c4-4b27-8f24-15fa356ad1cd",
+    "interaction_id": "4799e2f4-5b01-4905-8c84-69992df988ac",
+    "metadata": {
+      "agent_prompt": "J’aimerais lancer un service RStudio.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "J’aimerais lancer un service RStudio.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
