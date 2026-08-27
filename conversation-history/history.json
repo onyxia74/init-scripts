@@ -7402,5 +7402,26 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"L'accès direct au plan de contrôle (control plane) du cluster Kubernetes est restreint pour des raisons de sécurité. Cependant, pour interagir avec le cluster via une approche GitOps et gérer vos déploiements de manière déclarative, je vous recommande l'utilisation d'**Argo CD**. Ce service vous permettra de piloter vos ressources Kubernetes de manière continue et sécurisée au sein du SSP Cloud.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/automation/argo-cd?name=argo-cd&version=3.4.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"argo-cd\",\n      \"catalog_id\": \"automation\",\n      \"version\": \"3.4.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-27T16:22:17.293296+00:00",
+    "event_id": "0e5e1362-5c76-4017-b620-81a4e36c5cc9",
+    "interaction_id": "10776df6-c8d9-4686-bdf1-1036798d9885",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "automation",
+        "chart_id": "argo-cd",
+        "version": "3.4.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
