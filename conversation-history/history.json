@@ -2827,5 +2827,35 @@
     "question": "Je veux utiliser Neo4j dans Onyxia.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas le champ answer attendu.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\n```json\n{\n  \"answer\": \"Pour travailler avec PostgreSQL, je vous ai préparé un environnement complet comprenant le serveur de base de données et une interface de gestion graphique. \\n\\n1. **PostgreSQL (cnpg)** : C'est le moteur de base de données qui stockera vos données de manière persistante.\\n2. **pgAdmin** : C'est l'outil visuel qui vous permettra de créer des tables, d'exécuter des requêtes SQL et de gérer vos bases de données sans avoir à utiliser uniquement la ligne de commande.\\n\\nGrâce à la fonctionnalité de 'discovery' activée par défaut sur pgAdmin, l'interface devrait détecter automatiquement votre nouveau serveur PostgreSQL pour faciliter la connexion.\\n\\n%C2%ABteacher_block%C2%BB\\n{\\n  \\\"explanation\\\": \\\"Pour manipuler des données, il faut deux éléments : un moteur (le serveur) et un volant (l'interface). PostgreSQL est le moteur puissant, et pgAdmin est votre tableau de bord pour le piloter.\\\",\\n  \\\"tutorial\\\": [\\n    {\\\"step\\\": 1, \\\"title\\\": \\\"Lancer les services\\\", \\\"content\\\": \\\"Lancez d'abord le service PostgreSQL, puis pgAdmin depuis votre interface Onyxia.\\\"},\\n    {\\\"step\\\": 2, \\\"title\\\": \\\"Se connecter\\\", \\\"content\\\": \\\"Ouvrez pgAdmin. Si la détection automatique ne fonctionne pas, utilisez l'hôte fourni par le service PostgreSQL.\\\"},\\n    {\\\"step\\\": 3, \\\"title\\\": \\\"Créer une base\\\", \\\"content\\\": \\\"Faites un clic droit sur 'Databases' dans pgAdmin et choisissez 'Create' %C2%BB 'Database'.\\\"}\\n  ],\\n  \\\"hello_world_script\\\": {\\n    \\\"language\\\": \\\"sql\\\",\\n    \\\"filename\\\": \\\"setup.sql\\\",\\n    \\\"content\\\": \\\"CREATE TABLE users (id SERIAL PRIMARY KEY, name TEXT, email TEXT UNIQUE);\\nINSERT INTO users (name, email) VALUES ('Onyxia User', 'user@example.com');\\nSELECT * FROM users;\\\"\\n  },\\n  \\\"best_practices\\\": [\\n    \\\"Ne partagez jamais votre mot de passe 'auth.password'\\\",\\n    \\\"Utilisez des volumes persistants pour ne pas perdre vos données au redémarrage\\\",\\n    \\\"Faites des sauvegardes régulières de vos schémas SQL\\\"\\n  ]\\n}\\n%C2%AB/teacher_block%C2%BB\\\",\n  \"config_link\": \"\",\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"\"\n    },\n    {\n      \"chart_id\": \"pgadmin\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"\"\n    }\n  ],\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"\n... [detail tronque]\n```",
+    "created_at": "2026-08-27T10:49:50.243622+00:00",
+    "event_id": "9b4c5cae-7e91-424b-9269-40dd21b51b84",
+    "interaction_id": "0e773119-e9bc-4c1a-9131-97802f2ab3b7",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec une base PostgreSQL.",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "pgadmin",
+            "version": "1.0.11"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec une base PostgreSQL.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
