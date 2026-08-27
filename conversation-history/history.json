@@ -5008,5 +5008,21 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "it.\n%C2%AB/think%C2%BB\n\n```json\n{\n  \"chart_id\": \"postgresql-cnpg\",\n  \"purpose\": \"Créer plusieurs utilisateurs et bases de données pour le partage\",\n  \"script\": \"-- Création de la base de données pour l'utilisateur 1\\nCREATE DATABASE db_user1;\\nGRANT ALL PRIVILEGES ON DATABASE db_user1 TO user1;\\n\\n-- Création de la base de données pour l'utilisateur 2\\nCREATE DATABASE db_user2;\\nGRANT ALL PRIVILEGES ON DATABASE db_user2 TO user2;\\n\\n-- Création des rôles utilisateurs (si non existants)\\n-- Note: Dans PostgreSQL, les rôles sont souvent créés via ALTER ROLE ou CREATE ROLE\\n-- Ici on suppose que les rôles existent ou seront créés par l'admin, mais on peut le faire ici aussi.\\nCREATE ROLE user1 WITH LOGIN PASSWORD 'password1';\\nCREATE ROLE user2 WITH LOGIN PASSWORD 'password2';\\n\\n-- Attribution des droits\\nGRANT ALL PRIVILEGES ON DATABASE db_user1 TO user1;\\nGRANT ALL PRIVILEGES ON DATABASE db_user2 TO user2;\\n\\n-- Connexion à db_user1 pour créer des schémas si besoin\\n\\\\c db_user1\\nCREATE SCHEMA IF NOT EXISTS user1_schema;\\nGRANT ALL ON SCHEMA user1_schema TO user1;\",\n  \"content_type\": \"sql\"\n}\n```",
+    "created_at": "2026-08-27T13:53:08.721660+00:00",
+    "event_id": "13b24286-ec7f-4e55-a2e8-808bc94dbf4c",
+    "interaction_id": "5c2ef4be-8676-4c7e-8e38-6d3feb83f578",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
