@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# This init script prepares vscode-python on Onyxia.
+# Purpose: accès au cluster via kubectl
+# Expected parameters : None
+
+WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
+mkdir -p "${WORK_DIR}"
+# Install Python packages.
+PYTHON_BIN="${PYTHON_BIN:-python}"
+if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
+  PYTHON_BIN="python3"
+fi
+"${PYTHON_BIN}" -m pip install kubernetes
+
+
+mkdir -p ~/.kube
+echo 'apiVersion: v1
+kind: Pod
+metadata:
+  name: test' > test.yaml
+kubectl version --client
