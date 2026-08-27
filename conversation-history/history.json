@@ -2220,5 +2220,37 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service RStudio est configuré pour utiliser l'image personnalisée `Toto/rstudio-custom`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&service.image.custom.enabled=true&service.image.custom.version=%C2%ABToto%2Frstudio-custom%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"image personnalisée demandée\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"Toto/rstudio-custom\",\n        \"reason\": \"image personnalisée demandée\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T22:15:53.396032+00:00",
+    "event_id": "d2e83256-4e97-4d32-a990-a78cf5ba1a32",
+    "interaction_id": "402e8be2-6d4d-4ec6-89c2-d5d384404251",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "agent_prompt_english": "How to deploy a custom RStudio image? Toto/rstudio-custom",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "custom image requested",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "custom image requested",
+            "value": "Toto/rstudio-custom"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
