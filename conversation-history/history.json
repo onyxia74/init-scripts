@@ -1467,5 +1467,26 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour augmenter le stockage disponible dans votre service Onyxia, vous devez modifier le paramètre de persistance lors de la configuration. \\n\\nDans l'exemple d'un service **VS Code (Python)**, le paramètre à modifier est `persistence.size`. Par défaut, il est réglé sur `10Gi`. Vous pouvez augmenter cette valeur (par exemple à `50Gi`) selon vos besoins. \\n\\nSi vous souhaitez que je prépare une configuration spécifique pour vous, n'hésitez pas à me préciser le service que vous utilisez et la taille de stockage souhaitée.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Le stockage dans Onyxia est géré par des 'Persistent Volumes'. Chaque service possède un paramètre `persistence.size` qui définit la taille de votre espace de travail personnel. Cet espace est persistant : vos fichiers ne sont pas supprimés à la fermeture du service.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Identifier le besoin\",\n        \"content\": \"Évaluez la taille de vos datasets. Si vous travaillez sur des fichiers de quelques Mo, le défaut (10Gi) suffit. Pour du Big Data, visez plus haut.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Modifier la configuration\",\n        \"content\": \"Lors de la demande de service, spécifiez la taille souhaitée (ex: 'Je veux 50Gi de stockage').\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Vérifier le montage\",\n        \"content\": \"Une fois le service lancé, vérifiez que votre dossier `/home/onyxia/work` est bien accessible et dispose de l'espace prévu.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"check_storage.py\",\n      \"content\": \"import shutil\\nimport os\\n\\ntotal, used, free = shutil.disk_usage(\\\"/home/onyxia/work\\\")\\nprint(f\\\"Total: {total // (2**30)} GiB\\\")\\nprint(f\\\"Used: {used // (2**30)} GiB\\\")\\nprint(f\\\"Free: {free // (2**30)} GiB\\\")\"\n    },\n    \"best_practices\": [\n      \"Ne demandez pas de volumes massifs (ex: 1To) si ce n'est pas nécessaire pour optimiser les ressources du cluster.\",\n      \"Utilisez des solutions de stockage objet (S3) pour les très gros datasets plutôt que le stockage persistant du service.\",\n      \"Sauvegardez régulièrement vos travaux importants sur un dépôt Git.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:22:51.264741+00:00",
+    "event_id": "52a37f1f-d22e-4996-affa-d80d11ab7527",
+    "interaction_id": "b4931dbf-da0e-4d0d-9a07-61b1b6505af3",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
