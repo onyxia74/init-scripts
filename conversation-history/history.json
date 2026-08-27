@@ -2569,5 +2569,26 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement, vous devez utiliser le paramètre `extraEnvVars`. Ce paramètre accepte une liste d'objets contenant chacun une clé `name` et une valeur `value`. Par exemple, pour ajouter une variable `MY_VAR`, la configuration doit inclure `extraEnvVars: [{ \\\"name\\\": \\\"MY_VAR\\\", \\\"value\\\": \\\"ma_valeur\\\" }]`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Les variables d'environnement sont essentielles pour configurer vos applications sans modifier le code (ex: URLs de bases de données, clés d'API). Sur Onyxia, cela passe par le paramètre `extraEnvVars` qui injecte ces données directement dans le conteneur.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Définition\",\n        \"content\": \"Listez vos variables sous la forme : `{\\\"name\\\": \\\"NOM\\\", \\\"value\\\": \\\"VALEUR\\\"}`.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Configuration\",\n        \"content\": \"Demandez l'ajout de ces variables via l'interface de configuration Onyxia.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Vérification\",\n        \"content\": \"Dans un terminal ou un notebook, tapez `print(os.environ['NOM'])` pour vérifier la présence de la variable.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"test_env.py\",\n      \"content\": \"import os\\n\\n# Test de lecture d'une variable d'environnement\\nmy_var = os.getenv('MY_VARIABLE', 'Non définie')\\nprint(f'La valeur de MY_VARIABLE est : {my_var}')\"\n    },\n    \"best_practices\": [\n      \"Utilisez des noms de variables en MAJUSCULES par convention.\",\n      \"Pour les secrets critiques, utilisez l'intégration Vault plutôt que extraEnvVars.\",\n      \"Évitez de stocker des informations trop volumineuses dans les variables d'environnement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:45:52.109882+00:00",
+    "event_id": "2ef69c78-5199-4e11-93af-7546f51d92d6",
+    "interaction_id": "66880299-1928-480a-9e97-9900197fed80",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
