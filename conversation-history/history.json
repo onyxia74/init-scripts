@@ -8606,5 +8606,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T17:15:08.522557+00:00",
+    "event_id": "1f9d6d9a-a001-4608-a631-b58e7a5cbcd6",
+    "interaction_id": "2bb330c6-df90-401b-91a9-fefea2cdd1c1",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
