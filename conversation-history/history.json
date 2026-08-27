@@ -2090,5 +2090,22 @@
     "question": "Crée-moi un service VS Code adapté à l’exploration de ce dataset de la population française .",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:01:31.293630+00:00",
+    "event_id": "9946a3c3-15ad-4117-bc4a-02dff3773222",
+    "interaction_id": "5a75af34-1ff8-4bb5-83e2-19f576e088b7",
+    "metadata": {
+      "agent_prompt": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
+      "agent_prompt_english": "How to deploy PostgreSQL, Neo4j, and a web interface together?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
