@@ -6175,5 +6175,21 @@
     "question": "Je veux travailler avec une base PostgreSQL.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T15:40:13.076001+00:00",
+    "event_id": "06bbb544-d9e7-4bf0-8f0f-6d0b0b3f51e3",
+    "interaction_id": "85766a70-0c8a-41ce-8eaf-f9e1bcb88ac7",
+    "metadata": {
+      "agent_prompt": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Quel service est le plus adapté pour entraîner un modèle de machine learning ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
