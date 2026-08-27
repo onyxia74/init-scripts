@@ -3122,5 +3122,41 @@
     "question": "Comment exposer un port de mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter une application Shiny à une base PostgreSQL, j'ai configuré deux services : un environnement RStudio prêt pour le développement et une base de données PostgreSQL. Le service RStudio inclut un script d'initialisation qui installe automatiquement les bibliothèques nécessaires (`shiny`, `DBI`, `RPostgres`) pour faciliter la connexion à votre base de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"rstudio\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.5.5\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/pr-paration-de-l-environnement-pour-connexion-shiny-vers-postgresql.sh\",\n            \"reason\": \"Changement demande explicitement.\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio%2Fpr-paration-de-l-environnement-pour-connexion-shiny-vers-postgresql.sh%C2%BB\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio%2Fpr-paration-de-l-environnement-pour-connexion-shiny-vers-postgresql.sh%C2%BB\"\n    },\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-27T11:54:00.668343+00:00",
+    "event_id": "2d5161f6-8093-44a9-a0f3-0fbe27cef17b",
+    "interaction_id": "6767d8de-0bcc-4c52-8f3d-9ba02f943656",
+    "metadata": {
+      "agent_prompt": "Comment connecter une application Shiny à une base PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "ide",
+            "chart_id": "rstudio",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Changement demande explicitement.",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/pr-paration-de-l-environnement-pour-connexion-shiny-vers-postgresql.sh"
+              }
+            },
+            "version": "2.5.5"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
