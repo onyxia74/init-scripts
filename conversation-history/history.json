@@ -4546,5 +4546,32 @@
     "question": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour travailler avec des données géographiques volumineuses, j'ai configuré un environnement JupyterLab Python. Un script d'initialisation a été préparé pour installer automatiquement les bibliothèques spécialisées en SIG (geopandas, shapely, fiona, pyproj, matplotlib, folium et contextily), vous permettant de commencer vos analyses spatiales immédiatement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fanalyse-de-donn-es-g-ographiques-volumineuses.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/analyse-de-donn-es-g-ographiques-volumineuses.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T12:20:27.196929+00:00",
+    "event_id": "34647e85-21ab-48d7-af5a-6107603e5ba6",
+    "interaction_id": "11b7f383-756b-468b-8401-37d2e5b1730d",
+    "metadata": {
+      "agent_prompt": "Je veux travailler avec des données géographiques volumineuses.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/analyse-de-donn-es-g-ographiques-volumineuses.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux travailler avec des données géographiques volumineuses.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
