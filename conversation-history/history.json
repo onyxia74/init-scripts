@@ -7375,5 +7375,32 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour lire les événements Kubernetes associés à votre service, le moyen le plus efficace est d'utiliser un environnement de développement doté d'un terminal et d'un accès à l'API Kubernetes. Je vous recommande d'utiliser **VS Code (Python)**. \\n\\nCe service est configuré avec l'accès Kubernetes activé (`kubernetes.enabled: true`), ce qui vous permettra d'utiliser la commande `kubectl` directement dans le terminal de l'IDE. Une fois votre service lancé, ouvrez un terminal et exécutez la commande suivante pour voir les événements de votre namespace :\\n\\n`kubectl get events` \\n\\nVous pouvez également filtrer les événements par type ou par message pour faciliter votre diagnostic.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"kubernetes.enabled\": {\n        \"value\": true,\n        \"reason\": \"permettre l'accès aux événements Kubernetes via kubectl\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T16:21:34.721023+00:00",
+    "event_id": "ab21d305-f30e-4abe-a0b2-13a283d2fd11",
+    "interaction_id": "7ee42e54-3d43-47f0-9586-39913abdafb3",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "kubernetes.enabled": {
+            "reason": "permettre l'accès aux événements Kubernetes via kubectl",
+            "value": true
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
