@@ -1897,5 +1897,32 @@
     "question": "Quel graphique est le plus adapté à mes données ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour vos travaux de cartographie et de SIG, je vous recommande d'utiliser le service **JupyterLab Python**. Bien qu'il ne soit pas exclusivement dédié au géospatial, il est extrêmement flexible. J'ai configuré un script d'initialisation qui installera automatiquement les bibliothèques de référence : `geopandas` (manipulation de données vectorielles), `folium` (cartes interactives), `matplotlib` et `shapely`. Cela vous permettra de commencer vos analyses spatiales dès l'ouverture de votre notebook sans aucune installation manuelle.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-jupyter-python-packages-geopandas-folium-matplotlib-shapely-rasterio-contextily.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-jupyter-python-packages-geopandas-folium-matplotlib-shapely-rasterio-contextily.sh\",\n        \"reason\": \"Installation automatique des bibliothèques SIG (geopandas, folium, etc.)\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"En analyse spatiale, l'environnement est crucial. Au lieu d'installer les outils un par un, nous utilisons un 'init script'. C'est un petit programme qui s'exécute au démarrage de votre service pour préparer votre espace de travail (installation de librairies, création de dossiers).\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton de lancement pour JupyterLab Python. Attendez quelques minutes que le script d'initialisation installe les packages géospatiaux.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier l'installation\",\n        \"content\": \"Ouvrez un nouveau notebook Python et tapez `import geopandas; print(geopandas.__version__)`. Si cela fonctionne, vous êtes prêt !\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Créer votre première carte\",\n        \"content\": \"Utilisez `folium` pour afficher des cartes interactives directement dans vos cellules Jupyter.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"map_test.py\",\n      \"content\": \"import geopandas as gpd\\nimport folium\\n\\n# Création d'un point simple pour tester\\ndef test_map():\\n    m = folium.Map(location=[48.8566, 2.3522], zoom_start=12)\\n    print(\\\"Carte interactive prête (utilisez un notebook pour l'afficher)\\\")\\n    return m\\n\\ntest_map()\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours des environnements virtuels ou des scripts d'init pour garantir la reproductibilité de vos analyses spatiales.\",\n      \"Pour les gros fichiers Shapefile ou GeoJSON, privilégiez le stockage sur le volume persistant de votre service.\",\n      \"Si vous travaillez sur des rasters lourds, envisagez d'utiliser un service avec GPU si disponible.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:32:12.324911+00:00",
+    "event_id": "397eed3a-300d-4f0f-81a8-1548dc9151c6",
+    "interaction_id": "b0699b52-403f-487a-bb37-1bd41b6d9fc0",
+    "metadata": {
+      "agent_prompt": "Quel service utiliser pour faire de la cartographie ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Installation automatique des bibliothèques SIG (geopandas, folium, etc.)",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-jupyter-python-packages-geopandas-folium-matplotlib-shapely-rasterio-contextily.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Quel service utiliser pour faire de la cartographie ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
