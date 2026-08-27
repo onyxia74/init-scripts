@@ -5943,5 +5943,21 @@
     "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n````text\ne\".\n</think>\n\n```json\n{\"query\":\"vscode\",\"limit\":5}\n```\n````",
+    "created_at": "2026-08-27T15:23:16.412275+00:00",
+    "event_id": "ec95177c-df6e-4500-82bb-e7d0d257e1fe",
+    "interaction_id": "abcffd05-db9c-4838-add5-24ba8b9acfc4",
+    "metadata": {
+      "agent_prompt": "Active automatiquement l’option « Format on Save » dans VS Code.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
