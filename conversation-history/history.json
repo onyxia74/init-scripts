@@ -2719,5 +2719,27 @@
     "question": "J’aimerais lancer un service RStudio.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Un environnement VS Code avec R, Python et Julia est prêt à être lancé. La configuration utilise les paramètres par défaut pour le service `vscode-r-python-julia`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-27T22:58:22.324305+00:00",
+    "event_id": "937238c9-7198-42f7-94c1-d1213edc992d",
+    "interaction_id": "e5fe9847-7eac-4c02-9e92-daefb686af9b",
+    "metadata": {
+      "agent_prompt": "Je veux un environnement VS Code.",
+      "agent_prompt_english": "I want a VS Code environment.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un environnement VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
