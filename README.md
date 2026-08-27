@@ -416,3 +416,4 @@
 | vscode-python | Deployer une application Streamlit | [init-scripts/vscode-python/deployer-une-application-streamlit.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deployer-une-application-streamlit.sh) | - |
 | vscode-python | API Python avec FastAPI | [init-scripts/vscode-python/api-python-avec-fastapi.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/api-python-avec-fastapi.sh) | - |
 | rstudio | Application Shiny | [init-scripts/rstudio/application-shiny.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny.sh) | - |
+| rstudio | Application Shiny Hello World | [init-scripts/rstudio/application-shiny-hello-world.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/application-shiny-hello-world.sh) | - |
