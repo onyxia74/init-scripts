@@ -7634,5 +7634,32 @@
     "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"L'environnement de développement VS Code a été configuré pour inclure le support Java. Un script d'initialisation a été préparé pour installer le JDK (Java Development Kit) ainsi que l'extension 'Extension Pack for Java' de Microsoft, vous permettant de coder, déboguer et gérer des projets Java directement dans votre interface.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Finstaller-l-environnement-java-et-l-extension-pack-java-pour-vs-code.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installer-l-environnement-java-et-l-extension-pack-java-pour-vs-code.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T16:25:31.690321+00:00",
+    "event_id": "27502fbb-db3b-46a8-9c46-4e56dcf46c11",
+    "interaction_id": "2c8fbae9-ee7c-4c9f-bbd7-bdcdaf847116",
+    "metadata": {
+      "agent_prompt": "Configure un environnement Java complet dans VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installer-l-environnement-java-et-l-extension-pack-java-pour-vs-code.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Configure un environnement Java complet dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
