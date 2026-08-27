@@ -9,16 +9,11 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.py")"
-cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_d67d5081e9db'
+cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_6c082426c674'
 import streamlit as st
-
 st.title('Mon Application Web')
 st.write('Ceci est une interface web déployée sur Onyxia.')
-
-name = st.text_input('Entrez votre nom')
-if name:
-    st.success(f'Bonjour, {name} !')
-ONYXIA_FILE_d67d5081e9db
+ONYXIA_FILE_6c082426c674
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
