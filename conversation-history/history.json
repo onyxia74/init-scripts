@@ -1842,5 +1842,32 @@
     "question": "Déploie mon application de datavisualisation.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour joindre vos données statistiques à un fond de carte, j'ai configuré un environnement JupyterLab spécialisé en analyse géospatiale. \\n\\nCe service inclut l'installation automatique des bibliothèques essentielles comme `geopandas` (pour la manipulation de données géographiques), `folium` (pour la création de cartes interactives) et `matplotlib`. J'ai également ajouté un script de démonstration (`map_demo.py`) pour vous permettre de tester immédiatement la génération d'une carte interactive dès l'ouverture de votre interface.\\n\\nLe script d'initialisation prépare votre environnement en installant les dépendances et en créant un fichier d'exemple pour faciliter votre démarrage.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fanalyse-et-visualisation-de-donn-es-g-ospatiales-avec-fonds-de-carte.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/analyse-et-visualisation-de-donn-es-g-ospatiales-avec-fonds-de-carte.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"La cartographie dans un notebook repose sur la capacité à lier des données tabulaires (vos statistiques) à des géométries (coordonnées GPS ou codes INSEE). En Python, la bibliothèque `geopandas` est le standard : elle transforme un tableau classique en un objet capable de comprendre le monde spatial.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Charger les données\",\n        \"content\": \"Utilisez `pandas` pour lire votre fichier CSV et `geopandas` pour convertir une colonne de coordonnées en géométrie (Point).\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Joindre le fond de carte\",\n        \"content\": \"Chargez un fichier Shapefile ou GeoJSON (ex: les communes de France) et utilisez la méthode `.merge()` pour fusionner vos statistiques avec les géométries.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Visualiser\",\n        \"content\": \"Utilisez `.plot()` pour une carte statique ou `folium` pour une carte interactive où vous pouvez zoomer et cliquer sur les zones.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"map_demo.py\",\n      \"content\": \"import geopandas as gpd\\nimport folium\\n\\n# Création d'un point simple (Paris)\\ndef quick_map():\\n    m = folium.Map(location=[48.8566, 2.3522], zoom_start=12)\\n    folium.Marker([48.8566, 2.3522], popup='Point de test').add_to(m)\\n    m.save('map_test.html')\\n    print('Carte générée : map_test.html')\\n\\nif __name__ == '__main__':\\n    quick_map()\"\n    },\n    \"best_practices\": [\n      \"Privilégiez le format GeoJSON pour l'échange de données géographiques légères.\",\n      \"Vérifiez toujours le système de projection (CRS) : utilisez EPSG:4326 pour le web (Folium) et un système projeté (ex: Lambert-93) pour les calculs de distance.\",\n      \"Pour les gros jeux de données, utilisez des fichiers Parquet pour accélérer le chargement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:31:06.229039+00:00",
+    "event_id": "57938b5b-8a6d-403d-8591-37a984861b2f",
+    "interaction_id": "66b68dd4-e021-4e07-b2c8-8e26bffb2b89",
+    "metadata": {
+      "agent_prompt": "Comment joindre mes données statistiques à un fond de carte ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/analyse-et-visualisation-de-donn-es-g-ospatiales-avec-fonds-de-carte.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment joindre mes données statistiques à un fond de carte ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
