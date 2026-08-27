@@ -2590,5 +2590,32 @@
     "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est fait ! J'ai configuré votre environnement VS Code pour activer le formatage automatique à l'enregistrement. Un script d'initialisation a été préparé pour créer le fichier `.vscode/settings.json` avec l'option `\\\"editor.formatOnSave\\\": true` dès le lancement de votre session.\\n\\nDans le cadre de l'onboarding, voici quelques conseils pour tirer le meilleur parti de VS Code sur Onyxia.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Factiver-le-formatage-automatique-l-enregistrement-dans-vs-code.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/activer-le-formatage-automatique-l-enregistrement-dans-vs-code.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Le formatage automatique (Format on Save) est une pratique essentielle en développement pour maintenir un code propre et lisible sans effort manuel. Sur Onyxia, nous utilisons un 'init script' qui injecte une configuration VS Code personnalisée dans votre espace de travail au démarrage.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Sélectionnez le service VS Code Python dans votre interface Onyxia et lancez-le.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier la configuration\",\n        \"content\": \"Une fois dans VS Code, ouvrez un fichier `.py` et modifiez l'indentation ou l'espacement de manière irrégulière.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Tester le formatage\",\n        \"content\": \"Appuyez sur `Ctrl+S` (ou `Cmd+S`). Le code doit se réaligner automatiquement selon les standards PEP8.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_format.py\",\n      \"content\": \"def hello_world():\\n    print(\\\"Hello Onyxia! Testez le formatage en supprimant les espaces ici.\\\")\\n\\nhello_world()\"\n    },\n    \"best_practices\": [\n      \"Utilisez des extensions comme 'Black' ou 'Ruff' pour un formatage Python de haute qualité.\",\n      \"Commitez vos fichiers `.vscode/settings.json` si vous travaillez en équipe pour partager vos standards.\",\n      \"Ne surchargez pas les scripts d'initialisation avec des modifications trop spécifiques à un seul fichier.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:46:12.698763+00:00",
+    "event_id": "22e54745-9065-4595-9a55-e17b079fbdbe",
+    "interaction_id": "8245b450-6c9d-4b4a-a924-594ed05c2be0",
+    "metadata": {
+      "agent_prompt": "Active automatiquement l’option « Format on Save » dans VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/activer-le-formatage-automatique-l-enregistrement-dans-vs-code.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
