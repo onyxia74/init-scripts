@@ -5458,5 +5458,21 @@
     "question": "Quel service utiliser pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T14:37:52.115305+00:00",
+    "event_id": "df148b1e-ffec-4104-8a5c-f99fa44550e8",
+    "interaction_id": "9f3f9612-4d52-49c0-a47c-6efb85ba63f5",
+    "metadata": {
+      "agent_prompt": "J’aimerais créer une carte interactive.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "J’aimerais créer une carte interactive.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
