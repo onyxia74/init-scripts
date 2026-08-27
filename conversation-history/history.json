@@ -2017,5 +2017,22 @@
     "question": "Comment utiliser un GPU avec Python dans Onyxia ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T21:53:52.829330+00:00",
+    "event_id": "0b48956a-0cf6-4124-b893-b96daadef5ac",
+    "interaction_id": "c19e50ac-9154-474f-a0e7-b3f028a981a1",
+    "metadata": {
+      "agent_prompt": "Propose un notebook pour explorer des données.",
+      "agent_prompt_english": "Propose a notebook to explore data.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Propose un notebook pour explorer des données.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
