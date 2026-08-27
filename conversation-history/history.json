@@ -5361,5 +5361,21 @@
     "question": "Je veux déployer une application Shiny.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T14:31:17.843200+00:00",
+    "event_id": "09d2eadb-9bcb-46ce-bd7a-916662d424c8",
+    "interaction_id": "ee968130-8fcd-4226-911d-5901ffe38397",
+    "metadata": {
+      "agent_prompt": "Déploie mon application de datavisualisation.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Déploie mon application de datavisualisation.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
