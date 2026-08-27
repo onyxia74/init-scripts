@@ -3568,5 +3568,21 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour répondre à votre question sur l'injection de secrets dans une application sur Onyxia, la méthode recommandée dépend de la nature de votre service et de la manière dont vous souhaitez les consommer.\n\nEn tant qu'architecte Data, je préconise généralement l'une des trois approches suivantes :\n\n1.  **Variables d'environnement (Standard) :** C'est la méthode la plus courante. Les secrets sont injectés dans le conteneur sous forme de variables d'environnement. Dans Onyxia, cela se fait via la configuration Helm du service (par exemple, en utilisant des `extraEnv` ou des références à des `Secret` Kubernetes existants si le chart le permet).\n2.  **Fichiers de configuration sécurisés (Volume Mount) :** Pour les applications qui lisent des fichiers (comme des clés SSH ou des certificats), on monte un volume contenant le secret à un emplacement spécifique (ex: `/home/onyxia/.ssh/id_rsa`).\n3.  **Gestion via un script d'initialisation (`init_script`) :** Si vous avez besoin de préparer un environnement spécifique (ex: configurer un fichier `.env` ou un fichier de credentials pour une base de données), nous pouvons utiliser un script d'initialisation qui récupère ces informations ou prépare la structure de fichiers nécessaire au démarrage de votre application.\n\n**Souhaitez-vous que je configure un service spécifique (comme VS Code ou Jupyter) avec un script d'initialisation prêt à gérer vos fichiers de configuration ou vos variables d'environnement ?**\n\nSi vous avez un cas d'usage précis (ex: \"Je veux utiliser une clé API dans un notebook Jupyter\"), n'hésitez pas à me le préciser pour que je puisse générer la configuration exacte.",
+    "created_at": "2026-08-27T12:01:32.244265+00:00",
+    "event_id": "adac55f3-87c3-457d-bd11-e24eb7114e6b",
+    "interaction_id": "81618d64-2d64-4a9d-9b0f-90d64fa0c901",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
