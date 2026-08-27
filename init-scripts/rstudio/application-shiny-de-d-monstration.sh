@@ -9,17 +9,17 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.R")"
-cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_89bede754319'
+cat > "${WORK_DIR}/app.R" <<'ONYXIA_FILE_382b97b1567b'
 library(shiny)
 
 ui <- fluidPage(
-  titlePanel("Hello Shiny!"),
+  titlePanel('Hello Shiny!'),
   sidebarLayout(
     sidebarPanel(
-      sliderInput("obs", "Number of observations:", min = 0, max = 1000, value = 500)
+      sliderInput('obs', 'Nombre d\'observations:', min = 0, max = 1000, value = 500)
     ),
     mainPanel(
-      plotOutput("distPlot")
+      plotOutput('distPlot')
     )
   )
 )
@@ -31,22 +31,18 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
-ONYXIA_FILE_89bede754319
+ONYXIA_FILE_382b97b1567b
 
 # Install R packages.
 Rscript -e 'install.packages(c('"'"'shiny'"'"'), repos='"'"'https://cloud.r-project.org'"'"')'
 
 # Create a reusable launch helper.
 mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
-cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_4ce3d7d82348'
+cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_46d1e5c67980'
 #!/usr/bin/env bash
 set -euo pipefail
 cd "${WORK_DIR}"
-R -e 'shiny::runApp("app.R", port=8080, host="0.0.0.0")'
-ONYXIA_FILE_4ce3d7d82348
+R -e shiny::runApp('/home/onyxia/work/app.R', port = Sys.getenv('PORT', '8501'), host = '0.0.0.0')
+ONYXIA_FILE_46d1e5c67980
 chmod +x "${WORK_DIR}/onyxia/run.sh"
-
-# Start the prepared project in the background.
-mkdir -p "${WORK_DIR}/.onyxia"
-nohup bash "${WORK_DIR}/onyxia/run.sh" > "${WORK_DIR}/.onyxia/run.log" 2>&1 &
 
