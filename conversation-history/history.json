@@ -2542,5 +2542,32 @@
     "question": "Configure un environnement Java complet dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est entendu ! J'ai configuré votre environnement VS Code pour qu'il soit prêt pour vos travaux de développement. \\n\\nLe service **VS Code Python** a été préparé avec un script d'initialisation personnalisé qui va automatiquement installer la bibliothèque **pandas** ainsi que le pack d'extensions **Java** pour VS Code dès le lancement de votre session. Vous n'aurez ainsi aucune manipulation manuelle à faire pour retrouver vos outils habituels.\\n\\nVoici votre guide de démarrage en tant que mentor Onyxia :\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Finstallation-de-pandas-et-extensions-vs-code-java.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installation-de-pandas-et-extensions-vs-code-java.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Sur Onyxia, l'utilisation d'un 'init script' est la méthode la plus puissante pour personnaliser votre environnement. Au lieu de réinstaller vos outils à chaque session, nous utilisons un script qui s'exécute dans un conteneur d'initialisation avant que votre IDE ne soit accessible. Cela garantit que vos extensions et bibliothèques sont prêtes dès la première seconde.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Lancez le service VS Code Python depuis votre catalogue Onyxia. Notez que le premier démarrage peut être légèrement plus long car le script installe vos extensions en arrière-plan.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier l'installation\",\n        \"content\": \"Ouvrez un terminal dans VS Code et tapez `pip show pandas` pour vérifier la présence de la bibliothèque, ou vérifiez l'onglet 'Extensions' pour confirmer l'installation du pack Java.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Coder sereinement\",\n        \"content\": \"Créez un fichier `.py` et commencez à importer vos modules. Votre environnement est désormais persistant et personnalisé.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"test_env.py\",\n      \"content\": \"import pandas as pd\\n\\n# Test de la bibliothèque pandas\\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\\nprint('Pandas est bien installé !')\\nprint(df)\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours un fichier requirements.txt pour vos projets afin de faciliter la reproductibilité.\",\n      \"Pour les extensions VS Code, privilégiez les packs officiels pour éviter les conflits de dépendances.\",\n      \"Si vous avez besoin de nouveaux packages, vous pouvez modifier votre script d'initialisation pour automatiser vos futurs environnements.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:45:29.059861+00:00",
+    "event_id": "1cd79d03-0fc4-487e-9d78-d2eef6eb2f9b",
+    "interaction_id": "d0f226d8-bef9-4fad-9907-312f333151e7",
+    "metadata": {
+      "agent_prompt": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/installation-de-pandas-et-extensions-vs-code-java.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
