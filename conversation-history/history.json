@@ -516,5 +516,22 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas fournir de configuration spécifique sans savoir quel environnement de développement vous souhaitez utiliser et à quel dépôt vous souhaitez vous connecter.\n\nPour connecter votre service Onyxia à GitHub, la meilleure approche consiste à utiliser un **script d'initialisation (init script)** qui clone automatiquement votre dépôt et configure votre environnement (installation de packages, création de répertoires, etc.) au démarrage.\n\nVeuillez fournir les informations suivantes afin que je puisse générer votre configuration :\n\n1.  **Quel service souhaitez-vous utiliser ?** (par ex. **VS Code**, **JupyterLab**, ou **RStudio**)\n2.  **Quelle est l'URL du dépôt GitHub ?**\n3.  **Avez-vous des exigences spécifiques ?** (par ex. des bibliothèques Python/R spécifiques à installer, ou une structure de projet particulière à préparer)\n\nUne fois que vous aurez fourni ces détails, je créerai une configuration prête à l'emploi pour vous.",
+    "created_at": "2026-08-27T20:11:17.823372+00:00",
+    "event_id": "1221065d-4cdd-4da5-9121-46890c044f66",
+    "interaction_id": "d4663270-eead-44f0-8c7b-d781a51895dc",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "agent_prompt_english": "How do I connect my service to GitHub?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
