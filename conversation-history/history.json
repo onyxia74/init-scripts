@@ -8746,5 +8746,32 @@
     "question": "Déploie mon application de datavisualisation.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour joindre vos données statistiques à un fond de carte, je recommande d'utiliser l'environnement Jupyter avec Python. J'ai configuré un script d'initialisation qui installe les bibliothèques nécessaires (geopandas, folium, matplotlib, pandas, shapely) et fournit un exemple de code pour créer une carte interactive à partir de données géographiques. Vous pourrez ainsi charger vos données, les géocoder si nécessaire, et les visualiser sur une carte.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fscript-de-cartographie-avec-geopandas-et-folium.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/script-de-cartographie-avec-geopandas-et-folium.sh\",\n        \"reason\": \"Script de cartographie avec geopandas et folium\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T17:23:38.342958+00:00",
+    "event_id": "903f2928-d8c2-463e-addc-9e0dd0fc1833",
+    "interaction_id": "359a7b27-19ea-4164-876c-fee7dd91b903",
+    "metadata": {
+      "agent_prompt": "Comment joindre mes données statistiques à un fond de carte ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script de cartographie avec geopandas et folium",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/script-de-cartographie-avec-geopandas-et-folium.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment joindre mes données statistiques à un fond de carte ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
