@@ -5280,5 +5280,32 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer une API Python, j'ai sélectionné l'environnement de développement VS Code (vscode-python), qui est idéal pour coder et tester vos applications. J'ai également créé un script d'initialisation qui installe les dépendances nécessaires (FastAPI, Uvicorn) et configure le lancement automatique de votre serveur web dès l'ouverture de l'IDE. Vous n'avez plus qu'à lancer le service pour avoir une API fonctionnelle prête à être testée.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fapi-python-avec-fastapi.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/api-python-avec-fastapi.sh\",\n        \"reason\": \"Script d'initialisation pour créer une API FastAPI\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"L'utilisation de VS Code combinée à un script d'initialisation permet de créer un environnement de développement 'prêt à l'emploi'. Le script installe les bibliothèques (FastAPI) et configure le serveur (Uvicorn) pour qu'il soit accessible via le port de la plateforme, facilitant ainsi le déploiement et le test de votre API sans configuration manuelle complexe.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Validez la configuration ci-dessous pour lancer votre environnement VS Code avec l'API pré-configurée.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Tester l'API\",\n        \"content\": \"Une fois le service lancé, ouvrez le terminal dans VS Code et tapez 'curl http://localhost:8000/' pour voir la réponse de votre API.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder votre travail\",\n        \"content\": \"Modifiez le fichier 'app.py' dans l'éditeur de VS Code pour ajouter vos propres routes. Vos modifications seront sauvegardées automatiquement dans votre espace de travail.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"from fastapi import FastAPI\\n\\napp = FastAPI()\\n\\n@app.get(\\\"/\\\")\\ndef read_root():\\n    return {\\\"message\\\": \\\"Hello World\\\"}\"\n    },\n    \"best_practices\": [\n      \"Utilisez les scripts d'initialisation pour installer vos dépendances (pip install) et préparer vos fichiers de projet avant de commencer à coder.\",\n      \"Pensez à vérifier les logs de votre service si l'API ne répond pas, cela permet de diagnostiquer rapidement les erreurs de démarrage.\",\n      \"Pour exposer votre API sur internet, assurez-vous que le port configuré dans votre application correspond au port d'entrée de votre service Onyxia.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:23:00.202902+00:00",
+    "event_id": "a46a19be-d7a6-41fa-a000-c6b5a2e59f61",
+    "interaction_id": "cd476d81-971b-4681-8223-814f73b8f466",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour créer une API FastAPI",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/api-python-avec-fastapi.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
