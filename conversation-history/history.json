@@ -2785,5 +2785,26 @@
     "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour vos besoins de dataviz, je vous recommande **Metabase**. C'est un outil de Business Intelligence (BI) extrêmement intuitif qui vous permettra d'explorer vos données, de créer des tableaux de bord interactifs et de partager des visualisations sans avoir besoin de maîtriser le SQL complexe. \\n\\nComme vous n'avez pas spécifié de contraintes de ressources, j'ai configuré le service avec les paramètres par défaut d'Onyxia, ce qui est idéal pour débuter vos explorations.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Metabase est une solution 'Self-Service BI'. Contrairement à un notebook où vous devez coder vos graphiques, Metabase vous permet de poser des questions à vos données via une interface visuelle.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Connexion aux données\",\n        \"content\": \"Une fois Metabase lancé, connectez votre base de données (PostgreSQL, MySQL, BigQuery, etc.) via l'interface d'administration.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Exploration\",\n        \"content\": \"Utilisez le bouton 'Ask a question' pour filtrer et agréger vos données sans écrire une seule ligne de code.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Dashboarding\",\n        \"content\": \"Enregistrez vos questions sous forme de graphiques et assemblez-les dans un 'Dashboard' pour un suivi en temps réel.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"sql\",\n      \"filename\": \"query_example.sql\",\n      \"content\": \"-- Exemple de question simple pour tester votre connexion\\nSELECT category, COUNT(*) \\nFROM orders \\nGROUP BY category \\nORDER BY COUNT(*) DESC;\"\n    },\n    \"best_practices\": [\n      \"Commencez par des questions simples avant de construire des dashboards complexes.\",\n      \"Utilisez les 'Questions' enregistrées pour réutiliser vos filtres.\",\n      \"Privilégiez les connexions en lecture seule pour vos bases de données de production.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:49:00.967641+00:00",
+    "event_id": "dacb30d9-55b7-4dde-9795-6ed4d634c4a3",
+    "interaction_id": "642c319a-462c-4eae-9c0b-cd5e86353a52",
+    "metadata": {
+      "agent_prompt": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
