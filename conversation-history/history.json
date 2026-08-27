@@ -1509,5 +1509,26 @@
     "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour créer un « kit » de travail avec Metabase sur Onyxia, la meilleure approche consiste à déployer l'instance Metabase elle-même. Metabase est un outil de Business Intelligence (BI) qui vous permet de vous connecter à vos bases de données (PostgreSQL, MySQL, etc.) pour créer des tableaux de bord, des questions et des visualisations sans écrire de code complexe.\\n\\nComme Metabase est une application autonome et non un environnement de développement (IDE), nous ne pouvons pas y injecter de scripts de préparation de fichiers comme nous le ferions pour Jupyter ou VS Code. Cependant, une fois le service lancé, votre « kit » consistera à connecter vos sources de données via l'interface web de Metabase pour commencer votre exploration.\\n\\nJ'ai configuré le service avec les paramètres par défaut, ce qui est idéal pour un démarrage rapide.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Metabase est un outil de 'Self-Service BI'. Contrairement à un notebook où vous manipulez des données par code, Metabase vous permet de poser des questions à vos données via une interface visuelle ou du SQL, puis de transformer ces résultats en graphiques interactifs.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer Metabase\",\n        \"content\": \"Cliquez sur le bouton de lancement après avoir validé la configuration pour démarrer l'instance.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Connecter vos données\",\n        \"content\": \"Une fois dans l'interface, allez dans 'Admin Settings' %C2%BB 'Databases' et ajoutez vos sources de données (ex: une base PostgreSQL).\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Explorer et Visualiser\",\n        \"content\": \"Utilisez le bouton 'New' pour créer une 'Question' (filtre/agrégation) ou une 'Dashboard' pour regrouper vos graphiques.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"sql\",\n      \"filename\": \"first_query.sql\",\n      \"content\": \"-- Exemple de question simple pour tester votre connexion\\nSELECT category, COUNT(*) \\nFROM products \\nGROUP BY category \\nORDER BY COUNT(*) DESC;\"\n    },\n    \"best_practices\": [\n      \"Utilisez des vues SQL dans votre base de données pour simplifier les questions dans Metabase.\",\n      \"Créez des 'Collections' pour organiser vos tableaux de bord par projet ou par équipe.\",\n      \"Privilégiez l'utilisation de comptes de lecture seule pour les connexions de données afin de sécuriser vos sources.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:23:31.860335+00:00",
+    "event_id": "1b2dcefe-8d20-4526-b3e5-8cb2a04ba1d5",
+    "interaction_id": "e6a93786-a601-4ef6-8097-d2144928fc37",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
