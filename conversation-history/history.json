@@ -5614,5 +5614,32 @@
     "question": "Propose un notebook pour explorer des données.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour un environnement de Machine Learning basé sur Jupyter Python. Le service est pré-configuré avec un script d'initialisation qui installe les bibliothèques essentielles (pandas, scikit-learn, numpy) et crée un fichier `pipeline.py` contenant un squelette commenté pour vos projets.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fsquelette-pipeline-ml.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/squelette-pipeline-ml.sh\",\n        \"reason\": \"Squelette pipeline ML\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Ce service configure un environnement JupyterLab prêt pour la Data Science. Le script d'initialisation (`init.personalInit`) télécharge et exécute un script qui installe les dépendances Python nécessaires et génère un fichier `pipeline.py`. Ce fichier sert de point de départ pour vos projets, structuré selon les étapes classiques : chargement des données, prétraitement, séparation train/test, entraînement et évaluation.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur 'Lancer' pour démarrer votre instance Jupyter. Attendez que le statut passe à 'Running'.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Explorer le squelette\",\n        \"content\": \"Dans l'explorateur de fichiers à gauche, ouvrez le dossier `work` et lancez le fichier `pipeline.py`. Vous verrez le code commenté prêt à être adapté.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Tester et Sauvegarder\",\n        \"content\": \"Exécutez les cellules pour vérifier que les bibliothèques sont bien installées. Sauvegardez vos modifications dans le dépôt Git configuré pour versionner votre pipeline.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_ml.py\",\n      \"content\": \"import pandas as pd\\nimport numpy as np\\nfrom sklearn.datasets import load_iris\\nfrom sklearn.model_selection import train_test_split\\nfrom sklearn.ensemble import RandomForestClassifier\\n\\n# Chargement des données\\niris = load_iris()\\nX = iris.data\\ny = iris.target\\n\\n# Séparation\\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\\n\\n# Entraînement\\nclf = RandomForestClassifier(n_estimators=10)\\nclf.fit(X_train, y_train)\\n\\n# Évaluation\\nscore = clf.score(X_test, y_test)\\nprint(f'Accuracy: {score:.2f}')\\nprint('Hello ML Pipeline!')\"\n    },\n    \"best_practices\": [\n      \"Séparez toujours vos données de votre code pour faciliter la maintenance.\",\n      \"Fixez `random_state` lors de la séparation des données pour garantir la reproductibilité des résultats.\",\n      \"Utilisez un fichier `requirements.txt` pour lister explicitement vos dépendances et faciliter le déploiement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:53:09.146495+00:00",
+    "event_id": "d0c14d79-fb12-40b5-9dd5-5674b070f746",
+    "interaction_id": "433579a0-fbdf-4c11-9c38-a65645e22392",
+    "metadata": {
+      "agent_prompt": "Donne-moi le squelette d’un pipeline de machine learning.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Squelette pipeline ML",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/squelette-pipeline-ml.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Donne-moi le squelette d’un pipeline de machine learning.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
