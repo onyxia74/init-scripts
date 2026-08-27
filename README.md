@@ -502,3 +502,4 @@
 | vscode-python | Streamlit application skeleton | [init-scripts/vscode-python/streamlit-application-skeleton.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/streamlit-application-skeleton.sh) | - |
 | vscode-python | Python API deployment | [init-scripts/vscode-python/python-api-deployment.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/python-api-deployment.sh) | - |
 | rstudio | Shiny application | [init-scripts/rstudio/shiny-application.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/shiny-application.sh) | - |
+| rstudio | deploy a Shiny application | [init-scripts/rstudio/deploy-a-shiny-application.sh](https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio/deploy-a-shiny-application.sh) | - |
