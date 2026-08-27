@@ -1978,5 +1978,32 @@
     "question": "Je veux faire de la cartographie.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré pour vous un environnement JupyterLab Python optimisé pour la science des données. Pour garantir la reproductibilité de vos travaux, j'ai mis en place une architecture de projet structurée qui inclut automatiquement la création de dossiers dédiés (`data/`, `src/`, `notebooks/`), un fichier `requirements.txt` pour vos dépendances, et un script d'exemple pour démarrer immédiatement.\\n\\nLe script d'initialisation prépare votre espace de travail en installant les bibliothèques essentielles (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, GeoPandas et Folium) et en générant un squelette de projet propre.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Farchitecture-de-projet-data-science-reproductible-avec-structure-de-dossiers-et-script-exemple.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/architecture-de-projet-data-science-reproductible-avec-structure-de-dossiers-et-script-exemple.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"En Data Science, la reproductibilité est la clé. Un projet mal organisé mène souvent à la perte de données ou à l'impossibilité de relancer une analyse. Cette configuration utilise un 'init script' pour automatiser la création d'un environnement standardisé dès l'ouverture de votre session Onyxia.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Validez la configuration pour démarrer votre instance JupyterLab. L'initialisation peut prendre une minute le temps d'installer les packages.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier la structure\",\n        \"content\": \"Une fois dans JupyterLab, ouvrez le navigateur de fichiers. Vous devriez voir les dossiers `data`, `src` et `notebooks` ainsi que le fichier `src/main.py`.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter l'exemple\",\n        \"content\": \"Ouvrez un terminal dans Jupyter et tapez `python src/main.py` pour voir le script de test fonctionner.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import pandas as pd\\nimport numpy as np\\n\\ndef main():\\n    print(\\\"🚀 Initialisation du projet Data Science...\\\")\\n    data = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\\n    print(\\\"✅ Données générées avec succès :\\\\n\\\", data)\\n\\nif __name__ == '__main__':\\n    main()\"\n    },\n    \"best_practices\": [\n      \"Stockez toujours vos données brutes dans `data/raw/` et ne les modifiez jamais directement.\",\n      \"Utilisez le fichier `requirements.txt` pour lister chaque nouvelle bibliothèque installée via pip.\",\n      \"Séparez votre code de traitement (`src/`) de vos analyses exploratoires (`notebooks/`).\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:33:22.834392+00:00",
+    "event_id": "ba019b6a-2594-4352-a889-ac53cf1917c5",
+    "interaction_id": "c3d54760-33e5-4683-81aa-f791048226e7",
+    "metadata": {
+      "agent_prompt": "Génère une architecture de projet data science reproductible.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/architecture-de-projet-data-science-reproductible-avec-structure-de-dossiers-et-script-exemple.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Génère une architecture de projet data science reproductible.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
