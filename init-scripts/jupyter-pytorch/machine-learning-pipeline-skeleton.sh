@@ -8,82 +8,59 @@ set -euo pipefail
 WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 mkdir -p "${WORK_DIR}/src"
+mkdir -p "${WORK_DIR}/data"
 
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/src/main.py")"
-cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_6a66311eeda3'
+cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_848092526899'
 import os
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-def main():
-    print("Starting ML Pipeline...")
-    
-    # 1. Data Loading (Simulated)
-    print("Step 1: Loading data...")
-    # In a real scenario, you would load from a file or database
-    data = pd.DataFrame({
-        'feature1': np.random.rand(100),
-        'feature2': np.random.rand(100),
-        'label': np.random.randint(0, 2, 100)
-    })
-    
-    # 2. Preprocessing
-    print("Step 2: Preprocessing...")
-    X = data[['feature1', 'feature2']]
-    y = data['label']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    
-    # 3. Training
-    print("Step 3: Training model...")
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
-    
-    # 4. Evaluation
-    print("Step 4: Evaluating model...")
-    y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
-    print(f"Model Accuracy: {accuracy:.2f}")
-    
-    print("Pipeline completed successfully.")
+def load_data(path):
+    print(f"Loading data from {path}")
+    return pd.DataFrame()
+
+def preprocess(df):
+    return df
+
+def train_model(df):
+    print("Training model...")
+    return None
+
+def evaluate_model(model, df):
+    print("Evaluating model...")
+    return 0.0
 
 if __name__ == "__main__":
-    main()
-ONYXIA_FILE_6a66311eeda3
+    data_path = os.path.join("data", "dataset.csv")
+    df = load_data(data_path)
+    df = preprocess(df)
+    model = train_model(df)
+    score = evaluate_model(model, df)
+    print(f"Model score: {score}")
+ONYXIA_FILE_848092526899
 mkdir -p "$(dirname "${WORK_DIR}/requirements.txt")"
-cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_21ee2e566777'
-scikit-learn
+cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_539068d69d82'
 pandas
 numpy
-ONYXIA_FILE_21ee2e566777
+scikit-learn
+ONYXIA_FILE_539068d69d82
 mkdir -p "$(dirname "${WORK_DIR}/README.md")"
-cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_1834aa9c3b4b'
-# Machine Learning Pipeline Skeleton
+cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_ed4aa4fb3368'
+# Machine Learning Pipeline
 
-This project provides a basic skeleton for a machine learning pipeline using Python, scikit-learn, pandas, and numpy.
+This project contains a skeleton for a machine learning pipeline.
 
 ## Structure
-
-- `src/main.py`: Main script containing the pipeline logic.
-- `requirements.txt`: Python dependencies.
+- `src/main.py`: Main entry point.
+- `data/`: Directory for datasets.
 
 ## Usage
-
-Run the pipeline using:
-
-```bash
-python src/main.py
-```
-
-## Customization
-
-- Replace the simulated data loading with your actual data source.
-- Modify the preprocessing steps as needed.
-- Swap the model with your preferred algorithm.
-ONYXIA_FILE_1834aa9c3b4b
+Run `python src/main.py` to execute the pipeline.
+ONYXIA_FILE_ed4aa4fb3368
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
@@ -94,14 +71,4 @@ fi
 if [ -f "${WORK_DIR}/requirements.txt" ]; then
   "${PYTHON_BIN}" -m pip install -r "${WORK_DIR}/requirements.txt"
 fi
-
-# Create a reusable launch helper.
-mkdir -p "$(dirname "${WORK_DIR}/onyxia/run.sh")"
-cat > "${WORK_DIR}/onyxia/run.sh" <<'ONYXIA_FILE_207d13ccc92c'
-#!/usr/bin/env bash
-set -euo pipefail
-cd "${WORK_DIR}"
-python src/main.py
-ONYXIA_FILE_207d13ccc92c
-chmod +x "${WORK_DIR}/onyxia/run.sh"
 
