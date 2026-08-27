@@ -8293,5 +8293,41 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour partager un service PostgreSQL entre plusieurs utilisateurs, activez la découverte automatique (`discovery.enabled: true`). Cela permet aux clients de se connecter automatiquement sans configuration manuelle complexe.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {\n          \"discovery.enabled\": {\n            \"value\": true,\n            \"reason\": \"faciliter le partage et la connexion des clients\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&discovery.enabled=true\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    },\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1&discovery.enabled=true\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-27T16:54:51.757107+00:00",
+    "event_id": "84be8e7e-0c78-46ef-93e0-cd9faec04f90",
+    "interaction_id": "d09c9ee1-cf43-4d0c-8ad8-a1874486ba48",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "overrides": {
+              "discovery.enabled": {
+                "reason": "faciliter le partage et la connexion des clients",
+                "value": true
+              }
+            },
+            "version": "0.5.1"
+          }
+        ]
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
