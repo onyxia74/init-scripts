@@ -9,47 +9,38 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 mkdir -p "${WORK_DIR}/src"
 mkdir -p "${WORK_DIR}/data"
-mkdir -p "${WORK_DIR}/notebooks"
 mkdir -p "${WORK_DIR}/tests"
 
 # Create workspace files.
-mkdir -p "$(dirname "${WORK_DIR}/src/__init__.py")"
-cat > "${WORK_DIR}/src/__init__.py" <<'ONYXIA_FILE_c78e05835f91'
-
-ONYXIA_FILE_c78e05835f91
 mkdir -p "$(dirname "${WORK_DIR}/src/main.py")"
-cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_5a714a320bd1'
+cat > "${WORK_DIR}/src/main.py" <<'ONYXIA_FILE_9401d477204f'
 import pandas as pd
 import numpy as np
 
-def load_data(path):
-    """Charge les données depuis un fichier CSV."""
-    return pd.read_csv(path)
+def load_data():
+    # Placeholder pour le chargement des données
+    return pd.DataFrame({'col1': [1, 2, 3]})
 
-def preprocess(df):
-    """Nettoyage basique des données."""
-    return df.dropna()
+def process_data(df):
+    # Placeholder pour le traitement
+    return df.describe()
 
-if __name__ == "__main__":
-    print("Projet Data Science initialisé.")
-ONYXIA_FILE_5a714a320bd1
+if __name__ == '__main__':
+    df = load_data()
+    print(process_data(df))
+ONYXIA_FILE_9401d477204f
 mkdir -p "$(dirname "${WORK_DIR}/requirements.txt")"
-cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_cd2bbdd9c80a'
+cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_7fb0967a5e1c'
 pandas
 numpy
-scikit-learn
-matplotlib
-ONYXIA_FILE_cd2bbdd9c80a
+ONYXIA_FILE_7fb0967a5e1c
 mkdir -p "$(dirname "${WORK_DIR}/README.md")"
-cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_e3cf237187f8'
+cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_96294ca2b552'
 # Projet Data Science
-
-Ce projet est structuré pour la reproductibilité.
 
 ## Structure
 - `src/` : Code source
 - `data/` : Données brutes et intermédiaires
-- `notebooks/` : Analyses exploratoires
 - `tests/` : Tests unitaires
 
 ## Installation
@@ -61,14 +52,14 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
-ONYXIA_FILE_e3cf237187f8
+ONYXIA_FILE_96294ca2b552
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
 if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
   PYTHON_BIN="python3"
 fi
-"${PYTHON_BIN}" -m pip install numpy pandas scikit-learn matplotlib
+"${PYTHON_BIN}" -m pip install numpy pandas
 if [ -f "${WORK_DIR}/requirements.txt" ]; then
   "${PYTHON_BIN}" -m pip install -r "${WORK_DIR}/requirements.txt"
 fi
