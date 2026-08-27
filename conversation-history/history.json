@@ -2394,5 +2394,36 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est entendu ! J'ai configuré votre environnement RStudio pour utiliser votre image personnalisée `Toto/rstudio-custom`. Pour ce faire, j'ai activé l'option de l'image personnalisée (`service.image.custom.enabled`) et spécifié votre tag dans le paramètre de version. Votre environnement est maintenant prêt à être déployé avec vos propres outils et bibliothèques pré-installés dans l'image.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&service.image.custom.enabled=true&service.image.custom.version=%C2%ABToto%2Frstudio-custom%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"Utilisation d'une image personnalisée demandée par l'utilisateur\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"Toto/rstudio-custom\",\n        \"reason\": \"Image personnalisée spécifiée\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Sur Onyxia, vous pouvez utiliser vos propres images Docker pour RStudio. Cela est particulièrement utile si vous avez besoin de bibliothèques système spécifiques (via `apt`) ou de versions de R très précises qui ne sont pas dans le catalogue standard.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Préparation\",\n        \"content\": \"Assurez-vous que votre image `Toto/rstudio-custom` est accessible sur un registre Docker (comme Docker Hub ou un registre privé) et que les permissions sont correctes.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Configuration\",\n        \"content\": \"Dans l'interface de déploiement, activez l'option 'Custom Image' et renseignez le nom complet de votre image.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Vérification\",\n        \"content\": \"Une fois le service lancé, ouvrez un terminal dans RStudio et tapez `sessionInfo()` pour vérifier que vous utilisez bien la version attendue.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"r\",\n      \"filename\": \"test_env.R\",\n      \"content\": \"# Test de l'environnement personnalisé\\nprint('Hello Onyxia!')\\nprint(paste('Version de R:', R.version.string))\\nprint(paste('Plateforme:', R.version$platform))\"\n    },\n    \"best_practices\": [\n      \"Privilégiez des images légères pour accélérer le temps de démarrage du service.\",\n      \"Documentez toujours les dépendances système installées dans votre Dockerfile.\",\n      \"Utilisez des tags de version explicites (ex: :v1.2) plutôt que ':latest' pour garantir la reproductibilité de vos analyses.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:42:09.910175+00:00",
+    "event_id": "0daa74a3-af53-45b0-b984-974ee0ab81a4",
+    "interaction_id": "0cc80de2-903b-4bbf-82be-1300f38b46af",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "Utilisation d'une image personnalisée demandée par l'utilisateur",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "Image personnalisée spécifiée",
+            "value": "Toto/rstudio-custom"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
