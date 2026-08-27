@@ -8456,5 +8456,28 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Quels sont les services cibles (ex: jupyter, vscode) et que doit contenir le script d'initialisation (packages, fichiers, commandes) ?",
+    "created_at": "2026-08-27T17:02:08.619876+00:00",
+    "event_id": "e7c94dab-2c39-409a-be41-eb9eecf7b976",
+    "interaction_id": "4f25dd10-e6ff-45a8-a8ac-ded14124b145",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "target_services_and_script_content",
+        "options": [],
+        "original_request": "",
+        "question": "Quels sont les services cibles (ex: jupyter, vscode) et que doit contenir le script d'initialisation (packages, fichiers, commandes) ?",
+        "usage": "Afficher cette question a l'utilisateur et attendre sa reponse. Ne pas generer de configuration tant que la precision manque."
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
