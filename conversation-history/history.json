@@ -1734,5 +1734,32 @@
     "question": "Comment déployer une application Streamlit ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas le champ teacher_block attendu.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\n```json\n{\n  \"answer\": \"Pour déployer votre API Python, j'ai configuré un environnement **VS Code Python** optimisé. J'ai préparé un script d'initialisation automatique qui installe les bibliothèques nécessaires (`fastapi`, `uvicorn`) et crée un fichier `app.py` contenant une structure d'API prête à l'emploi. Une fois le service lancé, vous n'aurez qu'à exécuter la commande de lancement pour voir votre API en action.\\n\\n%C2%ABdiv class='teacher_block'%C2%BB\\n  %C2%ABh3%C2%BB🎓 Mode Professeur : Déployer une API avec FastAPI%C2%AB/h3%C2%BB\\n  %C2%ABp%C2%BB%C2%ABstrong%C2%BBExplication :%C2%AB/strong%C2%BB FastAPI est un framework moderne et ultra-rapide pour construire des API avec Python. Il utilise les annotations de type pour valider les données automatiquement et génère une documentation interactive (Swagger) sans effort supplémentaire.%C2%AB/p%C2%BB\\n  %C2%ABh4%C2%BB🚀 Tutoriel en 3 étapes :%C2%AB/h4%C2%BB\\n  %C2%ABol%C2%BB\\n    %C2%ABli%C2%BB%C2%ABstrong%C2%BBLancer :%C2%AB/strong%C2%BB Déployez le service VS Code configuré via Onyxia.%C2%AB/li%C2%BB\\n    %C2%ABli%C2%BB%C2%ABstrong%C2%BBTester :%C2%AB/strong%C2%BB Ouvrez le terminal dans VS Code et lancez la commande : %C2%ABcode%C2%BBpython app.py%C2%AB/code%C2%BB.%C2%AB/li%C2%BB\\n    %C2%ABli%C2%BB%C2%ABstrong%C2%BBExplorer :%C2%AB/strong%C2%BB Accédez à l'interface de documentation automatique en allant sur l'URL de votre service suivie de %C2%ABcode%C2%BB/docs%C2%AB/code%C2%BB.%C2%AB/li%C2%BB\\n  %C2%AB/ol%C2%BB\\n  %C2%ABh4%C2%BB💻 Hello World (FastAPI) :%C2%AB/h4%C2%BB\\n  %C2%ABpre%C2%BB%C2%ABcode%C2%BBfrom fastapi import FastAPI\\nimport uvicorn\\n\\napp = FastAPI()\\n\\n@app.get('/')\\ndef read_root():\\n    return {'Hello': 'Onyxia API'}\\n\\nif __name__ == '__main__':\\n    uvicorn.run(app, host='0.0.0.0', port=8000)%C2%AB/code%C2%BB%C2%AB/pre%C2%BB\\n  %C2%ABh4%C2%BB💡 Bonnes pratiques Onyxia :%C2%AB/h4%C2%BB\\n  %C2%ABul%C2%BB\\n    %C2%ABli%C2%BBUtilisez toujours un fichier %C2%ABcode%C2%BBrequirements.txt%C2%AB/code%C2%BB pour rendre vos dépendances reproductibles.%C2%AB/li%C2%BB\\n    %C2%ABli%C2%BBPour les API, travaillez dans un dossier %C2%ABcode%C2%BBsrc/%C2%AB/code%C2%BB pour séparer le code des données.%C2%AB/li%C2%BB\\n    %C2%ABli%C2%BBN'oubliez pas de tester vos endpoints avec des outils comme %C2%ABcode%C2%BBcurl%C2%AB/co\n... [detail tronque]\n```",
+    "created_at": "2026-08-27T10:29:04.606350+00:00",
+    "event_id": "c6ee7e56-9f50-4fd0-9328-7e1990a7fe04",
+    "interaction_id": "8e85e022-85b0-49ba-a8b0-ce2b6370bded",
+    "metadata": {
+      "agent_prompt": "Comment déployer une API Python ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-from-fastapi-import-fastapi-nimport-uvicorn-n-napp-fastapi-n-n-app.get-ndef-read_root-n-return-hello-onyxia-api-n-n-app.get-status-ndef-status-n-return-status-running-n-nif-__name__-__main__-n-uvicorn.run-app-host-0.0.0.0-port-8000-packages-fastapi-uvicorn-purpose-d-ploiement-d-une-api-python-avec-fastapi-purpose-d-ploiement-d-une-api-python-avec-fastapi.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une API Python ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
