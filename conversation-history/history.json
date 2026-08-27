@@ -1485,5 +1485,40 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service souhaitez-vous configurer ? Veuillez préciser le chart_id ou le type de service (par ex. : Jupyter, VS Code, RStudio).",
+    "created_at": "2026-08-27T21:05:39.419176+00:00",
+    "event_id": "d378eac0-2296-4509-b461-83462b8bcd24",
+    "interaction_id": "2078141d-83c1-4c45-95ab-6cf55286e3e4",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "agent_prompt_english": "How can I increase the available storage in my service?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "chart_id",
+        "options": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "options_english": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "original_request": "",
+        "original_request_english": "How can I increase the available storage in my service?",
+        "question": "Quel service souhaitez-vous configurer ? Veuillez préciser le chart_id ou le type de service (par ex. : Jupyter, VS Code, RStudio).",
+        "question_english": "Which service would you like to configure? Please specify the chart_id or the type of service (e.g., Jupyter, VS Code, RStudio).",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
