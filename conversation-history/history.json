@@ -2421,5 +2421,22 @@
     "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:33:53.268952+00:00",
+    "event_id": "33f2dca5-a5d8-4b7d-a57f-109849cbd1c5",
+    "interaction_id": "72da5e91-8b71-4b68-a83b-7c6c91ce10c7",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+      "agent_prompt_english": "Can you launch a service with 220 GB of memory and 4 CPU?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
