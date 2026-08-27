@@ -5780,5 +5780,36 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour déployer RStudio avec votre image personnalisée `Toto/rstudio-custom`. J'ai activé le mode image personnalisée et défini le nom de l'image dans les paramètres Helm.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&service.image.custom.enabled=true&service.image.custom.version=%C2%ABToto%2Frstudio-custom%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"Activer l'image personnalisée\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"Toto/rstudio-custom\",\n        \"reason\": \"Définir l'image personnalisée demandée\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Pour utiliser une image Docker personnalisée dans RStudio sur Onyxia, il faut explicitement activer le champ `custom.enabled` et fournir l'URI de l'image dans `custom.version`. Cela permet de remplacer l'image par défaut fournie par le catalogue.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Configurer le service\",\n        \"content\": \"Utilisez le JSON de configuration fourni ci-dessus pour initialiser votre service RStudio.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Démarrez le service et attendez que les conteneurs soient prêts.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Vérifier l'image\",\n        \"content\": \"Connectez-vous à RStudio et exécutez `R.version.string` dans la console pour confirmer que votre image personnalisée est bien utilisée.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"r\",\n      \"filename\": \"hello_world.R\",\n      \"content\": \"# Script Hello World en R\\ncat(\\\"Hello World from RStudio!\\n\\\")\\n\\n# Vérification de la version R\\nprint(R.version.string)\"\n    },\n    \"best_practices\": [\n      \"Vérifiez que votre image personnalisée inclut les dépendances système nécessaires (ex: libcurl, git) pour une compatibilité optimale avec Onyxia.\",\n      \"Utilisez des volumes persistants pour sauvegarder vos scripts et données entre les sessions.\",\n      \"Limitez les ressources CPU/Mémoire dans les paramètres du service pour éviter de surcharger le cluster.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T15:11:27.085265+00:00",
+    "event_id": "d0083abe-3684-43fa-bb53-b0e10767e4f7",
+    "interaction_id": "9c4c493a-943d-4273-ba4a-0f310710b522",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "Activer l'image personnalisée",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "Définir l'image personnalisée demandée",
+            "value": "Toto/rstudio-custom"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
