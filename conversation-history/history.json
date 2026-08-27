@@ -5404,5 +5404,32 @@
     "question": "Comment joindre mes données statistiques à un fond de carte ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Il n'existe pas de graphique universel : le choix dépend de la nature de vos données et de l'information que vous souhaitez mettre en avant. Par exemple, un **nuage de points** est idéal pour voir des corrélations, tandis qu'un **histogramme** sert à observer des distributions. Pour vous aider à explorer, j'ai configuré un environnement Jupyter avec un script d'exemple qui génère ces deux types de graphiques automatiquement au démarrage.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fexemple-de-visualisation-de-donn-es-avec-matplotlib.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/exemple-de-visualisation-de-donn-es-avec-matplotlib.sh\",\n        \"reason\": \"Script d'exemple pour visualisation de données\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Le choix du graphique est une étape clé de l'analyse. Si vous voulez voir comment deux variables évoluent ensemble, utilisez un nuage de points. Si vous voulez comprendre la répartition de vos valeurs, optez pour un histogramme. Ce service Jupyter est pré-configuré pour vous montrer ces deux exemples.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer\",\n        \"content\": \"Cliquez sur le bouton de lancement pour ouvrir JupyterLab. Attendez que le script d'initialisation se termine.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Tester\",\n        \"content\": \"Ouvrez le fichier `visualisation_exemple.py` dans le dossier `work` et exécutez-le pour voir les graphiques.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder\",\n        \"content\": \"Vos modifications sont automatiquement sauvegardées dans votre espace de travail persistant.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"import matplotlib.pyplot as plt\\n\\n# Exemple simple\\nplt.plot([1, 2, 3, 4], [1, 4, 9, 16])\\nplt.title('Ma première courbe')\\nplt.show()\"\n    },\n    \"best_practices\": [\n      \"Choisissez un graphique simple si votre audience n'est pas experte.\",\n      \"Étiquetez toujours vos axes X et Y.\",\n      \"Utilisez des couleurs cohérentes pour représenter des catégories similaires.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:34:53.682501+00:00",
+    "event_id": "acde6a23-b5a1-4ffc-b032-9e75725a98ce",
+    "interaction_id": "fe9b6dfb-8ce2-4de5-929c-bc5e0f3c78af",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'exemple pour visualisation de données",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/exemple-de-visualisation-de-donn-es-avec-matplotlib.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
