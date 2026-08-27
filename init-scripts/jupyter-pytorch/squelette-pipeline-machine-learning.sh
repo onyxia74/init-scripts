@@ -9,77 +9,61 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/pipeline.py")"
-cat > "${WORK_DIR}/pipeline.py" <<'ONYXIA_FILE_25660e62cb33'
+cat > "${WORK_DIR}/pipeline.py" <<'ONYXIA_FILE_200a407ba030'
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 
-# --- 1. Chargement des données ---
-def load_data(filepath):
-    """Charge les données depuis un fichier CSV."""
-    # Remplacer par le chemin réel ou une URL
-    df = pd.read_csv(filepath)
-    print(f"Données chargées : {df.shape}")
-    return df
+class MLPipeline:
+    def __init__(self):
+        self.model = None
+        self.is_trained = False
 
-# --- 2. Prétraitement ---
-def preprocess_data(df):
-    """Nettoie et prépare les données pour l'entraînement."""
-    # Exemple : gestion des valeurs manquantes
-    df.dropna(inplace=True)
-    
-    # Séparation features et target (à adapter selon le dataset)
-    X = df.drop('target_column', axis=1) # Remplacer 'target_column'
-    y = df['target_column']
-    
-    return X, y
+    def load_data(self, filepath):
+        # Placeholder pour le chargement des données
+        print(f"Chargement des données depuis {filepath}")
+        return pd.DataFrame()
 
-# --- 3. Entraînement ---
-def train_model(X_train, y_train):
-    """Entraîne un modèle de classification simple."""
-    from sklearn.ensemble import RandomForestClassifier
-    
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
-    print("Modèle entraîné.")
-    return model
+    def preprocess(self, data):
+        # Placeholder pour le pretraitement
+        return data
 
-# --- 4. Évaluation ---
-def evaluate_model(model, X_test, y_test):
-    """Évalue les performances du modèle."""
-    y_pred = model.predict(X_test)
-    print("Rapport de classification :")
-    print(classification_report(y_test, y_pred))
-    return y_pred
+    def train(self, X, y):
+        # Placeholder pour l'entraînement
+        print("Entraînement du modèle...")
+        self.is_trained = True
 
-# --- Orchestration ---
-def main():
-    # Charger les données
-    # df = load_data('data.csv')
-    
-    # Prétraiter
-    # X, y = preprocess_data(df)
-    
-    # Diviser
-    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    
-    # Entraîner
-    # model = train_model(X_train, y_train)
-    
-    # Évaluer
-    # evaluate_model(model, X_test, y_test)
-    
-    print("Pipeline prêt à être configuré avec vos données.")
+    def predict(self, X):
+        if not self.is_trained:
+            raise Exception("Le modèle n'a pas été entraîné.")
+        return [0] * len(X)
 
 if __name__ == "__main__":
-    main()
-ONYXIA_FILE_25660e62cb33
+    pipeline = MLPipeline()
+    data = pipeline.load_data("data.csv")
+    X = data.drop('target', axis=1)
+    y = data['target']
+    pipeline.train(X, y)
+    preds = pipeline.predict(X)
+    print(f"Prédictions: {preds[:5]}")
+ONYXIA_FILE_200a407ba030
+
+# Install missing language runtimes.
+APT_GET="apt-get"
+if [ "$(id -u)" -ne 0 ] && command -v sudo >/dev/null 2>&1; then
+  APT_GET="sudo apt-get"
+fi
+if ! command -v javac >/dev/null 2>&1 || ! command -v java >/dev/null 2>&1; then
+  echo "Installing Java JDK"
+  ${APT_GET} update
+  ${APT_GET} install -y default-jdk
+fi
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
 if ! command -v "${PYTHON_BIN}" >/dev/null 2>&1; then
   PYTHON_BIN="python3"
 fi
-"${PYTHON_BIN}" -m pip install numpy pandas scikit-learn matplotlib seaborn
+"${PYTHON_BIN}" -m pip install numpy pandas scikit-learn matplotlib
 
