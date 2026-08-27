@@ -1837,5 +1837,33 @@
     "question": "Déploie mon application de datavisualisation.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Le service JupyterLab est configuré avec les bibliothèques `geopandas`, `folium` et `contextily` pour permettre l'analyse et la cartographie des données spatiales. Un script d'initialisation est associé au service ; il installe ces dépendances et fournit un script Python (`definition.py`) contenant un exemple reproductible montrant comment charger des données statistiques, les joindre à un jeu de données spatial et tracer le résultat sur un fond de carte. Vous pouvez ouvrir le notebook dans JupyterLab et exécuter les cellules pour visualiser la carte.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fgis-and-mapping-environment-with-geopandas-folium-contextily-and-a-join-example.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/gis-and-mapping-environment-with-geopandas-folium-contextily-and-a-join-example.sh\",\n        \"reason\": \"Environnement SIG et de cartographie avec geopandas, folium, contextily et un exemple de jointure\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T21:35:41.253630+00:00",
+    "event_id": "3c0ebc8e-4b03-4ba8-b21d-43f471f9bd2e",
+    "interaction_id": "0c32260c-3447-4e2a-a20c-6f17877781eb",
+    "metadata": {
+      "agent_prompt": "Comment joindre mes données statistiques à un fond de carte ?",
+      "agent_prompt_english": "How do I join my statistical data to a basemap?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "GIS and mapping environment with geopandas, folium, contextily, and a join example",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/gis-and-mapping-environment-with-geopandas-folium-contextily-and-a-join-example.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment joindre mes données statistiques à un fond de carte ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
