@@ -1451,5 +1451,22 @@
     "question": "Comment connecter R à une base PostgreSQL ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T21:03:03.382940+00:00",
+    "event_id": "0596c657-3519-429e-88ba-42747e475692",
+    "interaction_id": "c340d898-47d3-4570-8a68-7c2ca9052e91",
+    "metadata": {
+      "agent_prompt": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
+      "agent_prompt_english": "Create a PostgreSQL connected to VS Code with R.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Crée-moi un PostgreSQL connecté à un VS Code avec R.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
