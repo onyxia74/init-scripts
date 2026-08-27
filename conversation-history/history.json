@@ -5843,5 +5843,32 @@
     "question": "Configure un environnement R connecté à PostgreSQL.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre environnement VS Code (vscode-r-python-julia) est configuré pour installer automatiquement le JDK, Maven et les extensions de débogage Java au démarrage. Le script d'initialisation a été créé et est prêt à être exécuté.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Finstallation-de-jdk-maven-et-outils-de-d-bogage-java.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/installation-de-jdk-maven-et-outils-de-d-bogage-java.sh\",\n        \"reason\": \"Installation de JDK, Maven et outils de débogage Java\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Ce service utilise un script d'initialisation (init script) pour préparer l'environnement avant que vous ne vous connectiez. Il installe les paquets système (JDK, Maven) et configure les extensions VS Code nécessaires au développement Java.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer\",\n        \"content\": \"Cliquez sur le bouton de lancement pour démarrer votre service VS Code.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Tester\",\n        \"content\": \"Ouvrez un terminal et tapez `java -version` et `mvn -version` pour vérifier l'installation.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder\",\n        \"content\": \"Vos projets sont sauvegardés dans le volume persistant. Pensez à les cloner dans le dossier /home/onyxia/work.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"java\",\n      \"filename\": \"HelloWorld.java\",\n      \"content\": \"public class HelloWorld {\\n    public static void main(String[] args) {\\n        System.out.println(\\\"Hello from Onyxia!\\\");\\n    }\\n}\"\n    },\n    \"best_practices\": [\n      \"Utilisez le terminal intégré pour exécuter vos commandes Maven.\",\n      \"Le dossier /home/onyxia/work est persistant, vos fichiers ne seront pas perdus.\",\n      \"Vous pouvez installer d'autres extensions via le marketplace VS Code.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T15:16:09.126109+00:00",
+    "event_id": "d48536e8-9f21-4fd6-b268-2a999b3c3522",
+    "interaction_id": "29593d8c-f348-454d-81cf-9edb72046c1a",
+    "metadata": {
+      "agent_prompt": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Installation de JDK, Maven et outils de débogage Java",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/installation-de-jdk-maven-et-outils-de-d-bogage-java.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
