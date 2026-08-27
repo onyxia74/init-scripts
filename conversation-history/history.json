@@ -9060,5 +9060,21 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\n5}\n</think>\n\nAction: get_catalog({\"query\": \"web app\", \"limit\": 5})\n```",
+    "created_at": "2026-08-27T17:49:04.594152+00:00",
+    "event_id": "ae80e19c-a5e5-450e-99c9-b9cd8d4bcf2f",
+    "interaction_id": "0dfda92e-2e23-48fa-bd67-191b9a21f672",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
