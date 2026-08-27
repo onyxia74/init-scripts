@@ -1961,5 +1961,22 @@
     "question": "Génère une architecture de projet data science reproductible.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T21:47:43.499508+00:00",
+    "event_id": "79266844-bf5f-4957-abf8-c90f9bbc6570",
+    "interaction_id": "3809f598-1133-48bb-84b6-95d41d146f2a",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "agent_prompt_english": "How to work with a dataset that is too large for memory?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
