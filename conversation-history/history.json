@@ -2806,5 +2806,26 @@
     "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas le champ answer attendu.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\n```json\n{\n  \"answer\": \"C'est entendu ! J'ai configuré votre instance Neo4j sur Onyxia avec les paramètres par défaut. Vous disposez d'une base de données orientée graphe prête à accueillir vos données complexes et vos relations.\\n\\nDans ce mode, j'ai conservé les réglages standards (comme le mot de passe par défaut `password` et une persistance de `10Gi`) pour vous permettre de démarrer immédiatement. Si vous avez besoin de plus de puissance (CPU/RAM) ou d'un volume de stockage plus important, n'hésitez pas à me le demander.\\n\\n%C2%ABteacher_block%C2%BB\\n{\\n  \\\"explanation\\\": \\\"Neo4j est une base de données de graphes qui ne stocke pas les données dans des tables, mais sous forme de nœuds (entités) et de relations (liens). C'est l'outil idéal pour analyser des réseaux sociaux, des systèmes de recommandation ou des parcours de fraude.\\\",\\n  \\\"tutorial\\\": [\\n    {\\\"step\\\": 1, \\\"title\\\": \\\"Lancer\\\", \\\"content\\\": \\\"Déployez le service via Onyxia et attendez que l'interface Neo4j Browser soit disponible.\\\"},\\n    {\\\"step\\\": 2, \\\"title\\\": \\\"Se connecter\\\", \\\"content\\\": \\\"Utilisez l'URL fournie par Onyxia, le login 'neo4j' et le mot de passe configuré (par défaut: 'password').\\\"},\\n    {\\\"step\\\": 3, \\\"title\\\": \\\"Explorer\\\", \\\"content\\\": \\\"Utilisez le langage Cypher dans la console pour créer vos premiers nœuds : `CREATE (n:Person {name: 'Alice'})`.\\\"}\\n  ],\\n  \\\"hello_world_script\\\": {\\n    \\\"language\\\": \\\"cypher\\\",\\n    \\\"filename\\\": \\\"hello_world.cypher\\\",\\n    \\\"content\\\": \\\"CREATE (p:Person {name: 'Onyxia User', role: 'Data Architect'})\\\\nCREATE (t:Technology {name: 'Neo4j'})\\\\nCREATE (p)-[:USES]-%C2%BB(t)\\\\nRETURN p, t;\\\"\\n  },\\n  \\\"best_practices\\\": [\\n    \\\"Changez immédiatement le mot de passe par défaut pour sécuriser vos données.\\\",\\n    \\\"Utilisez des index sur les propriétés fréquemment recherchées pour optimiser les performances.\\\",\\n    \\\"Surveillez l'utilisation de la RAM, car les opérations de graphes sont gourmandes en mémoire.\\\"\\n  ]\\n}\\n%C2%AB/teacher_block%C2%BB\\\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"neo4j\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"1.0.8\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```\n```",
+    "created_at": "2026-08-27T10:49:17.416257+00:00",
+    "event_id": "12b96abc-09f1-4153-b9ab-519c9d79b14b",
+    "interaction_id": "f299edc8-9789-42dc-856e-f7585ca6847c",
+    "metadata": {
+      "agent_prompt": "Je veux utiliser Neo4j dans Onyxia.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "neo4j",
+        "version": "1.0.8"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux utiliser Neo4j dans Onyxia.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
