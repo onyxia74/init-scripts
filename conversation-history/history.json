@@ -2203,5 +2203,22 @@
     "question": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:15:17.385277+00:00",
+    "event_id": "afce745c-d568-4621-94a3-bd52572db242",
+    "interaction_id": "c57a4d65-4c21-44e4-a813-38dc496b452c",
+    "metadata": {
+      "agent_prompt": "Comment utiliser mes secrets S3 dans un script ?",
+      "agent_prompt_english": "How do I use my S3 secrets in a script?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment utiliser mes secrets S3 dans un script ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
