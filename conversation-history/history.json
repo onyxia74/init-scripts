@@ -4468,5 +4468,32 @@
     "question": "Active automatiquement l’option « Format on Save » dans VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Votre service VS Code (Python) a été configuré avec le thème 'Visual Studio Dark'. Un script d'initialisation a été préparé pour appliquer ce paramètre de préférence dans votre environnement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fconfigure-vs-code-with-dark-visual-studio-theme.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/configure-vs-code-with-dark-visual-studio-theme.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T12:19:32.229399+00:00",
+    "event_id": "cc48d4c4-e51e-4b1a-b919-837be7145f3d",
+    "interaction_id": "5103c49d-1ab5-4582-9e78-832adf81910c",
+    "metadata": {
+      "agent_prompt": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/configure-vs-code-with-dark-visual-studio-theme.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
