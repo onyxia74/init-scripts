@@ -2534,5 +2534,22 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:43:43.813994+00:00",
+    "event_id": "7d1d0098-ccb9-4c91-ada6-24b508ba48c7",
+    "interaction_id": "ac3d06f1-5d26-449f-9762-b13cb7d477e6",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+      "agent_prompt_english": "I want RAG with a vector database. How do I create it? And then how do I populate it via a client?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
