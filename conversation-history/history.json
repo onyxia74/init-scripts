@@ -1547,5 +1547,22 @@
     "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T21:08:12.185541+00:00",
+    "event_id": "4696063d-2865-4a90-9f98-1a3deb4214fe",
+    "interaction_id": "7aff7608-f834-494e-be08-cc7c7d9b90c8",
+    "metadata": {
+      "agent_prompt": "Comment créer un kit sur Metabase ?",
+      "agent_prompt_english": "How to create a kit on Metabase?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment créer un kit sur Metabase ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
