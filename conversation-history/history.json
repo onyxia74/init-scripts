@@ -5253,5 +5253,32 @@
     "question": "Comment injecter mes secrets dans l’application ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Voici la configuration pour déployer votre application Streamlit. Le service VS Code Python sera utilisé, préconfiguré avec un script d'initialisation qui installe Streamlit et crée une application de démonstration. Vous pouvez lancer ce service pour accéder à votre environnement de développement et à l'application.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fdeployer-une-application-streamlit.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deployer-une-application-streamlit.sh\",\n        \"reason\": \"Script d'initialisation pour Streamlit\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Streamlit est une bibliothèque Python open-source qui permet de créer rapidement des applications web interactives pour la data science. Ce script d'initialisation prépare votre environnement Onyxia en installant les dépendances nécessaires et en créant un fichier `app.py` prêt à être exécuté.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton de lancement pour démarrer votre environnement VS Code Python.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Tester l'application\",\n        \"content\": \"Ouvrez le terminal dans VS Code et exécutez la commande : `streamlit run app.py`. L'application sera accessible via le port indiqué.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Sauvegarder\",\n        \"content\": \"Modifiez le code dans `app.py` et sauvegardez vos fichiers. Vos modifications seront conservées grâce au volume persistant.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_streamlit.py\",\n      \"content\": \"import streamlit as st\\n\\nst.title('Bonjour Streamlit !')\\nst.write('Ceci est une application de démonstration.')\\n\\nimport pandas as pd\\nimport numpy as np\\n\\ndata = pd.DataFrame(np.random.randn(100, 4), columns=['A', 'B', 'C', 'D'])\\nst.line_chart(data)\"\n    },\n    \"best_practices\": [\n      \"Utilisez un fichier `requirements.txt` pour gérer vos dépendances Python.\",\n      \"Versionnez votre code avec Git pour suivre les modifications de votre application.\",\n      \"Utilisez les variables d'environnement pour configurer les paramètres sensibles ou spécifiques à l'environnement.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T14:22:09.405910+00:00",
+    "event_id": "c0afb3a1-bfec-4359-be07-e43f08bd8303",
+    "interaction_id": "1116a676-f593-4c16-9da8-8bd8101930a2",
+    "metadata": {
+      "agent_prompt": "Comment déployer une application Streamlit ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour Streamlit",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deployer-une-application-streamlit.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment déployer une application Streamlit ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
