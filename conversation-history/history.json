@@ -2515,5 +2515,32 @@
     "question": "Installe le JDK, Maven et les outils de débogage dans mon service VScode.",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré votre environnement de développement Java au sein de VS Code. Pour ce faire, j'ai sélectionné l'image VS Code Python (polyvalente et robuste) et j'ai injecté un script d'initialisation personnalisé qui installe automatiquement le JDK 17 et l'outil de gestion de projet Maven. Votre environnement sera prêt à compiler et exécuter des applications Java dès l'ouverture du terminal.\\n\\nVoici votre bloc pédagogique pour bien démarrer :\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fsetup-java-development-environment.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-java-development-environment.sh\",\n        \"reason\": \"setup java development environment\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Pour transformer un IDE orienté Data Science en environnement Java, nous utilisons un 'init script'. Ce script s'exécute au démarrage du conteneur pour installer les binaires système (apt) nécessaires sans que vous ayez à les réinstaller manuellement à chaque session.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton de déploiement dans l'interface Onyxia pour démarrer votre instance VS Code.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier l'installation\",\n        \"content\": \"Ouvrez un terminal dans VS Code et tapez `java -version` puis `mvn -version` pour confirmer la présence des outils.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Créer votre projet\",\n        \"content\": \"Utilisez la commande `mvn archetype:generate` pour créer la structure standard d'un projet Maven.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"java\",\n      \"filename\": \"HelloWorld.java\",\n      \"content\": \"public class HelloWorld {\\n    public static void main(String[] args) {\\n        System.out.println(\\\"Hello, Onyxia Java!\\\");\\n    }\\n}\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours un fichier pom.xml pour gérer vos dépendances Java.\",\n      \"Stockez vos projets dans le répertoire /home/onyxia/work pour garantir la persistance des données.\",\n      \"Installez l'extension 'Extension Pack for Java' dans VS Code pour une expérience de développement complète (autocomplétion, debug).\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:44:01.646016+00:00",
+    "event_id": "2621e448-7fe4-40de-92fc-e17bf937ab1a",
+    "interaction_id": "62e296b9-c3e2-4b52-87be-75bc59a97f02",
+    "metadata": {
+      "agent_prompt": "Configure un environnement Java complet dans VS Code.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "setup java development environment",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/setup-java-development-environment.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Configure un environnement Java complet dans VS Code.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
