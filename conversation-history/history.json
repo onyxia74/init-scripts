@@ -5913,5 +5913,35 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas le champ teacher_block attendu.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\n5})\n%C2%AB/think%C2%BB\n\n```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement au lancement d'un service Onyxia, vous devez utiliser le paramètre `service.env` dans la configuration du service. Ce paramètre accepte une liste de chaînes de caractères au format `KEY=VALUE`.\\n\\nVoici un exemple de configuration pour un service Jupyter Python avec une variable d'environnement personnalisée `MY_VAR`.\\n\\n```json\\n{\\n  \\\"service\\\": {\\n    \\\"chart_id\\\": \\\"jupyter-python\\\",\\n    \\\"catalog_id\\\": \\\"jupyter\\\",\\n    \\\"version\\\": \\\"latest\\\"\\n  },\\n  \\\"selected_parameters\\\": {\\n    \\\"service.env\\\": {\\n      \\\"value\\\": [\\n        \\\"MY_VAR=ma_valeur\\\",\\n        \\\"ANOTHER_VAR=autre_valeur\\\"\\n      ],\\n      \\\"reason\\\": \\\"Ajout de variables d'environnement personnalisées\\\"\\n    }\\n  }\\n}\\n```\\n\\nDans ce dictionnaire, le paramètre `service.env` est modifié pour inclure vos variables. Les autres paramètres restent à leurs valeurs par défaut.\\n\\nSi vous souhaitez ajouter des variables spécifiques à un service particulier, veuillez me fournir le nom du service ou le type de service que vous souhaitez utiliser.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"jupyter\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {\n      \"service.env\": {\n        \"value\": [\n          \"MY_VAR=ma_valeur\",\n          \"ANOTHER_VAR=autre_valeur\"\n        ],\n        \"reason\": \"Ajout de variables d'environnement personnalisées\"\n      }\n    }\n  }\n}\n```\n```",
+    "created_at": "2026-08-27T15:21:10.485146+00:00",
+    "event_id": "41b06f09-4a1a-4ff9-bd04-801231a79679",
+    "interaction_id": "9a3430d2-f13d-4c63-9680-3fc3fb849bd5",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "jupyter",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "service.env": {
+            "reason": "Ajout de variables d'environnement personnalisées",
+            "value": [
+              "MY_VAR=ma_valeur",
+              "ANOTHER_VAR=autre_valeur"
+            ]
+          }
+        },
+        "version": "latest"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
