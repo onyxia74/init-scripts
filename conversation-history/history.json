@@ -9658,5 +9658,32 @@
     "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour faire de la cartographie sur Onyxia, le service le plus adapté est un environnement de développement Python comme **JupyterLab** (chart `jupyter-python`). Il permet d'utiliser des bibliothèques puissantes comme `geopandas`, `folium` et `matplotlib`. J'ai préparé un script d'initialisation qui installe ces dépendances et fournit un exemple de code pour générer des cartes.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Fenvironnement-de-cartographie-geospatiale-avec-exemples.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-cartographie-geospatiale-avec-exemples.sh\",\n        \"reason\": \"Script d'initialisation pour la cartographie\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-27T18:27:04.996262+00:00",
+    "event_id": "2162da06-682e-4284-ac89-74efe45e4653",
+    "interaction_id": "5d38feec-78ed-4147-a305-6bc2e96ca7f3",
+    "metadata": {
+      "agent_prompt": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Script d'initialisation pour la cartographie",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/environnement-de-cartographie-geospatiale-avec-exemples.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
