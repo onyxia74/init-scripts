@@ -2005,5 +2005,32 @@
     "question": "Génère une architecture de projet data science reproductible.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour traiter des datasets volumineux qui dépassent la capacité de votre mémoire vive (RAM), la stratégie consiste à ne plus charger l'intégralité du fichier en une seule fois, mais à utiliser des techniques de traitement par morceaux (*chunking*) ou de parallélisation. \\n\\nJ'ai configuré pour vous un environnement **JupyterLab Python** optimisé. Ce service inclut un script d'initialisation qui installe des bibliothèques de pointe comme `Dask` (pour le calcul parallèle), `Polars` (pour une performance extrême sur de gros volumes) et `PyArrow` (pour une gestion efficace des formats colonnaires comme Parquet). Un script d'exemple `big_data_demo.py` est également prêt dans votre espace de travail pour vous montrer comment manipuler ces outils.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Ftravailler-sur-des-datasets-volumineux-avec-outillage-de-traitement-par-morceaux-chunking-et-parall-lisation.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/travailler-sur-des-datasets-volumineux-avec-outillage-de-traitement-par-morceaux-chunking-et-parall-lisation.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Quand un dataset est trop grand pour la RAM, le système sature et le processus 'crash' (Out Of Memory). Pour éviter cela, on utilise le 'Lazy Loading' ou le 'Chunking' : on ne lit que de petits morceaux du fichier successivement, ou on utilise des bibliothèques qui gèrent intelligemment le passage sur le disque.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Déployez le service JupyterLab configuré. Une fois ouvert, vérifiez la présence du fichier `big_data_demo.py`.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Tester le chunking avec Pandas\",\n        \"content\": \"Utilisez `pd.read_csv(file, chunksize=10000)` pour itérer sur votre fichier sans saturer la mémoire.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Passer à l'échelle avec Polars ou Dask\",\n        \"content\": \"Pour des performances accrues, utilisez `pl.scan_csv()` avec Polars qui utilise l'exécution paresseuse (lazy evaluation) pour optimiser le plan de calcul avant de lire les données.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"big_data_demo.py\",\n      \"content\": \"import polars as pl\\n# Utilisation du mode 'lazy' pour traiter des fichiers massifs\\nquery = pl.scan_csv('votre_gros_fichier.csv').filter(pl.col('valeur') %C2%BB 100).select(['id', 'valeur'])\\nprint(query.collect())\\nprint('Traitement terminé avec succès !')\"\n    },\n    \"best_practices\": [\n      \"Privilégiez les formats de fichiers colonnaires comme Parquet ou Feather plutôt que le CSV pour le Big Data.\",\n      \"Utilisez toujours le mode 'Lazy' (scan_csv dans Polars) pour laisser la bibliothèque optimiser la lecture.\",\n      \"Surveillez l'utilisation de la mémoire avec la commande `top` ou l'interface de monitoring si disponible.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:33:48.855463+00:00",
+    "event_id": "decbcc17-82c1-4aad-b545-8e616c80f02f",
+    "interaction_id": "ae32982f-c9eb-47b3-9a12-dd7cd65682ab",
+    "metadata": {
+      "agent_prompt": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/travailler-sur-des-datasets-volumineux-avec-outillage-de-traitement-par-morceaux-chunking-et-parall-lisation.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment travailler sur un dataset trop volumineux pour la mémoire ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
