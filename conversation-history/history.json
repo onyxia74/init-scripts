@@ -1599,5 +1599,32 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"La mise en production (ou déploiement) est le processus qui consiste à porter un code, une application ou un modèle de données de l'environnement de développement vers un environnement de production stable et accessible aux utilisateurs finaux. \\n\\nPour illustrer ce concept, j'ai configuré pour vous un environnement **VS Code Python** sur Onyxia. Ce service inclut un script d'initialisation qui prépare automatiquement une structure de projet professionnelle (`src/`, `README.md`) et simule les étapes clés du cycle de vie logiciel (SDLC) : du linting aux tests unitaires, jusqu'au déploiement final.\\n\\nVoici les étapes théoriques essentielles :\\n1. **Développement & Linting** : Écriture du code et vérification de sa conformité aux standards.\\n2. **Tests (Unitaires & Intégration)** : Validation que chaque composant fonctionne et que l'ensemble est cohérent.\\n3. **Build & Packaging** : Création d'un artefact immuable (comme une image Docker) pour garantir que ce qui a été testé est exactement ce qui sera déployé.\\n4. **Déploiement (Staging puis Production)** : Mise en ligne progressive pour minimiser les risques.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fillustrer-les-tapes-de-mise-en-production-via-un-script-de-simulation.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/illustrer-les-tapes-de-mise-en-production-via-un-script-de-simulation.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"La mise en production ne se résume pas à 'copier un fichier sur un serveur'. C'est un pipeline rigoureux qui garantit la fiabilité et la répétabilité de votre travail.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Lancez le service VS Code configuré. Le script d'initialisation va créer vos dossiers de travail automatiquement.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Explorer le projet\",\n        \"content\": \"Ouvrez `src/main.py` pour voir comment les étapes de déploiement sont simulées en Python.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Pratiquer le cycle\",\n        \"content\": \"Modifiez le code, installez de nouvelles dépendances via le terminal et essayez de structurer vos propres tests.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"hello_world.py\",\n      \"content\": \"def main():\\n    print(\\\"Hello Onyxia! Prêt pour la mise en production.\\\")\\n\\nif __name__ == '__main__':\\n    main()\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours un fichier requirements.txt ou un environnement virtuel pour la reproductibilité.\",\n      \"Automatisez vos tests (CI) pour détecter les régressions avant le déploiement.\",\n      \"Versionnez votre code avec Git dès le premier jour.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:25:54.787886+00:00",
+    "event_id": "4ec7f74b-2dd2-4bbb-8467-d53549a20372",
+    "interaction_id": "644200e4-657a-485b-ab77-21432509df09",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/illustrer-les-tapes-de-mise-en-production-via-un-script-de-simulation.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
