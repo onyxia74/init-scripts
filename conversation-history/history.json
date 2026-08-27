@@ -5024,5 +5024,21 @@
     "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n````text\n}`.\n</think>\n\n```json\n{\"query\":\"python postgresql\",\"decompose\":true,\"limit\":10}\n```\n````",
+    "created_at": "2026-08-27T13:55:18.314819+00:00",
+    "event_id": "e8d06fca-11f1-46a2-97fc-6aba62aea8b9",
+    "interaction_id": "5f70d848-584d-4590-b341-e79822cc02ad",
+    "metadata": {
+      "agent_prompt": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment connecter Python à un service PostgreSQL Onyxia ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
