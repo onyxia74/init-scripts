@@ -2158,5 +2158,22 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:10:24.543714+00:00",
+    "event_id": "68ae11ef-5bdc-405a-9411-17f7c854d99a",
+    "interaction_id": "4c3e27dc-bc32-471c-acf7-30259fd161f3",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "agent_prompt_english": "How do I connect my service to GitHub?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
