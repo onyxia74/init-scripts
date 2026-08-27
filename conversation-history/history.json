@@ -2141,5 +2141,22 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"L'accès direct au cluster Kubernetes interne de SSP Cloud n'est pas accessible pour les utilisateurs finaux pour des raisons de sécurité et de multi-tenancy. Vous devez interagir avec la plateforme exclusivement via les services Onyxia. Si vous avez besoin d'un accès au niveau du cluster à des fins d'administration ou de débogage, veuillez contacter les administrateurs de la plateforme SSP Cloud.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"\",\n      \"catalog_id\": \"\",\n      \"version\": \"\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-27T22:08:04.444799+00:00",
+    "event_id": "e15c038a-e625-47b6-a204-7d0791ec5aca",
+    "interaction_id": "18794abf-02d3-4b94-992d-1c5419a8c840",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "agent_prompt_english": "How to access the internal Kubernetes cluster of SSP Cloud?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
