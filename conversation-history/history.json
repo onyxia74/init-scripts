@@ -8500,5 +8500,26 @@
     "question": "Comment créer un kit sur Metabase ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Configuration prête pour Metabase. Les paramètres par défaut sont appliqués (100m CPU, 2Gi RAM). Vous pouvez lancer ce service pour créer votre tableau de bord.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-27T17:04:00.649265+00:00",
+    "event_id": "b815e706-74e4-4f55-8335-ac9a299405d4",
+    "interaction_id": "8a440da8-2d4d-47f6-aec0-a7b88addc8e2",
+    "metadata": {
+      "agent_prompt": "Je veux créer un tableau de bord avec Metabase.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux créer un tableau de bord avec Metabase.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
