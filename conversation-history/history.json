@@ -4951,5 +4951,21 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\n0})\n</think>\n\nAction: get_catalog({\"query\": \"web interface streamlit\", \"decompose\": true, \"limit\": 10})\n```",
+    "created_at": "2026-08-27T13:49:27.881410+00:00",
+    "event_id": "15744b4a-d426-4cd8-aae7-91d3e3d3ce0e",
+    "interaction_id": "ff6b7d85-7c0c-4019-b3b7-2f33208bbdd5",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
