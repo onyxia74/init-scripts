@@ -1653,5 +1653,32 @@
     "question": "Comment sauvegarder les données produites par mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter votre application à PostgreSQL, je vous ai préparé un environnement de développement complet avec **VS Code Python**. \\n\\nJ'ai configuré un script d'initialisation automatique qui installe les bibliothèques essentielles (`psycopg2-binary` et `sqlalchemy`) pour faciliter vos interactions avec la base de données dès l'ouverture de votre session. Vous n'aurez qu'à créer votre script Python et utiliser vos identifiants de connexion pour commencer à manipuler vos données.\\n\\nVoici votre environnement prêt à l'emploi !\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fpr-parer-la-connexion-postgresql-avec-python.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-parer-la-connexion-postgresql-avec-python.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Pour communiquer entre Python et PostgreSQL, on utilise généralement un 'driver' (comme psycopg2) qui sert de traducteur, et souvent un 'ORM' (comme SQLAlchemy) qui permet de manipuler les données comme des objets Python plutôt que d'écrire du SQL pur.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer l'environnement\",\n        \"content\": \"Lancez le service VS Code Python depuis votre interface Onyxia.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Créer le script de connexion\",\n        \"content\": \"Créez un fichier `db_test.py` et utilisez le code d'exemple fourni ci-dessous.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter et vérifier\",\n        \"content\": \"Ouvrez un terminal dans VS Code et lancez `python db_test.py` pour tester la connexion.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"db_test.py\",\n      \"content\": \"import sqlalchemy\\nimport psycopg2\\n\\n# Remplacez par vos vrais paramètres\\nDB_URL = \\\"postgresql://user:password@host:port/dbname\\\"\\n\\ntry:\\n    engine = sqlalchemy.create_engine(DB_URL)\\n    connection = engine.connect()\\n    print(\\\"✅ Connexion réussie à PostgreSQL !\\\")\\n    connection.close()\\nexcept Exception as e:\\n    print(f\\\"❌ Erreur de connexion : {e}\\\")\"\n    },\n    \"best_practices\": [\n      \"Ne stockez jamais vos mots de passe en clair dans votre code (utilisez des variables d'environnement).\",\n      \"Utilisez un ORM comme SQLAlchemy pour protéger votre application contre les injections SQL.\",\n      \"Fermez toujours vos connexions à la base de données après usage pour libérer les ressources.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:26:51.476087+00:00",
+    "event_id": "5873248e-b9a8-48bc-a036-f8dc8e13dde8",
+    "interaction_id": "8b72e933-6526-4d7d-8a93-5bc40f9730ed",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon application à PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/pr-parer-la-connexion-postgresql-avec-python.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment connecter mon application à PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
