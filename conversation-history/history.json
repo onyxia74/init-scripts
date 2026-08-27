@@ -1530,5 +1530,26 @@
     "question": "Comment créer un kit sur Metabase ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"C'est une excellente idée ! Metabase est l'outil idéal pour transformer vos données en tableaux de bord interactifs et visuels sans avoir à écrire de code complexe. J'ai préparé votre environnement Metabase avec la configuration standard, prête à l'emploi.\\n\\nAvec Metabase, vous pourrez connecter vos bases de données (PostgreSQL, MySQL, etc.) et commencer immédiatement à poser des questions à vos données via une interface intuitive.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/dataviz/metabase?name=metabase&version=2.0.3\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"metabase\",\n      \"catalog_id\": \"dataviz\",\n      \"version\": \"2.0.3\"\n    },\n    \"selected_parameters\": {}\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Metabase est un outil de Business Intelligence (BI) 'self-service'. Contrairement à un outil de programmation, il permet à des utilisateurs non-techniques de créer des graphiques et des tableaux de bord en cliquant simplement sur des menus. Il utilise une base de données interne (PostgreSQL par défaut) pour stocker vos questions et vos tableaux de bord.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Connexion aux données\",\n        \"content\": \"Une fois Metabase lancé, allez dans 'Admin settings' %C2%BB 'Databases' et ajoutez la source de données que vous souhaitez analyser (ex: votre base PostgreSQL).\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Exploration\",\n        \"content\": \"Cliquez sur 'New' %C2%BB 'Question'. Choisissez votre base de données et commencez à filtrer et agréger vos données via l'interface visuelle.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Visualisation\",\n        \"content\": \"Une fois votre question répondue, cliquez sur 'Visualization' pour choisir un graphique (barres, lignes, pie chart) et enregistrez-le dans un 'Dashboard'.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"sql\",\n      \"filename\": \"first_query.sql\",\n      \"content\": \"-- Exemple de requête simple pour tester votre connexion\\nSELECT category, COUNT(*) \\nFROM your_table_name \\nGROUP BY category \\nORDER BY COUNT(*) DESC;\"\n    },\n    \"best_practices\": [\n      \"Utilisez des bases de données de lecture seule pour vos connexions Metabase afin de sécuriser vos données sources.\",\n      \"Organisez vos tableaux de bord par département ou par projet pour faciliter la navigation.\",\n      \"Privilégiez les questions 'visuelles' pour les utilisateurs métier, et réservez le SQL pour les analyses complexes.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:23:55.797521+00:00",
+    "event_id": "d53b521f-caf4-4ffc-8f5e-78ea82058586",
+    "interaction_id": "6bab73ea-1992-4905-a953-2b3ff22b56b6",
+    "metadata": {
+      "agent_prompt": "Je veux créer un tableau de bord avec Metabase.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "dataviz",
+        "chart_id": "metabase",
+        "version": "2.0.3"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Je veux créer un tableau de bord avec Metabase.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
