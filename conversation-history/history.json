@@ -2367,5 +2367,32 @@
     "question": "Comment gérer de gros fichiers sur S3 sans saturer la mémoire ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour utiliser vos secrets S3 dans un script sur Onyxia, la meilleure approche consiste à utiliser un environnement de développement comme VS Code et à injecter vos identifiants via les mécanismes de gestion de secrets de la plateforme. \\n\\nJ'ai préparé pour vous un environnement **VS Code Python** qui inclut automatiquement la bibliothèque `boto3` (le SDK AWS pour Python) et un script d'exemple. Ce script vous montre comment récupérer vos clés d'accès depuis les variables d'environnement, ce qui est la méthode la plus sécurisée sur Onyxia.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fexemple-de-connexion-s3-avec-gestion-de-secrets.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exemple-de-connexion-s3-avec-gestion-de-secrets.sh\",\n        \"reason\": \"Changement demande explicitement.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Sur Onyxia, ne stockez jamais vos clés S3 en dur dans votre code. Utilisez plutôt les variables d'environnement injectées par la plateforme ou un gestionnaire de secrets (comme Vault). Le script d'initialisation que j'ai configuré installe `boto3` et crée un fichier d'exemple qui lit ces variables de manière sécurisée.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Cliquez sur le bouton de lancement pour démarrer votre instance VS Code. Le script d'initialisation s'exécutera en arrière-plan pour installer les outils nécessaires.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Configurer les secrets\",\n        \"content\": \"Assurez-vous que vos secrets S3 sont bien configurés dans votre interface Onyxia (via les paramètres de votre projet ou Vault) pour qu'ils soient disponibles en tant que variables d'environnement.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter le script\",\n        \"content\": \"Ouvrez le fichier `s3_test.py` généré dans votre espace de travail et lancez-le dans le terminal avec `python s3_test.py`.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"python\",\n      \"filename\": \"s3_test.py\",\n      \"content\": \"import boto3\\nimport os\\n\\n# Récupération sécurisée des secrets via les variables d'environnement\\naws_access_key = os.getenv('AWS_ACCESS_KEY_ID')\\naws_secret_key = os.getenv('AWS_SECRET_ACCESS_KEY')\\nendpoint_url = os.getenv('S3_ENDPOINT_URL')\\n\\nprint(\\\"Tentative de connexion à S3...\\\")\\n\\ntry:\\n    s3 = boto3.client(\\n        's3',\\n        aws_access_key_id=aws_access_key,\\n        aws_secret_access_key=aws_secret_key,\\n        endpoint_url=endpoint_url\\n    )\\n    # Liste les buckets pour tester la connexion\\n    response = s3.list_buckets()\\n    print(\\\"Connexion réussie ! Voici vos buckets :\\\")\\n    for bucket in response['Buckets']:\\n        print(f\\\" - {bucket['Name']}\\\")\\nexcept Exception as e:\\n    print(f\\\"Erreur de connexion : {e}\\\")\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours `os.getenv()` pour accéder à vos secrets.\",\n      \"Ajoutez votre fichier `.env` ou tout fichier contenant des clés au `.gitignore`.\",\n      \"Privilégiez l'utilisation de l'endpoint S3 spécifique à votre région/fournisseur pour réduire la latence.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:41:51.377645+00:00",
+    "event_id": "78f629ee-c7d9-4cb8-a2ce-767f3a7aa195",
+    "interaction_id": "35a2a599-e5fe-4dea-b7a7-d959c0abecb3",
+    "metadata": {
+      "agent_prompt": "Comment utiliser mes secrets S3 dans un script ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/exemple-de-connexion-s3-avec-gestion-de-secrets.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment utiliser mes secrets S3 dans un script ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
