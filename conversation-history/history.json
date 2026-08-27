@@ -1228,5 +1228,32 @@
     "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas le champ answer attendu.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\n```json\n{\n  \"answer\": \"Pour rendre votre interface web accessible depuis l'extérieur sur Onyxia, la meilleure approche consiste à utiliser un environnement de développement comme **VS Code Python** et à configurer votre application (par exemple avec Streamlit) pour qu'elle écoute sur l'adresse `0.0.0.0`. \\n\\nJ'ai préparé pour vous un environnement prêt à l'emploi qui inclut :\\n1. Un script d'initialisation qui installe automatiquement `streamlit`, `pandas` et `numpy`.\\n2. Un fichier `app.py` contenant un exemple de tableau de bord interactif.\\n3. Une commande de lancement configurée pour écouter sur toutes les interfaces réseau, ce qui est la clé pour l'accessibilité.\\n\\nUne fois le service lancé, vous pourrez accéder à votre application via l'interface de routage d'Onyxia.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-import-streamlit-as-st-nimport-pandas-as-pd-nimport-numpy-as-np-n-nst.title-mon-interface-web-onyxia-nst.write-ceci-est-une-application-streamlit-pr-te-l-emploi-n-ndata-pd.dataframe-np.random.randn-10-2-columns-x-y-nst.line_chart-data-n-requirements.txt-streamlit-npandas-nnumpy-n-purpose-pr-parer-un-environnement-de-d-veloppement-pour-une-interface-web-streamlit-accessible-de-l-ext-rieur-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501.sh\",\n        \"reason\": \"Configuration d'un environnement Streamlit pré-installé et prêt pour l'exposition réseau.\"\n      }\n    }\n  },\n  \"teacher_block\": {\n    \"explanation\": \"Sur une plateforme cloud comme Onyxia, les services tournent dans des conteneurs isolés. Pour qu'une application web (Streamlit, FastAPI, Flask) soit visible, elle ne doit pas écouter uniquement sur `localhost` (127.0.0.1), mais sur `0.0.0.0`. Cela permet au réseau de la plateforme de rediriger le trafic vers votre conteneur.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer le service\",\n        \"content\": \"Sélectionnez le service VS Code Python configuré ci-dessus et lancez-le depuis votre catalogue Onyxia.\"\n... [detail tronque]\n```",
+    "created_at": "2026-08-27T10:17:58.059261+00:00",
+    "event_id": "de950aa1-a042-4b95-b101-87d56238d516",
+    "interaction_id": "e3385737-071c-4010-aafc-a1b2d1ccad0e",
+    "metadata": {
+      "agent_prompt": "Rends l’interface web accessible depuis l’extérieur.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Changement demande explicitement.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-files-app.py-import-streamlit-as-st-nimport-pandas-as-pd-nimport-numpy-as-np-n-nst.title-mon-interface-web-onyxia-nst.write-ceci-est-une-application-streamlit-pr-te-l-emploi-n-ndata-pd.dataframe-np.random.randn-10-2-columns-x-y-nst.line_chart-data-n-requirements.txt-streamlit-npandas-nnumpy-n-purpose-pr-parer-un-environnement-de-d-veloppement-pour-une-interface-web-streamlit-accessible-de-l-ext-rieur-start_command-streamlit-run-app.py---server.address-0.0.0.0---server.port-port--8501.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Rends l’interface web accessible depuis l’extérieur.",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
