@@ -8773,5 +8773,21 @@
     "question": "Comment joindre mes données statistiques à un fond de carte ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T17:26:15.945533+00:00",
+    "event_id": "84283bdd-3a5a-445f-9247-85f9754492d2",
+    "interaction_id": "241e0814-976c-4802-87f1-1d472006938d",
+    "metadata": {
+      "agent_prompt": "Quel graphique est le plus adapté à mes données ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Quel graphique est le plus adapté à mes données ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
