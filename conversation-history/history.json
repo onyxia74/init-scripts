@@ -8542,5 +8542,21 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T17:08:32.923482+00:00",
+    "event_id": "9e05fcdb-9c80-4f4d-824a-c386e554e374",
+    "interaction_id": "d1a2b29d-146e-4dbd-927f-cb7465e9b1b0",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
