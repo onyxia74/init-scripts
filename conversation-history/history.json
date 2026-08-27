@@ -6234,5 +6234,21 @@
     "question": "Quel service dois-je utiliser pour créer une application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T15:47:48.779627+00:00",
+    "event_id": "fc61c84f-b2ed-4f3f-a9c2-5cebdc454a46",
+    "interaction_id": "67d08a51-869f-4d14-82e2-d80a12dbe6e2",
+    "metadata": {
+      "agent_prompt": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Quel service Onyxia est adapté pour faire de la cartographie ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
