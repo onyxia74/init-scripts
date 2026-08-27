@@ -2124,5 +2124,22 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : Le LLM n'a pas fourni de réponse finale exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nRéponse vide.\n```\n\nSortie brute du LLM après épuisement des relances :\n\n```text\nRéponse vide.\n```",
+    "created_at": "2026-08-27T22:05:58.975771+00:00",
+    "event_id": "558fb059-cfd0-45f3-b5c0-ca6cc2ce5ece",
+    "interaction_id": "e48d10c0-6e7f-4a43-9a50-6c34bc5dd521",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "agent_prompt_english": "How to read Kubernetes events associated with my service?",
+      "clarification": {},
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
