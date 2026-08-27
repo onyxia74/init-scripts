@@ -8521,5 +8521,26 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs d'une application déployée sur Onyxia, vous pouvez utiliser l'interface utilisateur d'Onyxia (onglet 'Logs' ou 'Déploiements') ou accéder aux logs via la ligne de commande Kubernetes si vous avez les droits. Si vous souhaitez un environnement de développement pour inspecter les logs ou déboguer votre application, je vous recommande d'utiliser un environnement Jupyter ou VS Code. Voici une configuration pour un environnement Jupyter Python prêt à l'emploi.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"jupyter-python\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-27T17:06:04.378097+00:00",
+    "event_id": "03a4c516-b8fd-4af9-a80a-963f34e4ee55",
+    "interaction_id": "200f335c-fa91-48e2-9c9b-64db9756b381",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "jupyter-python",
+        "chart_id": "jupyter-python",
+        "version": "latest"
+      },
+      "model": "qwen3-6-35b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
