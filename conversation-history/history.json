@@ -1192,5 +1192,41 @@
     "question": "Comment exposer un port de mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter une application Shiny à une base PostgreSQL sur Onyxia, la meilleure approche consiste à déployer deux services complémentaires : une instance **PostgreSQL** pour le stockage de vos données et un environnement **RStudio** pour le développement de votre application. \\n\\nJ'ai préparé pour vous un environnement de travail prêt à l'emploi. Pour le service RStudio, j'ai configuré un script d'initialisation qui installe automatiquement les bibliothèques nécessaires (`shiny`, `DBI`, `RPostgres`) et crée un fichier `app.R` contenant un exemple de code de connexion fonctionnel. \\n\\n**Note importante sur la connexion :** Dans l'environnement Onyxia, les services communiquent au sein du même namespace. Pour vous connecter, utilisez le nom du service PostgreSQL (par défaut `postgresql-cnpg`) comme hôte (`host`) dans votre chaîne de connexion.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"rstudio-r-python-julia\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.5.5\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/connexion-shiny-a-postgresql.sh\",\n            \"reason\": \"Changement demande explicitement.\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fconnexion-shiny-a-postgresql.sh%C2%BB\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    },\n    {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fconnexion-shiny-a-postgresql.sh%C2%BB\"\n    }\n  ],\n  \"teacher_block\": {\n    \"explanation\": \"La connexion entre une application (Shiny) et une base de données (PostgreSQL) repose sur un pilote (driver) et une interface de programmation (DBI). Sur Onyxia, la communication est facilitée par le réseau interne du cluster : vous n'avez pas besoin d'adresse IP, le nom du service suffit.\",\n    \"tutorial\": [\n      {\n        \"step\": 1,\n        \"title\": \"Lancer les services\",\n        \"content\": \"Déployez d'abord PostgreSQL, puis RStudio via l'interface Onyxia.\"\n      },\n      {\n        \"step\": 2,\n        \"title\": \"Vérifier l'installation\",\n        \"content\": \"Ouvrez RStudio. Le script d'initialisation aura déjà installé les packages. Vérifiez en tapant `library(DBI)` dans la console.\"\n      },\n      {\n        \"step\": 3,\n        \"title\": \"Exécuter l'exemple\",\n        \"content\": \"Ouvrez le fichier `app.R` créé dans votre dossier de travail et cliquez sur 'Run App'.\"\n      }\n    ],\n    \"hello_world_script\": {\n      \"language\": \"r\",\n      \"filename\": \"test_db.R\",\n      \"content\": \"library(DBI)\\nlibrary(RPostgres)\\n\\n# Test de connexion\\ncon %C2%AB- dbConnect(\\n  RPostgres::Postgres(),\\n  dbname = 'defaultdb',\\n  host = 'postgresql-cnpg',\\n  port = 5432,\\n  user = 'changeme',\\n  password = 'changeme'\\n)\\nprint(dbListTables(con))\\ndbDisconnect(con)\"\n    },\n    \"best_practices\": [\n      \"Utilisez toujours des variables d'environnement pour stocker vos mots de passe plutôt que de les écrire en dur.\",\n      \"Privilégiez le nom du service (DNS interne) pour l'hôte de la base de données.\",\n      \"N'oubliez pas de fermer vos connexions avec `dbDisconnect(con)` pour libérer les ressources du serveur.\"\n    ]\n  }\n}\n```",
+    "created_at": "2026-08-27T10:17:21.145461+00:00",
+    "event_id": "688f7b28-5e4d-45a1-95ac-7fefadffd097",
+    "interaction_id": "49effa88-aaec-481f-be80-133714473623",
+    "metadata": {
+      "agent_prompt": "Comment connecter une application Shiny à une base PostgreSQL ?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "ide",
+            "chart_id": "rstudio-r-python-julia",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Changement demande explicitement.",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/connexion-shiny-a-postgresql.sh"
+              }
+            },
+            "version": "2.5.5"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "teacher",
+      "retryable": false
+    },
+    "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
