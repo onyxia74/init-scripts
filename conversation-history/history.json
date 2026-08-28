@@ -5382,5 +5382,32 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service Onyxia utilisez-vous ou prévoyez-vous d'utiliser ? (ex: VS Code, Jupyter, RStudio, ou une application web personnalisée)",
+    "created_at": "2026-08-28T09:05:39.330457+00:00",
+    "event_id": "fd80071b-5662-4c89-a25a-998ba3fad447",
+    "interaction_id": "d5ab6cc1-01bd-4f6a-83fb-85adb53a6a50",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "agent_prompt_english": "How to inject my secrets into the application?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_name",
+        "options": [],
+        "options_english": [],
+        "original_request": "",
+        "original_request_english": "How to inject my secrets into the application?",
+        "question": "Quel service Onyxia utilisez-vous ou prévoyez-vous d'utiliser ? (ex: VS Code, Jupyter, RStudio, ou une application web personnalisée)",
+        "question_english": "Which Onyxia service are you using or planning to use? (e.g., VS Code, Jupyter, RStudio, or a custom web application)",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
