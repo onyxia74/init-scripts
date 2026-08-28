@@ -9,7 +9,7 @@ WORK_DIR="${WORK_DIR:-/home/onyxia/work}"
 mkdir -p "${WORK_DIR}"
 # Create workspace files.
 mkdir -p "$(dirname "${WORK_DIR}/app.py")"
-cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_9c4f5b5c4153'
+cat > "${WORK_DIR}/app.py" <<'ONYXIA_FILE_cdf873691ec2'
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -34,20 +34,20 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader('Distribution')
-    fig_hist = px.histogram(data, x='x', color='category')
-    st.plotly_chart(fig_hist, use_container_width=True)
+    fig1 = px.histogram(data, x='x', color='category')
+    st.plotly_chart(fig1, use_container_width=True)
 
 with col2:
     if show_scatter:
         st.subheader('Relationship')
-        fig_scatter = px.scatter(data, x='x', y='y', color='category')
-        st.plotly_chart(fig_scatter, use_container_width=True)
+        fig2 = px.scatter(data, x='x', y='y', color='category')
+        st.plotly_chart(fig2, use_container_width=True)
     else:
         st.info('Scatter plot disabled in sidebar.')
 
 st.divider()
 st.write('Data Preview:', data.head())
-ONYXIA_FILE_9c4f5b5c4153
+ONYXIA_FILE_cdf873691ec2
 mkdir -p "$(dirname "${WORK_DIR}/requirements.txt")"
 cat > "${WORK_DIR}/requirements.txt" <<'ONYXIA_FILE_5344d55d37d3'
 streamlit
@@ -58,20 +58,19 @@ matplotlib
 seaborn
 ONYXIA_FILE_5344d55d37d3
 mkdir -p "$(dirname "${WORK_DIR}/README.md")"
-cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_45ff3213376e'
+cat > "${WORK_DIR}/README.md" <<'ONYXIA_FILE_55ca4ff42000'
 # Data Visualization App
 
-This is a ready-to-run Streamlit application for data visualization.
+This application was automatically prepared for your Onyxia environment.
 
 ## How to run
-
 1. Open the terminal in VS Code.
 2. Run the following command:
    ```bash
    streamlit run app.py --server.address=0.0.0.0 --server.port=${PORT:-8501}
    ```
-3. The application will be available via the Onyxia networking port.
-ONYXIA_FILE_45ff3213376e
+3. Access the application via the provided URL.
+ONYXIA_FILE_55ca4ff42000
 
 # Install Python packages.
 PYTHON_BIN="${PYTHON_BIN:-python}"
