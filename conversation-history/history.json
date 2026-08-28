@@ -5170,5 +5170,22 @@
     "question": "Comment augmenter le stockage disponible dans mon service ?",
     "status": "llm_validation_error",
     "type": "interaction"
+  },
+  {
+    "answer": "J'ai besoin de savoir quels services vous souhaitez cibler et quel environnement ou quels outils spécifiques vous voulez que le script d'initialisation prépare.\n\nPour fournir une configuration valide, veuillez préciser :\n1. **Les services** que vous utilisez (ex: JupyterLab, VS Code, RStudio).\n2. **L'objectif du script** (ex: installer des packages Python/R spécifiques, créer une structure de dossiers de projet, configurer une application web ou configurer des extensions VS Code).\n\nUne fois que vous aurez fourni ces détails, je générerai les configurations appropriées pour vous.",
+    "created_at": "2026-08-28T09:01:32.041971+00:00",
+    "event_id": "f032b036-5f2c-47e1-a4c7-26408c3effe0",
+    "interaction_id": "6480b32e-6187-4bcb-9471-d56f5049a96f",
+    "metadata": {
+      "agent_prompt": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+      "agent_prompt_english": "Help me add a common initialization script to several services.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Aide-moi à ajouter un script d’initialisation commun à plusieurs services.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
