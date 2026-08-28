@@ -5622,5 +5622,33 @@
     "question": "Quel service utiliser pour faire de la cartographie ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai préparé un environnement JupyterLab configuré pour la cartographie interactive et l'analyse géospatiale. Il inclut des bibliothèques essentielles telles que `geopandas`, `folium`, `matplotlib`, `ipyleaflet`, `contextily` et `shapely` pour vous aider à créer et explorer des cartes interactives.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Finteractive-mapping-and-geospatial-analysis.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/interactive-mapping-and-geospatial-analysis.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T09:08:58.791213+00:00",
+    "event_id": "b389afd0-0110-4f4f-bfe5-1e5bc3e9db85",
+    "interaction_id": "d177066d-9b8b-45f2-859f-2da18cea80aa",
+    "metadata": {
+      "agent_prompt": "J’aimerais créer une carte interactive.",
+      "agent_prompt_english": "I would like to create an interactive map.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/interactive-mapping-and-geospatial-analysis.sh"
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "J’aimerais créer une carte interactive.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
