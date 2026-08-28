@@ -12012,5 +12012,37 @@
     "question": "Comment utiliser mes secrets S3 dans un script ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un service RStudio en utilisant votre image personnalisée `Toto/rstudio-custom`. Le paramètre d'image personnalisée a été activé pour garantir le chargement de votre environnement spécifique.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio?name=rstudio&version=2.5.5&service.image.custom.enabled=true&service.image.custom.version=%C2%ABToto%2Frstudio-custom%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"service.image.custom.enabled\": {\n        \"value\": true,\n        \"reason\": \"Modification explicitement demandée.\"\n      },\n      \"service.image.custom.version\": {\n        \"value\": \"Toto/rstudio-custom\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T12:03:00.596101+00:00",
+    "event_id": "87615205-6351-423a-abdc-f9316eb3fa5a",
+    "interaction_id": "bdbc11da-f5a2-4803-8aa1-10241f4ac16c",
+    "metadata": {
+      "agent_prompt": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+      "agent_prompt_english": "How to deploy a custom RStudio image? Toto/rstudio-custom",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio",
+        "overrides": {
+          "service.image.custom.enabled": {
+            "reason": "Explicitly requested change.",
+            "value": true
+          },
+          "service.image.custom.version": {
+            "reason": "Explicitly requested change.",
+            "value": "Toto/rstudio-custom"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une image personnalisée de RStudio ? Toto/rstudio-custom",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
