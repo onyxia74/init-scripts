@@ -10906,5 +10906,36 @@
     "question": "Déploie PostgreSQL, Neo4j et une interface web.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour partager un service PostgreSQL, déployez une instance unique en utilisant la configuration ci-dessous et partagez les détails de connexion (hôte, port, nom de la base de données, nom d'utilisateur et mot de passe) avec vos collaborateurs. J'ai également inclus pgAdmin dans la configuration afin que vous puissiez fournir une interface graphique aux utilisateurs pour accéder à la base de données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"postgresql-cnpg\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"0.5.1\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"pgadmin\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.11\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"postgresql-cnpg\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/postgresql-cnpg?name=postgresql-cnpg&version=0.5.1\"\n    },\n    {\n      \"chart_id\": \"pgadmin\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/pgadmin?name=pgadmin&version=1.0.11\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-28T11:46:23.011325+00:00",
+    "event_id": "d564d1f3-16b5-41a8-be0f-861aa3cb96f7",
+    "interaction_id": "b6cf12c8-91cb-42ec-8a57-4d500369e38b",
+    "metadata": {
+      "agent_prompt": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+      "agent_prompt_english": "How to share a PostgreSQL service among multiple users?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "postgresql-cnpg",
+            "version": "0.5.1"
+          },
+          {
+            "catalog_id": "databases",
+            "chart_id": "pgadmin",
+            "version": "1.0.11"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment partager un service PostgreSQL entre plusieurs utilisateurs ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
