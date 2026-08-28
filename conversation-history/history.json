@@ -5918,5 +5918,38 @@
     "question": "Comment déployer PostgreSQL, Neo4j et une interface web ensemble ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour fournir la configuration correcte, pourriez-vous préciser votre objectif ? Souhaitez-vous : 1. Configurer des secrets pour le service Onyxia lui-même (par exemple, des identifiants de base de données via des paramètres Helm) ? 2. Gérer des secrets pour une application que vous développez à l'intérieur d'un service (par exemple, en utilisant des fichiers .env ou des variables d'environnement) ?",
+    "created_at": "2026-08-28T09:12:36.552187+00:00",
+    "event_id": "3f5e3622-e869-4959-9d17-fa97ae6deecc",
+    "interaction_id": "ca66a6b9-925e-440b-bb42-417247409c28",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des secrets dans mon déploiement ?",
+      "agent_prompt_english": "How to add secrets to my deployment?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "secret_management_context",
+        "options": [
+          "Configurer les paramètres du service Onyxia",
+          "Gérer les secrets de l'application (ex: fichiers .env)"
+        ],
+        "options_english": [
+          "Configure Onyxia service parameters",
+          "Manage application secrets (e.g. .env files)"
+        ],
+        "original_request": "",
+        "original_request_english": "How to add secrets to my deployment?",
+        "question": "Pour fournir la configuration correcte, pourriez-vous préciser votre objectif ? Souhaitez-vous : 1. Configurer des secrets pour le service Onyxia lui-même (par exemple, des identifiants de base de données via des paramètres Helm) ? 2. Gérer des secrets pour une application que vous développez à l'intérieur d'un service (par exemple, en utilisant des fichiers .env ou des variables d'environnement) ?",
+        "question_english": "To provide the correct configuration, could you please specify your goal? Are you looking to: 1. Configure secrets for an Onyxia service itself (e.g., database credentials via Helm parameters)? 2. Manage secrets for an application you are developing inside a service (e.g., using .env files or environment variables)?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des secrets dans mon déploiement ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
