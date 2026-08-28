@@ -8800,5 +8800,22 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour exposer un port pour votre application dans Onyxia, la méthode dépend de si vous utilisez un service standard (comme Jupyter ou VS Code) ou si vous développez une application web personnalisée (comme une application Streamlit ou FastAPI).\n\n### 1. Pour les applications web personnalisées (Streamlit, FastAPI, etc.)\nSi vous développez une interface web, la meilleure approche consiste à utiliser un environnement de développement comme **VS Code** et à fournir une `start_command`. Cette commande indique au service comment exécuter votre application et sur quel port se lier.\n\nLorsque vous définissez une `start_command` (par exemple, `streamlit run app.py --server.port=8501`), la plateforme Onyxia est conçue pour détecter cela et exposer le port correspondant via l'ingress/proxy du service.\n\n### 2. Pour les services de science des données standards\nPour les services tels que JupyterLab ou RStudio, les ports sont préconfigurés par la plateforme Onyxia. Vous n'avez pas besoin de les exposer manuellement ; ils sont automatiquement mis à disposition via l'URL spécifique du service fournie dans le lanceur.\n\n### 3. Utilisation d'un script d'initialisation (Init Script) pour l'automatisation\nSi vous souhaitez vous assurer que votre application est toujours prête à s'exécuter sur un port spécifique dès le démarrage, vous pouvez utiliser un **init script**. Ce script peut :\n*   Installer les dépendances nécessaires (par exemple, `pip install streamlit`).\n*   Créer les fichiers de votre application (par exemple, `app.py`).\n*   Définir une `start_command` qui se lie explicitement à un port.\n\n**Exemple de flux de travail :**\nSi vous demandiez un « environnement Streamlit », je générerais une configuration incluant un init script contenant :\n*   **Files :** `app.py`\n*   **Packages :** `streamlit`\n*   **Start Command :** `streamlit run app.py --server.address=0.0.0.0 --server.port=8501`\n\nCela garantit que dès que votre service démarre, l'application est en cours d'exécution et le port est prêt pour l'accès.",
+    "created_at": "2026-08-28T09:51:31.986915+00:00",
+    "event_id": "8de0ab1f-1902-45da-8ce8-9351cdc1e5b8",
+    "interaction_id": "bc3d6e9c-379a-4200-9dcb-4036c50f2009",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "agent_prompt_english": "How to expose a port of my application?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
