@@ -11190,5 +11190,33 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour mettre à jour votre application après une modification de code, vous devez redémarrer le processus en cours. J'ai préparé un environnement Python pour VS Code avec une application d'exemple (`app.py`) pour illustrer cela. Modifiez simplement votre code, arrêtez l'exécution actuelle dans le terminal en utilisant `Ctrl+C`, puis relancez votre commande de démarrage (par exemple, `python app.py`) pour appliquer les changements.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fservice%2Fchart_id-vscode-python-packages-pandas-numpy-matplotlib-purpose-demonstrate-code-modification-and-application-running-with-a-simple-script-files-app.py-import-pandas-as-pd-import-numpy-as-np-import-matplotlib.pyplot-as-plt-def-main-print-running-application...-data-np.random.rand-10-df-pd.dataframe-data-columns-value-print-data-generated-print-df-plt.plot-df-plt.title-random-data-plot-plt.savefig-plot.png-print-plot-saved-as-plot.png-if-__name__-__main__-n-main-readme.md-my-application-n-nto-run-the-application-use-the-terminal-and-type-n-python-app.py-n-nafter-modifying-app.py-simply-stop-the-current-process-with-ctrl-c-and-run-the-command-again-to-see-your-changes.-start_command-python-app.py.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-pandas-numpy-matplotlib-purpose-demonstrate-code-modification-and-application-running-with-a-simple-script-files-app.py-import-pandas-as-pd-import-numpy-as-np-import-matplotlib.pyplot-as-plt-def-main-print-running-application...-data-np.random.rand-10-df-pd.dataframe-data-columns-value-print-data-generated-print-df-plt.plot-df-plt.title-random-data-plot-plt.savefig-plot.png-print-plot-saved-as-plot.png-if-__name__-__main__-n-main-readme.md-my-application-n-nto-run-the-application-use-the-terminal-and-type-n-python-app.py-n-nafter-modifying-app.py-simply-stop-the-current-process-with-ctrl-c-and-run-the-command-again-to-see-your-changes.-start_command-python-app.py.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T11:51:29.599703+00:00",
+    "event_id": "cac11b43-fe27-429e-a747-1389b702c0ed",
+    "interaction_id": "be9c0907-9a88-42fc-851d-ba795c260833",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "agent_prompt_english": "How do I update my application after a code modification?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/service/chart_id-vscode-python-packages-pandas-numpy-matplotlib-purpose-demonstrate-code-modification-and-application-running-with-a-simple-script-files-app.py-import-pandas-as-pd-import-numpy-as-np-import-matplotlib.pyplot-as-plt-def-main-print-running-application...-data-np.random.rand-10-df-pd.dataframe-data-columns-value-print-data-generated-print-df-plt.plot-df-plt.title-random-data-plot-plt.savefig-plot.png-print-plot-saved-as-plot.png-if-__name__-__main__-n-main-readme.md-my-application-n-nto-run-the-application-use-the-terminal-and-type-n-python-app.py-n-nafter-modifying-app.py-simply-stop-the-current-process-with-ctrl-c-and-run-the-command-again-to-see-your-changes.-start_command-python-app.py.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
