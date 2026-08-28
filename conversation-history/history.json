@@ -11058,5 +11058,40 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour augmenter le stockage, j'ai besoin de savoir quel service vous utilisez et la taille de stockage souhaitée.",
+    "created_at": "2026-08-28T11:48:04.592174+00:00",
+    "event_id": "9cd8c14b-fa1a-4258-8f2b-3c7609b4b9da",
+    "interaction_id": "d4da89c3-b025-4aff-a7d8-a0a258c70b0c",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "agent_prompt_english": "How can I increase the available storage in my service?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_id, storage_size",
+        "options": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "options_english": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "original_request": "",
+        "original_request_english": "How can I increase the available storage in my service?",
+        "question": "Pour augmenter le stockage, j'ai besoin de savoir quel service vous utilisez et la taille de stockage souhaitée.",
+        "question_english": "To increase the storage, I need to know which service you are using and the desired storage size.",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
