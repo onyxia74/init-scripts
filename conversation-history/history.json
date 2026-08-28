@@ -6441,5 +6441,42 @@
     "question": "Quel environnement utiliser pour développer une application Java ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré un environnement de développement RAG pour vous. Il comprend une base de données vectorielle ChromaDB et une instance JupyterLab. L'environnement JupyterLab est préchargé avec un script d'initialisation qui installe toutes les bibliothèques RAG nécessaires (LangChain, client ChromaDB, etc.) et fournit un fichier `rag_demo.py` pour vous aider à commencer la connexion à la base de données et son alimentation en données.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"chromadb\",\n          \"catalog_id\": \"databases\",\n          \"version\": \"1.0.9\"\n        },\n        \"selected_parameters\": {},\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n      },\n      {\n        \"service\": {\n          \"chart_id\": \"jupyter-python\",\n          \"catalog_id\": \"ide\",\n          \"version\": \"2.5.2\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/rag-development-with-chromadb-and-langchain.sh\",\n            \"reason\": \"Modification explicitement demandée.\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Frag-development-with-chromadb-and-langchain.sh%C2%BB\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"chromadb\",\n      \"catalog_id\": \"databases\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/chromadb?name=chromadb&version=1.0.9\"\n    },\n    {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fjupyter-python%2Frag-development-with-chromadb-and-langchain.sh%C2%BB\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-28T09:20:20.785719+00:00",
+    "event_id": "f252f260-3047-486b-9695-2b49c7344306",
+    "interaction_id": "8afdc4f6-9fb7-4a42-a3ae-113c04e038fa",
+    "metadata": {
+      "agent_prompt": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+      "agent_prompt_english": "I want RAGs with a vector database. How do I create it? And then how do I populate it by going through a client?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "databases",
+            "chart_id": "chromadb",
+            "version": "1.0.9"
+          },
+          {
+            "catalog_id": "ide",
+            "chart_id": "jupyter-python",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Explicitly requested change.",
+                "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/jupyter-python/rag-development-with-chromadb-and-langchain.sh"
+              }
+            },
+            "version": "2.5.2"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux des RAG avec une base de données vectorielle. Comment la créer ? Et ensuite l’alimenter en passant par un client ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
