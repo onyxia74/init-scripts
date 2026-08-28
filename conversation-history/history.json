@@ -7452,5 +7452,33 @@
     "question": "Quel service utiliser pour publier mon application Shiny ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai préparé une configuration pour l'IDE VSCode (R, Python, Julia) afin de déployer votre application Shiny. Le service comprend un script d'initialisation qui installe le package `shiny` nécessaire et crée un fichier `app.R` prêt à l'emploi avec un histogramme interactif d'exemple. Vous pouvez lancer l'application directement depuis le terminal ou via la configuration fournie.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-r-python-julia?name=vscode-r-python-julia&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-r-python-julia%2Fdeploy-a-shiny-application.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/deploy-a-shiny-application.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T09:33:27.359586+00:00",
+    "event_id": "92bec7a1-1db7-4404-abb9-028177082997",
+    "interaction_id": "6ef6f4df-032f-4052-92ae-14221f5d9401",
+    "metadata": {
+      "agent_prompt": "Je veux déployer une application Shiny.",
+      "agent_prompt_english": "I want to deploy a Shiny application.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-r-python-julia/deploy-a-shiny-application.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux déployer une application Shiny.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
