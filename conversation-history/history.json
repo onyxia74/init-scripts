@@ -10778,5 +10778,22 @@
     "question": "Comment utiliser un agent de code dans VS Code ou RStudio ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour exposer un port pour votre application dans Onyxia, la méthode dépend de si vous utilisez un service préconfiguré ou si vous développez votre propre application (comme un serveur web ou une API).\n\n### 1. Pour les applications personnalisées (Web/API/Dashboards)\nSi vous développez une application (par exemple, en utilisant Streamlit, FastAPI ou Flask) et que vous souhaitez qu'elle soit accessible via une URL, vous devez utiliser un environnement de développement comme **VS Code** ou **Jupyter**.\n\nLa meilleure pratique consiste à utiliser un **script d'initialisation (init script)** pour :\n1.  **Définir l'hôte sur `0.0.0.0`** : Cela garantit que l'application écoute sur toutes les interfaces réseau à l'intérieur du conteneur, permettant ainsi à l'ingress d'Onyxia d'acheminer le trafic vers elle.\n2.  **Définir le port** : Assurez-vous que votre application s'exécute sur un port spécifique (par exemple, `8501` pour Streamlit, `8000` pour FastAPI).\n3.  **Utiliser une commande de démarrage (Start Command)** : Configurez le service pour qu'il exécute automatiquement la commande de lancement.\n\n### 2. Pour les services existants\nLa plupart des services standards d'Onyxia (comme Jupyter ou RStudio) sont déjà configurés pour exposer leur interface web principale via le système d'ingress de la plateforme. Vous n'avez pas besoin d'exposer manuellement les ports pour ceux-ci.\n\n### Exemple : Exposer une application Streamlit dans VS Code\nSi vous demandiez un environnement VS Code pour une application Streamlit, la configuration inclurait automatiquement une `start_command` telle que :\n`streamlit run app.py --server.address=0.0.0.0 --server.port=8501`\n\nCela indique à la plateforme exactement quel port mapper vers l'URL externe.\n\n**Si vous avez une application ou un service spécifique en tête, n'hésitez pas à me le faire savoir afin que je puisse vous fournir la configuration exacte.**",
+    "created_at": "2026-08-28T11:44:27.080249+00:00",
+    "event_id": "bc1b9421-4706-4083-bbb0-441f3167ab1c",
+    "interaction_id": "de4a6545-bf36-4350-bdf2-f845b70451ab",
+    "metadata": {
+      "agent_prompt": "Comment exposer un port de mon application ?",
+      "agent_prompt_english": "How to expose a port of my application?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment exposer un port de mon application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
