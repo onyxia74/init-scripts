@@ -6011,5 +6011,22 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour connecter votre service Onyxia à GitHub, la meilleure approche consiste à utiliser un **script d'initialisation (init script)**. Cela vous permet de cloner automatiquement un dépôt, de configurer la structure de votre projet ou d'installer des dépendances spécifiques dès le démarrage de votre service.\n\nSelon votre objectif, je peux préparer un service pour vous qui :\n1. **Clone un dépôt spécifique** dans votre répertoire de travail.\n2. **Configure un environnement de développement** (par exemple, VS Code ou Jupyter) avec les bibliothèques et les fichiers de projet nécessaires.\n3. **Configure les identifiants Git** ou les clés SSH si vous avez besoin de renvoyer des modifications vers GitHub.\n\nAfin de vous fournir une configuration prête à l'emploi, pourriez-vous préciser :\n- **Quel service** vous souhaitez utiliser (par exemple, VS Code, Jupyter, RStudio) ?\n- **L'URL du dépôt GitHub** auquel vous souhaitez vous connecter ?\n- **Ce que vous souhaitez faire** une fois connecté (par exemple, « Je veux cloner un projet Python et commencer à travailler immédiatement » ou « Je veux mettre en place un tableau de bord web à partir d'un dépôt ») ?\n\nUne fois que vous aurez fourni ces détails, je générerai la configuration pour vous.",
+    "created_at": "2026-08-28T09:14:15.180007+00:00",
+    "event_id": "aaf551c5-e4c5-46f7-a3fb-848d719ee932",
+    "interaction_id": "05a68cd2-9b95-4127-a193-af77a99e1f1b",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "agent_prompt_english": "How do I connect my service to GitHub?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
