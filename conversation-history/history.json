@@ -2854,5 +2854,33 @@
     "question": "Comment exposer un port de mon application ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour connecter une application Shiny à une base de données PostgreSQL dans Onyxia, j'ai préparé un environnement RStudio équipé des packages R nécessaires (`DBI`, `RPostgres` et `shiny`) ainsi qu'un script de démarrage. Le script inclut un modèle `app.R` pour vous aider à débuter avec la logique de connexion. \\n\\nUne fois le service lancé, vous devrez fournir vos identifiants PostgreSQL (hôte, nom de la base de données, utilisateur et mot de passe). Vous pouvez le faire en définissant des variables d'environnement dans votre session ou en utilisant un Secret Kubernetes si vous disposez des permissions appropriées.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.5&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Frstudio-r-python-julia%2Fconnect-shiny-to-postgresql.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.5\"\n    },\n    \"selected_parameters\": {\n      \"postgresql.secretName\": {\n        \"value\": \"\",\n        \"reason\": \"L'utilisateur devra fournir ses propres identifiants PostgreSQL via des variables d'environnement ou un secret une fois le service en cours d'exécution.\"\n      },\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/connect-shiny-to-postgresql.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T08:25:08.011496+00:00",
+    "event_id": "8b0efc37-383b-47de-b461-4d45cc6849e8",
+    "interaction_id": "908586b9-91ae-4c19-8ac3-97ac9d49e7ef",
+    "metadata": {
+      "agent_prompt": "Comment connecter une application Shiny à une base PostgreSQL ?",
+      "agent_prompt_english": "How to connect a Shiny application to a PostgreSQL database?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/rstudio-r-python-julia/connect-shiny-to-postgresql.sh"
+          }
+        },
+        "version": "2.5.5"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter une application Shiny à une base PostgreSQL ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
