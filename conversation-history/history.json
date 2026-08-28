@@ -3374,5 +3374,40 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous proposer la méthode correcte d'injection de secrets, j'ai besoin de savoir quel service vous utilisez actuellement ou prévoyez d'utiliser. L'approche diffère selon l'environnement (par exemple, l'utilisation de variables d'environnement dans un notebook Jupyter, un fichier .env dans VS Code, ou des Kubernetes Secrets pour une application déployée).",
+    "created_at": "2026-08-28T08:34:06.279254+00:00",
+    "event_id": "55efb688-829f-4c3e-ab73-5c271f76306f",
+    "interaction_id": "3fced696-618d-4b49-b3b9-e613f2a5e67f",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "agent_prompt_english": "How to inject my secrets into the application?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_name",
+        "options": [
+          "VS Code (pour le développement local avec des fichiers .env)",
+          "Jupyter (pour les variables d'environnement de notebook)",
+          "Une application web/API personnalisée (pour Kubernetes Secrets/Variables d'environnement)"
+        ],
+        "options_english": [
+          "VS Code (for local development with .env files)",
+          "Jupyter (for notebook environment variables)",
+          "A custom web application/API (for Kubernetes Secrets/Environment Variables)"
+        ],
+        "original_request": "",
+        "original_request_english": "How to inject my secrets into the application?",
+        "question": "Pour vous proposer la méthode correcte d'injection de secrets, j'ai besoin de savoir quel service vous utilisez actuellement ou prévoyez d'utiliser. L'approche diffère selon l'environnement (par exemple, l'utilisation de variables d'environnement dans un notebook Jupyter, un fichier .env dans VS Code, ou des Kubernetes Secrets pour une application déployée).",
+        "question_english": "To provide the correct method for injecting secrets, I need to know which service you are currently using or planning to use. The approach differs depending on the environment (e.g., using environment variables in a Jupyter notebook, a .env file in VS Code, or Kubernetes Secrets for a deployed application).",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
