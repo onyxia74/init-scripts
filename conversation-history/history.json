@@ -3979,5 +3979,37 @@
     "question": "Comment lire les événements Kubernetes associés à mon service ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Je ne peux pas fournir d'accès administratif direct au cluster Kubernetes interne. Cependant, je peux vous proposer un environnement VS Code préconfiguré avec les outils Kubernetes (kubectl) afin que vous puissiez interagir avec le cluster depuis votre espace de travail.\",\n  \"config_link\": \"\",\n  \"json_payload\": {\n    \"services\": [\n      {\n        \"service\": {\n          \"chart_id\": \"vscode-python\",\n          \"catalog_id\": \"development\",\n          \"version\": \"latest\"\n        },\n        \"selected_parameters\": {\n          \"init.personalInit\": {\n            \"value\": \"https://raw.githubusercontent.com/onyxia-scidat/onyxia-init-scripts/main/vscode-python-k8s.sh\",\n            \"reason\": \"Pré-installation de kubectl et des extensions Kubernetes pour l'interaction avec le cluster\"\n          }\n        },\n        \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia-scidat%2Fonyxia-init-scripts%2Fmain%2Fvscode-python-k8s.sh%C2%BB\"\n      }\n    ]\n  },\n  \"config_links\": [\n    {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"development\",\n      \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia-scidat%2Fonyxia-init-scripts%2Fmain%2Fvscode-python-k8s.sh%C2%BB\"\n    }\n  ]\n}\n```",
+    "created_at": "2026-08-28T08:42:00.704766+00:00",
+    "event_id": "bd09ea79-253e-475f-ad2b-0828a5e9e19f",
+    "interaction_id": "c619ab99-7175-4a27-8921-16420bad5ece",
+    "metadata": {
+      "agent_prompt": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+      "agent_prompt_english": "How to access the internal Kubernetes cluster of the SSP Cloud?",
+      "clarification": {},
+      "launcher_request": {
+        "services": [
+          {
+            "catalog_id": "development",
+            "chart_id": "vscode-python",
+            "overrides": {
+              "init.personalInit": {
+                "reason": "Pre-installing kubectl and kubernetes extensions for cluster interaction",
+                "value": "https://raw.githubusercontent.com/onyxia-scidat/onyxia-init-scripts/main/vscode-python-k8s.sh"
+              }
+            },
+            "version": "latest"
+          }
+        ]
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
