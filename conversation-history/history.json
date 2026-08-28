@@ -6315,5 +6315,40 @@
     "question": "Configure mon service VSCode avec le thème Dark Visual Studio.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "La mémoire demandée (220 GB) dépasse la limite maximale autorisée pour ce service (200 Gi). Souhaitez-vous utiliser le maximum disponible (200 Gi) ou spécifier un montant différent ?",
+    "created_at": "2026-08-28T09:18:56.580941+00:00",
+    "event_id": "531490b5-8d24-444d-8b40-a9b0fddd17aa",
+    "interaction_id": "f13cd33a-7a54-4f02-99ed-f2bd8c573f2e",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+      "agent_prompt_english": "Can you launch a service with 220 GB of memory and 4 CPU?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "memory_value",
+        "options": [
+          "200Gi",
+          "100Gi",
+          "50Gi"
+        ],
+        "options_english": [
+          "200Gi",
+          "100Gi",
+          "50Gi"
+        ],
+        "original_request": "",
+        "original_request_english": "Can you launch a service with 220 GB of memory and 4 CPU?",
+        "question": "La mémoire demandée (220 GB) dépasse la limite maximale autorisée pour ce service (200 Gi). Souhaitez-vous utiliser le maximum disponible (200 Gi) ou spécifier un montant différent ?",
+        "question_english": "The requested memory (220 GB) exceeds the maximum allowed limit for this service (200 Gi). Would you like to use the maximum available (200 Gi) or specify a different amount?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
