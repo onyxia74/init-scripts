@@ -5295,5 +5295,22 @@
     "question": "Comment mettre à jour mon application après une modification du code ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je suis un architecte de données expert pour la plateforme Onyxia SSPCloud, spécialisé dans la configuration de services et d'environnements via des charts Helm.\n\nConcernant votre question sur les **étapes de déploiement en production**, il est important de distinguer le **déploiement de la plateforme Onyxia** (au niveau de l'infrastructure) et le **déploiement d'un service/application au sein d'Onyxia** (au niveau de l'utilisateur).\n\n### 1. Déploiement de la plateforme Onyxia (Niveau Infrastructure)\nLa plateforme Onyxia elle-même est généralement déployée sur un cluster Kubernetes (comme AWS EKS, Google GKE ou Azure AKS) en utilisant Helm. Les étapes de déploiement en production impliquent généralement :\n* **Provisionnement de l'infrastructure :** Mise en place du cluster Kubernetes, des VPC et des rôles IAM.\n* **Gestion des secrets :** Configuration de gestionnaires de secrets externes (comme HashiCorp Vault ou AWS Secrets Manager) pour gérer les identifiants sensibles.\n* **Installation de Helm :** Déploiement des composants de base d'Onyxia (API, UI, Launcher, etc.) en utilisant des fichiers `values.yaml` spécifiques à la production qui définissent la haute disponibilité (HA), les limites de ressources et les contrôleurs d'ingress.\n* **Couche de persistance :** Configuration des persistent volume claims (PVCs) avec des classes de stockage haute performance (ex: EBS, Azure Disk) pour garantir la durabilité des données.\n* **Pipeline CI/CD :** Utilisation d'outils comme ArgoCD ou FluxCD pour implémenter le GitOps, garantissant que l'état du cluster correspond au dépôt.\n\n### 2. Déploiement de votre application/service (Niveau Utilisateur)\nSi vous demandez comment déployer une application ou un service de science des données spécifique *en utilisant* Onyxia, le flux de travail est différent. Au sein d'Onyxia, le \"déploiement\" fait généralement référence à la préparation d'un environnement reproductible. Les étapes que je facilite sont :\n* **Sélection du service :** Identification du chart Helm correct (ex: `jupyter-python`, `vscode-python`, ou une base de données comme `postgresql`).\n* **Configuration de l'environnement :** Définition de paramètres spécifiques tels que les besoins en RAM, CPU et stockage.\n* **Initialisation (Le modèle \"Init Script\") :** Pour rendre un service \"prêt pour la production\" pour une tâche spécifique, nous utilisons un **script d'initialisation (init script)**. Ce script automatise :\n    * L'installation de packages Python/R/Conda spécifiques.\n    * La création de structures de répertoires de projet (`src/`, `data/`, `models/`).\n    * La configuration des fichiers de paramètres (ex: `.vscode/settings.json`).\n    * Le déploiement de squelettes d'applications (ex: une application FastAPI ou Streamlit).\n* **Validation :** S'assurer que la configuration respecte le schéma Helm pour éviter les échecs de déploiement.\n\n**Si vous avez un service ou une application spécifique en tête que vous souhaiteriez configurer pour un environnement de type production, veuillez me communiquer les exigences (ex: \"J'ai besoin d'un environnement Python avec FastAPI et PostgreSQL pour une API web\"), et je générerai la configuration exacte pour vous.**",
+    "created_at": "2026-08-28T09:04:35.941879+00:00",
+    "event_id": "eda4d7fb-d88e-4676-acef-4826f8d81065",
+    "interaction_id": "8eca8910-d712-4f81-8403-8082a6dcb9be",
+    "metadata": {
+      "agent_prompt": "Explique-moi les étapes de mise en production.",
+      "agent_prompt_english": "Explain the production deployment steps to me.",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Explique-moi les étapes de mise en production.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
