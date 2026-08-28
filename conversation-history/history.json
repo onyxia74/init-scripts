@@ -5267,5 +5267,33 @@
     "question": "Comment consulter les logs de l’application déployée ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour mettre à jour votre application après une modification de code dans Onyxia, le processus dépend du type d'application que vous exécutez. Pour illustrer cela, j'ai préparé un environnement VS Code avec une application web Streamlit. \\n\\nDans cet environnement, vous pouvez modifier le fichier `app.py` directement dans l'éditeur. Comme Streamlit est configuré avec le rechargement automatique (auto-reload), le simple fait d'enregistrer le fichier (`Ctrl+S` ou `Cmd+S`) permettra à l'interface web de détecter le changement et de s'actualiser automatiquement. Pour d'autres types d'applications, vous devrez peut-être redémarrer manuellement le processus dans le terminal intégré (par exemple, en arrêtant le processus actuel avec `Ctrl+C` et en relançant la commande de démarrage).\\n\\nL'environnement préparé comprend :\\n- Un squelette d'application Python/Streamlit.\\n- Un fichier `requirements.txt` pour les dépendances.\\n- Un fichier `README.md` avec des instructions.\\n- Une commande de démarrage préconfigurée pour lancer l'application immédiatement.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fdemonstrate-code-modification-and-auto-reload-with-a-streamlit-app.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/demonstrate-code-modification-and-auto-reload-with-a-streamlit-app.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T09:04:21.404307+00:00",
+    "event_id": "fdf18b7d-7569-4fff-a736-5b8660908550",
+    "interaction_id": "7c575cfb-5671-4adb-82f9-20457a34f98c",
+    "metadata": {
+      "agent_prompt": "Comment mettre à jour mon application après une modification du code ?",
+      "agent_prompt_english": "How do I update my application after a code modification?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/demonstrate-code-modification-and-auto-reload-with-a-streamlit-app.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment mettre à jour mon application après une modification du code ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
