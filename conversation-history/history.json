@@ -11235,5 +11235,40 @@
     "question": "Explique-moi les étapes de mise en production.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour garantir que vos données soient sauvegardées, je dois configurer les paramètres de persistance pour votre service spécifique. Pourriez-vous préciser quel service vous souhaitez utiliser (ex: Jupyter, VS Code, RStudio) et de quel espace de stockage vous avez besoin (ex: 10Gi, 50Gi, 100Gi) ?",
+    "created_at": "2026-08-28T11:52:19.997933+00:00",
+    "event_id": "e48dd42e-1243-44fd-b777-152455fed2e2",
+    "interaction_id": "2a14581b-92f0-466f-bdef-723bb3cd696d",
+    "metadata": {
+      "agent_prompt": "Comment sauvegarder les données produites par mon application ?",
+      "agent_prompt_english": "How can I save the data produced by my application?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type, storage_size",
+        "options": [
+          "Jupyter",
+          "VS Code",
+          "RStudio"
+        ],
+        "options_english": [
+          "Jupyter",
+          "VS Code",
+          "RStudio"
+        ],
+        "original_request": "",
+        "original_request_english": "How can I save the data produced by my application?",
+        "question": "Pour garantir que vos données soient sauvegardées, je dois configurer les paramètres de persistance pour votre service spécifique. Pourriez-vous préciser quel service vous souhaitez utiliser (ex: Jupyter, VS Code, RStudio) et de quel espace de stockage vous avez besoin (ex: 10Gi, 50Gi, 100Gi) ?",
+        "question_english": "To ensure your data is saved, I need to configure the persistence settings for your specific service. Could you please specify which service you would like to use (e.g., Jupyter, VS Code, RStudio) and how much storage space you require (e.g., 10Gi, 50Gi, 100Gi)?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sauvegarder les données produites par mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
