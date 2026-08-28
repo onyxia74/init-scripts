@@ -7204,5 +7204,27 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs de vos applications Spark, vous pouvez utiliser le **Spark History Server**. Ce service fournit une interface web pour examiner l'historique d'exécution et les logs de vos jobs Spark. J'ai préparé une configuration pour le service Spark History Server pour vous.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/spark-history?name=spark-history&version=1.0.4\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"spark-history\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"1.0.4\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-28T09:30:26.561891+00:00",
+    "event_id": "2b3cf19e-594e-4eab-babd-f7e9ac8a86f8",
+    "interaction_id": "183c3688-f009-452e-90e1-0f5c842d6b14",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "agent_prompt_english": "How can I consult the logs of the deployed application?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "spark-history",
+        "version": "1.0.4"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
