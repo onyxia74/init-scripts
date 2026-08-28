@@ -11168,5 +11168,27 @@
     "question": "Je veux créer un tableau de bord avec Metabase.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour consulter les logs de votre application déployée, la méthode la plus polyvalente consiste à utiliser un environnement de développement avec un terminal. J'ai configuré VS Code pour vous, ce qui vous permet d'accéder au terminal pour visualiser la sortie des processus en temps réel (stdout/stderr) à l'aide de commandes comme `tail -f` ou de parcourir directement les fichiers de logs de l'application via l'explorateur de fichiers. Si vous recherchez spécifiquement les logs d'une application Spark, vous pouvez également utiliser le service Spark History Server.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=latest\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"latest\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-28T11:50:51.667193+00:00",
+    "event_id": "7e63b7dd-a69f-45c0-afcf-ce8ded27e78d",
+    "interaction_id": "7348b01f-335b-4627-993b-7c4b9c33fa75",
+    "metadata": {
+      "agent_prompt": "Comment consulter les logs de l’application déployée ?",
+      "agent_prompt_english": "How can I consult the logs of the deployed application?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "latest"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment consulter les logs de l’application déployée ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
