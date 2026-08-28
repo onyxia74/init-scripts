@@ -9263,5 +9263,32 @@
     "question": "Explique-moi les étapes de mise en production.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous fournir la configuration correcte pour la sauvegarde de vos données, pourriez-vous préciser quel service vous utilisez (par exemple, JupyterLab, VS Code, RStudio, ou une base de données comme PostgreSQL) ? De plus, devez-vous demander une quantité spécifique d'espace de stockage (par exemple, 10Gi, 50Gi) ?",
+    "created_at": "2026-08-28T10:02:38.387877+00:00",
+    "event_id": "fd126f71-cf95-48f1-a984-cd53cfecc5ca",
+    "interaction_id": "718cd9a7-bba4-4418-956c-e2de4cea3deb",
+    "metadata": {
+      "agent_prompt": "Comment sauvegarder les données produites par mon application ?",
+      "agent_prompt_english": "How can I save the data produced by my application?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_name, storage_size",
+        "options": [],
+        "options_english": [],
+        "original_request": "",
+        "original_request_english": "How can I save the data produced by my application?",
+        "question": "Pour vous fournir la configuration correcte pour la sauvegarde de vos données, pourriez-vous préciser quel service vous utilisez (par exemple, JupyterLab, VS Code, RStudio, ou une base de données comme PostgreSQL) ? De plus, devez-vous demander une quantité spécifique d'espace de stockage (par exemple, 10Gi, 50Gi) ?",
+        "question_english": "To provide you with the correct configuration for saving your data, could you please specify which service you are using (e.g., JupyterLab, VS Code, RStudio, or a database like PostgreSQL)? Additionally, do you need to request a specific amount of storage space (e.g., 10Gi, 50Gi)?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment sauvegarder les données produites par mon application ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
