@@ -11917,5 +11917,40 @@
     "question": "Comment accéder au cluster Kubernetes interne du SSP Cloud ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Pour vous aider à vous connecter à GitHub, pourriez-vous préciser quel service vous souhaitez utiliser (par exemple, VS Code, Jupyter, RStudio) et fournir l'URL du dépôt GitHub que vous souhaitez cloner ?",
+    "created_at": "2026-08-28T12:01:47.258672+00:00",
+    "event_id": "ad3e1ce9-32f5-4849-8c05-06ec499ee0be",
+    "interaction_id": "4bf62ae5-b1f7-4c64-861f-65fdb2189019",
+    "metadata": {
+      "agent_prompt": "Comment connecter mon service à GitHub ?",
+      "agent_prompt_english": "How do I connect my service to GitHub?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_type, github_repo_url",
+        "options": [
+          "vscode-python",
+          "jupyter-python",
+          "rstudio-r-python-julia"
+        ],
+        "options_english": [
+          "vscode-python",
+          "jupyter-python",
+          "rstudio-r-python-julia"
+        ],
+        "original_request": "",
+        "original_request_english": "How do I connect my service to GitHub?",
+        "question": "Pour vous aider à vous connecter à GitHub, pourriez-vous préciser quel service vous souhaitez utiliser (par exemple, VS Code, Jupyter, RStudio) et fournir l'URL du dépôt GitHub que vous souhaitez cloner ?",
+        "question_english": "To help you connect to GitHub, could you please specify which service you would like to use (e.g., VS Code, Jupyter, RStudio) and provide the URL of the GitHub repository you want to clone?",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment connecter mon service à GitHub ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
