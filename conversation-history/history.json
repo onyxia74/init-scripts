@@ -54,5 +54,38 @@
     "question": "Peux-tu préinstaller mes extensions VS Code au démarrage notamment Java et pandas ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour ajouter des variables d'environnement, utilisez le paramètre `extraEnvVars`. Ce paramètre attend une liste d'objets, chacun contenant un `name` et un `value`. J'ai préparé une configuration Jupyter Python ci-dessous ; vous pouvez l'utiliser comme modèle en ajoutant vos variables souhaitées à la section `extraEnvVars`.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.2&extraEnvVars=%C2%AB%5B%7B%22name%22%3A%22EXAMPLE_VAR%22%2C%22value%22%3A%22example_value%22%7D%5D%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.2\"\n    },\n    \"selected_parameters\": {\n      \"extraEnvVars\": {\n        \"value\": [\n          {\n            \"name\": \"EXAMPLE_VAR\",\n            \"value\": \"example_value\"\n          }\n        ],\n        \"reason\": \"démontrant comment ajouter des variables d'environnement\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T12:04:56.115060+00:00",
+    "event_id": "87860dde-f462-4d85-8a72-53391a58dfe2",
+    "interaction_id": "1aa18c0c-0582-44c6-a347-61b587437ada",
+    "metadata": {
+      "agent_prompt": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+      "agent_prompt_english": "How to add environment variables when starting a service?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "overrides": {
+          "extraEnvVars": {
+            "reason": "demonstrating how to add environment variables",
+            "value": [
+              {
+                "name": "EXAMPLE_VAR",
+                "value": "example_value"
+              }
+            ]
+          }
+        },
+        "version": "2.5.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment ajouter des variables d’environnement au lancement d’un service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
