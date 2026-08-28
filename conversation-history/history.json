@@ -7368,5 +7368,33 @@
     "question": "Comment injecter mes secrets dans l’application ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour déployer une application Streamlit, j'ai préparé un environnement Python dans VS Code équipé d'un squelette Streamlit prêt à l'emploi. L'environnement comprend un fichier d'exemple `app.py`, un fichier `requirements.txt` et une commande de lancement configurée pour démarrer le serveur automatiquement. Une fois le service démarré, il vous suffit d'exécuter l'application pour voir votre tableau de bord.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fonyxia74%2Finit-scripts%2Fmain%2Finit-scripts%2Fvscode-python%2Fdeploy-a-streamlit-application.sh%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"init.personalInit\": {\n        \"value\": \"https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deploy-a-streamlit-application.sh\",\n        \"reason\": \"Modification explicitement demandée.\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T09:32:35.406602+00:00",
+    "event_id": "8cf7828e-d9a9-4730-969e-0cae8fdcc38a",
+    "interaction_id": "77440fbd-d540-4501-afb9-4c9025ead653",
+    "metadata": {
+      "agent_prompt": "Comment déployer une application Streamlit ?",
+      "agent_prompt_english": "How to deploy a Streamlit application?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "init.personalInit": {
+            "reason": "Explicitly requested change.",
+            "value": "https://raw.githubusercontent.com/onyxia74/init-scripts/main/init-scripts/vscode-python/deploy-a-streamlit-application.sh"
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment déployer une application Streamlit ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
