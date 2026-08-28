@@ -328,5 +328,27 @@
     "question": "Je veux faire de la dataviz. Quel service recommandes tu ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai préparé la configuration pour Neo4j. Vous pouvez lancer le service avec les paramètres par défaut, qui incluent un volume persistant de 10Gi et la version standard de Neo4j 5.26.4.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/databases/neo4j?name=neo4j&version=1.0.8\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"neo4j\",\n      \"catalog_id\": \"databases\",\n      \"version\": \"1.0.8\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-28T12:07:47.424498+00:00",
+    "event_id": "b8c17602-226d-4e4a-aafb-22a2b7a5c62e",
+    "interaction_id": "f9cb3469-6966-4df7-b772-46bec59c9fa7",
+    "metadata": {
+      "agent_prompt": "Je veux utiliser Neo4j dans Onyxia.",
+      "agent_prompt_english": "I want to use Neo4j in Onyxia.",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "databases",
+        "chart_id": "neo4j",
+        "version": "1.0.8"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux utiliser Neo4j dans Onyxia.",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
