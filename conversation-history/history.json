@@ -3951,5 +3951,33 @@
     "question": "Comment ajouter des secrets dans mon déploiement ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour lire les événements Kubernetes associés à votre service, vous pouvez utiliser l'outil de ligne de commande `kubectl` directement depuis le terminal de votre environnement. J'ai configuré une instance VS Code avec l'accès Kubernetes activé. Une fois le service lancé, vous pourrez ouvrir un terminal et utiliser des commandes telles que `kubectl get pods`, `kubectl describe pod %C2%ABpod-name%C2%BB`, ou `kubectl get events` pour inspecter le cycle de vie et les événements de votre service.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {\n      \"kubernetes.enabled\": {\n        \"value\": true,\n        \"reason\": \"l'utilisateur souhaite lire les événements kubernetes\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-08-28T08:40:59.325766+00:00",
+    "event_id": "6c33323d-1f6a-455f-8076-eaf879eedbc5",
+    "interaction_id": "00fa9800-2ec0-4ad2-b251-7ec8dd309739",
+    "metadata": {
+      "agent_prompt": "Comment lire les événements Kubernetes associés à mon service ?",
+      "agent_prompt_english": "How to read the Kubernetes events associated with my service?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "kubernetes.enabled": {
+            "reason": "user wants to read kubernetes events",
+            "value": true
+          }
+        },
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment lire les événements Kubernetes associés à mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
