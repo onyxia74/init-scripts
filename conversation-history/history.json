@@ -5153,5 +5153,22 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Erreur : La réponse JSON du LLM ne contient pas de configuration de service exploitable.\n\nAucune configuration locale n'a été reconstruite automatiquement. Veuillez relancer la demande ou vérifier le modèle LLM utilisé.\n\nRéponse reçue du LLM :\n\n```text\nI cannot provide a specific configuration to increase your storage without knowing which service you are currently using and the amount of storage you wish to allocate. Different services use different Helm parameter paths for persistence.\n\nTo assist you, please specify:\n1. **The service you are using** (e.g., Jupyter, VS Code, RStudio, etc.).\n2. **The desired storage size** (e.g., 50Gi, 100Gi).\n\nOnce you provide these details, I will generate the exact configuration for you.\n\n```json\n{\n  \"answer\": \"To provide you with the correct configuration to increase your storage, I need to know which service you are using and how much storage you require. Please specify the service name (e.g., Jupyter, VS Code) and the desired size (e.g., 50Gi).\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```\n```\n\nSortie brute du LLM après épuisement des relances :\n\n````text\nI cannot provide a specific configuration to increase your storage without knowing which service you are currently using and the amount of storage you wish to allocate. Different services use different Helm parameter paths for persistence.\n\nTo assist you, please specify:\n1. **The service you are using** (e.g., Jupyter, VS Code, RStudio, etc.).\n2. **The desired storage size** (e.g., 50Gi, 100Gi).\n\nOnce you provide these details, I will generate the exact configuration for you.\n\n```json\n{\n  \"answer\": \"To provide you with the correct configuration to increase your storage, I need to know which service you are using and how much storage you require. Please specify the service name (e.g., Jupyter, VS Code) and the desired size (e.g., 50Gi).\",\n  \"config_link\": \"\",\n  \"json_payload\": {}\n}\n```\n````",
+    "created_at": "2026-08-28T09:00:44.834310+00:00",
+    "event_id": "ca37aac3-ae73-4543-91d8-f0576791ef23",
+    "interaction_id": "8f72a651-cd30-42f9-873d-5f790ecfe8c8",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "agent_prompt_english": "How can I increase the available storage in my service?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "llm_validation_error",
+    "type": "interaction"
   }
 ]
