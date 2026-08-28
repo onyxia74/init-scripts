@@ -6350,5 +6350,40 @@
     "question": "Peux-tu lancer un service avec 220 Go de mémoire et 4 CPU ?",
     "status": "clarification_requested",
     "type": "interaction"
+  },
+  {
+    "answer": "Quel service souhaitez-vous lancer avec 65 Go de mémoire et 4 CPU ? (ex: Jupyter, VS Code, RStudio, etc.)",
+    "created_at": "2026-08-28T09:19:28.563673+00:00",
+    "event_id": "ac4aba5b-ea39-472a-bc86-543564cfc99b",
+    "interaction_id": "f1bebe32-d168-4cbe-a673-d3c6b2b90181",
+    "metadata": {
+      "agent_prompt": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
+      "agent_prompt_english": "Can you launch a service with 65 GB of memory and 4 CPUs?",
+      "clarification": {
+        "clarification_required": true,
+        "missing": "service_id",
+        "options": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "options_english": [
+          "jupyter-python",
+          "vscode-python",
+          "rstudio-r-python-julia"
+        ],
+        "original_request": "",
+        "original_request_english": "Can you launch a service with 65 GB of memory and 4 CPUs?",
+        "question": "Quel service souhaitez-vous lancer avec 65 Go de mémoire et 4 CPU ? (ex: Jupyter, VS Code, RStudio, etc.)",
+        "question_english": "Which service would you like to launch with 65 GB of memory and 4 CPUs? (e.g., Jupyter, VS Code, RStudio, etc.)",
+        "usage": "Display this question to the user and wait for the answer. Do not generate a configuration while the required clarification is missing."
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Peux-tu lancer un service avec 65 Go de mémoire et 4 CPU ?",
+    "status": "clarification_requested",
+    "type": "interaction"
   }
 ]
