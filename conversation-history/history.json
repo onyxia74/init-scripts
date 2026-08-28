@@ -7112,5 +7112,22 @@
     "question": "Réserve une ressource GPU pendant une heure.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "Je ne peux pas vous fournir de configuration spécifique pour augmenter votre stockage sans savoir quel service vous utilisez et la quantité de stockage dont vous avez besoin.\n\nPour vous aider, veuillez préciser :\n1. **Le service que vous utilisez** (ex: Jupyter, VS Code, RStudio, etc.).\n2. **La taille de stockage souhaitée** (ex: `50Gi`, `100Gi`).\n\nUne fois ces détails fournis, je générerai la configuration exacte pour vous.",
+    "created_at": "2026-08-28T09:27:20.285465+00:00",
+    "event_id": "6cf6bc25-f11d-48e2-87f9-5dc7504091d6",
+    "interaction_id": "1100f979-c1ca-4e4e-a267-3f788ff2bcbe",
+    "metadata": {
+      "agent_prompt": "Comment augmenter le stockage disponible dans mon service ?",
+      "agent_prompt_english": "How can I increase the available storage in my service?",
+      "clarification": {},
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment augmenter le stockage disponible dans mon service ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
