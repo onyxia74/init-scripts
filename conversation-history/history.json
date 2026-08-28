@@ -11313,5 +11313,27 @@
     "question": "Comment connecter mon application à PostgreSQL ?",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"Pour injecter des secrets dans votre application Onyxia, vous pouvez utiliser des variables d'environnement via `extraEnvVars`, vous intégrer directement avec HashiCorp Vault en utilisant les paramètres `vault` (la méthode la plus sécurisée), ou référencer des secrets Kubernetes existants pour des services spécifiques comme Git ou S3. Vous pouvez également utiliser un script d'initialisation personnel pour configurer des fichiers de configuration locaux au démarrage.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.2\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.2\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-08-28T11:52:58.881657+00:00",
+    "event_id": "5393377b-fdab-469a-b925-aac0c0b8ea2e",
+    "interaction_id": "e29099b2-b9d0-49f5-82ae-f6d7ad6a26fc",
+    "metadata": {
+      "agent_prompt": "Comment injecter mes secrets dans l’application ?",
+      "agent_prompt_english": "How to inject my secrets into the application?",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "version": "2.6.2"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Comment injecter mes secrets dans l’application ?",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
