@@ -528,5 +528,37 @@
     "question": "Je veux un environnement VS Code.",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré une instance VS Code avec 10 CPU comme demandé. La configuration définit à la fois le CPU garanti (requests) et le CPU maximum (limits) à 10000m (10 CPU).\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.4&s3=region-79669f20&resources.requests.cpu=%C2%AB10000m%C2%BB&resources.limits.cpu=%C2%AB10000m%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.4\"\n    },\n    \"selected_parameters\": {\n      \"resources.requests.cpu\": {\n        \"value\": \"10000m\",\n        \"reason\": \"l'utilisateur a demandé 10 CPU\"\n      },\n      \"resources.limits.cpu\": {\n        \"value\": \"10000m\",\n        \"reason\": \"l'utilisateur a demandé 10 CPU\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-09-17T12:55:19.921129+00:00",
+    "event_id": "12f1ec4a-16ea-4111-9d39-7d799542271e",
+    "interaction_id": "2893d023-6c1b-4aa7-942e-42a655b9090d",
+    "metadata": {
+      "agent_prompt": "Je veux un Vscode avec 10 CPU",
+      "agent_prompt_english": "I want a Vscode with 10 CPU",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.limits.cpu": {
+            "reason": "user requested 10 CPU",
+            "value": "10000m"
+          },
+          "resources.requests.cpu": {
+            "reason": "user requested 10 CPU",
+            "value": "10000m"
+          }
+        },
+        "version": "2.6.4"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un Vscode avec 10 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
