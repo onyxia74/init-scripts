@@ -725,5 +725,33 @@
     "question": "Je veux faire du R",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai configuré votre environnement Python VS Code avec 10 CPU (10000m) comme demandé.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=vscode-python&version=2.6.4&s3=region-79669f20&resources.requests.cpu=%C2%AB10000m%C2%BB\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"vscode-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.6.4\"\n    },\n    \"selected_parameters\": {\n      \"resources.requests.cpu\": {\n        \"value\": \"10000m\",\n        \"reason\": \"l'utilisateur a demandé 10 CPU\"\n      }\n    }\n  }\n}\n```",
+    "created_at": "2026-09-21T09:10:52.871542+00:00",
+    "event_id": "c2cb9e55-1170-4f78-89a3-ca7d970935fb",
+    "interaction_id": "37aa37b2-e7bb-4017-a1b9-afe4e662b9ed",
+    "metadata": {
+      "agent_prompt": "Je veux un VScode python avec 10 CPU",
+      "agent_prompt_english": "I want a VSCode python with 10 CPU",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "vscode-python",
+        "overrides": {
+          "resources.requests.cpu": {
+            "reason": "user requested 10 CPU",
+            "value": "10000m"
+          }
+        },
+        "version": "2.6.4"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux un VScode python avec 10 CPU",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
