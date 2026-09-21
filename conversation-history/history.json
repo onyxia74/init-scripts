@@ -753,5 +753,27 @@
     "question": "Je veux un VScode python avec 10 CPU",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai préparé pour vous un environnement JupyterLab avec Python. Il comprend une collection standard de packages de science des données et est prêt à l'emploi.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=jupyter-python&version=2.5.4\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"jupyter-python\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.4\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-09-21T10:30:13.257769+00:00",
+    "event_id": "98375412-c556-4c9e-9fa9-58e61c2772b3",
+    "interaction_id": "f67be38e-194c-4696-bf8f-d4c851bc1cec",
+    "metadata": {
+      "agent_prompt": "Je veux faire du python",
+      "agent_prompt_english": "I want to do python",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "jupyter-python",
+        "version": "2.5.4"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire du python",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
