@@ -907,5 +907,27 @@
     "question": "Je veux un VScode avec 10 CPU",
     "status": "answered",
     "type": "interaction"
+  },
+  {
+    "answer": "```json\n{\n  \"answer\": \"J'ai préparé votre environnement R. Vous pouvez utiliser l'IDE RStudio, qui est préconfiguré avec R, Python et Julia, ainsi qu'une collection standard de packages de science des données.\",\n  \"config_link\": \"https://datalab.sspcloud.fr/launcher/ide/rstudio-r-python-julia?name=rstudio-r-python-julia&version=2.5.8\",\n  \"json_payload\": {\n    \"service\": {\n      \"chart_id\": \"rstudio-r-python-julia\",\n      \"catalog_id\": \"ide\",\n      \"version\": \"2.5.8\"\n    },\n    \"selected_parameters\": {}\n  }\n}\n```",
+    "created_at": "2026-09-23T10:18:13.696565+00:00",
+    "event_id": "765c41f0-89f3-4dac-9bf4-b657880a2cfa",
+    "interaction_id": "60da5764-9d2c-494b-bdf8-2505d0c63015",
+    "metadata": {
+      "agent_prompt": "Je veux faire du R",
+      "agent_prompt_english": "I want to do R",
+      "clarification": {},
+      "launcher_request": {
+        "catalog_id": "ide",
+        "chart_id": "rstudio-r-python-julia",
+        "version": "2.5.8"
+      },
+      "model": "gemma4-26b-moe",
+      "response_mode": "standard",
+      "retryable": false
+    },
+    "question": "Je veux faire du R",
+    "status": "answered",
+    "type": "interaction"
   }
 ]
